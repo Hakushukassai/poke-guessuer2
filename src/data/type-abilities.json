@@ -1,0 +1,83 @@
+{
+  "levitate": {
+    "name": "ふゆう",
+    "immunities": ["じめん"]
+  },
+  "water_absorb": {
+    "name": "ちょすい",
+    "immunities": ["みず"]
+  },
+  "dry_skin": {
+    "name": "かんそうはだ",
+    "immunities": ["みず"],
+    "multipliers": { "ほのお": 1.25 }
+  },
+  "storm_drain": {
+    "name": "よびみず",
+    "immunities": ["みず"]
+  },
+  "volt_absorb": {
+    "name": "ちくでん",
+    "immunities": ["でんき"]
+  },
+  "lightning_rod": {
+    "name": "ひらいしん",
+    "immunities": ["でんき"]
+  },
+  "motor_drive": {
+    "name": "でんきエンジン",
+    "immunities": ["でんき"]
+  },
+  "flash_fire": {
+    "name": "もらいび",
+    "immunities": ["ほのお"]
+  },
+  "well_baked_body": {
+    "name": "よくやけるからだ",
+    "immunities": ["ほのお"]
+  },
+  "sap_sipper": {
+    "name": "そうしょく",
+    "immunities": ["くさ"]
+  },
+  "earth_eater": {
+    "name": "どしょく",
+    "immunities": ["じめん"]
+  },
+  "thick_fat": {
+    "name": "あついしぼう",
+    "multipliers": { "ほのお": 0.5, "こおり": 0.5 }
+  },
+  "heatproof": {
+    "name": "たいねつ",
+    "multipliers": { "ほのお": 0.5 }
+  },
+  "water_bubble": {
+    "name": "すいほう",
+    "multipliers": { "ほのお": 0.5 }
+  },
+  "fluffy": {
+    "name": "もふもふ",
+    "multipliers": { "ほのお": 2 }
+  },
+  "purifying_salt": {
+    "name": "きよめのしお",
+    "multipliers": { "ゴースト": 0.5 }
+  },
+  "filter": {
+    "name": "フィルター",
+    "superEffectiveModifier": 0.75
+  },
+  "solid_rock": {
+    "name": "ハードロック",
+    "superEffectiveModifier": 0.75
+  },
+  "prism_armor": {
+    "name": "プリズムアーマー",
+    "superEffectiveModifier": 0.75
+  },
+  "wonder_guard": {
+    "name": "ふしぎなまもり",
+    "wonderGuard": true
+  }
+}
