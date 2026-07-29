@@ -43,10 +43,50 @@ select {
 }
 
 .app-shell {
-  max-width: 720px;
+  --shell-pad-x: 0.75rem;
+  width: 100%;
+  max-width: 42rem;
   margin: 0 auto;
-  padding: 1rem 0.85rem 2.5rem;
+  padding: 0.75rem var(--shell-pad-x) 2rem;
   animation: rise 0.28s ease-out;
+}
+
+/* Tablet: room to breathe without looking like a phone strip */
+@media (min-width: 720px) {
+  .app-shell {
+    --shell-pad-x: 1.15rem;
+    max-width: 52rem;
+    padding-top: 1rem;
+    padding-bottom: 2.25rem;
+  }
+
+  .app-shell.is-home {
+    max-width: 44rem;
+  }
+}
+
+/* Desktop: play screens use the viewport; home stays a focused panel */
+@media (min-width: 960px) {
+  .app-shell {
+    --shell-pad-x: 1.5rem;
+    max-width: 68rem;
+    padding-top: 1.15rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .app-shell.is-home {
+    max-width: 46rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .app-shell {
+    max-width: 76rem;
+  }
+
+  .app-shell.is-home {
+    max-width: 48rem;
+  }
 }
 
 @keyframes rise {
@@ -86,6 +126,16 @@ select {
   background: linear-gradient(160deg, #fffdf8 0%, #eef6e8 55%, #e7f0ff 100%);
   border-bottom: 3px solid var(--line);
   text-align: center;
+}
+
+@media (min-width: 720px) {
+  .home-stage {
+    padding: 2.6rem 1.75rem 1.85rem;
+  }
+
+  .brand {
+    font-size: clamp(2.6rem, 6vw, 3.6rem);
+  }
 }
 
 .home-kicker {
@@ -670,8 +720,46 @@ select {
 }
 
 .poke-tray.compact {
-  max-height: min(34vh, 320px);
+  max-height: min(38vh, 360px);
   width: 100%;
+}
+
+@media (min-width: 720px) {
+  .poke-tray {
+    grid-template-columns: repeat(auto-fill, minmax(142px, 1fr));
+    gap: 0.65rem;
+    max-height: min(58vh, 560px);
+  }
+
+  .poke-tray.compact {
+    max-height: min(46vh, 440px);
+  }
+}
+
+@media (min-width: 960px) {
+  .poke-tray {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    max-height: min(64vh, 720px);
+  }
+
+  .poke-tray.has-dock {
+    padding-bottom: 6.5rem;
+  }
+
+  .poke-tray.compact {
+    max-height: min(54vh, 560px);
+  }
+}
+
+@media (min-width: 1280px) {
+  .poke-tray {
+    grid-template-columns: repeat(auto-fill, minmax(158px, 1fr));
+    max-height: min(68vh, 820px);
+  }
+
+  .poke-tray.compact {
+    max-height: min(58vh, 640px);
+  }
 }
 
 .poke-tile {
@@ -1069,6 +1157,40 @@ select {
   margin-bottom: 0.65rem;
 }
 
+@media (min-width: 960px) {
+  .battle-screen {
+    padding: 1.25rem 1.25rem 1.4rem;
+  }
+
+  .battle-body {
+    display: grid;
+    grid-template-columns: minmax(0, 1.45fr) minmax(18rem, 0.95fr);
+    gap: 1rem 1.15rem;
+    align-items: start;
+  }
+
+  .battle-main {
+    min-width: 0;
+  }
+
+  .battle-body > .clue-board {
+    position: sticky;
+    top: 0.75rem;
+    max-height: calc(100vh - 1.5rem);
+    overflow: auto;
+  }
+
+  .pick-screen {
+    padding: 1.25rem 1.25rem 1.4rem;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 959px) {
+  .clue-lanes {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .remain-box {
   min-width: 7.5rem;
 }
@@ -1217,6 +1339,12 @@ select {
   }
 }
 
+@media (min-width: 960px) {
+  .type-pad {
+    gap: 0.55rem;
+  }
+}
+
 .trait-panels {
   display: grid;
   gap: 0.85rem;
@@ -1263,6 +1391,12 @@ select {
 
 @media (min-width: 560px) {
   .trait-pad {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1100px) {
+  .battle-main .trait-pad {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -1737,6 +1871,13 @@ select {
   display: grid;
   justify-items: center;
   gap: 0.35rem;
+}
+
+@media (min-width: 720px) {
+  .sheet {
+    width: min(480px, 100%);
+    padding: 1.25rem 1.15rem 1.3rem;
+  }
 }
 
 .sheet-title {

@@ -34,7 +34,7 @@ function App() {
 
   if (session.kind === 'online') {
     return (
-      <div className="app-shell">
+      <div className="app-shell is-play">
         <OnlineSession
           roomCode={session.roomCode}
           displayName={session.name}
@@ -48,7 +48,7 @@ function App() {
 
   if (session.kind === 'home' || state.phase === 'home') {
     return (
-      <div className="app-shell" key="home">
+      <div className="app-shell is-home" key="home">
         <HomeScreen
           initialNames={state.names}
           onStartLocal={(pool, names, options: GameOptions, quizMode) => {
@@ -79,7 +79,7 @@ function App() {
   }
 
   return (
-    <div className="app-shell" key={state.phase}>
+    <div className="app-shell is-play" key={state.phase}>
       {state.phase === 'ban_p1' && (
         <BanTypeScreen
           player="p1"

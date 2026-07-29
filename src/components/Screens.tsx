@@ -1383,6 +1383,8 @@ export function BattleScreen({
 
       <ActionFlash flash={flash} />
 
+      <div className="battle-body">
+        <div className="battle-main">
       {!catchup && (
         <div className="action-switch three" role="tablist" aria-label="行動">
           {competitive ? (
@@ -1596,6 +1598,7 @@ export function BattleScreen({
           )}
         </div>
       )}
+        </div>
 
       <ClueBoard
         probes={state.probes}
@@ -1606,6 +1609,7 @@ export function BattleScreen({
         currentPlayer={state.currentPlayer}
         names={state.names}
       />
+      </div>
 
       {pendingDex && (
         <div
