@@ -9,6 +9,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { abilityNameJa } from './ability-ja.mjs'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const root = path.join(__dirname, '..')
@@ -64,6 +65,7 @@ const TYPE_ABILITY = {
   'Solid Rock': { id: 'solid_rock', name: 'ハードロック' },
   'Prism Armor': { id: 'prism_armor', name: 'プリズムアーマー' },
   'Wonder Guard': { id: 'wonder_guard', name: 'ふしぎなまもり' },
+  Eelevate: { id: 'eelevate', name: 'うなぎのぼり' },
 }
 
 const FORME_JA = {
@@ -98,9 +100,10 @@ function pickAbility(abilities) {
     }
   }
   const first = list[0] || 'Unknown'
+  const id = first.toLowerCase().replace(/[^a-z0-9]+/g, '_')
   return {
-    id: first.toLowerCase().replace(/[^a-z0-9]+/g, '_'),
-    name: first,
+    id,
+    name: abilityNameJa(id, first),
     affectsTypes: false,
   }
 }

@@ -11,6 +11,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { abilityNameJa } from './ability-ja.mjs'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const root = path.join(__dirname, '..')
@@ -60,6 +61,7 @@ const TYPE_ABILITY = {
   'Solid Rock': { id: 'solid_rock', name: 'ハードロック' },
   'Prism Armor': { id: 'prism_armor', name: 'プリズムアーマー' },
   'Wonder Guard': { id: 'wonder_guard', name: 'ふしぎなまもり' },
+  Eelevate: { id: 'eelevate', name: 'うなぎのぼり' },
 }
 
 /** Prefer these when present (after type-affecting abilities). */
@@ -112,9 +114,10 @@ function abilityEntry(name) {
       affectsTypes: true,
     }
   }
+  const id = a?.id || String(name).toLowerCase().replace(/[^a-z0-9]+/g, '_')
   return {
-    id: a?.id || String(name).toLowerCase().replace(/[^a-z0-9]+/g, '_'),
-    name: a?.nameJa || name,
+    id,
+    name: a?.nameJa || abilityNameJa(id, name),
     affectsTypes: false,
   }
 }

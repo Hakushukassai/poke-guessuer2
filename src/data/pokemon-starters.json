@@ -8,7 +8,7 @@
     ],
     "ability": {
       "id": "overgrow",
-      "name": "Overgrow",
+      "name": "しんりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -40,7 +40,7 @@
     ],
     "ability": {
       "id": "blaze",
-      "name": "Blaze",
+      "name": "もうか",
       "affectsTypes": false
     },
     "form": null,
@@ -56,7 +56,7 @@
     ],
     "ability": {
       "id": "tough_claws",
-      "name": "Tough Claws",
+      "name": "かたいツメ",
       "affectsTypes": false
     },
     "form": "Mega-X",
@@ -71,7 +71,7 @@
     ],
     "ability": {
       "id": "torrent",
-      "name": "Torrent",
+      "name": "げきりゅう",
       "affectsTypes": false
     },
     "form": null,
@@ -86,7 +86,7 @@
     ],
     "ability": {
       "id": "overgrow",
-      "name": "Overgrow",
+      "name": "しんりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -102,7 +102,7 @@
     ],
     "ability": {
       "id": "mega_sol",
-      "name": "Mega Sol",
+      "name": "メガソーラー",
       "affectsTypes": false
     },
     "form": "Mega",
@@ -133,7 +133,7 @@
     ],
     "ability": {
       "id": "blaze",
-      "name": "Blaze",
+      "name": "もうか",
       "affectsTypes": false
     },
     "form": "Hisui",
@@ -148,7 +148,7 @@
     ],
     "ability": {
       "id": "torrent",
-      "name": "Torrent",
+      "name": "げきりゅう",
       "affectsTypes": false
     },
     "form": null,
@@ -164,7 +164,7 @@
     ],
     "ability": {
       "id": "dragonize",
-      "name": "Dragonize",
+      "name": "ドラゴンスキン",
       "affectsTypes": false
     },
     "form": "Mega",
@@ -179,7 +179,7 @@
     ],
     "ability": {
       "id": "overgrow",
-      "name": "Overgrow",
+      "name": "しんりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -211,7 +211,7 @@
     ],
     "ability": {
       "id": "blaze",
-      "name": "Blaze",
+      "name": "もうか",
       "affectsTypes": false
     },
     "form": null,
@@ -227,7 +227,7 @@
     ],
     "ability": {
       "id": "torrent",
-      "name": "Torrent",
+      "name": "げきりゅう",
       "affectsTypes": false
     },
     "form": null,
@@ -243,7 +243,7 @@
     ],
     "ability": {
       "id": "overgrow",
-      "name": "Overgrow",
+      "name": "しんりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -259,7 +259,7 @@
     ],
     "ability": {
       "id": "blaze",
-      "name": "Blaze",
+      "name": "もうか",
       "affectsTypes": false
     },
     "form": null,
@@ -275,7 +275,7 @@
     ],
     "ability": {
       "id": "torrent",
-      "name": "Torrent",
+      "name": "げきりゅう",
       "affectsTypes": false
     },
     "form": null,
@@ -290,7 +290,7 @@
     ],
     "ability": {
       "id": "overgrow",
-      "name": "Overgrow",
+      "name": "しんりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -306,7 +306,7 @@
     ],
     "ability": {
       "id": "blaze",
-      "name": "Blaze",
+      "name": "もうか",
       "affectsTypes": false
     },
     "form": null,
@@ -321,7 +321,7 @@
     ],
     "ability": {
       "id": "torrent",
-      "name": "Torrent",
+      "name": "げきりゅう",
       "affectsTypes": false
     },
     "form": null,
@@ -337,7 +337,7 @@
     ],
     "ability": {
       "id": "torrent",
-      "name": "Torrent",
+      "name": "げきりゅう",
       "affectsTypes": false
     },
     "form": "Hisui",
@@ -353,7 +353,7 @@
     ],
     "ability": {
       "id": "overgrow",
-      "name": "Overgrow",
+      "name": "しんりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -369,7 +369,7 @@
     ],
     "ability": {
       "id": "blaze",
-      "name": "Blaze",
+      "name": "もうか",
       "affectsTypes": false
     },
     "form": null,
@@ -401,7 +401,7 @@
     ],
     "ability": {
       "id": "torrent",
-      "name": "Torrent",
+      "name": "げきりゅう",
       "affectsTypes": false
     },
     "form": null,
@@ -417,7 +417,7 @@
     ],
     "ability": {
       "id": "overgrow",
-      "name": "Overgrow",
+      "name": "しんりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -433,7 +433,7 @@
     ],
     "ability": {
       "id": "overgrow",
-      "name": "Overgrow",
+      "name": "しんりょく",
       "affectsTypes": false
     },
     "form": "Hisui",
@@ -449,7 +449,7 @@
     ],
     "ability": {
       "id": "blaze",
-      "name": "Blaze",
+      "name": "もうか",
       "affectsTypes": false
     },
     "form": null,
@@ -465,7 +465,7 @@
     ],
     "ability": {
       "id": "torrent",
-      "name": "Torrent",
+      "name": "げきりゅう",
       "affectsTypes": false
     },
     "form": null,
@@ -480,7 +480,7 @@
     ],
     "ability": {
       "id": "overgrow",
-      "name": "Overgrow",
+      "name": "しんりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -495,7 +495,7 @@
     ],
     "ability": {
       "id": "blaze",
-      "name": "Blaze",
+      "name": "もうか",
       "affectsTypes": false
     },
     "form": null,
@@ -510,7 +510,7 @@
     ],
     "ability": {
       "id": "torrent",
-      "name": "Torrent",
+      "name": "げきりゅう",
       "affectsTypes": false
     },
     "form": null,
@@ -526,7 +526,7 @@
     ],
     "ability": {
       "id": "overgrow",
-      "name": "Overgrow",
+      "name": "しんりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -542,7 +542,7 @@
     ],
     "ability": {
       "id": "blaze",
-      "name": "Blaze",
+      "name": "もうか",
       "affectsTypes": false
     },
     "form": null,
@@ -558,7 +558,7 @@
     ],
     "ability": {
       "id": "torrent",
-      "name": "Torrent",
+      "name": "げきりゅう",
       "affectsTypes": false
     },
     "form": null,

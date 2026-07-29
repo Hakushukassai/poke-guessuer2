@@ -79,5 +79,9 @@
   "wonder_guard": {
     "name": "ふしぎなまもり",
     "wonderGuard": true
+  },
+  "eelevate": {
+    "name": "うなぎのぼり",
+    "immunities": ["じめん"]
   }
 }

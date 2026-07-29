@@ -108,26 +108,97 @@ function typeMatchupRows(pokemon: Pokemon) {
   }))
 }
 
-/** 全18タイプの相性グリッド（クリック詳細用） */
+/** 等倍以外の相性を弱点／耐性で簡潔表示 */
 function TypeMatchupGrid({ pokemon }: { pokemon: Pokemon }) {
-  const rows = useMemo(() => typeMatchupRows(pokemon), [pokemon])
+  const { weak, resist } = useMemo(() => {
+    const rows = typeMatchupRows(pokemon).filter((row) => row.label !== 'neutral')
+    return {
+      weak: rows.filter(
+        (row) => row.label === 'super' || row.label === 'double_super',
+      ),
+      resist: rows.filter(
+        (row) =>
+          row.label === 'half' ||
+          row.label === 'quarter' ||
+          row.label === 'immune',
+      ),
+    }
+  }, [pokemon])
+
   return (
-    <div className="matchup-grid" role="list" aria-label={`${pokemon.name}のタイプ相性`}>
-      {rows.map((row) => (
-        <span
-          key={row.type}
-          role="listitem"
-          className={`matchup-cell result-${row.label}`}
-          style={{ ['--cell' as string]: TYPE_COLORS[row.type] }}
-          title={`${row.type}：${EFFECTIVENESS_LABEL_JA[row.label]}`}
-        >
-          <span className="matchup-cell-type">{row.type}</span>
-          <span className="matchup-cell-mark" aria-hidden>
-            {RESULT_MARK[row.label]}
-          </span>
-        </span>
-      ))}
+    <div className="matchup-summary" aria-label={`${pokemon.name}のタイプ相性`}>
+      <div className="matchup-summary-row">
+        <span className="matchup-summary-tag weak">弱点</span>
+        <div className="type-row matchup-chips">
+          {weak.length === 0 ? (
+            <span className="muted-inline">なし</span>
+          ) : (
+            weak.map((w) => (
+              <span
+                key={w.type}
+                className={`matchup-chip result-${w.label}`}
+                style={{ background: TYPE_COLORS[w.type] }}
+                title={`${w.type}：${EFFECTIVENESS_LABEL_JA[w.label]}`}
+              >
+                {w.type}
+                <small aria-hidden>{RESULT_MARK[w.label]}</small>
+              </span>
+            ))
+          )}
+        </div>
+      </div>
+      <div className="matchup-summary-row">
+        <span className="matchup-summary-tag resist">耐性</span>
+        <div className="type-row matchup-chips">
+          {resist.length === 0 ? (
+            <span className="muted-inline">なし</span>
+          ) : (
+            resist.map((w) => (
+              <span
+                key={w.type}
+                className={`matchup-chip result-${w.label}`}
+                style={{ background: TYPE_COLORS[w.type] }}
+                title={`${w.type}：${EFFECTIVENESS_LABEL_JA[w.label]}`}
+              >
+                {w.type}
+                <small aria-hidden>{RESULT_MARK[w.label]}</small>
+              </span>
+            ))
+          )}
+        </div>
+      </div>
     </div>
+  )
+}
+
+/** 候補タイル用：弱点だけ一行で表示 */
+function TileWeaknesses({ pokemon }: { pokemon: Pokemon }) {
+  const weak = useMemo(
+    () =>
+      typeMatchupRows(pokemon).filter(
+        (row) => row.label === 'super' || row.label === 'double_super',
+      ),
+    [pokemon],
+  )
+  return (
+    <span className="tile-weak" aria-label="弱点">
+      <span className="tile-weak-label">弱点</span>
+      {weak.length === 0 ? (
+        <span className="tile-weak-none">なし</span>
+      ) : (
+        weak.map((w) => (
+          <span
+            key={w.type}
+            className={`tile-weak-chip result-${w.label}`}
+            style={{ background: TYPE_COLORS[w.type] }}
+            title={`${w.type}：${EFFECTIVENESS_LABEL_JA[w.label]}`}
+          >
+            {w.type}
+            <small aria-hidden>{RESULT_MARK[w.label]}</small>
+          </span>
+        ))
+      )}
+    </span>
   )
 }
 
@@ -161,18 +232,12 @@ function TypeMatchupSheet({
           ))}
         </span>
         <p className="sheet-sub matchup-sheet-lead">
-          タイプ相性
+          弱点・耐性
           {pokemon.ability.affectsTypes
             ? ` · 特性「${pokemon.ability.name}」反映`
             : ''}
         </p>
         <TypeMatchupGrid pokemon={pokemon} />
-        <p className="matchup-legend" aria-label="記号の見方">
-          <span>×無効</span>
-          <span>▽いまひとつ</span>
-          <span>－等倍</span>
-          <span>▲ばつぐん</span>
-        </p>
         <div className="sheet-actions">
           <button type="button" className="btn ghost" onClick={onClose}>
             閉じる
@@ -1271,7 +1336,7 @@ export function OnlineWatchScreen({
               <button
                 key={p.id}
                 type="button"
-                className="poke-tile"
+                className="poke-tile has-weak"
                 onClick={() => setInspectCand(p)}
                 aria-label={`${p.name}のタイプ相性を見る`}
               >
@@ -1282,6 +1347,7 @@ export function OnlineWatchScreen({
                     <TypeBadge key={t} type={t} />
                   ))}
                 </span>
+                <TileWeaknesses pokemon={p} />
               </button>
             ))}
           </div>
@@ -1704,7 +1770,7 @@ export function PickScreen({
             これに決める
           </button>
           <div className="dock-matchup">
-            <p className="dock-matchup-label">タイプ相性</p>
+            <p className="dock-matchup-label">弱点・耐性</p>
             <TypeMatchupGrid pokemon={selected} />
           </div>
         </div>
@@ -1748,6 +1814,8 @@ export function BattleScreen({
       : 'probe'
   const [mode, setMode] = useState<BattleTab>(defaultTab)
   const [query, setQuery] = useState('')
+  const [candTab, setCandTab] = useState<'mine' | 'rival'>('mine')
+  const [inspectCand, setInspectCand] = useState<Pokemon | null>(null)
   const [pendingGuess, setPendingGuess] = useState<Pokemon | null>(null)
   const [pendingDex, setPendingDex] = useState<Pokemon | null>(null)
   const [pendingStat, setPendingStat] = useState<Pokemon | null>(null)
@@ -1764,10 +1832,19 @@ export function BattleScreen({
   const remainPct = Math.round((candidates.length / roster.length) * 100)
   const rivalPct = Math.round((rivalCandidates.length / roster.length) * 100)
 
+  const activeCandList = candTab === 'mine' ? candidates : rivalCandidates
   const visibleCandidates = useMemo(() => {
     const q = query.trim()
-    return candidates.filter((p) => !q || p.name.includes(q))
-  }, [candidates, query])
+    return activeCandList.filter((p) => !q || p.name.includes(q))
+  }, [activeCandList, query])
+
+  const canActOnTile =
+    candTab === 'mine' &&
+    (mode === 'guess' ||
+      mode === 'dex' ||
+      mode === 'stat' ||
+      catchup ||
+      !canAsk)
 
   const askedTypes = new Set(
     state.probes
@@ -1869,6 +1946,8 @@ export function BattleScreen({
           : 'probe',
     )
     setQuery('')
+    setCandTab('mine')
+    setInspectCand(null)
     setPendingGuess(null)
     setPendingDex(null)
     setPendingStat(null)
@@ -2126,88 +2205,130 @@ export function BattleScreen({
         </div>
       )}
 
-      {showList && (
-        <div className="guess-pane">
-          {mode === 'stat' && !catchup && canAsk && (
-            <div className="stat-switch" role="group" aria-label="比べ方">
-              {COMPETITIVE_STATS.map((s) => (
-                <button
-                  key={s.id}
-                  type="button"
-                  className={statKind === s.id ? 'is-on' : ''}
-                  onClick={() => setStatKind(s.id)}
-                >
-                  {s.id === 'speed' ? '速さ' : '種族値'}
-                </button>
-              ))}
-            </div>
-          )}
-          <div className="tool-row">
-            <input
-              type="search"
-              placeholder="候補を名前で探す"
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-            />
-          </div>
-          {mode === 'dex' && !catchup && canAsk && (
-            <p className="dex-hint">
-              基準を選ぶと「図鑑番号はこれより大きい？」と聞ける
-            </p>
-          )}
-          {mode === 'stat' && !catchup && canAsk && (
-            <p className="dex-hint">{statAsk(statKind)}</p>
-          )}
-          {visibleCandidates.length === 0 ? (
-            <p className="empty-panel">
-              条件に合う候補がない。メモを見直してみて。
-            </p>
-          ) : (
-            <div className="poke-tray compact">
-              {visibleCandidates.map((p) => {
-                const usedDex = mode === 'dex' && usedPivots.has(p.id)
-                const usedStat =
-                  mode === 'stat' && usedStatKeys.has(`${statKind}:${p.id}`)
-                const used = usedDex || usedStat
-                const meta = competitive ? getCompetitiveMeta(p.id) : undefined
-                return (
-                  <button
-                    key={p.id}
-                    type="button"
-                    className={`poke-tile ${used ? 'is-used' : ''}`}
-                    disabled={used}
-                    onClick={() => {
-                      if (mode === 'dex' && !catchup) setPendingDex(p)
-                      else if (mode === 'stat' && !catchup) setPendingStat(p)
-                      else setPendingGuess(p)
-                    }}
-                  >
-                    <PokemonSprite pokemon={p} name={p.name} size={60} />
-                    <span className="poke-name">{p.name}</span>
-                    {mode === 'stat' && meta ? (
-                      <span className="dex-num">
-                        {statKind === 'speed'
-                          ? `速さ ${meta.speed}`
-                          : `合計 ${meta.bst}`}
-                      </span>
-                    ) : (
-                      p.num != null && (
-                        <span className="dex-num">#{p.num}</span>
-                      )
-                    )}
-                    <span className="type-row">
-                      {p.types.map((t) => (
-                        <TypeBadge key={t} type={t} />
-                      ))}
-                    </span>
-                    {used && <small className="tile-used">比較済</small>}
-                  </button>
-                )
-              })}
-            </div>
-          )}
+      <div className="guess-pane candidate-browser">
+        <div className="cand-tabs" role="tablist" aria-label="候補の切り替え">
+          <button
+            type="button"
+            role="tab"
+            aria-selected={candTab === 'mine'}
+            className={candTab === 'mine' ? 'is-on' : ''}
+            onClick={() => {
+              setCandTab('mine')
+              setQuery('')
+            }}
+          >
+            自分の候補
+            <strong>{candidates.length}</strong>
+          </button>
+          <button
+            type="button"
+            role="tab"
+            aria-selected={candTab === 'rival'}
+            className={candTab === 'rival' ? 'is-on' : ''}
+            onClick={() => {
+              setCandTab('rival')
+              setQuery('')
+            }}
+          >
+            相手の候補
+            <strong>{rivalCandidates.length}</strong>
+          </button>
         </div>
-      )}
+
+        {showList && mode === 'stat' && !catchup && canAsk && canActOnTile && (
+          <div className="stat-switch" role="group" aria-label="比べ方">
+            {COMPETITIVE_STATS.map((s) => (
+              <button
+                key={s.id}
+                type="button"
+                className={statKind === s.id ? 'is-on' : ''}
+                onClick={() => setStatKind(s.id)}
+              >
+                {s.id === 'speed' ? '速さ' : '種族値'}
+              </button>
+            ))}
+          </div>
+        )}
+        <div className="tool-row">
+          <input
+            type="search"
+            placeholder="候補を名前で探す"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+          />
+        </div>
+        {canActOnTile && mode === 'dex' && !catchup && canAsk && (
+          <p className="dex-hint">
+            基準を選ぶと「図鑑番号はこれより大きい？」と聞ける
+          </p>
+        )}
+        {canActOnTile && mode === 'stat' && !catchup && canAsk && (
+          <p className="dex-hint">{statAsk(statKind)}</p>
+        )}
+        {!canActOnTile && (
+          <p className="dex-hint">
+            {candTab === 'rival'
+              ? '相手が絞っている候補。タップで弱点・耐性を確認'
+              : 'タップで弱点・耐性を確認（解答は「名前を当てる」から）'}
+          </p>
+        )}
+        {visibleCandidates.length === 0 ? (
+          <p className="empty-panel">
+            条件に合う候補がない。メモを見直してみて。
+          </p>
+        ) : (
+          <div className="poke-tray compact rival-tray">
+            {visibleCandidates.map((p) => {
+              const usedDex =
+                canActOnTile && mode === 'dex' && usedPivots.has(p.id)
+              const usedStat =
+                canActOnTile &&
+                mode === 'stat' &&
+                usedStatKeys.has(`${statKind}:${p.id}`)
+              const used = usedDex || usedStat
+              const meta = competitive ? getCompetitiveMeta(p.id) : undefined
+              return (
+                <button
+                  key={p.id}
+                  type="button"
+                  className={`poke-tile has-weak ${used ? 'is-used' : ''}`}
+                  disabled={used}
+                  onClick={() => {
+                    if (!canActOnTile) {
+                      setInspectCand(p)
+                      return
+                    }
+                    if (mode === 'dex' && !catchup) setPendingDex(p)
+                    else if (mode === 'stat' && !catchup) setPendingStat(p)
+                    else setPendingGuess(p)
+                  }}
+                >
+                  <PokemonSprite pokemon={p} name={p.name} size={60} />
+                  <span className="poke-name">{p.name}</span>
+                  {canActOnTile && mode === 'stat' && meta ? (
+                    <span className="dex-num">
+                      {statKind === 'speed'
+                        ? `速さ ${meta.speed}`
+                        : `合計 ${meta.bst}`}
+                    </span>
+                  ) : (
+                    p.num != null && (
+                      <span className="dex-num">#{p.num}</span>
+                    )
+                  )}
+                  <span className="type-row">
+                    {p.types.map((t) => (
+                      <TypeBadge key={t} type={t} />
+                    ))}
+                  </span>
+                  <TileWeaknesses pokemon={p} />
+                  {used && <small className="tile-used">比較済</small>}
+                </button>
+              )
+            })}
+          </div>
+        )}
+      </div>
         </div>
 
       <ClueBoard
@@ -2221,6 +2342,13 @@ export function BattleScreen({
         names={state.names}
       />
       </div>
+
+      {inspectCand && (
+        <TypeMatchupSheet
+          pokemon={inspectCand}
+          onClose={() => setInspectCand(null)}
+        />
+      )}
 
       {pendingDex && (
         <div
@@ -2251,7 +2379,7 @@ export function BattleScreen({
               <br />
               聞くと相手の番になるよ。
             </p>
-            <p className="sheet-sub matchup-sheet-lead">タイプ相性</p>
+            <p className="sheet-sub matchup-sheet-lead">弱点・耐性</p>
             <TypeMatchupGrid pokemon={pendingDex} />
             <div className="sheet-actions">
               <button
@@ -2310,7 +2438,7 @@ export function BattleScreen({
               <br />
               聞くと相手の番になるよ。
             </p>
-            <p className="sheet-sub matchup-sheet-lead">タイプ相性</p>
+            <p className="sheet-sub matchup-sheet-lead">弱点・耐性</p>
             <TypeMatchupGrid pokemon={pendingStat} />
             <div className="sheet-actions">
               <button
@@ -2364,7 +2492,7 @@ export function BattleScreen({
                 ? 'これに解答する？ 当たれば引き分け、外すと先行の勝ち。'
                 : 'これに解答する？ 外すと相手の番になるよ。'}
             </p>
-            <p className="sheet-sub matchup-sheet-lead">タイプ相性</p>
+            <p className="sheet-sub matchup-sheet-lead">弱点・耐性</p>
             <TypeMatchupGrid pokemon={pendingGuess} />
             <div className="sheet-actions">
               <button

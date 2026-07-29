@@ -8,7 +8,7 @@
     ],
     "ability": {
       "id": "overgrow",
-      "name": "Overgrow",
+      "name": "しんりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -24,7 +24,7 @@
     ],
     "ability": {
       "id": "overgrow",
-      "name": "Overgrow",
+      "name": "しんりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -40,7 +40,7 @@
     ],
     "ability": {
       "id": "overgrow",
-      "name": "Overgrow",
+      "name": "しんりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -71,7 +71,7 @@
     ],
     "ability": {
       "id": "blaze",
-      "name": "Blaze",
+      "name": "もうか",
       "affectsTypes": false
     },
     "form": null,
@@ -86,7 +86,7 @@
     ],
     "ability": {
       "id": "blaze",
-      "name": "Blaze",
+      "name": "もうか",
       "affectsTypes": false
     },
     "form": null,
@@ -102,7 +102,7 @@
     ],
     "ability": {
       "id": "blaze",
-      "name": "Blaze",
+      "name": "もうか",
       "affectsTypes": false
     },
     "form": null,
@@ -118,7 +118,7 @@
     ],
     "ability": {
       "id": "tough_claws",
-      "name": "Tough Claws",
+      "name": "かたいツメ",
       "affectsTypes": false
     },
     "form": "Mega-X",
@@ -133,7 +133,7 @@
     ],
     "ability": {
       "id": "torrent",
-      "name": "Torrent",
+      "name": "げきりゅう",
       "affectsTypes": false
     },
     "form": null,
@@ -148,7 +148,7 @@
     ],
     "ability": {
       "id": "torrent",
-      "name": "Torrent",
+      "name": "げきりゅう",
       "affectsTypes": false
     },
     "form": null,
@@ -163,7 +163,7 @@
     ],
     "ability": {
       "id": "torrent",
-      "name": "Torrent",
+      "name": "げきりゅう",
       "affectsTypes": false
     },
     "form": null,
@@ -178,7 +178,7 @@
     ],
     "ability": {
       "id": "shield_dust",
-      "name": "Shield Dust",
+      "name": "りんぷん",
       "affectsTypes": false
     },
     "form": null,
@@ -193,7 +193,7 @@
     ],
     "ability": {
       "id": "shed_skin",
-      "name": "Shed Skin",
+      "name": "だっぴ",
       "affectsTypes": false
     },
     "form": null,
@@ -209,7 +209,7 @@
     ],
     "ability": {
       "id": "compound_eyes",
-      "name": "Compound Eyes",
+      "name": "ふくがん",
       "affectsTypes": false
     },
     "form": null,
@@ -225,7 +225,7 @@
     ],
     "ability": {
       "id": "shield_dust",
-      "name": "Shield Dust",
+      "name": "りんぷん",
       "affectsTypes": false
     },
     "form": null,
@@ -241,7 +241,7 @@
     ],
     "ability": {
       "id": "shed_skin",
-      "name": "Shed Skin",
+      "name": "だっぴ",
       "affectsTypes": false
     },
     "form": null,
@@ -257,7 +257,7 @@
     ],
     "ability": {
       "id": "swarm",
-      "name": "Swarm",
+      "name": "むしのしらせ",
       "affectsTypes": false
     },
     "form": null,
@@ -273,7 +273,7 @@
     ],
     "ability": {
       "id": "keen_eye",
-      "name": "Keen Eye",
+      "name": "するどいめ",
       "affectsTypes": false
     },
     "form": null,
@@ -289,7 +289,7 @@
     ],
     "ability": {
       "id": "keen_eye",
-      "name": "Keen Eye",
+      "name": "するどいめ",
       "affectsTypes": false
     },
     "form": null,
@@ -305,7 +305,7 @@
     ],
     "ability": {
       "id": "keen_eye",
-      "name": "Keen Eye",
+      "name": "するどいめ",
       "affectsTypes": false
     },
     "form": null,
@@ -320,7 +320,7 @@
     ],
     "ability": {
       "id": "run_away",
-      "name": "Run Away",
+      "name": "にげあし",
       "affectsTypes": false
     },
     "form": null,
@@ -351,7 +351,7 @@
     ],
     "ability": {
       "id": "run_away",
-      "name": "Run Away",
+      "name": "にげあし",
       "affectsTypes": false
     },
     "form": null,
@@ -383,7 +383,7 @@
     ],
     "ability": {
       "id": "keen_eye",
-      "name": "Keen Eye",
+      "name": "するどいめ",
       "affectsTypes": false
     },
     "form": null,
@@ -399,7 +399,7 @@
     ],
     "ability": {
       "id": "keen_eye",
-      "name": "Keen Eye",
+      "name": "するどいめ",
       "affectsTypes": false
     },
     "form": null,
@@ -414,7 +414,7 @@
     ],
     "ability": {
       "id": "intimidate",
-      "name": "Intimidate",
+      "name": "いかく",
       "affectsTypes": false
     },
     "form": null,
@@ -429,7 +429,7 @@
     ],
     "ability": {
       "id": "intimidate",
-      "name": "Intimidate",
+      "name": "いかく",
       "affectsTypes": false
     },
     "form": null,
@@ -475,7 +475,7 @@
     ],
     "ability": {
       "id": "surge_surfer",
-      "name": "Surge Surfer",
+      "name": "サーフテール",
       "affectsTypes": false
     },
     "form": "Alola",
@@ -490,7 +490,7 @@
     ],
     "ability": {
       "id": "electric_surge",
-      "name": "Electric Surge",
+      "name": "エレキメイカー",
       "affectsTypes": false
     },
     "form": "Mega-X",
@@ -505,7 +505,7 @@
     ],
     "ability": {
       "id": "sand_veil",
-      "name": "Sand Veil",
+      "name": "すながくれ",
       "affectsTypes": false
     },
     "form": null,
@@ -521,7 +521,7 @@
     ],
     "ability": {
       "id": "snow_cloak",
-      "name": "Snow Cloak",
+      "name": "ゆきがくれ",
       "affectsTypes": false
     },
     "form": "Alola",
@@ -536,7 +536,7 @@
     ],
     "ability": {
       "id": "sand_veil",
-      "name": "Sand Veil",
+      "name": "すながくれ",
       "affectsTypes": false
     },
     "form": null,
@@ -552,7 +552,7 @@
     ],
     "ability": {
       "id": "snow_cloak",
-      "name": "Snow Cloak",
+      "name": "ゆきがくれ",
       "affectsTypes": false
     },
     "form": "Alola",
@@ -567,7 +567,7 @@
     ],
     "ability": {
       "id": "poison_point",
-      "name": "Poison Point",
+      "name": "どくのトゲ",
       "affectsTypes": false
     },
     "form": null,
@@ -582,7 +582,7 @@
     ],
     "ability": {
       "id": "poison_point",
-      "name": "Poison Point",
+      "name": "どくのトゲ",
       "affectsTypes": false
     },
     "form": null,
@@ -598,7 +598,7 @@
     ],
     "ability": {
       "id": "poison_point",
-      "name": "Poison Point",
+      "name": "どくのトゲ",
       "affectsTypes": false
     },
     "form": null,
@@ -613,7 +613,7 @@
     ],
     "ability": {
       "id": "poison_point",
-      "name": "Poison Point",
+      "name": "どくのトゲ",
       "affectsTypes": false
     },
     "form": null,
@@ -628,7 +628,7 @@
     ],
     "ability": {
       "id": "poison_point",
-      "name": "Poison Point",
+      "name": "どくのトゲ",
       "affectsTypes": false
     },
     "form": null,
@@ -644,7 +644,7 @@
     ],
     "ability": {
       "id": "poison_point",
-      "name": "Poison Point",
+      "name": "どくのトゲ",
       "affectsTypes": false
     },
     "form": null,
@@ -659,7 +659,7 @@
     ],
     "ability": {
       "id": "cute_charm",
-      "name": "Cute Charm",
+      "name": "メロメロボディ",
       "affectsTypes": false
     },
     "form": null,
@@ -674,7 +674,7 @@
     ],
     "ability": {
       "id": "cute_charm",
-      "name": "Cute Charm",
+      "name": "メロメロボディ",
       "affectsTypes": false
     },
     "form": null,
@@ -690,7 +690,7 @@
     ],
     "ability": {
       "id": "magic_bounce",
-      "name": "Magic Bounce",
+      "name": "マジックミラー",
       "affectsTypes": false
     },
     "form": "Mega",
@@ -720,7 +720,7 @@
     ],
     "ability": {
       "id": "snow_cloak",
-      "name": "Snow Cloak",
+      "name": "ゆきがくれ",
       "affectsTypes": false
     },
     "form": "Alola",
@@ -751,7 +751,7 @@
     ],
     "ability": {
       "id": "snow_cloak",
-      "name": "Snow Cloak",
+      "name": "ゆきがくれ",
       "affectsTypes": false
     },
     "form": "Alola",
@@ -767,7 +767,7 @@
     ],
     "ability": {
       "id": "cute_charm",
-      "name": "Cute Charm",
+      "name": "メロメロボディ",
       "affectsTypes": false
     },
     "form": null,
@@ -783,7 +783,7 @@
     ],
     "ability": {
       "id": "cute_charm",
-      "name": "Cute Charm",
+      "name": "メロメロボディ",
       "affectsTypes": false
     },
     "form": null,
@@ -799,7 +799,7 @@
     ],
     "ability": {
       "id": "inner_focus",
-      "name": "Inner Focus",
+      "name": "せいしんりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -815,7 +815,7 @@
     ],
     "ability": {
       "id": "inner_focus",
-      "name": "Inner Focus",
+      "name": "せいしんりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -831,7 +831,7 @@
     ],
     "ability": {
       "id": "chlorophyll",
-      "name": "Chlorophyll",
+      "name": "ようりょくそ",
       "affectsTypes": false
     },
     "form": null,
@@ -847,7 +847,7 @@
     ],
     "ability": {
       "id": "chlorophyll",
-      "name": "Chlorophyll",
+      "name": "ようりょくそ",
       "affectsTypes": false
     },
     "form": null,
@@ -863,7 +863,7 @@
     ],
     "ability": {
       "id": "chlorophyll",
-      "name": "Chlorophyll",
+      "name": "ようりょくそ",
       "affectsTypes": false
     },
     "form": null,
@@ -911,7 +911,7 @@
     ],
     "ability": {
       "id": "compound_eyes",
-      "name": "Compound Eyes",
+      "name": "ふくがん",
       "affectsTypes": false
     },
     "form": null,
@@ -927,7 +927,7 @@
     ],
     "ability": {
       "id": "shield_dust",
-      "name": "Shield Dust",
+      "name": "りんぷん",
       "affectsTypes": false
     },
     "form": null,
@@ -942,7 +942,7 @@
     ],
     "ability": {
       "id": "sand_veil",
-      "name": "Sand Veil",
+      "name": "すながくれ",
       "affectsTypes": false
     },
     "form": null,
@@ -958,7 +958,7 @@
     ],
     "ability": {
       "id": "sand_veil",
-      "name": "Sand Veil",
+      "name": "すながくれ",
       "affectsTypes": false
     },
     "form": "Alola",
@@ -973,7 +973,7 @@
     ],
     "ability": {
       "id": "sand_veil",
-      "name": "Sand Veil",
+      "name": "すながくれ",
       "affectsTypes": false
     },
     "form": null,
@@ -989,7 +989,7 @@
     ],
     "ability": {
       "id": "sand_veil",
-      "name": "Sand Veil",
+      "name": "すながくれ",
       "affectsTypes": false
     },
     "form": "Alola",
@@ -1004,7 +1004,7 @@
     ],
     "ability": {
       "id": "pickup",
-      "name": "Pickup",
+      "name": "ものひろい",
       "affectsTypes": false
     },
     "form": null,
@@ -1019,7 +1019,7 @@
     ],
     "ability": {
       "id": "pickup",
-      "name": "Pickup",
+      "name": "ものひろい",
       "affectsTypes": false
     },
     "form": "Alola",
@@ -1034,7 +1034,7 @@
     ],
     "ability": {
       "id": "pickup",
-      "name": "Pickup",
+      "name": "ものひろい",
       "affectsTypes": false
     },
     "form": "Galar",
@@ -1049,7 +1049,7 @@
     ],
     "ability": {
       "id": "limber",
-      "name": "Limber",
+      "name": "じゅうなん",
       "affectsTypes": false
     },
     "form": null,
@@ -1064,7 +1064,7 @@
     ],
     "ability": {
       "id": "fur_coat",
-      "name": "Fur Coat",
+      "name": "ファーコート",
       "affectsTypes": false
     },
     "form": "Alola",
@@ -1079,7 +1079,7 @@
     ],
     "ability": {
       "id": "damp",
-      "name": "Damp",
+      "name": "しめりけ",
       "affectsTypes": false
     },
     "form": null,
@@ -1094,7 +1094,7 @@
     ],
     "ability": {
       "id": "damp",
-      "name": "Damp",
+      "name": "しめりけ",
       "affectsTypes": false
     },
     "form": null,
@@ -1109,7 +1109,7 @@
     ],
     "ability": {
       "id": "vital_spirit",
-      "name": "Vital Spirit",
+      "name": "やるき",
       "affectsTypes": false
     },
     "form": null,
@@ -1124,7 +1124,7 @@
     ],
     "ability": {
       "id": "vital_spirit",
-      "name": "Vital Spirit",
+      "name": "やるき",
       "affectsTypes": false
     },
     "form": null,
@@ -1247,7 +1247,7 @@
     ],
     "ability": {
       "id": "synchronize",
-      "name": "Synchronize",
+      "name": "シンクロ",
       "affectsTypes": false
     },
     "form": null,
@@ -1262,7 +1262,7 @@
     ],
     "ability": {
       "id": "synchronize",
-      "name": "Synchronize",
+      "name": "シンクロ",
       "affectsTypes": false
     },
     "form": null,
@@ -1277,7 +1277,7 @@
     ],
     "ability": {
       "id": "synchronize",
-      "name": "Synchronize",
+      "name": "シンクロ",
       "affectsTypes": false
     },
     "form": null,
@@ -1292,7 +1292,7 @@
     ],
     "ability": {
       "id": "guts",
-      "name": "Guts",
+      "name": "こんじょう",
       "affectsTypes": false
     },
     "form": null,
@@ -1307,7 +1307,7 @@
     ],
     "ability": {
       "id": "guts",
-      "name": "Guts",
+      "name": "こんじょう",
       "affectsTypes": false
     },
     "form": null,
@@ -1322,7 +1322,7 @@
     ],
     "ability": {
       "id": "guts",
-      "name": "Guts",
+      "name": "こんじょう",
       "affectsTypes": false
     },
     "form": null,
@@ -1338,7 +1338,7 @@
     ],
     "ability": {
       "id": "chlorophyll",
-      "name": "Chlorophyll",
+      "name": "ようりょくそ",
       "affectsTypes": false
     },
     "form": null,
@@ -1354,7 +1354,7 @@
     ],
     "ability": {
       "id": "chlorophyll",
-      "name": "Chlorophyll",
+      "name": "ようりょくそ",
       "affectsTypes": false
     },
     "form": null,
@@ -1370,7 +1370,7 @@
     ],
     "ability": {
       "id": "chlorophyll",
-      "name": "Chlorophyll",
+      "name": "ようりょくそ",
       "affectsTypes": false
     },
     "form": null,
@@ -1386,7 +1386,7 @@
     ],
     "ability": {
       "id": "clear_body",
-      "name": "Clear Body",
+      "name": "クリアボディ",
       "affectsTypes": false
     },
     "form": null,
@@ -1402,7 +1402,7 @@
     ],
     "ability": {
       "id": "clear_body",
-      "name": "Clear Body",
+      "name": "クリアボディ",
       "affectsTypes": false
     },
     "form": null,
@@ -1418,7 +1418,7 @@
     ],
     "ability": {
       "id": "rock_head",
-      "name": "Rock Head",
+      "name": "いしあたま",
       "affectsTypes": false
     },
     "form": null,
@@ -1434,7 +1434,7 @@
     ],
     "ability": {
       "id": "magnet_pull",
-      "name": "Magnet Pull",
+      "name": "じりょく",
       "affectsTypes": false
     },
     "form": "Alola",
@@ -1450,7 +1450,7 @@
     ],
     "ability": {
       "id": "rock_head",
-      "name": "Rock Head",
+      "name": "いしあたま",
       "affectsTypes": false
     },
     "form": null,
@@ -1466,7 +1466,7 @@
     ],
     "ability": {
       "id": "magnet_pull",
-      "name": "Magnet Pull",
+      "name": "じりょく",
       "affectsTypes": false
     },
     "form": "Alola",
@@ -1482,7 +1482,7 @@
     ],
     "ability": {
       "id": "rock_head",
-      "name": "Rock Head",
+      "name": "いしあたま",
       "affectsTypes": false
     },
     "form": null,
@@ -1498,7 +1498,7 @@
     ],
     "ability": {
       "id": "magnet_pull",
-      "name": "Magnet Pull",
+      "name": "じりょく",
       "affectsTypes": false
     },
     "form": "Alola",
@@ -1528,7 +1528,7 @@
     ],
     "ability": {
       "id": "run_away",
-      "name": "Run Away",
+      "name": "にげあし",
       "affectsTypes": false
     },
     "form": "Galar",
@@ -1559,7 +1559,7 @@
     ],
     "ability": {
       "id": "run_away",
-      "name": "Run Away",
+      "name": "にげあし",
       "affectsTypes": false
     },
     "form": "Galar",
@@ -1575,7 +1575,7 @@
     ],
     "ability": {
       "id": "oblivious",
-      "name": "Oblivious",
+      "name": "どんかん",
       "affectsTypes": false
     },
     "form": null,
@@ -1590,7 +1590,7 @@
     ],
     "ability": {
       "id": "gluttony",
-      "name": "Gluttony",
+      "name": "くいしんぼう",
       "affectsTypes": false
     },
     "form": "Galar",
@@ -1606,7 +1606,7 @@
     ],
     "ability": {
       "id": "oblivious",
-      "name": "Oblivious",
+      "name": "どんかん",
       "affectsTypes": false
     },
     "form": null,
@@ -1622,7 +1622,7 @@
     ],
     "ability": {
       "id": "quick_draw",
-      "name": "Quick Draw",
+      "name": "クイックドロウ",
       "affectsTypes": false
     },
     "form": "Galar",
@@ -1638,7 +1638,7 @@
     ],
     "ability": {
       "id": "magnet_pull",
-      "name": "Magnet Pull",
+      "name": "じりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -1654,7 +1654,7 @@
     ],
     "ability": {
       "id": "magnet_pull",
-      "name": "Magnet Pull",
+      "name": "じりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -1670,7 +1670,7 @@
     ],
     "ability": {
       "id": "keen_eye",
-      "name": "Keen Eye",
+      "name": "するどいめ",
       "affectsTypes": false
     },
     "form": null,
@@ -1685,7 +1685,7 @@
     ],
     "ability": {
       "id": "steadfast",
-      "name": "Steadfast",
+      "name": "ふくつのこころ",
       "affectsTypes": false
     },
     "form": "Galar",
@@ -1701,7 +1701,7 @@
     ],
     "ability": {
       "id": "run_away",
-      "name": "Run Away",
+      "name": "にげあし",
       "affectsTypes": false
     },
     "form": null,
@@ -1717,7 +1717,7 @@
     ],
     "ability": {
       "id": "run_away",
-      "name": "Run Away",
+      "name": "にげあし",
       "affectsTypes": false
     },
     "form": null,
@@ -1763,7 +1763,7 @@
     ],
     "ability": {
       "id": "stench",
-      "name": "Stench",
+      "name": "あくしゅう",
       "affectsTypes": false
     },
     "form": null,
@@ -1779,7 +1779,7 @@
     ],
     "ability": {
       "id": "poison_touch",
-      "name": "Poison Touch",
+      "name": "どくしゅ",
       "affectsTypes": false
     },
     "form": "Alola",
@@ -1794,7 +1794,7 @@
     ],
     "ability": {
       "id": "stench",
-      "name": "Stench",
+      "name": "あくしゅう",
       "affectsTypes": false
     },
     "form": null,
@@ -1810,7 +1810,7 @@
     ],
     "ability": {
       "id": "poison_touch",
-      "name": "Poison Touch",
+      "name": "どくしゅ",
       "affectsTypes": false
     },
     "form": "Alola",
@@ -1825,7 +1825,7 @@
     ],
     "ability": {
       "id": "shell_armor",
-      "name": "Shell Armor",
+      "name": "シェルアーマー",
       "affectsTypes": false
     },
     "form": null,
@@ -1841,7 +1841,7 @@
     ],
     "ability": {
       "id": "shell_armor",
-      "name": "Shell Armor",
+      "name": "シェルアーマー",
       "affectsTypes": false
     },
     "form": null,
@@ -1889,7 +1889,7 @@
     ],
     "ability": {
       "id": "cursed_body",
-      "name": "Cursed Body",
+      "name": "のろわれボディ",
       "affectsTypes": false
     },
     "form": null,
@@ -1905,7 +1905,7 @@
     ],
     "ability": {
       "id": "rock_head",
-      "name": "Rock Head",
+      "name": "いしあたま",
       "affectsTypes": false
     },
     "form": null,
@@ -1920,7 +1920,7 @@
     ],
     "ability": {
       "id": "insomnia",
-      "name": "Insomnia",
+      "name": "ふみん",
       "affectsTypes": false
     },
     "form": null,
@@ -1935,7 +1935,7 @@
     ],
     "ability": {
       "id": "insomnia",
-      "name": "Insomnia",
+      "name": "ふみん",
       "affectsTypes": false
     },
     "form": null,
@@ -1950,7 +1950,7 @@
     ],
     "ability": {
       "id": "hyper_cutter",
-      "name": "Hyper Cutter",
+      "name": "かいりきバサミ",
       "affectsTypes": false
     },
     "form": null,
@@ -1965,7 +1965,7 @@
     ],
     "ability": {
       "id": "hyper_cutter",
-      "name": "Hyper Cutter",
+      "name": "かいりきバサミ",
       "affectsTypes": false
     },
     "form": null,
@@ -1980,7 +1980,7 @@
     ],
     "ability": {
       "id": "soundproof",
-      "name": "Soundproof",
+      "name": "ぼうおん",
       "affectsTypes": false
     },
     "form": null,
@@ -1996,7 +1996,7 @@
     ],
     "ability": {
       "id": "soundproof",
-      "name": "Soundproof",
+      "name": "ぼうおん",
       "affectsTypes": false
     },
     "form": "Hisui",
@@ -2011,7 +2011,7 @@
     ],
     "ability": {
       "id": "soundproof",
-      "name": "Soundproof",
+      "name": "ぼうおん",
       "affectsTypes": false
     },
     "form": null,
@@ -2027,7 +2027,7 @@
     ],
     "ability": {
       "id": "soundproof",
-      "name": "Soundproof",
+      "name": "ぼうおん",
       "affectsTypes": false
     },
     "form": "Hisui",
@@ -2043,7 +2043,7 @@
     ],
     "ability": {
       "id": "chlorophyll",
-      "name": "Chlorophyll",
+      "name": "ようりょくそ",
       "affectsTypes": false
     },
     "form": null,
@@ -2059,7 +2059,7 @@
     ],
     "ability": {
       "id": "chlorophyll",
-      "name": "Chlorophyll",
+      "name": "ようりょくそ",
       "affectsTypes": false
     },
     "form": null,
@@ -2075,7 +2075,7 @@
     ],
     "ability": {
       "id": "frisk",
-      "name": "Frisk",
+      "name": "おみとおし",
       "affectsTypes": false
     },
     "form": "Alola",
@@ -2137,7 +2137,7 @@
     ],
     "ability": {
       "id": "rock_head",
-      "name": "Rock Head",
+      "name": "いしあたま",
       "affectsTypes": false
     },
     "form": "Alola-Totem",
@@ -2152,7 +2152,7 @@
     ],
     "ability": {
       "id": "limber",
-      "name": "Limber",
+      "name": "じゅうなん",
       "affectsTypes": false
     },
     "form": null,
@@ -2167,7 +2167,7 @@
     ],
     "ability": {
       "id": "keen_eye",
-      "name": "Keen Eye",
+      "name": "するどいめ",
       "affectsTypes": false
     },
     "form": null,
@@ -2182,7 +2182,7 @@
     ],
     "ability": {
       "id": "own_tempo",
-      "name": "Own Tempo",
+      "name": "マイペース",
       "affectsTypes": false
     },
     "form": null,
@@ -2275,7 +2275,7 @@
     ],
     "ability": {
       "id": "natural_cure",
-      "name": "Natural Cure",
+      "name": "しぜんかいふく",
       "affectsTypes": false
     },
     "form": null,
@@ -2290,7 +2290,7 @@
     ],
     "ability": {
       "id": "chlorophyll",
-      "name": "Chlorophyll",
+      "name": "ようりょくそ",
       "affectsTypes": false
     },
     "form": null,
@@ -2305,7 +2305,7 @@
     ],
     "ability": {
       "id": "early_bird",
-      "name": "Early Bird",
+      "name": "はやおき",
       "affectsTypes": false
     },
     "form": null,
@@ -2320,7 +2320,7 @@
     ],
     "ability": {
       "id": "swift_swim",
-      "name": "Swift Swim",
+      "name": "すいすい",
       "affectsTypes": false
     },
     "form": null,
@@ -2335,7 +2335,7 @@
     ],
     "ability": {
       "id": "poison_point",
-      "name": "Poison Point",
+      "name": "どくのトゲ",
       "affectsTypes": false
     },
     "form": null,
@@ -2380,7 +2380,7 @@
     ],
     "ability": {
       "id": "illuminate",
-      "name": "Illuminate",
+      "name": "はっこう",
       "affectsTypes": false
     },
     "form": null,
@@ -2396,7 +2396,7 @@
     ],
     "ability": {
       "id": "illuminate",
-      "name": "Illuminate",
+      "name": "はっこう",
       "affectsTypes": false
     },
     "form": null,
@@ -2428,7 +2428,7 @@
     ],
     "ability": {
       "id": "vital_spirit",
-      "name": "Vital Spirit",
+      "name": "やるき",
       "affectsTypes": false
     },
     "form": "Galar",
@@ -2444,7 +2444,7 @@
     ],
     "ability": {
       "id": "swarm",
-      "name": "Swarm",
+      "name": "むしのしらせ",
       "affectsTypes": false
     },
     "form": null,
@@ -2475,7 +2475,7 @@
     ],
     "ability": {
       "id": "static",
-      "name": "Static",
+      "name": "せいでんき",
       "affectsTypes": false
     },
     "form": null,
@@ -2490,7 +2490,7 @@
     ],
     "ability": {
       "id": "flame_body",
-      "name": "Flame Body",
+      "name": "ほのおのからだ",
       "affectsTypes": false
     },
     "form": null,
@@ -2505,7 +2505,7 @@
     ],
     "ability": {
       "id": "hyper_cutter",
-      "name": "Hyper Cutter",
+      "name": "かいりきバサミ",
       "affectsTypes": false
     },
     "form": null,
@@ -2521,7 +2521,7 @@
     ],
     "ability": {
       "id": "aerilate",
-      "name": "Aerilate",
+      "name": "スカイスキン",
       "affectsTypes": false
     },
     "form": "Mega",
@@ -2536,7 +2536,7 @@
     ],
     "ability": {
       "id": "intimidate",
-      "name": "Intimidate",
+      "name": "いかく",
       "affectsTypes": false
     },
     "form": null,
@@ -2552,7 +2552,7 @@
     ],
     "ability": {
       "id": "intimidate",
-      "name": "Intimidate",
+      "name": "いかく",
       "affectsTypes": false
     },
     "form": "Paldea-Aqua",
@@ -2568,7 +2568,7 @@
     ],
     "ability": {
       "id": "intimidate",
-      "name": "Intimidate",
+      "name": "いかく",
       "affectsTypes": false
     },
     "form": "Paldea-Blaze",
@@ -2583,7 +2583,7 @@
     ],
     "ability": {
       "id": "intimidate",
-      "name": "Intimidate",
+      "name": "いかく",
       "affectsTypes": false
     },
     "form": "Paldea-Combat",
@@ -2598,7 +2598,7 @@
     ],
     "ability": {
       "id": "swift_swim",
-      "name": "Swift Swim",
+      "name": "すいすい",
       "affectsTypes": false
     },
     "form": null,
@@ -2614,7 +2614,7 @@
     ],
     "ability": {
       "id": "intimidate",
-      "name": "Intimidate",
+      "name": "いかく",
       "affectsTypes": false
     },
     "form": null,
@@ -2630,7 +2630,7 @@
     ],
     "ability": {
       "id": "mold_breaker",
-      "name": "Mold Breaker",
+      "name": "かたやぶり",
       "affectsTypes": false
     },
     "form": "Mega",
@@ -2661,7 +2661,7 @@
     ],
     "ability": {
       "id": "limber",
-      "name": "Limber",
+      "name": "じゅうなん",
       "affectsTypes": false
     },
     "form": null,
@@ -2676,7 +2676,7 @@
     ],
     "ability": {
       "id": "run_away",
-      "name": "Run Away",
+      "name": "にげあし",
       "affectsTypes": false
     },
     "form": null,
@@ -2736,7 +2736,7 @@
     ],
     "ability": {
       "id": "trace",
-      "name": "Trace",
+      "name": "トレース",
       "affectsTypes": false
     },
     "form": null,
@@ -2752,7 +2752,7 @@
     ],
     "ability": {
       "id": "swift_swim",
-      "name": "Swift Swim",
+      "name": "すいすい",
       "affectsTypes": false
     },
     "form": null,
@@ -2768,7 +2768,7 @@
     ],
     "ability": {
       "id": "swift_swim",
-      "name": "Swift Swim",
+      "name": "すいすい",
       "affectsTypes": false
     },
     "form": null,
@@ -2784,7 +2784,7 @@
     ],
     "ability": {
       "id": "swift_swim",
-      "name": "Swift Swim",
+      "name": "すいすい",
       "affectsTypes": false
     },
     "form": null,
@@ -2800,7 +2800,7 @@
     ],
     "ability": {
       "id": "swift_swim",
-      "name": "Swift Swim",
+      "name": "すいすい",
       "affectsTypes": false
     },
     "form": null,
@@ -2816,7 +2816,7 @@
     ],
     "ability": {
       "id": "rock_head",
-      "name": "Rock Head",
+      "name": "いしあたま",
       "affectsTypes": false
     },
     "form": null,
@@ -2847,7 +2847,7 @@
     ],
     "ability": {
       "id": "pressure",
-      "name": "Pressure",
+      "name": "プレッシャー",
       "affectsTypes": false
     },
     "form": null,
@@ -2863,7 +2863,7 @@
     ],
     "ability": {
       "id": "competitive",
-      "name": "Competitive",
+      "name": "かちき",
       "affectsTypes": false
     },
     "form": "Galar",
@@ -2879,7 +2879,7 @@
     ],
     "ability": {
       "id": "pressure",
-      "name": "Pressure",
+      "name": "プレッシャー",
       "affectsTypes": false
     },
     "form": null,
@@ -2895,7 +2895,7 @@
     ],
     "ability": {
       "id": "defiant",
-      "name": "Defiant",
+      "name": "まけんき",
       "affectsTypes": false
     },
     "form": "Galar",
@@ -2911,7 +2911,7 @@
     ],
     "ability": {
       "id": "pressure",
-      "name": "Pressure",
+      "name": "プレッシャー",
       "affectsTypes": false
     },
     "form": null,
@@ -2927,7 +2927,7 @@
     ],
     "ability": {
       "id": "berserk",
-      "name": "Berserk",
+      "name": "ぎゃくじょう",
       "affectsTypes": false
     },
     "form": "Galar",
@@ -2942,7 +2942,7 @@
     ],
     "ability": {
       "id": "shed_skin",
-      "name": "Shed Skin",
+      "name": "だっぴ",
       "affectsTypes": false
     },
     "form": null,
@@ -2957,7 +2957,7 @@
     ],
     "ability": {
       "id": "shed_skin",
-      "name": "Shed Skin",
+      "name": "だっぴ",
       "affectsTypes": false
     },
     "form": null,
@@ -2973,7 +2973,7 @@
     ],
     "ability": {
       "id": "inner_focus",
-      "name": "Inner Focus",
+      "name": "せいしんりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -2988,7 +2988,7 @@
     ],
     "ability": {
       "id": "pressure",
-      "name": "Pressure",
+      "name": "プレッシャー",
       "affectsTypes": false
     },
     "form": null,
@@ -3004,7 +3004,7 @@
     ],
     "ability": {
       "id": "steadfast",
-      "name": "Steadfast",
+      "name": "ふくつのこころ",
       "affectsTypes": false
     },
     "form": "Mega-X",
@@ -3019,7 +3019,7 @@
     ],
     "ability": {
       "id": "synchronize",
-      "name": "Synchronize",
+      "name": "シンクロ",
       "affectsTypes": false
     },
     "form": null,
@@ -3034,7 +3034,7 @@
     ],
     "ability": {
       "id": "overgrow",
-      "name": "Overgrow",
+      "name": "しんりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -3049,7 +3049,7 @@
     ],
     "ability": {
       "id": "overgrow",
-      "name": "Overgrow",
+      "name": "しんりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -3064,7 +3064,7 @@
     ],
     "ability": {
       "id": "overgrow",
-      "name": "Overgrow",
+      "name": "しんりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -3080,7 +3080,7 @@
     ],
     "ability": {
       "id": "mega_sol",
-      "name": "Mega Sol",
+      "name": "メガソーラー",
       "affectsTypes": false
     },
     "form": "Mega",
@@ -3141,7 +3141,7 @@
     ],
     "ability": {
       "id": "blaze",
-      "name": "Blaze",
+      "name": "もうか",
       "affectsTypes": false
     },
     "form": "Hisui",
@@ -3156,7 +3156,7 @@
     ],
     "ability": {
       "id": "torrent",
-      "name": "Torrent",
+      "name": "げきりゅう",
       "affectsTypes": false
     },
     "form": null,
@@ -3171,7 +3171,7 @@
     ],
     "ability": {
       "id": "torrent",
-      "name": "Torrent",
+      "name": "げきりゅう",
       "affectsTypes": false
     },
     "form": null,
@@ -3186,7 +3186,7 @@
     ],
     "ability": {
       "id": "torrent",
-      "name": "Torrent",
+      "name": "げきりゅう",
       "affectsTypes": false
     },
     "form": null,
@@ -3202,7 +3202,7 @@
     ],
     "ability": {
       "id": "dragonize",
-      "name": "Dragonize",
+      "name": "ドラゴンスキン",
       "affectsTypes": false
     },
     "form": "Mega",
@@ -3217,7 +3217,7 @@
     ],
     "ability": {
       "id": "run_away",
-      "name": "Run Away",
+      "name": "にげあし",
       "affectsTypes": false
     },
     "form": null,
@@ -3232,7 +3232,7 @@
     ],
     "ability": {
       "id": "run_away",
-      "name": "Run Away",
+      "name": "にげあし",
       "affectsTypes": false
     },
     "form": null,
@@ -3248,7 +3248,7 @@
     ],
     "ability": {
       "id": "insomnia",
-      "name": "Insomnia",
+      "name": "ふみん",
       "affectsTypes": false
     },
     "form": null,
@@ -3264,7 +3264,7 @@
     ],
     "ability": {
       "id": "insomnia",
-      "name": "Insomnia",
+      "name": "ふみん",
       "affectsTypes": false
     },
     "form": null,
@@ -3280,7 +3280,7 @@
     ],
     "ability": {
       "id": "swarm",
-      "name": "Swarm",
+      "name": "むしのしらせ",
       "affectsTypes": false
     },
     "form": null,
@@ -3296,7 +3296,7 @@
     ],
     "ability": {
       "id": "swarm",
-      "name": "Swarm",
+      "name": "むしのしらせ",
       "affectsTypes": false
     },
     "form": null,
@@ -3312,7 +3312,7 @@
     ],
     "ability": {
       "id": "swarm",
-      "name": "Swarm",
+      "name": "むしのしらせ",
       "affectsTypes": false
     },
     "form": null,
@@ -3328,7 +3328,7 @@
     ],
     "ability": {
       "id": "swarm",
-      "name": "Swarm",
+      "name": "むしのしらせ",
       "affectsTypes": false
     },
     "form": null,
@@ -3344,7 +3344,7 @@
     ],
     "ability": {
       "id": "inner_focus",
-      "name": "Inner Focus",
+      "name": "せいしんりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -3406,7 +3406,7 @@
     ],
     "ability": {
       "id": "static",
-      "name": "Static",
+      "name": "せいでんき",
       "affectsTypes": false
     },
     "form": "Spiky-eared",
@@ -3421,7 +3421,7 @@
     ],
     "ability": {
       "id": "cute_charm",
-      "name": "Cute Charm",
+      "name": "メロメロボディ",
       "affectsTypes": false
     },
     "form": null,
@@ -3437,7 +3437,7 @@
     ],
     "ability": {
       "id": "cute_charm",
-      "name": "Cute Charm",
+      "name": "メロメロボディ",
       "affectsTypes": false
     },
     "form": null,
@@ -3452,7 +3452,7 @@
     ],
     "ability": {
       "id": "hustle",
-      "name": "Hustle",
+      "name": "はりきり",
       "affectsTypes": false
     },
     "form": null,
@@ -3468,7 +3468,7 @@
     ],
     "ability": {
       "id": "hustle",
-      "name": "Hustle",
+      "name": "はりきり",
       "affectsTypes": false
     },
     "form": null,
@@ -3484,7 +3484,7 @@
     ],
     "ability": {
       "id": "synchronize",
-      "name": "Synchronize",
+      "name": "シンクロ",
       "affectsTypes": false
     },
     "form": null,
@@ -3500,7 +3500,7 @@
     ],
     "ability": {
       "id": "synchronize",
-      "name": "Synchronize",
+      "name": "シンクロ",
       "affectsTypes": false
     },
     "form": null,
@@ -3515,7 +3515,7 @@
     ],
     "ability": {
       "id": "static",
-      "name": "Static",
+      "name": "せいでんき",
       "affectsTypes": false
     },
     "form": null,
@@ -3530,7 +3530,7 @@
     ],
     "ability": {
       "id": "static",
-      "name": "Static",
+      "name": "せいでんき",
       "affectsTypes": false
     },
     "form": null,
@@ -3545,7 +3545,7 @@
     ],
     "ability": {
       "id": "static",
-      "name": "Static",
+      "name": "せいでんき",
       "affectsTypes": false
     },
     "form": null,
@@ -3561,7 +3561,7 @@
     ],
     "ability": {
       "id": "mold_breaker",
-      "name": "Mold Breaker",
+      "name": "かたやぶり",
       "affectsTypes": false
     },
     "form": "Mega",
@@ -3576,7 +3576,7 @@
     ],
     "ability": {
       "id": "chlorophyll",
-      "name": "Chlorophyll",
+      "name": "ようりょくそ",
       "affectsTypes": false
     },
     "form": null,
@@ -3623,7 +3623,7 @@
     ],
     "ability": {
       "id": "sturdy",
-      "name": "Sturdy",
+      "name": "がんじょう",
       "affectsTypes": false
     },
     "form": null,
@@ -3654,7 +3654,7 @@
     ],
     "ability": {
       "id": "chlorophyll",
-      "name": "Chlorophyll",
+      "name": "ようりょくそ",
       "affectsTypes": false
     },
     "form": null,
@@ -3670,7 +3670,7 @@
     ],
     "ability": {
       "id": "chlorophyll",
-      "name": "Chlorophyll",
+      "name": "ようりょくそ",
       "affectsTypes": false
     },
     "form": null,
@@ -3686,7 +3686,7 @@
     ],
     "ability": {
       "id": "chlorophyll",
-      "name": "Chlorophyll",
+      "name": "ようりょくそ",
       "affectsTypes": false
     },
     "form": null,
@@ -3701,7 +3701,7 @@
     ],
     "ability": {
       "id": "run_away",
-      "name": "Run Away",
+      "name": "にげあし",
       "affectsTypes": false
     },
     "form": null,
@@ -3716,7 +3716,7 @@
     ],
     "ability": {
       "id": "chlorophyll",
-      "name": "Chlorophyll",
+      "name": "ようりょくそ",
       "affectsTypes": false
     },
     "form": null,
@@ -3731,7 +3731,7 @@
     ],
     "ability": {
       "id": "chlorophyll",
-      "name": "Chlorophyll",
+      "name": "ようりょくそ",
       "affectsTypes": false
     },
     "form": null,
@@ -3747,7 +3747,7 @@
     ],
     "ability": {
       "id": "speed_boost",
-      "name": "Speed Boost",
+      "name": "かそく",
       "affectsTypes": false
     },
     "form": null,
@@ -3810,7 +3810,7 @@
     ],
     "ability": {
       "id": "synchronize",
-      "name": "Synchronize",
+      "name": "シンクロ",
       "affectsTypes": false
     },
     "form": null,
@@ -3825,7 +3825,7 @@
     ],
     "ability": {
       "id": "synchronize",
-      "name": "Synchronize",
+      "name": "シンクロ",
       "affectsTypes": false
     },
     "form": null,
@@ -3841,7 +3841,7 @@
     ],
     "ability": {
       "id": "insomnia",
-      "name": "Insomnia",
+      "name": "ふみん",
       "affectsTypes": false
     },
     "form": null,
@@ -3857,7 +3857,7 @@
     ],
     "ability": {
       "id": "oblivious",
-      "name": "Oblivious",
+      "name": "どんかん",
       "affectsTypes": false
     },
     "form": null,
@@ -3873,7 +3873,7 @@
     ],
     "ability": {
       "id": "curious_medicine",
-      "name": "Curious Medicine",
+      "name": "きみょうなくすり",
       "affectsTypes": false
     },
     "form": "Galar",
@@ -3918,7 +3918,7 @@
     ],
     "ability": {
       "id": "shadow_tag",
-      "name": "Shadow Tag",
+      "name": "かげふみ",
       "affectsTypes": false
     },
     "form": null,
@@ -3949,7 +3949,7 @@
     ],
     "ability": {
       "id": "sturdy",
-      "name": "Sturdy",
+      "name": "がんじょう",
       "affectsTypes": false
     },
     "form": null,
@@ -3965,7 +3965,7 @@
     ],
     "ability": {
       "id": "sturdy",
-      "name": "Sturdy",
+      "name": "がんじょう",
       "affectsTypes": false
     },
     "form": null,
@@ -3980,7 +3980,7 @@
     ],
     "ability": {
       "id": "serene_grace",
-      "name": "Serene Grace",
+      "name": "てんのめぐみ",
       "affectsTypes": false
     },
     "form": null,
@@ -3996,7 +3996,7 @@
     ],
     "ability": {
       "id": "hyper_cutter",
-      "name": "Hyper Cutter",
+      "name": "かいりきバサミ",
       "affectsTypes": false
     },
     "form": null,
@@ -4012,7 +4012,7 @@
     ],
     "ability": {
       "id": "rock_head",
-      "name": "Rock Head",
+      "name": "いしあたま",
       "affectsTypes": false
     },
     "form": null,
@@ -4027,7 +4027,7 @@
     ],
     "ability": {
       "id": "intimidate",
-      "name": "Intimidate",
+      "name": "いかく",
       "affectsTypes": false
     },
     "form": null,
@@ -4042,7 +4042,7 @@
     ],
     "ability": {
       "id": "intimidate",
-      "name": "Intimidate",
+      "name": "いかく",
       "affectsTypes": false
     },
     "form": null,
@@ -4058,7 +4058,7 @@
     ],
     "ability": {
       "id": "poison_point",
-      "name": "Poison Point",
+      "name": "どくのトゲ",
       "affectsTypes": false
     },
     "form": null,
@@ -4074,7 +4074,7 @@
     ],
     "ability": {
       "id": "poison_point",
-      "name": "Poison Point",
+      "name": "どくのトゲ",
       "affectsTypes": false
     },
     "form": "Hisui",
@@ -4090,7 +4090,7 @@
     ],
     "ability": {
       "id": "swarm",
-      "name": "Swarm",
+      "name": "むしのしらせ",
       "affectsTypes": false
     },
     "form": null,
@@ -4106,7 +4106,7 @@
     ],
     "ability": {
       "id": "sturdy",
-      "name": "Sturdy",
+      "name": "がんじょう",
       "affectsTypes": false
     },
     "form": null,
@@ -4122,7 +4122,7 @@
     ],
     "ability": {
       "id": "swarm",
-      "name": "Swarm",
+      "name": "むしのしらせ",
       "affectsTypes": false
     },
     "form": null,
@@ -4138,7 +4138,7 @@
     ],
     "ability": {
       "id": "inner_focus",
-      "name": "Inner Focus",
+      "name": "せいしんりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -4154,7 +4154,7 @@
     ],
     "ability": {
       "id": "inner_focus",
-      "name": "Inner Focus",
+      "name": "せいしんりょく",
       "affectsTypes": false
     },
     "form": "Hisui",
@@ -4169,7 +4169,7 @@
     ],
     "ability": {
       "id": "pickup",
-      "name": "Pickup",
+      "name": "ものひろい",
       "affectsTypes": false
     },
     "form": null,
@@ -4184,7 +4184,7 @@
     ],
     "ability": {
       "id": "guts",
-      "name": "Guts",
+      "name": "こんじょう",
       "affectsTypes": false
     },
     "form": null,
@@ -4199,7 +4199,7 @@
     ],
     "ability": {
       "id": "magma_armor",
-      "name": "Magma Armor",
+      "name": "マグマのよろい",
       "affectsTypes": false
     },
     "form": null,
@@ -4215,7 +4215,7 @@
     ],
     "ability": {
       "id": "magma_armor",
-      "name": "Magma Armor",
+      "name": "マグマのよろい",
       "affectsTypes": false
     },
     "form": null,
@@ -4263,7 +4263,7 @@
     ],
     "ability": {
       "id": "hustle",
-      "name": "Hustle",
+      "name": "はりきり",
       "affectsTypes": false
     },
     "form": null,
@@ -4278,7 +4278,7 @@
     ],
     "ability": {
       "id": "weak_armor",
-      "name": "Weak Armor",
+      "name": "くだけるよろい",
       "affectsTypes": false
     },
     "form": "Galar",
@@ -4293,7 +4293,7 @@
     ],
     "ability": {
       "id": "hustle",
-      "name": "Hustle",
+      "name": "はりきり",
       "affectsTypes": false
     },
     "form": null,
@@ -4308,7 +4308,7 @@
     ],
     "ability": {
       "id": "suction_cups",
-      "name": "Suction Cups",
+      "name": "きゅうばん",
       "affectsTypes": false
     },
     "form": null,
@@ -4324,7 +4324,7 @@
     ],
     "ability": {
       "id": "vital_spirit",
-      "name": "Vital Spirit",
+      "name": "やるき",
       "affectsTypes": false
     },
     "form": null,
@@ -4356,7 +4356,7 @@
     ],
     "ability": {
       "id": "keen_eye",
-      "name": "Keen Eye",
+      "name": "するどいめ",
       "affectsTypes": false
     },
     "form": null,
@@ -4404,7 +4404,7 @@
     ],
     "ability": {
       "id": "solar_power",
-      "name": "Solar Power",
+      "name": "サンパワー",
       "affectsTypes": false
     },
     "form": "Mega",
@@ -4420,7 +4420,7 @@
     ],
     "ability": {
       "id": "swift_swim",
-      "name": "Swift Swim",
+      "name": "すいすい",
       "affectsTypes": false
     },
     "form": null,
@@ -4435,7 +4435,7 @@
     ],
     "ability": {
       "id": "pickup",
-      "name": "Pickup",
+      "name": "ものひろい",
       "affectsTypes": false
     },
     "form": null,
@@ -4450,7 +4450,7 @@
     ],
     "ability": {
       "id": "sturdy",
-      "name": "Sturdy",
+      "name": "がんじょう",
       "affectsTypes": false
     },
     "form": null,
@@ -4465,7 +4465,7 @@
     ],
     "ability": {
       "id": "trace",
-      "name": "Trace",
+      "name": "トレース",
       "affectsTypes": false
     },
     "form": null,
@@ -4495,7 +4495,7 @@
     ],
     "ability": {
       "id": "own_tempo",
-      "name": "Own Tempo",
+      "name": "マイペース",
       "affectsTypes": false
     },
     "form": null,
@@ -4510,7 +4510,7 @@
     ],
     "ability": {
       "id": "guts",
-      "name": "Guts",
+      "name": "こんじょう",
       "affectsTypes": false
     },
     "form": null,
@@ -4525,7 +4525,7 @@
     ],
     "ability": {
       "id": "intimidate",
-      "name": "Intimidate",
+      "name": "いかく",
       "affectsTypes": false
     },
     "form": null,
@@ -4541,7 +4541,7 @@
     ],
     "ability": {
       "id": "oblivious",
-      "name": "Oblivious",
+      "name": "どんかん",
       "affectsTypes": false
     },
     "form": null,
@@ -4556,7 +4556,7 @@
     ],
     "ability": {
       "id": "static",
-      "name": "Static",
+      "name": "せいでんき",
       "affectsTypes": false
     },
     "form": null,
@@ -4571,7 +4571,7 @@
     ],
     "ability": {
       "id": "flame_body",
-      "name": "Flame Body",
+      "name": "ほのおのからだ",
       "affectsTypes": false
     },
     "form": null,
@@ -4601,7 +4601,7 @@
     ],
     "ability": {
       "id": "natural_cure",
-      "name": "Natural Cure",
+      "name": "しぜんかいふく",
       "affectsTypes": false
     },
     "form": null,
@@ -4616,7 +4616,7 @@
     ],
     "ability": {
       "id": "pressure",
-      "name": "Pressure",
+      "name": "プレッシャー",
       "affectsTypes": false
     },
     "form": null,
@@ -4631,7 +4631,7 @@
     ],
     "ability": {
       "id": "pressure",
-      "name": "Pressure",
+      "name": "プレッシャー",
       "affectsTypes": false
     },
     "form": null,
@@ -4646,7 +4646,7 @@
     ],
     "ability": {
       "id": "pressure",
-      "name": "Pressure",
+      "name": "プレッシャー",
       "affectsTypes": false
     },
     "form": null,
@@ -4662,7 +4662,7 @@
     ],
     "ability": {
       "id": "guts",
-      "name": "Guts",
+      "name": "こんじょう",
       "affectsTypes": false
     },
     "form": null,
@@ -4678,7 +4678,7 @@
     ],
     "ability": {
       "id": "shed_skin",
-      "name": "Shed Skin",
+      "name": "だっぴ",
       "affectsTypes": false
     },
     "form": null,
@@ -4694,7 +4694,7 @@
     ],
     "ability": {
       "id": "sand_stream",
-      "name": "Sand Stream",
+      "name": "すなおこし",
       "affectsTypes": false
     },
     "form": null,
@@ -4710,7 +4710,7 @@
     ],
     "ability": {
       "id": "pressure",
-      "name": "Pressure",
+      "name": "プレッシャー",
       "affectsTypes": false
     },
     "form": null,
@@ -4726,7 +4726,7 @@
     ],
     "ability": {
       "id": "pressure",
-      "name": "Pressure",
+      "name": "プレッシャー",
       "affectsTypes": false
     },
     "form": null,
@@ -4742,7 +4742,7 @@
     ],
     "ability": {
       "id": "natural_cure",
-      "name": "Natural Cure",
+      "name": "しぜんかいふく",
       "affectsTypes": false
     },
     "form": null,
@@ -4757,7 +4757,7 @@
     ],
     "ability": {
       "id": "overgrow",
-      "name": "Overgrow",
+      "name": "しんりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -4772,7 +4772,7 @@
     ],
     "ability": {
       "id": "overgrow",
-      "name": "Overgrow",
+      "name": "しんりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -4787,7 +4787,7 @@
     ],
     "ability": {
       "id": "overgrow",
-      "name": "Overgrow",
+      "name": "しんりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -4818,7 +4818,7 @@
     ],
     "ability": {
       "id": "blaze",
-      "name": "Blaze",
+      "name": "もうか",
       "affectsTypes": false
     },
     "form": null,
@@ -4834,7 +4834,7 @@
     ],
     "ability": {
       "id": "blaze",
-      "name": "Blaze",
+      "name": "もうか",
       "affectsTypes": false
     },
     "form": null,
@@ -4850,7 +4850,7 @@
     ],
     "ability": {
       "id": "blaze",
-      "name": "Blaze",
+      "name": "もうか",
       "affectsTypes": false
     },
     "form": null,
@@ -4865,7 +4865,7 @@
     ],
     "ability": {
       "id": "torrent",
-      "name": "Torrent",
+      "name": "げきりゅう",
       "affectsTypes": false
     },
     "form": null,
@@ -4881,7 +4881,7 @@
     ],
     "ability": {
       "id": "torrent",
-      "name": "Torrent",
+      "name": "げきりゅう",
       "affectsTypes": false
     },
     "form": null,
@@ -4897,7 +4897,7 @@
     ],
     "ability": {
       "id": "torrent",
-      "name": "Torrent",
+      "name": "げきりゅう",
       "affectsTypes": false
     },
     "form": null,
@@ -4912,7 +4912,7 @@
     ],
     "ability": {
       "id": "run_away",
-      "name": "Run Away",
+      "name": "にげあし",
       "affectsTypes": false
     },
     "form": null,
@@ -4927,7 +4927,7 @@
     ],
     "ability": {
       "id": "intimidate",
-      "name": "Intimidate",
+      "name": "いかく",
       "affectsTypes": false
     },
     "form": null,
@@ -4942,7 +4942,7 @@
     ],
     "ability": {
       "id": "pickup",
-      "name": "Pickup",
+      "name": "ものひろい",
       "affectsTypes": false
     },
     "form": null,
@@ -4958,7 +4958,7 @@
     ],
     "ability": {
       "id": "pickup",
-      "name": "Pickup",
+      "name": "ものひろい",
       "affectsTypes": false
     },
     "form": "Galar",
@@ -4973,7 +4973,7 @@
     ],
     "ability": {
       "id": "pickup",
-      "name": "Pickup",
+      "name": "ものひろい",
       "affectsTypes": false
     },
     "form": null,
@@ -4989,7 +4989,7 @@
     ],
     "ability": {
       "id": "pickup",
-      "name": "Pickup",
+      "name": "ものひろい",
       "affectsTypes": false
     },
     "form": "Galar",
@@ -5004,7 +5004,7 @@
     ],
     "ability": {
       "id": "shield_dust",
-      "name": "Shield Dust",
+      "name": "りんぷん",
       "affectsTypes": false
     },
     "form": null,
@@ -5019,7 +5019,7 @@
     ],
     "ability": {
       "id": "shed_skin",
-      "name": "Shed Skin",
+      "name": "だっぴ",
       "affectsTypes": false
     },
     "form": null,
@@ -5035,7 +5035,7 @@
     ],
     "ability": {
       "id": "swarm",
-      "name": "Swarm",
+      "name": "むしのしらせ",
       "affectsTypes": false
     },
     "form": null,
@@ -5050,7 +5050,7 @@
     ],
     "ability": {
       "id": "shed_skin",
-      "name": "Shed Skin",
+      "name": "だっぴ",
       "affectsTypes": false
     },
     "form": null,
@@ -5066,7 +5066,7 @@
     ],
     "ability": {
       "id": "shield_dust",
-      "name": "Shield Dust",
+      "name": "りんぷん",
       "affectsTypes": false
     },
     "form": null,
@@ -5082,7 +5082,7 @@
     ],
     "ability": {
       "id": "swift_swim",
-      "name": "Swift Swim",
+      "name": "すいすい",
       "affectsTypes": false
     },
     "form": null,
@@ -5098,7 +5098,7 @@
     ],
     "ability": {
       "id": "swift_swim",
-      "name": "Swift Swim",
+      "name": "すいすい",
       "affectsTypes": false
     },
     "form": null,
@@ -5114,7 +5114,7 @@
     ],
     "ability": {
       "id": "swift_swim",
-      "name": "Swift Swim",
+      "name": "すいすい",
       "affectsTypes": false
     },
     "form": null,
@@ -5129,7 +5129,7 @@
     ],
     "ability": {
       "id": "chlorophyll",
-      "name": "Chlorophyll",
+      "name": "ようりょくそ",
       "affectsTypes": false
     },
     "form": null,
@@ -5145,7 +5145,7 @@
     ],
     "ability": {
       "id": "chlorophyll",
-      "name": "Chlorophyll",
+      "name": "ようりょくそ",
       "affectsTypes": false
     },
     "form": null,
@@ -5161,7 +5161,7 @@
     ],
     "ability": {
       "id": "chlorophyll",
-      "name": "Chlorophyll",
+      "name": "ようりょくそ",
       "affectsTypes": false
     },
     "form": null,
@@ -5177,7 +5177,7 @@
     ],
     "ability": {
       "id": "guts",
-      "name": "Guts",
+      "name": "こんじょう",
       "affectsTypes": false
     },
     "form": null,
@@ -5193,7 +5193,7 @@
     ],
     "ability": {
       "id": "guts",
-      "name": "Guts",
+      "name": "こんじょう",
       "affectsTypes": false
     },
     "form": null,
@@ -5209,7 +5209,7 @@
     ],
     "ability": {
       "id": "keen_eye",
-      "name": "Keen Eye",
+      "name": "するどいめ",
       "affectsTypes": false
     },
     "form": null,
@@ -5225,7 +5225,7 @@
     ],
     "ability": {
       "id": "keen_eye",
-      "name": "Keen Eye",
+      "name": "するどいめ",
       "affectsTypes": false
     },
     "form": null,
@@ -5241,7 +5241,7 @@
     ],
     "ability": {
       "id": "synchronize",
-      "name": "Synchronize",
+      "name": "シンクロ",
       "affectsTypes": false
     },
     "form": null,
@@ -5257,7 +5257,7 @@
     ],
     "ability": {
       "id": "synchronize",
-      "name": "Synchronize",
+      "name": "シンクロ",
       "affectsTypes": false
     },
     "form": null,
@@ -5273,7 +5273,7 @@
     ],
     "ability": {
       "id": "synchronize",
-      "name": "Synchronize",
+      "name": "シンクロ",
       "affectsTypes": false
     },
     "form": null,
@@ -5289,7 +5289,7 @@
     ],
     "ability": {
       "id": "swift_swim",
-      "name": "Swift Swim",
+      "name": "すいすい",
       "affectsTypes": false
     },
     "form": null,
@@ -5305,7 +5305,7 @@
     ],
     "ability": {
       "id": "intimidate",
-      "name": "Intimidate",
+      "name": "いかく",
       "affectsTypes": false
     },
     "form": null,
@@ -5320,7 +5320,7 @@
     ],
     "ability": {
       "id": "effect_spore",
-      "name": "Effect Spore",
+      "name": "ほうし",
       "affectsTypes": false
     },
     "form": null,
@@ -5336,7 +5336,7 @@
     ],
     "ability": {
       "id": "effect_spore",
-      "name": "Effect Spore",
+      "name": "ほうし",
       "affectsTypes": false
     },
     "form": null,
@@ -5351,7 +5351,7 @@
     ],
     "ability": {
       "id": "truant",
-      "name": "Truant",
+      "name": "なまけ",
       "affectsTypes": false
     },
     "form": null,
@@ -5366,7 +5366,7 @@
     ],
     "ability": {
       "id": "vital_spirit",
-      "name": "Vital Spirit",
+      "name": "やるき",
       "affectsTypes": false
     },
     "form": null,
@@ -5381,7 +5381,7 @@
     ],
     "ability": {
       "id": "truant",
-      "name": "Truant",
+      "name": "なまけ",
       "affectsTypes": false
     },
     "form": null,
@@ -5397,7 +5397,7 @@
     ],
     "ability": {
       "id": "compound_eyes",
-      "name": "Compound Eyes",
+      "name": "ふくがん",
       "affectsTypes": false
     },
     "form": null,
@@ -5413,7 +5413,7 @@
     ],
     "ability": {
       "id": "speed_boost",
-      "name": "Speed Boost",
+      "name": "かそく",
       "affectsTypes": false
     },
     "form": null,
@@ -5444,7 +5444,7 @@
     ],
     "ability": {
       "id": "soundproof",
-      "name": "Soundproof",
+      "name": "ぼうおん",
       "affectsTypes": false
     },
     "form": null,
@@ -5459,7 +5459,7 @@
     ],
     "ability": {
       "id": "soundproof",
-      "name": "Soundproof",
+      "name": "ぼうおん",
       "affectsTypes": false
     },
     "form": null,
@@ -5474,7 +5474,7 @@
     ],
     "ability": {
       "id": "soundproof",
-      "name": "Soundproof",
+      "name": "ぼうおん",
       "affectsTypes": false
     },
     "form": null,
@@ -5535,7 +5535,7 @@
     ],
     "ability": {
       "id": "sturdy",
-      "name": "Sturdy",
+      "name": "がんじょう",
       "affectsTypes": false
     },
     "form": null,
@@ -5550,7 +5550,7 @@
     ],
     "ability": {
       "id": "cute_charm",
-      "name": "Cute Charm",
+      "name": "メロメロボディ",
       "affectsTypes": false
     },
     "form": null,
@@ -5565,7 +5565,7 @@
     ],
     "ability": {
       "id": "cute_charm",
-      "name": "Cute Charm",
+      "name": "メロメロボディ",
       "affectsTypes": false
     },
     "form": null,
@@ -5581,7 +5581,7 @@
     ],
     "ability": {
       "id": "keen_eye",
-      "name": "Keen Eye",
+      "name": "するどいめ",
       "affectsTypes": false
     },
     "form": null,
@@ -5597,7 +5597,7 @@
     ],
     "ability": {
       "id": "hyper_cutter",
-      "name": "Hyper Cutter",
+      "name": "かいりきバサミ",
       "affectsTypes": false
     },
     "form": null,
@@ -5613,7 +5613,7 @@
     ],
     "ability": {
       "id": "sturdy",
-      "name": "Sturdy",
+      "name": "がんじょう",
       "affectsTypes": false
     },
     "form": null,
@@ -5629,7 +5629,7 @@
     ],
     "ability": {
       "id": "sturdy",
-      "name": "Sturdy",
+      "name": "がんじょう",
       "affectsTypes": false
     },
     "form": null,
@@ -5645,7 +5645,7 @@
     ],
     "ability": {
       "id": "sturdy",
-      "name": "Sturdy",
+      "name": "がんじょう",
       "affectsTypes": false
     },
     "form": null,
@@ -5676,7 +5676,7 @@
     ],
     "ability": {
       "id": "pure_power",
-      "name": "Pure Power",
+      "name": "ヨガパワー",
       "affectsTypes": false
     },
     "form": null,
@@ -5692,7 +5692,7 @@
     ],
     "ability": {
       "id": "pure_power",
-      "name": "Pure Power",
+      "name": "ヨガパワー",
       "affectsTypes": false
     },
     "form": null,
@@ -5737,7 +5737,7 @@
     ],
     "ability": {
       "id": "intimidate",
-      "name": "Intimidate",
+      "name": "いかく",
       "affectsTypes": false
     },
     "form": "Mega",
@@ -5782,7 +5782,7 @@
     ],
     "ability": {
       "id": "illuminate",
-      "name": "Illuminate",
+      "name": "はっこう",
       "affectsTypes": false
     },
     "form": null,
@@ -5797,7 +5797,7 @@
     ],
     "ability": {
       "id": "oblivious",
-      "name": "Oblivious",
+      "name": "どんかん",
       "affectsTypes": false
     },
     "form": null,
@@ -5813,7 +5813,7 @@
     ],
     "ability": {
       "id": "natural_cure",
-      "name": "Natural Cure",
+      "name": "しぜんかいふく",
       "affectsTypes": false
     },
     "form": null,
@@ -5828,7 +5828,7 @@
     ],
     "ability": {
       "id": "liquid_ooze",
-      "name": "Liquid Ooze",
+      "name": "ヘドロえき",
       "affectsTypes": false
     },
     "form": null,
@@ -5843,7 +5843,7 @@
     ],
     "ability": {
       "id": "liquid_ooze",
-      "name": "Liquid Ooze",
+      "name": "ヘドロえき",
       "affectsTypes": false
     },
     "form": null,
@@ -5859,7 +5859,7 @@
     ],
     "ability": {
       "id": "rough_skin",
-      "name": "Rough Skin",
+      "name": "さめはだ",
       "affectsTypes": false
     },
     "form": null,
@@ -5875,7 +5875,7 @@
     ],
     "ability": {
       "id": "rough_skin",
-      "name": "Rough Skin",
+      "name": "さめはだ",
       "affectsTypes": false
     },
     "form": null,
@@ -5890,7 +5890,7 @@
     ],
     "ability": {
       "id": "water_veil",
-      "name": "Water Veil",
+      "name": "みずのベール",
       "affectsTypes": false
     },
     "form": null,
@@ -5905,7 +5905,7 @@
     ],
     "ability": {
       "id": "water_veil",
-      "name": "Water Veil",
+      "name": "みずのベール",
       "affectsTypes": false
     },
     "form": null,
@@ -5921,7 +5921,7 @@
     ],
     "ability": {
       "id": "oblivious",
-      "name": "Oblivious",
+      "name": "どんかん",
       "affectsTypes": false
     },
     "form": null,
@@ -5953,7 +5953,7 @@
     ],
     "ability": {
       "id": "sheer_force",
-      "name": "Sheer Force",
+      "name": "ちからずく",
       "affectsTypes": false
     },
     "form": "Mega",
@@ -5968,7 +5968,7 @@
     ],
     "ability": {
       "id": "white_smoke",
-      "name": "White Smoke",
+      "name": "しろいけむり",
       "affectsTypes": false
     },
     "form": null,
@@ -6013,7 +6013,7 @@
     ],
     "ability": {
       "id": "own_tempo",
-      "name": "Own Tempo",
+      "name": "マイペース",
       "affectsTypes": false
     },
     "form": null,
@@ -6028,7 +6028,7 @@
     ],
     "ability": {
       "id": "hyper_cutter",
-      "name": "Hyper Cutter",
+      "name": "かいりきバサミ",
       "affectsTypes": false
     },
     "form": null,
@@ -6107,7 +6107,7 @@
     ],
     "ability": {
       "id": "natural_cure",
-      "name": "Natural Cure",
+      "name": "しぜんかいふく",
       "affectsTypes": false
     },
     "form": null,
@@ -6123,7 +6123,7 @@
     ],
     "ability": {
       "id": "natural_cure",
-      "name": "Natural Cure",
+      "name": "しぜんかいふく",
       "affectsTypes": false
     },
     "form": null,
@@ -6139,7 +6139,7 @@
     ],
     "ability": {
       "id": "pixilate",
-      "name": "Pixilate",
+      "name": "フェアリースキン",
       "affectsTypes": false
     },
     "form": "Mega",
@@ -6154,7 +6154,7 @@
     ],
     "ability": {
       "id": "immunity",
-      "name": "Immunity",
+      "name": "めんえき",
       "affectsTypes": false
     },
     "form": null,
@@ -6169,7 +6169,7 @@
     ],
     "ability": {
       "id": "shed_skin",
-      "name": "Shed Skin",
+      "name": "だっぴ",
       "affectsTypes": false
     },
     "form": null,
@@ -6217,7 +6217,7 @@
     ],
     "ability": {
       "id": "oblivious",
-      "name": "Oblivious",
+      "name": "どんかん",
       "affectsTypes": false
     },
     "form": null,
@@ -6233,7 +6233,7 @@
     ],
     "ability": {
       "id": "oblivious",
-      "name": "Oblivious",
+      "name": "どんかん",
       "affectsTypes": false
     },
     "form": null,
@@ -6248,7 +6248,7 @@
     ],
     "ability": {
       "id": "hyper_cutter",
-      "name": "Hyper Cutter",
+      "name": "かいりきバサミ",
       "affectsTypes": false
     },
     "form": null,
@@ -6264,7 +6264,7 @@
     ],
     "ability": {
       "id": "hyper_cutter",
-      "name": "Hyper Cutter",
+      "name": "かいりきバサミ",
       "affectsTypes": false
     },
     "form": null,
@@ -6344,7 +6344,7 @@
     ],
     "ability": {
       "id": "battle_armor",
-      "name": "Battle Armor",
+      "name": "カブトアーマー",
       "affectsTypes": false
     },
     "form": null,
@@ -6360,7 +6360,7 @@
     ],
     "ability": {
       "id": "battle_armor",
-      "name": "Battle Armor",
+      "name": "カブトアーマー",
       "affectsTypes": false
     },
     "form": null,
@@ -6375,7 +6375,7 @@
     ],
     "ability": {
       "id": "swift_swim",
-      "name": "Swift Swim",
+      "name": "すいすい",
       "affectsTypes": false
     },
     "form": null,
@@ -6390,7 +6390,7 @@
     ],
     "ability": {
       "id": "marvel_scale",
-      "name": "Marvel Scale",
+      "name": "ふしぎなうろこ",
       "affectsTypes": false
     },
     "form": null,
@@ -6405,7 +6405,7 @@
     ],
     "ability": {
       "id": "forecast",
-      "name": "Forecast",
+      "name": "てんきや",
       "affectsTypes": false
     },
     "form": null,
@@ -6420,7 +6420,7 @@
     ],
     "ability": {
       "id": "color_change",
-      "name": "Color Change",
+      "name": "へんしょく",
       "affectsTypes": false
     },
     "form": null,
@@ -6435,7 +6435,7 @@
     ],
     "ability": {
       "id": "insomnia",
-      "name": "Insomnia",
+      "name": "ふみん",
       "affectsTypes": false
     },
     "form": null,
@@ -6450,7 +6450,7 @@
     ],
     "ability": {
       "id": "insomnia",
-      "name": "Insomnia",
+      "name": "ふみん",
       "affectsTypes": false
     },
     "form": null,
@@ -6480,7 +6480,7 @@
     ],
     "ability": {
       "id": "pressure",
-      "name": "Pressure",
+      "name": "プレッシャー",
       "affectsTypes": false
     },
     "form": null,
@@ -6496,7 +6496,7 @@
     ],
     "ability": {
       "id": "chlorophyll",
-      "name": "Chlorophyll",
+      "name": "ようりょくそ",
       "affectsTypes": false
     },
     "form": null,
@@ -6542,7 +6542,7 @@
     ],
     "ability": {
       "id": "pressure",
-      "name": "Pressure",
+      "name": "プレッシャー",
       "affectsTypes": false
     },
     "form": null,
@@ -6558,7 +6558,7 @@
     ],
     "ability": {
       "id": "magic_bounce",
-      "name": "Magic Bounce",
+      "name": "マジックミラー",
       "affectsTypes": false
     },
     "form": "Mega-Z",
@@ -6573,7 +6573,7 @@
     ],
     "ability": {
       "id": "shadow_tag",
-      "name": "Shadow Tag",
+      "name": "かげふみ",
       "affectsTypes": false
     },
     "form": null,
@@ -6588,7 +6588,7 @@
     ],
     "ability": {
       "id": "inner_focus",
-      "name": "Inner Focus",
+      "name": "せいしんりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -6603,7 +6603,7 @@
     ],
     "ability": {
       "id": "inner_focus",
-      "name": "Inner Focus",
+      "name": "せいしんりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -6666,7 +6666,7 @@
     ],
     "ability": {
       "id": "shell_armor",
-      "name": "Shell Armor",
+      "name": "シェルアーマー",
       "affectsTypes": false
     },
     "form": null,
@@ -6681,7 +6681,7 @@
     ],
     "ability": {
       "id": "swift_swim",
-      "name": "Swift Swim",
+      "name": "すいすい",
       "affectsTypes": false
     },
     "form": null,
@@ -6696,7 +6696,7 @@
     ],
     "ability": {
       "id": "swift_swim",
-      "name": "Swift Swim",
+      "name": "すいすい",
       "affectsTypes": false
     },
     "form": null,
@@ -6712,7 +6712,7 @@
     ],
     "ability": {
       "id": "swift_swim",
-      "name": "Swift Swim",
+      "name": "すいすい",
       "affectsTypes": false
     },
     "form": null,
@@ -6727,7 +6727,7 @@
     ],
     "ability": {
       "id": "swift_swim",
-      "name": "Swift Swim",
+      "name": "すいすい",
       "affectsTypes": false
     },
     "form": null,
@@ -6742,7 +6742,7 @@
     ],
     "ability": {
       "id": "rock_head",
-      "name": "Rock Head",
+      "name": "いしあたま",
       "affectsTypes": false
     },
     "form": null,
@@ -6757,7 +6757,7 @@
     ],
     "ability": {
       "id": "rock_head",
-      "name": "Rock Head",
+      "name": "いしあたま",
       "affectsTypes": false
     },
     "form": null,
@@ -6773,7 +6773,7 @@
     ],
     "ability": {
       "id": "intimidate",
-      "name": "Intimidate",
+      "name": "いかく",
       "affectsTypes": false
     },
     "form": null,
@@ -6789,7 +6789,7 @@
     ],
     "ability": {
       "id": "clear_body",
-      "name": "Clear Body",
+      "name": "クリアボディ",
       "affectsTypes": false
     },
     "form": null,
@@ -6805,7 +6805,7 @@
     ],
     "ability": {
       "id": "clear_body",
-      "name": "Clear Body",
+      "name": "クリアボディ",
       "affectsTypes": false
     },
     "form": null,
@@ -6821,7 +6821,7 @@
     ],
     "ability": {
       "id": "clear_body",
-      "name": "Clear Body",
+      "name": "クリアボディ",
       "affectsTypes": false
     },
     "form": null,
@@ -6836,7 +6836,7 @@
     ],
     "ability": {
       "id": "clear_body",
-      "name": "Clear Body",
+      "name": "クリアボディ",
       "affectsTypes": false
     },
     "form": null,
@@ -6851,7 +6851,7 @@
     ],
     "ability": {
       "id": "clear_body",
-      "name": "Clear Body",
+      "name": "クリアボディ",
       "affectsTypes": false
     },
     "form": null,
@@ -6866,7 +6866,7 @@
     ],
     "ability": {
       "id": "clear_body",
-      "name": "Clear Body",
+      "name": "クリアボディ",
       "affectsTypes": false
     },
     "form": null,
@@ -6913,7 +6913,7 @@
     ],
     "ability": {
       "id": "drizzle",
-      "name": "Drizzle",
+      "name": "あめふらし",
       "affectsTypes": false
     },
     "form": null,
@@ -6928,7 +6928,7 @@
     ],
     "ability": {
       "id": "drought",
-      "name": "Drought",
+      "name": "ひでり",
       "affectsTypes": false
     },
     "form": null,
@@ -6944,7 +6944,7 @@
     ],
     "ability": {
       "id": "desolate_land",
-      "name": "Desolate Land",
+      "name": "おわりのだいち",
       "affectsTypes": false
     },
     "form": "Primal",
@@ -6960,7 +6960,7 @@
     ],
     "ability": {
       "id": "air_lock",
-      "name": "Air Lock",
+      "name": "エアロック",
       "affectsTypes": false
     },
     "form": null,
@@ -6976,7 +6976,7 @@
     ],
     "ability": {
       "id": "serene_grace",
-      "name": "Serene Grace",
+      "name": "てんのめぐみ",
       "affectsTypes": false
     },
     "form": null,
@@ -6991,7 +6991,7 @@
     ],
     "ability": {
       "id": "pressure",
-      "name": "Pressure",
+      "name": "プレッシャー",
       "affectsTypes": false
     },
     "form": null,
@@ -7006,7 +7006,7 @@
     ],
     "ability": {
       "id": "overgrow",
-      "name": "Overgrow",
+      "name": "しんりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -7021,7 +7021,7 @@
     ],
     "ability": {
       "id": "overgrow",
-      "name": "Overgrow",
+      "name": "しんりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -7037,7 +7037,7 @@
     ],
     "ability": {
       "id": "overgrow",
-      "name": "Overgrow",
+      "name": "しんりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -7052,7 +7052,7 @@
     ],
     "ability": {
       "id": "blaze",
-      "name": "Blaze",
+      "name": "もうか",
       "affectsTypes": false
     },
     "form": null,
@@ -7068,7 +7068,7 @@
     ],
     "ability": {
       "id": "blaze",
-      "name": "Blaze",
+      "name": "もうか",
       "affectsTypes": false
     },
     "form": null,
@@ -7084,7 +7084,7 @@
     ],
     "ability": {
       "id": "blaze",
-      "name": "Blaze",
+      "name": "もうか",
       "affectsTypes": false
     },
     "form": null,
@@ -7099,7 +7099,7 @@
     ],
     "ability": {
       "id": "torrent",
-      "name": "Torrent",
+      "name": "げきりゅう",
       "affectsTypes": false
     },
     "form": null,
@@ -7114,7 +7114,7 @@
     ],
     "ability": {
       "id": "torrent",
-      "name": "Torrent",
+      "name": "げきりゅう",
       "affectsTypes": false
     },
     "form": null,
@@ -7130,7 +7130,7 @@
     ],
     "ability": {
       "id": "torrent",
-      "name": "Torrent",
+      "name": "げきりゅう",
       "affectsTypes": false
     },
     "form": null,
@@ -7146,7 +7146,7 @@
     ],
     "ability": {
       "id": "keen_eye",
-      "name": "Keen Eye",
+      "name": "するどいめ",
       "affectsTypes": false
     },
     "form": null,
@@ -7162,7 +7162,7 @@
     ],
     "ability": {
       "id": "intimidate",
-      "name": "Intimidate",
+      "name": "いかく",
       "affectsTypes": false
     },
     "form": null,
@@ -7178,7 +7178,7 @@
     ],
     "ability": {
       "id": "intimidate",
-      "name": "Intimidate",
+      "name": "いかく",
       "affectsTypes": false
     },
     "form": null,
@@ -7194,7 +7194,7 @@
     ],
     "ability": {
       "id": "contrary",
-      "name": "Contrary",
+      "name": "あまのじゃく",
       "affectsTypes": false
     },
     "form": "Mega",
@@ -7209,7 +7209,7 @@
     ],
     "ability": {
       "id": "simple",
-      "name": "Simple",
+      "name": "たんじゅん",
       "affectsTypes": false
     },
     "form": null,
@@ -7225,7 +7225,7 @@
     ],
     "ability": {
       "id": "simple",
-      "name": "Simple",
+      "name": "たんじゅん",
       "affectsTypes": false
     },
     "form": null,
@@ -7240,7 +7240,7 @@
     ],
     "ability": {
       "id": "shed_skin",
-      "name": "Shed Skin",
+      "name": "だっぴ",
       "affectsTypes": false
     },
     "form": null,
@@ -7255,7 +7255,7 @@
     ],
     "ability": {
       "id": "swarm",
-      "name": "Swarm",
+      "name": "むしのしらせ",
       "affectsTypes": false
     },
     "form": null,
@@ -7270,7 +7270,7 @@
     ],
     "ability": {
       "id": "rivalry",
-      "name": "Rivalry",
+      "name": "とうそうしん",
       "affectsTypes": false
     },
     "form": null,
@@ -7285,7 +7285,7 @@
     ],
     "ability": {
       "id": "rivalry",
-      "name": "Rivalry",
+      "name": "とうそうしん",
       "affectsTypes": false
     },
     "form": null,
@@ -7300,7 +7300,7 @@
     ],
     "ability": {
       "id": "rivalry",
-      "name": "Rivalry",
+      "name": "とうそうしん",
       "affectsTypes": false
     },
     "form": null,
@@ -7316,7 +7316,7 @@
     ],
     "ability": {
       "id": "natural_cure",
-      "name": "Natural Cure",
+      "name": "しぜんかいふく",
       "affectsTypes": false
     },
     "form": null,
@@ -7332,7 +7332,7 @@
     ],
     "ability": {
       "id": "natural_cure",
-      "name": "Natural Cure",
+      "name": "しぜんかいふく",
       "affectsTypes": false
     },
     "form": null,
@@ -7347,7 +7347,7 @@
     ],
     "ability": {
       "id": "mold_breaker",
-      "name": "Mold Breaker",
+      "name": "かたやぶり",
       "affectsTypes": false
     },
     "form": null,
@@ -7362,7 +7362,7 @@
     ],
     "ability": {
       "id": "mold_breaker",
-      "name": "Mold Breaker",
+      "name": "かたやぶり",
       "affectsTypes": false
     },
     "form": null,
@@ -7378,7 +7378,7 @@
     ],
     "ability": {
       "id": "sturdy",
-      "name": "Sturdy",
+      "name": "がんじょう",
       "affectsTypes": false
     },
     "form": null,
@@ -7394,7 +7394,7 @@
     ],
     "ability": {
       "id": "sturdy",
-      "name": "Sturdy",
+      "name": "がんじょう",
       "affectsTypes": false
     },
     "form": null,
@@ -7409,7 +7409,7 @@
     ],
     "ability": {
       "id": "shed_skin",
-      "name": "Shed Skin",
+      "name": "だっぴ",
       "affectsTypes": false
     },
     "form": null,
@@ -7425,7 +7425,7 @@
     ],
     "ability": {
       "id": "anticipation",
-      "name": "Anticipation",
+      "name": "きけんよち",
       "affectsTypes": false
     },
     "form": null,
@@ -7441,7 +7441,7 @@
     ],
     "ability": {
       "id": "anticipation",
-      "name": "Anticipation",
+      "name": "きけんよち",
       "affectsTypes": false
     },
     "form": "Sandy",
@@ -7457,7 +7457,7 @@
     ],
     "ability": {
       "id": "anticipation",
-      "name": "Anticipation",
+      "name": "きけんよち",
       "affectsTypes": false
     },
     "form": "Trash",
@@ -7473,7 +7473,7 @@
     ],
     "ability": {
       "id": "swarm",
-      "name": "Swarm",
+      "name": "むしのしらせ",
       "affectsTypes": false
     },
     "form": null,
@@ -7489,7 +7489,7 @@
     ],
     "ability": {
       "id": "honey_gather",
-      "name": "Honey Gather",
+      "name": "みつあつめ",
       "affectsTypes": false
     },
     "form": null,
@@ -7505,7 +7505,7 @@
     ],
     "ability": {
       "id": "pressure",
-      "name": "Pressure",
+      "name": "プレッシャー",
       "affectsTypes": false
     },
     "form": null,
@@ -7535,7 +7535,7 @@
     ],
     "ability": {
       "id": "swift_swim",
-      "name": "Swift Swim",
+      "name": "すいすい",
       "affectsTypes": false
     },
     "form": null,
@@ -7550,7 +7550,7 @@
     ],
     "ability": {
       "id": "swift_swim",
-      "name": "Swift Swim",
+      "name": "すいすい",
       "affectsTypes": false
     },
     "form": null,
@@ -7565,7 +7565,7 @@
     ],
     "ability": {
       "id": "chlorophyll",
-      "name": "Chlorophyll",
+      "name": "ようりょくそ",
       "affectsTypes": false
     },
     "form": null,
@@ -7580,7 +7580,7 @@
     ],
     "ability": {
       "id": "flower_gift",
-      "name": "Flower Gift",
+      "name": "フラワーギフト",
       "affectsTypes": false
     },
     "form": null,
@@ -7626,7 +7626,7 @@
     ],
     "ability": {
       "id": "technician",
-      "name": "Technician",
+      "name": "テクニシャン",
       "affectsTypes": false
     },
     "form": null,
@@ -7642,7 +7642,7 @@
     ],
     "ability": {
       "id": "aftermath",
-      "name": "Aftermath",
+      "name": "ゆうばく",
       "affectsTypes": false
     },
     "form": null,
@@ -7658,7 +7658,7 @@
     ],
     "ability": {
       "id": "aftermath",
-      "name": "Aftermath",
+      "name": "ゆうばく",
       "affectsTypes": false
     },
     "form": null,
@@ -7673,7 +7673,7 @@
     ],
     "ability": {
       "id": "run_away",
-      "name": "Run Away",
+      "name": "にげあし",
       "affectsTypes": false
     },
     "form": null,
@@ -7688,7 +7688,7 @@
     ],
     "ability": {
       "id": "cute_charm",
-      "name": "Cute Charm",
+      "name": "メロメロボディ",
       "affectsTypes": false
     },
     "form": null,
@@ -7704,7 +7704,7 @@
     ],
     "ability": {
       "id": "scrappy",
-      "name": "Scrappy",
+      "name": "きもったま",
       "affectsTypes": false
     },
     "form": "Mega",
@@ -7735,7 +7735,7 @@
     ],
     "ability": {
       "id": "insomnia",
-      "name": "Insomnia",
+      "name": "ふみん",
       "affectsTypes": false
     },
     "form": null,
@@ -7750,7 +7750,7 @@
     ],
     "ability": {
       "id": "limber",
-      "name": "Limber",
+      "name": "じゅうなん",
       "affectsTypes": false
     },
     "form": null,
@@ -7796,7 +7796,7 @@
     ],
     "ability": {
       "id": "stench",
-      "name": "Stench",
+      "name": "あくしゅう",
       "affectsTypes": false
     },
     "form": null,
@@ -7812,7 +7812,7 @@
     ],
     "ability": {
       "id": "stench",
-      "name": "Stench",
+      "name": "あくしゅう",
       "affectsTypes": false
     },
     "form": null,
@@ -7859,7 +7859,7 @@
     ],
     "ability": {
       "id": "sturdy",
-      "name": "Sturdy",
+      "name": "がんじょう",
       "affectsTypes": false
     },
     "form": null,
@@ -7890,7 +7890,7 @@
     ],
     "ability": {
       "id": "natural_cure",
-      "name": "Natural Cure",
+      "name": "しぜんかいふく",
       "affectsTypes": false
     },
     "form": null,
@@ -7906,7 +7906,7 @@
     ],
     "ability": {
       "id": "keen_eye",
-      "name": "Keen Eye",
+      "name": "するどいめ",
       "affectsTypes": false
     },
     "form": null,
@@ -7922,7 +7922,7 @@
     ],
     "ability": {
       "id": "pressure",
-      "name": "Pressure",
+      "name": "プレッシャー",
       "affectsTypes": false
     },
     "form": null,
@@ -7938,7 +7938,7 @@
     ],
     "ability": {
       "id": "sand_veil",
-      "name": "Sand Veil",
+      "name": "すながくれ",
       "affectsTypes": false
     },
     "form": null,
@@ -7954,7 +7954,7 @@
     ],
     "ability": {
       "id": "sand_veil",
-      "name": "Sand Veil",
+      "name": "すながくれ",
       "affectsTypes": false
     },
     "form": null,
@@ -7970,7 +7970,7 @@
     ],
     "ability": {
       "id": "sand_veil",
-      "name": "Sand Veil",
+      "name": "すながくれ",
       "affectsTypes": false
     },
     "form": null,
@@ -7985,7 +7985,7 @@
     ],
     "ability": {
       "id": "sand_force",
-      "name": "Sand Force",
+      "name": "すなのちから",
       "affectsTypes": false
     },
     "form": "Mega-Z",
@@ -8015,7 +8015,7 @@
     ],
     "ability": {
       "id": "steadfast",
-      "name": "Steadfast",
+      "name": "ふくつのこころ",
       "affectsTypes": false
     },
     "form": null,
@@ -8031,7 +8031,7 @@
     ],
     "ability": {
       "id": "steadfast",
-      "name": "Steadfast",
+      "name": "ふくつのこころ",
       "affectsTypes": false
     },
     "form": null,
@@ -8046,7 +8046,7 @@
     ],
     "ability": {
       "id": "sand_stream",
-      "name": "Sand Stream",
+      "name": "すなおこし",
       "affectsTypes": false
     },
     "form": null,
@@ -8061,7 +8061,7 @@
     ],
     "ability": {
       "id": "sand_stream",
-      "name": "Sand Stream",
+      "name": "すなおこし",
       "affectsTypes": false
     },
     "form": null,
@@ -8077,7 +8077,7 @@
     ],
     "ability": {
       "id": "battle_armor",
-      "name": "Battle Armor",
+      "name": "カブトアーマー",
       "affectsTypes": false
     },
     "form": null,
@@ -8093,7 +8093,7 @@
     ],
     "ability": {
       "id": "battle_armor",
-      "name": "Battle Armor",
+      "name": "カブトアーマー",
       "affectsTypes": false
     },
     "form": null,
@@ -8202,7 +8202,7 @@
     ],
     "ability": {
       "id": "snow_warning",
-      "name": "Snow Warning",
+      "name": "ゆきふらし",
       "affectsTypes": false
     },
     "form": null,
@@ -8218,7 +8218,7 @@
     ],
     "ability": {
       "id": "snow_warning",
-      "name": "Snow Warning",
+      "name": "ゆきふらし",
       "affectsTypes": false
     },
     "form": null,
@@ -8234,7 +8234,7 @@
     ],
     "ability": {
       "id": "pressure",
-      "name": "Pressure",
+      "name": "プレッシャー",
       "affectsTypes": false
     },
     "form": null,
@@ -8250,7 +8250,7 @@
     ],
     "ability": {
       "id": "magnet_pull",
-      "name": "Magnet Pull",
+      "name": "じりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -8265,7 +8265,7 @@
     ],
     "ability": {
       "id": "own_tempo",
-      "name": "Own Tempo",
+      "name": "マイペース",
       "affectsTypes": false
     },
     "form": null,
@@ -8296,7 +8296,7 @@
     ],
     "ability": {
       "id": "chlorophyll",
-      "name": "Chlorophyll",
+      "name": "ようりょくそ",
       "affectsTypes": false
     },
     "form": null,
@@ -8326,7 +8326,7 @@
     ],
     "ability": {
       "id": "flame_body",
-      "name": "Flame Body",
+      "name": "ほのおのからだ",
       "affectsTypes": false
     },
     "form": null,
@@ -8342,7 +8342,7 @@
     ],
     "ability": {
       "id": "hustle",
-      "name": "Hustle",
+      "name": "はりきり",
       "affectsTypes": false
     },
     "form": null,
@@ -8358,7 +8358,7 @@
     ],
     "ability": {
       "id": "speed_boost",
-      "name": "Speed Boost",
+      "name": "かそく",
       "affectsTypes": false
     },
     "form": null,
@@ -8373,7 +8373,7 @@
     ],
     "ability": {
       "id": "leaf_guard",
-      "name": "Leaf Guard",
+      "name": "リーフガード",
       "affectsTypes": false
     },
     "form": null,
@@ -8388,7 +8388,7 @@
     ],
     "ability": {
       "id": "snow_cloak",
-      "name": "Snow Cloak",
+      "name": "ゆきがくれ",
       "affectsTypes": false
     },
     "form": null,
@@ -8404,7 +8404,7 @@
     ],
     "ability": {
       "id": "hyper_cutter",
-      "name": "Hyper Cutter",
+      "name": "かいりきバサミ",
       "affectsTypes": false
     },
     "form": null,
@@ -8435,7 +8435,7 @@
     ],
     "ability": {
       "id": "adaptability",
-      "name": "Adaptability",
+      "name": "てきおうりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -8451,7 +8451,7 @@
     ],
     "ability": {
       "id": "steadfast",
-      "name": "Steadfast",
+      "name": "ふくつのこころ",
       "affectsTypes": false
     },
     "form": null,
@@ -8467,7 +8467,7 @@
     ],
     "ability": {
       "id": "sturdy",
-      "name": "Sturdy",
+      "name": "がんじょう",
       "affectsTypes": false
     },
     "form": null,
@@ -8482,7 +8482,7 @@
     ],
     "ability": {
       "id": "pressure",
-      "name": "Pressure",
+      "name": "プレッシャー",
       "affectsTypes": false
     },
     "form": null,
@@ -8498,7 +8498,7 @@
     ],
     "ability": {
       "id": "snow_cloak",
-      "name": "Snow Cloak",
+      "name": "ゆきがくれ",
       "affectsTypes": false
     },
     "form": null,
@@ -8655,7 +8655,7 @@
     ],
     "ability": {
       "id": "pressure",
-      "name": "Pressure",
+      "name": "プレッシャー",
       "affectsTypes": false
     },
     "form": null,
@@ -8671,7 +8671,7 @@
     ],
     "ability": {
       "id": "pressure",
-      "name": "Pressure",
+      "name": "プレッシャー",
       "affectsTypes": false
     },
     "form": null,
@@ -8702,7 +8702,7 @@
     ],
     "ability": {
       "id": "slow_start",
-      "name": "Slow Start",
+      "name": "スロースタート",
       "affectsTypes": false
     },
     "form": null,
@@ -8718,7 +8718,7 @@
     ],
     "ability": {
       "id": "pressure",
-      "name": "Pressure",
+      "name": "プレッシャー",
       "affectsTypes": false
     },
     "form": null,
@@ -8764,7 +8764,7 @@
     ],
     "ability": {
       "id": "hydration",
-      "name": "Hydration",
+      "name": "うるおいボディ",
       "affectsTypes": false
     },
     "form": null,
@@ -8779,7 +8779,7 @@
     ],
     "ability": {
       "id": "hydration",
-      "name": "Hydration",
+      "name": "うるおいボディ",
       "affectsTypes": false
     },
     "form": null,
@@ -8794,7 +8794,7 @@
     ],
     "ability": {
       "id": "bad_dreams",
-      "name": "Bad Dreams",
+      "name": "ナイトメア",
       "affectsTypes": false
     },
     "form": null,
@@ -8809,7 +8809,7 @@
     ],
     "ability": {
       "id": "natural_cure",
-      "name": "Natural Cure",
+      "name": "しぜんかいふく",
       "affectsTypes": false
     },
     "form": null,
@@ -8825,7 +8825,7 @@
     ],
     "ability": {
       "id": "serene_grace",
-      "name": "Serene Grace",
+      "name": "てんのめぐみ",
       "affectsTypes": false
     },
     "form": "Sky",
@@ -8840,7 +8840,7 @@
     ],
     "ability": {
       "id": "multitype",
-      "name": "Multitype",
+      "name": "マルチタイプ",
       "affectsTypes": false
     },
     "form": null,
@@ -8855,7 +8855,7 @@
     ],
     "ability": {
       "id": "multitype",
-      "name": "Multitype",
+      "name": "マルチタイプ",
       "affectsTypes": false
     },
     "form": "Bug",
@@ -8870,7 +8870,7 @@
     ],
     "ability": {
       "id": "multitype",
-      "name": "Multitype",
+      "name": "マルチタイプ",
       "affectsTypes": false
     },
     "form": "Dark",
@@ -8885,7 +8885,7 @@
     ],
     "ability": {
       "id": "multitype",
-      "name": "Multitype",
+      "name": "マルチタイプ",
       "affectsTypes": false
     },
     "form": "Dragon",
@@ -8900,7 +8900,7 @@
     ],
     "ability": {
       "id": "multitype",
-      "name": "Multitype",
+      "name": "マルチタイプ",
       "affectsTypes": false
     },
     "form": "Electric",
@@ -8915,7 +8915,7 @@
     ],
     "ability": {
       "id": "multitype",
-      "name": "Multitype",
+      "name": "マルチタイプ",
       "affectsTypes": false
     },
     "form": "Fairy",
@@ -8930,7 +8930,7 @@
     ],
     "ability": {
       "id": "multitype",
-      "name": "Multitype",
+      "name": "マルチタイプ",
       "affectsTypes": false
     },
     "form": "Fighting",
@@ -8945,7 +8945,7 @@
     ],
     "ability": {
       "id": "multitype",
-      "name": "Multitype",
+      "name": "マルチタイプ",
       "affectsTypes": false
     },
     "form": "Fire",
@@ -8960,7 +8960,7 @@
     ],
     "ability": {
       "id": "multitype",
-      "name": "Multitype",
+      "name": "マルチタイプ",
       "affectsTypes": false
     },
     "form": "Flying",
@@ -8975,7 +8975,7 @@
     ],
     "ability": {
       "id": "multitype",
-      "name": "Multitype",
+      "name": "マルチタイプ",
       "affectsTypes": false
     },
     "form": "Ghost",
@@ -8990,7 +8990,7 @@
     ],
     "ability": {
       "id": "multitype",
-      "name": "Multitype",
+      "name": "マルチタイプ",
       "affectsTypes": false
     },
     "form": "Grass",
@@ -9005,7 +9005,7 @@
     ],
     "ability": {
       "id": "multitype",
-      "name": "Multitype",
+      "name": "マルチタイプ",
       "affectsTypes": false
     },
     "form": "Ground",
@@ -9020,7 +9020,7 @@
     ],
     "ability": {
       "id": "multitype",
-      "name": "Multitype",
+      "name": "マルチタイプ",
       "affectsTypes": false
     },
     "form": "Ice",
@@ -9035,7 +9035,7 @@
     ],
     "ability": {
       "id": "multitype",
-      "name": "Multitype",
+      "name": "マルチタイプ",
       "affectsTypes": false
     },
     "form": "Poison",
@@ -9050,7 +9050,7 @@
     ],
     "ability": {
       "id": "multitype",
-      "name": "Multitype",
+      "name": "マルチタイプ",
       "affectsTypes": false
     },
     "form": "Psychic",
@@ -9065,7 +9065,7 @@
     ],
     "ability": {
       "id": "multitype",
-      "name": "Multitype",
+      "name": "マルチタイプ",
       "affectsTypes": false
     },
     "form": "Rock",
@@ -9080,7 +9080,7 @@
     ],
     "ability": {
       "id": "multitype",
-      "name": "Multitype",
+      "name": "マルチタイプ",
       "affectsTypes": false
     },
     "form": "Steel",
@@ -9095,7 +9095,7 @@
     ],
     "ability": {
       "id": "multitype",
-      "name": "Multitype",
+      "name": "マルチタイプ",
       "affectsTypes": false
     },
     "form": "Water",
@@ -9111,7 +9111,7 @@
     ],
     "ability": {
       "id": "victory_star",
-      "name": "Victory Star",
+      "name": "しょうりのほし",
       "affectsTypes": false
     },
     "form": null,
@@ -9126,7 +9126,7 @@
     ],
     "ability": {
       "id": "overgrow",
-      "name": "Overgrow",
+      "name": "しんりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -9141,7 +9141,7 @@
     ],
     "ability": {
       "id": "overgrow",
-      "name": "Overgrow",
+      "name": "しんりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -9156,7 +9156,7 @@
     ],
     "ability": {
       "id": "overgrow",
-      "name": "Overgrow",
+      "name": "しんりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -9203,7 +9203,7 @@
     ],
     "ability": {
       "id": "blaze",
-      "name": "Blaze",
+      "name": "もうか",
       "affectsTypes": false
     },
     "form": null,
@@ -9218,7 +9218,7 @@
     ],
     "ability": {
       "id": "torrent",
-      "name": "Torrent",
+      "name": "げきりゅう",
       "affectsTypes": false
     },
     "form": null,
@@ -9233,7 +9233,7 @@
     ],
     "ability": {
       "id": "torrent",
-      "name": "Torrent",
+      "name": "げきりゅう",
       "affectsTypes": false
     },
     "form": null,
@@ -9248,7 +9248,7 @@
     ],
     "ability": {
       "id": "torrent",
-      "name": "Torrent",
+      "name": "げきりゅう",
       "affectsTypes": false
     },
     "form": null,
@@ -9264,7 +9264,7 @@
     ],
     "ability": {
       "id": "torrent",
-      "name": "Torrent",
+      "name": "げきりゅう",
       "affectsTypes": false
     },
     "form": "Hisui",
@@ -9279,7 +9279,7 @@
     ],
     "ability": {
       "id": "run_away",
-      "name": "Run Away",
+      "name": "にげあし",
       "affectsTypes": false
     },
     "form": null,
@@ -9294,7 +9294,7 @@
     ],
     "ability": {
       "id": "illuminate",
-      "name": "Illuminate",
+      "name": "はっこう",
       "affectsTypes": false
     },
     "form": null,
@@ -9309,7 +9309,7 @@
     ],
     "ability": {
       "id": "vital_spirit",
-      "name": "Vital Spirit",
+      "name": "やるき",
       "affectsTypes": false
     },
     "form": null,
@@ -9324,7 +9324,7 @@
     ],
     "ability": {
       "id": "intimidate",
-      "name": "Intimidate",
+      "name": "いかく",
       "affectsTypes": false
     },
     "form": null,
@@ -9339,7 +9339,7 @@
     ],
     "ability": {
       "id": "intimidate",
-      "name": "Intimidate",
+      "name": "いかく",
       "affectsTypes": false
     },
     "form": null,
@@ -9354,7 +9354,7 @@
     ],
     "ability": {
       "id": "limber",
-      "name": "Limber",
+      "name": "じゅうなん",
       "affectsTypes": false
     },
     "form": null,
@@ -9369,7 +9369,7 @@
     ],
     "ability": {
       "id": "limber",
-      "name": "Limber",
+      "name": "じゅうなん",
       "affectsTypes": false
     },
     "form": null,
@@ -9384,7 +9384,7 @@
     ],
     "ability": {
       "id": "gluttony",
-      "name": "Gluttony",
+      "name": "くいしんぼう",
       "affectsTypes": false
     },
     "form": null,
@@ -9399,7 +9399,7 @@
     ],
     "ability": {
       "id": "gluttony",
-      "name": "Gluttony",
+      "name": "くいしんぼう",
       "affectsTypes": false
     },
     "form": null,
@@ -9414,7 +9414,7 @@
     ],
     "ability": {
       "id": "gluttony",
-      "name": "Gluttony",
+      "name": "くいしんぼう",
       "affectsTypes": false
     },
     "form": null,
@@ -9429,7 +9429,7 @@
     ],
     "ability": {
       "id": "gluttony",
-      "name": "Gluttony",
+      "name": "くいしんぼう",
       "affectsTypes": false
     },
     "form": null,
@@ -9444,7 +9444,7 @@
     ],
     "ability": {
       "id": "gluttony",
-      "name": "Gluttony",
+      "name": "くいしんぼう",
       "affectsTypes": false
     },
     "form": null,
@@ -9459,7 +9459,7 @@
     ],
     "ability": {
       "id": "gluttony",
-      "name": "Gluttony",
+      "name": "くいしんぼう",
       "affectsTypes": false
     },
     "form": null,
@@ -9474,7 +9474,7 @@
     ],
     "ability": {
       "id": "forewarn",
-      "name": "Forewarn",
+      "name": "よちむ",
       "affectsTypes": false
     },
     "form": null,
@@ -9489,7 +9489,7 @@
     ],
     "ability": {
       "id": "forewarn",
-      "name": "Forewarn",
+      "name": "よちむ",
       "affectsTypes": false
     },
     "form": null,
@@ -9505,7 +9505,7 @@
     ],
     "ability": {
       "id": "big_pecks",
-      "name": "Big Pecks",
+      "name": "はとむね",
       "affectsTypes": false
     },
     "form": null,
@@ -9521,7 +9521,7 @@
     ],
     "ability": {
       "id": "big_pecks",
-      "name": "Big Pecks",
+      "name": "はとむね",
       "affectsTypes": false
     },
     "form": null,
@@ -9537,7 +9537,7 @@
     ],
     "ability": {
       "id": "big_pecks",
-      "name": "Big Pecks",
+      "name": "はとむね",
       "affectsTypes": false
     },
     "form": null,
@@ -9582,7 +9582,7 @@
     ],
     "ability": {
       "id": "sturdy",
-      "name": "Sturdy",
+      "name": "がんじょう",
       "affectsTypes": false
     },
     "form": null,
@@ -9597,7 +9597,7 @@
     ],
     "ability": {
       "id": "sturdy",
-      "name": "Sturdy",
+      "name": "がんじょう",
       "affectsTypes": false
     },
     "form": null,
@@ -9612,7 +9612,7 @@
     ],
     "ability": {
       "id": "sturdy",
-      "name": "Sturdy",
+      "name": "がんじょう",
       "affectsTypes": false
     },
     "form": null,
@@ -9628,7 +9628,7 @@
     ],
     "ability": {
       "id": "unaware",
-      "name": "Unaware",
+      "name": "てんねん",
       "affectsTypes": false
     },
     "form": null,
@@ -9644,7 +9644,7 @@
     ],
     "ability": {
       "id": "unaware",
-      "name": "Unaware",
+      "name": "てんねん",
       "affectsTypes": false
     },
     "form": null,
@@ -9659,7 +9659,7 @@
     ],
     "ability": {
       "id": "sand_rush",
-      "name": "Sand Rush",
+      "name": "すなかき",
       "affectsTypes": false
     },
     "form": null,
@@ -9675,7 +9675,7 @@
     ],
     "ability": {
       "id": "sand_rush",
-      "name": "Sand Rush",
+      "name": "すなかき",
       "affectsTypes": false
     },
     "form": null,
@@ -9690,7 +9690,7 @@
     ],
     "ability": {
       "id": "healer",
-      "name": "Healer",
+      "name": "いやしのこころ",
       "affectsTypes": false
     },
     "form": null,
@@ -9706,7 +9706,7 @@
     ],
     "ability": {
       "id": "healer",
-      "name": "Healer",
+      "name": "いやしのこころ",
       "affectsTypes": false
     },
     "form": "Mega",
@@ -9721,7 +9721,7 @@
     ],
     "ability": {
       "id": "guts",
-      "name": "Guts",
+      "name": "こんじょう",
       "affectsTypes": false
     },
     "form": null,
@@ -9736,7 +9736,7 @@
     ],
     "ability": {
       "id": "guts",
-      "name": "Guts",
+      "name": "こんじょう",
       "affectsTypes": false
     },
     "form": null,
@@ -9751,7 +9751,7 @@
     ],
     "ability": {
       "id": "guts",
-      "name": "Guts",
+      "name": "こんじょう",
       "affectsTypes": false
     },
     "form": null,
@@ -9813,7 +9813,7 @@
     ],
     "ability": {
       "id": "guts",
-      "name": "Guts",
+      "name": "こんじょう",
       "affectsTypes": false
     },
     "form": null,
@@ -9828,7 +9828,7 @@
     ],
     "ability": {
       "id": "sturdy",
-      "name": "Sturdy",
+      "name": "がんじょう",
       "affectsTypes": false
     },
     "form": null,
@@ -9844,7 +9844,7 @@
     ],
     "ability": {
       "id": "swarm",
-      "name": "Swarm",
+      "name": "むしのしらせ",
       "affectsTypes": false
     },
     "form": null,
@@ -9860,7 +9860,7 @@
     ],
     "ability": {
       "id": "leaf_guard",
-      "name": "Leaf Guard",
+      "name": "リーフガード",
       "affectsTypes": false
     },
     "form": null,
@@ -9876,7 +9876,7 @@
     ],
     "ability": {
       "id": "swarm",
-      "name": "Swarm",
+      "name": "むしのしらせ",
       "affectsTypes": false
     },
     "form": null,
@@ -9892,7 +9892,7 @@
     ],
     "ability": {
       "id": "poison_point",
-      "name": "Poison Point",
+      "name": "どくのトゲ",
       "affectsTypes": false
     },
     "form": null,
@@ -9908,7 +9908,7 @@
     ],
     "ability": {
       "id": "poison_point",
-      "name": "Poison Point",
+      "name": "どくのトゲ",
       "affectsTypes": false
     },
     "form": null,
@@ -9924,7 +9924,7 @@
     ],
     "ability": {
       "id": "poison_point",
-      "name": "Poison Point",
+      "name": "どくのトゲ",
       "affectsTypes": false
     },
     "form": null,
@@ -9940,7 +9940,7 @@
     ],
     "ability": {
       "id": "prankster",
-      "name": "Prankster",
+      "name": "いたずらごころ",
       "affectsTypes": false
     },
     "form": null,
@@ -9956,7 +9956,7 @@
     ],
     "ability": {
       "id": "prankster",
-      "name": "Prankster",
+      "name": "いたずらごころ",
       "affectsTypes": false
     },
     "form": null,
@@ -9971,7 +9971,7 @@
     ],
     "ability": {
       "id": "chlorophyll",
-      "name": "Chlorophyll",
+      "name": "ようりょくそ",
       "affectsTypes": false
     },
     "form": null,
@@ -9986,7 +9986,7 @@
     ],
     "ability": {
       "id": "chlorophyll",
-      "name": "Chlorophyll",
+      "name": "ようりょくそ",
       "affectsTypes": false
     },
     "form": null,
@@ -10002,7 +10002,7 @@
     ],
     "ability": {
       "id": "chlorophyll",
-      "name": "Chlorophyll",
+      "name": "ようりょくそ",
       "affectsTypes": false
     },
     "form": "Hisui",
@@ -10017,7 +10017,7 @@
     ],
     "ability": {
       "id": "reckless",
-      "name": "Reckless",
+      "name": "すてみ",
       "affectsTypes": false
     },
     "form": null,
@@ -10033,7 +10033,7 @@
     ],
     "ability": {
       "id": "intimidate",
-      "name": "Intimidate",
+      "name": "いかく",
       "affectsTypes": false
     },
     "form": null,
@@ -10049,7 +10049,7 @@
     ],
     "ability": {
       "id": "intimidate",
-      "name": "Intimidate",
+      "name": "いかく",
       "affectsTypes": false
     },
     "form": null,
@@ -10065,7 +10065,7 @@
     ],
     "ability": {
       "id": "intimidate",
-      "name": "Intimidate",
+      "name": "いかく",
       "affectsTypes": false
     },
     "form": null,
@@ -10080,7 +10080,7 @@
     ],
     "ability": {
       "id": "hustle",
-      "name": "Hustle",
+      "name": "はりきり",
       "affectsTypes": false
     },
     "form": null,
@@ -10095,7 +10095,7 @@
     ],
     "ability": {
       "id": "hustle",
-      "name": "Hustle",
+      "name": "はりきり",
       "affectsTypes": false
     },
     "form": "Galar",
@@ -10110,7 +10110,7 @@
     ],
     "ability": {
       "id": "sheer_force",
-      "name": "Sheer Force",
+      "name": "ちからずく",
       "affectsTypes": false
     },
     "form": null,
@@ -10125,7 +10125,7 @@
     ],
     "ability": {
       "id": "gorilla_tactics",
-      "name": "Gorilla Tactics",
+      "name": "ごりむちゅう",
       "affectsTypes": false
     },
     "form": "Galar",
@@ -10141,7 +10141,7 @@
     ],
     "ability": {
       "id": "zen_mode",
-      "name": "Zen Mode",
+      "name": "ダルマモード",
       "affectsTypes": false
     },
     "form": "Galar-Zen",
@@ -10157,7 +10157,7 @@
     ],
     "ability": {
       "id": "zen_mode",
-      "name": "Zen Mode",
+      "name": "ダルマモード",
       "affectsTypes": false
     },
     "form": "Zen",
@@ -10188,7 +10188,7 @@
     ],
     "ability": {
       "id": "sturdy",
-      "name": "Sturdy",
+      "name": "がんじょう",
       "affectsTypes": false
     },
     "form": null,
@@ -10204,7 +10204,7 @@
     ],
     "ability": {
       "id": "sturdy",
-      "name": "Sturdy",
+      "name": "がんじょう",
       "affectsTypes": false
     },
     "form": null,
@@ -10220,7 +10220,7 @@
     ],
     "ability": {
       "id": "shed_skin",
-      "name": "Shed Skin",
+      "name": "だっぴ",
       "affectsTypes": false
     },
     "form": null,
@@ -10236,7 +10236,7 @@
     ],
     "ability": {
       "id": "shed_skin",
-      "name": "Shed Skin",
+      "name": "だっぴ",
       "affectsTypes": false
     },
     "form": null,
@@ -10252,7 +10252,7 @@
     ],
     "ability": {
       "id": "wonder_skin",
-      "name": "Wonder Skin",
+      "name": "ミラクルスキン",
       "affectsTypes": false
     },
     "form": null,
@@ -10267,7 +10267,7 @@
     ],
     "ability": {
       "id": "mummy",
-      "name": "Mummy",
+      "name": "ミイラ",
       "affectsTypes": false
     },
     "form": null,
@@ -10283,7 +10283,7 @@
     ],
     "ability": {
       "id": "wandering_spirit",
-      "name": "Wandering Spirit",
+      "name": "さまようたましい",
       "affectsTypes": false
     },
     "form": "Galar",
@@ -10298,7 +10298,7 @@
     ],
     "ability": {
       "id": "mummy",
-      "name": "Mummy",
+      "name": "ミイラ",
       "affectsTypes": false
     },
     "form": null,
@@ -10346,7 +10346,7 @@
     ],
     "ability": {
       "id": "defeatist",
-      "name": "Defeatist",
+      "name": "よわき",
       "affectsTypes": false
     },
     "form": null,
@@ -10362,7 +10362,7 @@
     ],
     "ability": {
       "id": "defeatist",
-      "name": "Defeatist",
+      "name": "よわき",
       "affectsTypes": false
     },
     "form": null,
@@ -10377,7 +10377,7 @@
     ],
     "ability": {
       "id": "stench",
-      "name": "Stench",
+      "name": "あくしゅう",
       "affectsTypes": false
     },
     "form": null,
@@ -10392,7 +10392,7 @@
     ],
     "ability": {
       "id": "stench",
-      "name": "Stench",
+      "name": "あくしゅう",
       "affectsTypes": false
     },
     "form": null,
@@ -10407,7 +10407,7 @@
     ],
     "ability": {
       "id": "illusion",
-      "name": "Illusion",
+      "name": "イリュージョン",
       "affectsTypes": false
     },
     "form": null,
@@ -10423,7 +10423,7 @@
     ],
     "ability": {
       "id": "illusion",
-      "name": "Illusion",
+      "name": "イリュージョン",
       "affectsTypes": false
     },
     "form": "Hisui",
@@ -10438,7 +10438,7 @@
     ],
     "ability": {
       "id": "illusion",
-      "name": "Illusion",
+      "name": "イリュージョン",
       "affectsTypes": false
     },
     "form": null,
@@ -10454,7 +10454,7 @@
     ],
     "ability": {
       "id": "illusion",
-      "name": "Illusion",
+      "name": "イリュージョン",
       "affectsTypes": false
     },
     "form": "Hisui",
@@ -10469,7 +10469,7 @@
     ],
     "ability": {
       "id": "cute_charm",
-      "name": "Cute Charm",
+      "name": "メロメロボディ",
       "affectsTypes": false
     },
     "form": null,
@@ -10484,7 +10484,7 @@
     ],
     "ability": {
       "id": "cute_charm",
-      "name": "Cute Charm",
+      "name": "メロメロボディ",
       "affectsTypes": false
     },
     "form": null,
@@ -10499,7 +10499,7 @@
     ],
     "ability": {
       "id": "frisk",
-      "name": "Frisk",
+      "name": "おみとおし",
       "affectsTypes": false
     },
     "form": null,
@@ -10514,7 +10514,7 @@
     ],
     "ability": {
       "id": "frisk",
-      "name": "Frisk",
+      "name": "おみとおし",
       "affectsTypes": false
     },
     "form": null,
@@ -10529,7 +10529,7 @@
     ],
     "ability": {
       "id": "frisk",
-      "name": "Frisk",
+      "name": "おみとおし",
       "affectsTypes": false
     },
     "form": null,
@@ -10544,7 +10544,7 @@
     ],
     "ability": {
       "id": "overcoat",
-      "name": "Overcoat",
+      "name": "ぼうじん",
       "affectsTypes": false
     },
     "form": null,
@@ -10559,7 +10559,7 @@
     ],
     "ability": {
       "id": "overcoat",
-      "name": "Overcoat",
+      "name": "ぼうじん",
       "affectsTypes": false
     },
     "form": null,
@@ -10574,7 +10574,7 @@
     ],
     "ability": {
       "id": "overcoat",
-      "name": "Overcoat",
+      "name": "ぼうじん",
       "affectsTypes": false
     },
     "form": null,
@@ -10590,7 +10590,7 @@
     ],
     "ability": {
       "id": "keen_eye",
-      "name": "Keen Eye",
+      "name": "するどいめ",
       "affectsTypes": false
     },
     "form": null,
@@ -10606,7 +10606,7 @@
     ],
     "ability": {
       "id": "keen_eye",
-      "name": "Keen Eye",
+      "name": "するどいめ",
       "affectsTypes": false
     },
     "form": null,
@@ -10621,7 +10621,7 @@
     ],
     "ability": {
       "id": "ice_body",
-      "name": "Ice Body",
+      "name": "アイスボディ",
       "affectsTypes": false
     },
     "form": null,
@@ -10636,7 +10636,7 @@
     ],
     "ability": {
       "id": "ice_body",
-      "name": "Ice Body",
+      "name": "アイスボディ",
       "affectsTypes": false
     },
     "form": null,
@@ -10651,7 +10651,7 @@
     ],
     "ability": {
       "id": "ice_body",
-      "name": "Ice Body",
+      "name": "アイスボディ",
       "affectsTypes": false
     },
     "form": null,
@@ -10714,7 +10714,7 @@
     ],
     "ability": {
       "id": "swarm",
-      "name": "Swarm",
+      "name": "むしのしらせ",
       "affectsTypes": false
     },
     "form": null,
@@ -10730,7 +10730,7 @@
     ],
     "ability": {
       "id": "swarm",
-      "name": "Swarm",
+      "name": "むしのしらせ",
       "affectsTypes": false
     },
     "form": null,
@@ -10746,7 +10746,7 @@
     ],
     "ability": {
       "id": "effect_spore",
-      "name": "Effect Spore",
+      "name": "ほうし",
       "affectsTypes": false
     },
     "form": null,
@@ -10762,7 +10762,7 @@
     ],
     "ability": {
       "id": "effect_spore",
-      "name": "Effect Spore",
+      "name": "ほうし",
       "affectsTypes": false
     },
     "form": null,
@@ -10809,7 +10809,7 @@
     ],
     "ability": {
       "id": "healer",
-      "name": "Healer",
+      "name": "いやしのこころ",
       "affectsTypes": false
     },
     "form": null,
@@ -10825,7 +10825,7 @@
     ],
     "ability": {
       "id": "compound_eyes",
-      "name": "Compound Eyes",
+      "name": "ふくがん",
       "affectsTypes": false
     },
     "form": null,
@@ -10841,7 +10841,7 @@
     ],
     "ability": {
       "id": "compound_eyes",
-      "name": "Compound Eyes",
+      "name": "ふくがん",
       "affectsTypes": false
     },
     "form": null,
@@ -10857,7 +10857,7 @@
     ],
     "ability": {
       "id": "iron_barbs",
-      "name": "Iron Barbs",
+      "name": "てつのトゲ",
       "affectsTypes": false
     },
     "form": null,
@@ -10873,7 +10873,7 @@
     ],
     "ability": {
       "id": "iron_barbs",
-      "name": "Iron Barbs",
+      "name": "てつのトゲ",
       "affectsTypes": false
     },
     "form": null,
@@ -10888,7 +10888,7 @@
     ],
     "ability": {
       "id": "plus",
-      "name": "Plus",
+      "name": "プラス",
       "affectsTypes": false
     },
     "form": null,
@@ -10903,7 +10903,7 @@
     ],
     "ability": {
       "id": "plus",
-      "name": "Plus",
+      "name": "プラス",
       "affectsTypes": false
     },
     "form": null,
@@ -10918,7 +10918,7 @@
     ],
     "ability": {
       "id": "plus",
-      "name": "Plus",
+      "name": "プラス",
       "affectsTypes": false
     },
     "form": null,
@@ -10978,8 +10978,8 @@
     ],
     "ability": {
       "id": "eelevate",
-      "name": "Eelevate",
-      "affectsTypes": false
+      "name": "うなぎのぼり",
+      "affectsTypes": true
     },
     "form": "Mega",
     "sprite": "eelektross-mega",
@@ -10993,7 +10993,7 @@
     ],
     "ability": {
       "id": "telepathy",
-      "name": "Telepathy",
+      "name": "テレパシー",
       "affectsTypes": false
     },
     "form": null,
@@ -11008,7 +11008,7 @@
     ],
     "ability": {
       "id": "telepathy",
-      "name": "Telepathy",
+      "name": "テレパシー",
       "affectsTypes": false
     },
     "form": null,
@@ -11072,7 +11072,7 @@
     ],
     "ability": {
       "id": "infiltrator",
-      "name": "Infiltrator",
+      "name": "すりぬけ",
       "affectsTypes": false
     },
     "form": "Mega",
@@ -11087,7 +11087,7 @@
     ],
     "ability": {
       "id": "rivalry",
-      "name": "Rivalry",
+      "name": "とうそうしん",
       "affectsTypes": false
     },
     "form": null,
@@ -11102,7 +11102,7 @@
     ],
     "ability": {
       "id": "rivalry",
-      "name": "Rivalry",
+      "name": "とうそうしん",
       "affectsTypes": false
     },
     "form": null,
@@ -11117,7 +11117,7 @@
     ],
     "ability": {
       "id": "rivalry",
-      "name": "Rivalry",
+      "name": "とうそうしん",
       "affectsTypes": false
     },
     "form": null,
@@ -11132,7 +11132,7 @@
     ],
     "ability": {
       "id": "snow_cloak",
-      "name": "Snow Cloak",
+      "name": "ゆきがくれ",
       "affectsTypes": false
     },
     "form": null,
@@ -11147,7 +11147,7 @@
     ],
     "ability": {
       "id": "snow_cloak",
-      "name": "Snow Cloak",
+      "name": "ゆきがくれ",
       "affectsTypes": false
     },
     "form": null,
@@ -11177,7 +11177,7 @@
     ],
     "ability": {
       "id": "hydration",
-      "name": "Hydration",
+      "name": "うるおいボディ",
       "affectsTypes": false
     },
     "form": null,
@@ -11192,7 +11192,7 @@
     ],
     "ability": {
       "id": "hydration",
-      "name": "Hydration",
+      "name": "うるおいボディ",
       "affectsTypes": false
     },
     "form": null,
@@ -11208,7 +11208,7 @@
     ],
     "ability": {
       "id": "static",
-      "name": "Static",
+      "name": "せいでんき",
       "affectsTypes": false
     },
     "form": null,
@@ -11224,7 +11224,7 @@
     ],
     "ability": {
       "id": "mimicry",
-      "name": "Mimicry",
+      "name": "ぎたい",
       "affectsTypes": false
     },
     "form": "Galar",
@@ -11239,7 +11239,7 @@
     ],
     "ability": {
       "id": "inner_focus",
-      "name": "Inner Focus",
+      "name": "せいしんりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -11254,7 +11254,7 @@
     ],
     "ability": {
       "id": "inner_focus",
-      "name": "Inner Focus",
+      "name": "せいしんりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -11269,7 +11269,7 @@
     ],
     "ability": {
       "id": "rough_skin",
-      "name": "Rough Skin",
+      "name": "さめはだ",
       "affectsTypes": false
     },
     "form": null,
@@ -11285,7 +11285,7 @@
     ],
     "ability": {
       "id": "iron_fist",
-      "name": "Iron Fist",
+      "name": "てつのこぶし",
       "affectsTypes": false
     },
     "form": null,
@@ -11301,7 +11301,7 @@
     ],
     "ability": {
       "id": "iron_fist",
-      "name": "Iron Fist",
+      "name": "てつのこぶし",
       "affectsTypes": false
     },
     "form": null,
@@ -11317,7 +11317,7 @@
     ],
     "ability": {
       "id": "defiant",
-      "name": "Defiant",
+      "name": "まけんき",
       "affectsTypes": false
     },
     "form": null,
@@ -11333,7 +11333,7 @@
     ],
     "ability": {
       "id": "defiant",
-      "name": "Defiant",
+      "name": "まけんき",
       "affectsTypes": false
     },
     "form": null,
@@ -11364,7 +11364,7 @@
     ],
     "ability": {
       "id": "keen_eye",
-      "name": "Keen Eye",
+      "name": "するどいめ",
       "affectsTypes": false
     },
     "form": null,
@@ -11380,7 +11380,7 @@
     ],
     "ability": {
       "id": "keen_eye",
-      "name": "Keen Eye",
+      "name": "するどいめ",
       "affectsTypes": false
     },
     "form": null,
@@ -11396,7 +11396,7 @@
     ],
     "ability": {
       "id": "keen_eye",
-      "name": "Keen Eye",
+      "name": "するどいめ",
       "affectsTypes": false
     },
     "form": "Hisui",
@@ -11412,7 +11412,7 @@
     ],
     "ability": {
       "id": "big_pecks",
-      "name": "Big Pecks",
+      "name": "はとむね",
       "affectsTypes": false
     },
     "form": null,
@@ -11428,7 +11428,7 @@
     ],
     "ability": {
       "id": "big_pecks",
-      "name": "Big Pecks",
+      "name": "はとむね",
       "affectsTypes": false
     },
     "form": null,
@@ -11459,7 +11459,7 @@
     ],
     "ability": {
       "id": "swarm",
-      "name": "Swarm",
+      "name": "むしのしらせ",
       "affectsTypes": false
     },
     "form": null,
@@ -11475,7 +11475,7 @@
     ],
     "ability": {
       "id": "hustle",
-      "name": "Hustle",
+      "name": "はりきり",
       "affectsTypes": false
     },
     "form": null,
@@ -11491,7 +11491,7 @@
     ],
     "ability": {
       "id": "hustle",
-      "name": "Hustle",
+      "name": "はりきり",
       "affectsTypes": false
     },
     "form": null,
@@ -11523,7 +11523,7 @@
     ],
     "ability": {
       "id": "flame_body",
-      "name": "Flame Body",
+      "name": "ほのおのからだ",
       "affectsTypes": false
     },
     "form": null,
@@ -11539,7 +11539,7 @@
     ],
     "ability": {
       "id": "flame_body",
-      "name": "Flame Body",
+      "name": "ほのおのからだ",
       "affectsTypes": false
     },
     "form": null,
@@ -11555,7 +11555,7 @@
     ],
     "ability": {
       "id": "justified",
-      "name": "Justified",
+      "name": "せいぎのこころ",
       "affectsTypes": false
     },
     "form": null,
@@ -11571,7 +11571,7 @@
     ],
     "ability": {
       "id": "justified",
-      "name": "Justified",
+      "name": "せいぎのこころ",
       "affectsTypes": false
     },
     "form": null,
@@ -11587,7 +11587,7 @@
     ],
     "ability": {
       "id": "justified",
-      "name": "Justified",
+      "name": "せいぎのこころ",
       "affectsTypes": false
     },
     "form": null,
@@ -11602,7 +11602,7 @@
     ],
     "ability": {
       "id": "prankster",
-      "name": "Prankster",
+      "name": "いたずらごころ",
       "affectsTypes": false
     },
     "form": null,
@@ -11618,7 +11618,7 @@
     ],
     "ability": {
       "id": "prankster",
-      "name": "Prankster",
+      "name": "いたずらごころ",
       "affectsTypes": false
     },
     "form": null,
@@ -11650,7 +11650,7 @@
     ],
     "ability": {
       "id": "turboblaze",
-      "name": "Turboblaze",
+      "name": "ターボブレイズ",
       "affectsTypes": false
     },
     "form": null,
@@ -11666,7 +11666,7 @@
     ],
     "ability": {
       "id": "teravolt",
-      "name": "Teravolt",
+      "name": "テラボルテージ",
       "affectsTypes": false
     },
     "form": null,
@@ -11682,7 +11682,7 @@
     ],
     "ability": {
       "id": "sand_force",
-      "name": "Sand Force",
+      "name": "すなのちから",
       "affectsTypes": false
     },
     "form": null,
@@ -11698,7 +11698,7 @@
     ],
     "ability": {
       "id": "pressure",
-      "name": "Pressure",
+      "name": "プレッシャー",
       "affectsTypes": false
     },
     "form": null,
@@ -11714,7 +11714,7 @@
     ],
     "ability": {
       "id": "justified",
-      "name": "Justified",
+      "name": "せいぎのこころ",
       "affectsTypes": false
     },
     "form": null,
@@ -11730,7 +11730,7 @@
     ],
     "ability": {
       "id": "serene_grace",
-      "name": "Serene Grace",
+      "name": "てんのめぐみ",
       "affectsTypes": false
     },
     "form": null,
@@ -11746,7 +11746,7 @@
     ],
     "ability": {
       "id": "serene_grace",
-      "name": "Serene Grace",
+      "name": "てんのめぐみ",
       "affectsTypes": false
     },
     "form": "Pirouette",
@@ -11762,7 +11762,7 @@
     ],
     "ability": {
       "id": "download",
-      "name": "Download",
+      "name": "ダウンロード",
       "affectsTypes": false
     },
     "form": null,
@@ -11777,7 +11777,7 @@
     ],
     "ability": {
       "id": "overgrow",
-      "name": "Overgrow",
+      "name": "しんりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -11792,7 +11792,7 @@
     ],
     "ability": {
       "id": "overgrow",
-      "name": "Overgrow",
+      "name": "しんりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -11808,7 +11808,7 @@
     ],
     "ability": {
       "id": "overgrow",
-      "name": "Overgrow",
+      "name": "しんりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -11823,7 +11823,7 @@
     ],
     "ability": {
       "id": "blaze",
-      "name": "Blaze",
+      "name": "もうか",
       "affectsTypes": false
     },
     "form": null,
@@ -11838,7 +11838,7 @@
     ],
     "ability": {
       "id": "blaze",
-      "name": "Blaze",
+      "name": "もうか",
       "affectsTypes": false
     },
     "form": null,
@@ -11854,7 +11854,7 @@
     ],
     "ability": {
       "id": "blaze",
-      "name": "Blaze",
+      "name": "もうか",
       "affectsTypes": false
     },
     "form": null,
@@ -11885,7 +11885,7 @@
     ],
     "ability": {
       "id": "torrent",
-      "name": "Torrent",
+      "name": "げきりゅう",
       "affectsTypes": false
     },
     "form": null,
@@ -11900,7 +11900,7 @@
     ],
     "ability": {
       "id": "torrent",
-      "name": "Torrent",
+      "name": "げきりゅう",
       "affectsTypes": false
     },
     "form": null,
@@ -11916,7 +11916,7 @@
     ],
     "ability": {
       "id": "torrent",
-      "name": "Torrent",
+      "name": "げきりゅう",
       "affectsTypes": false
     },
     "form": null,
@@ -11931,7 +11931,7 @@
     ],
     "ability": {
       "id": "pickup",
-      "name": "Pickup",
+      "name": "ものひろい",
       "affectsTypes": false
     },
     "form": null,
@@ -11947,7 +11947,7 @@
     ],
     "ability": {
       "id": "pickup",
-      "name": "Pickup",
+      "name": "ものひろい",
       "affectsTypes": false
     },
     "form": null,
@@ -11963,7 +11963,7 @@
     ],
     "ability": {
       "id": "big_pecks",
-      "name": "Big Pecks",
+      "name": "はとむね",
       "affectsTypes": false
     },
     "form": null,
@@ -11979,7 +11979,7 @@
     ],
     "ability": {
       "id": "flame_body",
-      "name": "Flame Body",
+      "name": "ほのおのからだ",
       "affectsTypes": false
     },
     "form": null,
@@ -11995,7 +11995,7 @@
     ],
     "ability": {
       "id": "flame_body",
-      "name": "Flame Body",
+      "name": "ほのおのからだ",
       "affectsTypes": false
     },
     "form": null,
@@ -12010,7 +12010,7 @@
     ],
     "ability": {
       "id": "shield_dust",
-      "name": "Shield Dust",
+      "name": "りんぷん",
       "affectsTypes": false
     },
     "form": null,
@@ -12025,7 +12025,7 @@
     ],
     "ability": {
       "id": "shed_skin",
-      "name": "Shed Skin",
+      "name": "だっぴ",
       "affectsTypes": false
     },
     "form": null,
@@ -12041,7 +12041,7 @@
     ],
     "ability": {
       "id": "shield_dust",
-      "name": "Shield Dust",
+      "name": "りんぷん",
       "affectsTypes": false
     },
     "form": null,
@@ -12057,7 +12057,7 @@
     ],
     "ability": {
       "id": "rivalry",
-      "name": "Rivalry",
+      "name": "とうそうしん",
       "affectsTypes": false
     },
     "form": null,
@@ -12073,7 +12073,7 @@
     ],
     "ability": {
       "id": "rivalry",
-      "name": "Rivalry",
+      "name": "とうそうしん",
       "affectsTypes": false
     },
     "form": null,
@@ -12088,7 +12088,7 @@
     ],
     "ability": {
       "id": "flower_veil",
-      "name": "Flower Veil",
+      "name": "フラワーベール",
       "affectsTypes": false
     },
     "form": null,
@@ -12103,7 +12103,7 @@
     ],
     "ability": {
       "id": "flower_veil",
-      "name": "Flower Veil",
+      "name": "フラワーベール",
       "affectsTypes": false
     },
     "form": null,
@@ -12118,7 +12118,7 @@
     ],
     "ability": {
       "id": "flower_veil",
-      "name": "Flower Veil",
+      "name": "フラワーベール",
       "affectsTypes": false
     },
     "form": null,
@@ -12163,7 +12163,7 @@
     ],
     "ability": {
       "id": "iron_fist",
-      "name": "Iron Fist",
+      "name": "てつのこぶし",
       "affectsTypes": false
     },
     "form": null,
@@ -12179,7 +12179,7 @@
     ],
     "ability": {
       "id": "iron_fist",
-      "name": "Iron Fist",
+      "name": "てつのこぶし",
       "affectsTypes": false
     },
     "form": null,
@@ -12194,7 +12194,7 @@
     ],
     "ability": {
       "id": "fur_coat",
-      "name": "Fur Coat",
+      "name": "ファーコート",
       "affectsTypes": false
     },
     "form": null,
@@ -12209,7 +12209,7 @@
     ],
     "ability": {
       "id": "keen_eye",
-      "name": "Keen Eye",
+      "name": "するどいめ",
       "affectsTypes": false
     },
     "form": null,
@@ -12224,7 +12224,7 @@
     ],
     "ability": {
       "id": "keen_eye",
-      "name": "Keen Eye",
+      "name": "するどいめ",
       "affectsTypes": false
     },
     "form": null,
@@ -12240,7 +12240,7 @@
     ],
     "ability": {
       "id": "no_guard",
-      "name": "No Guard",
+      "name": "ノーガード",
       "affectsTypes": false
     },
     "form": null,
@@ -12256,7 +12256,7 @@
     ],
     "ability": {
       "id": "no_guard",
-      "name": "No Guard",
+      "name": "ノーガード",
       "affectsTypes": false
     },
     "form": null,
@@ -12272,7 +12272,7 @@
     ],
     "ability": {
       "id": "stance_change",
-      "name": "Stance Change",
+      "name": "バトルスイッチ",
       "affectsTypes": false
     },
     "form": null,
@@ -12287,7 +12287,7 @@
     ],
     "ability": {
       "id": "healer",
-      "name": "Healer",
+      "name": "いやしのこころ",
       "affectsTypes": false
     },
     "form": null,
@@ -12302,7 +12302,7 @@
     ],
     "ability": {
       "id": "healer",
-      "name": "Healer",
+      "name": "いやしのこころ",
       "affectsTypes": false
     },
     "form": null,
@@ -12317,7 +12317,7 @@
     ],
     "ability": {
       "id": "sweet_veil",
-      "name": "Sweet Veil",
+      "name": "スイートベール",
       "affectsTypes": false
     },
     "form": null,
@@ -12332,7 +12332,7 @@
     ],
     "ability": {
       "id": "sweet_veil",
-      "name": "Sweet Veil",
+      "name": "スイートベール",
       "affectsTypes": false
     },
     "form": null,
@@ -12348,7 +12348,7 @@
     ],
     "ability": {
       "id": "contrary",
-      "name": "Contrary",
+      "name": "あまのじゃく",
       "affectsTypes": false
     },
     "form": null,
@@ -12364,7 +12364,7 @@
     ],
     "ability": {
       "id": "contrary",
-      "name": "Contrary",
+      "name": "あまのじゃく",
       "affectsTypes": false
     },
     "form": null,
@@ -12380,7 +12380,7 @@
     ],
     "ability": {
       "id": "tough_claws",
-      "name": "Tough Claws",
+      "name": "かたいツメ",
       "affectsTypes": false
     },
     "form": null,
@@ -12396,7 +12396,7 @@
     ],
     "ability": {
       "id": "tough_claws",
-      "name": "Tough Claws",
+      "name": "かたいツメ",
       "affectsTypes": false
     },
     "form": null,
@@ -12412,7 +12412,7 @@
     ],
     "ability": {
       "id": "tough_claws",
-      "name": "Tough Claws",
+      "name": "かたいツメ",
       "affectsTypes": false
     },
     "form": "Mega",
@@ -12428,7 +12428,7 @@
     ],
     "ability": {
       "id": "poison_point",
-      "name": "Poison Point",
+      "name": "どくのトゲ",
       "affectsTypes": false
     },
     "form": null,
@@ -12444,7 +12444,7 @@
     ],
     "ability": {
       "id": "poison_point",
-      "name": "Poison Point",
+      "name": "どくのトゲ",
       "affectsTypes": false
     },
     "form": null,
@@ -12459,7 +12459,7 @@
     ],
     "ability": {
       "id": "mega_launcher",
-      "name": "Mega Launcher",
+      "name": "メガランチャー",
       "affectsTypes": false
     },
     "form": null,
@@ -12474,7 +12474,7 @@
     ],
     "ability": {
       "id": "mega_launcher",
-      "name": "Mega Launcher",
+      "name": "メガランチャー",
       "affectsTypes": false
     },
     "form": null,
@@ -12522,7 +12522,7 @@
     ],
     "ability": {
       "id": "strong_jaw",
-      "name": "Strong Jaw",
+      "name": "がんじょうあご",
       "affectsTypes": false
     },
     "form": null,
@@ -12538,7 +12538,7 @@
     ],
     "ability": {
       "id": "strong_jaw",
-      "name": "Strong Jaw",
+      "name": "がんじょうあご",
       "affectsTypes": false
     },
     "form": null,
@@ -12554,7 +12554,7 @@
     ],
     "ability": {
       "id": "refrigerate",
-      "name": "Refrigerate",
+      "name": "フリーズスキン",
       "affectsTypes": false
     },
     "form": null,
@@ -12570,7 +12570,7 @@
     ],
     "ability": {
       "id": "refrigerate",
-      "name": "Refrigerate",
+      "name": "フリーズスキン",
       "affectsTypes": false
     },
     "form": null,
@@ -12585,7 +12585,7 @@
     ],
     "ability": {
       "id": "cute_charm",
-      "name": "Cute Charm",
+      "name": "メロメロボディ",
       "affectsTypes": false
     },
     "form": null,
@@ -12601,7 +12601,7 @@
     ],
     "ability": {
       "id": "limber",
-      "name": "Limber",
+      "name": "じゅうなん",
       "affectsTypes": false
     },
     "form": null,
@@ -12617,7 +12617,7 @@
     ],
     "ability": {
       "id": "cheek_pouch",
-      "name": "Cheek Pouch",
+      "name": "ほおぶくろ",
       "affectsTypes": false
     },
     "form": null,
@@ -12633,7 +12633,7 @@
     ],
     "ability": {
       "id": "clear_body",
-      "name": "Clear Body",
+      "name": "クリアボディ",
       "affectsTypes": false
     },
     "form": null,
@@ -12726,7 +12726,7 @@
     ],
     "ability": {
       "id": "prankster",
-      "name": "Prankster",
+      "name": "いたずらごころ",
       "affectsTypes": false
     },
     "form": null,
@@ -12742,7 +12742,7 @@
     ],
     "ability": {
       "id": "natural_cure",
-      "name": "Natural Cure",
+      "name": "しぜんかいふく",
       "affectsTypes": false
     },
     "form": null,
@@ -12758,7 +12758,7 @@
     ],
     "ability": {
       "id": "natural_cure",
-      "name": "Natural Cure",
+      "name": "しぜんかいふく",
       "affectsTypes": false
     },
     "form": null,
@@ -12774,7 +12774,7 @@
     ],
     "ability": {
       "id": "pickup",
-      "name": "Pickup",
+      "name": "ものひろい",
       "affectsTypes": false
     },
     "form": null,
@@ -12790,7 +12790,7 @@
     ],
     "ability": {
       "id": "pickup",
-      "name": "Pickup",
+      "name": "ものひろい",
       "affectsTypes": false
     },
     "form": null,
@@ -12805,7 +12805,7 @@
     ],
     "ability": {
       "id": "own_tempo",
-      "name": "Own Tempo",
+      "name": "マイペース",
       "affectsTypes": false
     },
     "form": null,
@@ -12820,7 +12820,7 @@
     ],
     "ability": {
       "id": "own_tempo",
-      "name": "Own Tempo",
+      "name": "マイペース",
       "affectsTypes": false
     },
     "form": null,
@@ -12836,7 +12836,7 @@
     ],
     "ability": {
       "id": "strong_jaw",
-      "name": "Strong Jaw",
+      "name": "がんじょうあご",
       "affectsTypes": false
     },
     "form": "Hisui",
@@ -12852,7 +12852,7 @@
     ],
     "ability": {
       "id": "frisk",
-      "name": "Frisk",
+      "name": "おみとおし",
       "affectsTypes": false
     },
     "form": null,
@@ -12868,7 +12868,7 @@
     ],
     "ability": {
       "id": "frisk",
-      "name": "Frisk",
+      "name": "おみとおし",
       "affectsTypes": false
     },
     "form": null,
@@ -12883,7 +12883,7 @@
     ],
     "ability": {
       "id": "fairy_aura",
-      "name": "Fairy Aura",
+      "name": "フェアリーオーラ",
       "affectsTypes": false
     },
     "form": null,
@@ -12899,7 +12899,7 @@
     ],
     "ability": {
       "id": "dark_aura",
-      "name": "Dark Aura",
+      "name": "ダークオーラ",
       "affectsTypes": false
     },
     "form": null,
@@ -12915,7 +12915,7 @@
     ],
     "ability": {
       "id": "aura_break",
-      "name": "Aura Break",
+      "name": "オーラブレイク",
       "affectsTypes": false
     },
     "form": null,
@@ -12931,7 +12931,7 @@
     ],
     "ability": {
       "id": "clear_body",
-      "name": "Clear Body",
+      "name": "クリアボディ",
       "affectsTypes": false
     },
     "form": null,
@@ -12947,7 +12947,7 @@
     ],
     "ability": {
       "id": "magician",
-      "name": "Magician",
+      "name": "マジシャン",
       "affectsTypes": false
     },
     "form": null,
@@ -12963,7 +12963,7 @@
     ],
     "ability": {
       "id": "magician",
-      "name": "Magician",
+      "name": "マジシャン",
       "affectsTypes": false
     },
     "form": "Unbound",
@@ -12995,7 +12995,7 @@
     ],
     "ability": {
       "id": "overgrow",
-      "name": "Overgrow",
+      "name": "しんりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -13011,7 +13011,7 @@
     ],
     "ability": {
       "id": "overgrow",
-      "name": "Overgrow",
+      "name": "しんりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -13027,7 +13027,7 @@
     ],
     "ability": {
       "id": "overgrow",
-      "name": "Overgrow",
+      "name": "しんりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -13043,7 +13043,7 @@
     ],
     "ability": {
       "id": "overgrow",
-      "name": "Overgrow",
+      "name": "しんりょく",
       "affectsTypes": false
     },
     "form": "Hisui",
@@ -13058,7 +13058,7 @@
     ],
     "ability": {
       "id": "blaze",
-      "name": "Blaze",
+      "name": "もうか",
       "affectsTypes": false
     },
     "form": null,
@@ -13073,7 +13073,7 @@
     ],
     "ability": {
       "id": "blaze",
-      "name": "Blaze",
+      "name": "もうか",
       "affectsTypes": false
     },
     "form": null,
@@ -13089,7 +13089,7 @@
     ],
     "ability": {
       "id": "blaze",
-      "name": "Blaze",
+      "name": "もうか",
       "affectsTypes": false
     },
     "form": null,
@@ -13104,7 +13104,7 @@
     ],
     "ability": {
       "id": "torrent",
-      "name": "Torrent",
+      "name": "げきりゅう",
       "affectsTypes": false
     },
     "form": null,
@@ -13119,7 +13119,7 @@
     ],
     "ability": {
       "id": "torrent",
-      "name": "Torrent",
+      "name": "げきりゅう",
       "affectsTypes": false
     },
     "form": null,
@@ -13135,7 +13135,7 @@
     ],
     "ability": {
       "id": "torrent",
-      "name": "Torrent",
+      "name": "げきりゅう",
       "affectsTypes": false
     },
     "form": null,
@@ -13151,7 +13151,7 @@
     ],
     "ability": {
       "id": "keen_eye",
-      "name": "Keen Eye",
+      "name": "するどいめ",
       "affectsTypes": false
     },
     "form": null,
@@ -13167,7 +13167,7 @@
     ],
     "ability": {
       "id": "keen_eye",
-      "name": "Keen Eye",
+      "name": "するどいめ",
       "affectsTypes": false
     },
     "form": null,
@@ -13183,7 +13183,7 @@
     ],
     "ability": {
       "id": "keen_eye",
-      "name": "Keen Eye",
+      "name": "するどいめ",
       "affectsTypes": false
     },
     "form": null,
@@ -13198,7 +13198,7 @@
     ],
     "ability": {
       "id": "stakeout",
-      "name": "Stakeout",
+      "name": "はりこみ",
       "affectsTypes": false
     },
     "form": null,
@@ -13213,7 +13213,7 @@
     ],
     "ability": {
       "id": "stakeout",
-      "name": "Stakeout",
+      "name": "はりこみ",
       "affectsTypes": false
     },
     "form": null,
@@ -13228,7 +13228,7 @@
     ],
     "ability": {
       "id": "swarm",
-      "name": "Swarm",
+      "name": "むしのしらせ",
       "affectsTypes": false
     },
     "form": null,
@@ -13244,7 +13244,7 @@
     ],
     "ability": {
       "id": "battery",
-      "name": "Battery",
+      "name": "バッテリー",
       "affectsTypes": false
     },
     "form": null,
@@ -13275,7 +13275,7 @@
     ],
     "ability": {
       "id": "hyper_cutter",
-      "name": "Hyper Cutter",
+      "name": "かいりきバサミ",
       "affectsTypes": false
     },
     "form": null,
@@ -13291,7 +13291,7 @@
     ],
     "ability": {
       "id": "hyper_cutter",
-      "name": "Hyper Cutter",
+      "name": "かいりきバサミ",
       "affectsTypes": false
     },
     "form": null,
@@ -13307,7 +13307,7 @@
     ],
     "ability": {
       "id": "dancer",
-      "name": "Dancer",
+      "name": "おどりこ",
       "affectsTypes": false
     },
     "form": null,
@@ -13323,7 +13323,7 @@
     ],
     "ability": {
       "id": "dancer",
-      "name": "Dancer",
+      "name": "おどりこ",
       "affectsTypes": false
     },
     "form": "Pa'u",
@@ -13339,7 +13339,7 @@
     ],
     "ability": {
       "id": "dancer",
-      "name": "Dancer",
+      "name": "おどりこ",
       "affectsTypes": false
     },
     "form": "Pom-Pom",
@@ -13355,7 +13355,7 @@
     ],
     "ability": {
       "id": "dancer",
-      "name": "Dancer",
+      "name": "おどりこ",
       "affectsTypes": false
     },
     "form": "Sensu",
@@ -13371,7 +13371,7 @@
     ],
     "ability": {
       "id": "honey_gather",
-      "name": "Honey Gather",
+      "name": "みつあつめ",
       "affectsTypes": false
     },
     "form": null,
@@ -13387,7 +13387,7 @@
     ],
     "ability": {
       "id": "honey_gather",
-      "name": "Honey Gather",
+      "name": "みつあつめ",
       "affectsTypes": false
     },
     "form": null,
@@ -13402,7 +13402,7 @@
     ],
     "ability": {
       "id": "keen_eye",
-      "name": "Keen Eye",
+      "name": "するどいめ",
       "affectsTypes": false
     },
     "form": null,
@@ -13417,7 +13417,7 @@
     ],
     "ability": {
       "id": "keen_eye",
-      "name": "Keen Eye",
+      "name": "するどいめ",
       "affectsTypes": false
     },
     "form": null,
@@ -13432,7 +13432,7 @@
     ],
     "ability": {
       "id": "schooling",
-      "name": "Schooling",
+      "name": "ぎょぐん",
       "affectsTypes": false
     },
     "form": null,
@@ -13448,7 +13448,7 @@
     ],
     "ability": {
       "id": "merciless",
-      "name": "Merciless",
+      "name": "ひとでなし",
       "affectsTypes": false
     },
     "form": null,
@@ -13464,7 +13464,7 @@
     ],
     "ability": {
       "id": "merciless",
-      "name": "Merciless",
+      "name": "ひとでなし",
       "affectsTypes": false
     },
     "form": null,
@@ -13479,7 +13479,7 @@
     ],
     "ability": {
       "id": "own_tempo",
-      "name": "Own Tempo",
+      "name": "マイペース",
       "affectsTypes": false
     },
     "form": null,
@@ -13494,7 +13494,7 @@
     ],
     "ability": {
       "id": "own_tempo",
-      "name": "Own Tempo",
+      "name": "マイペース",
       "affectsTypes": false
     },
     "form": null,
@@ -13541,7 +13541,7 @@
     ],
     "ability": {
       "id": "leaf_guard",
-      "name": "Leaf Guard",
+      "name": "リーフガード",
       "affectsTypes": false
     },
     "form": null,
@@ -13556,7 +13556,7 @@
     ],
     "ability": {
       "id": "leaf_guard",
-      "name": "Leaf Guard",
+      "name": "リーフガード",
       "affectsTypes": false
     },
     "form": null,
@@ -13572,7 +13572,7 @@
     ],
     "ability": {
       "id": "illuminate",
-      "name": "Illuminate",
+      "name": "はっこう",
       "affectsTypes": false
     },
     "form": null,
@@ -13588,7 +13588,7 @@
     ],
     "ability": {
       "id": "illuminate",
-      "name": "Illuminate",
+      "name": "はっこう",
       "affectsTypes": false
     },
     "form": null,
@@ -13604,7 +13604,7 @@
     ],
     "ability": {
       "id": "corrosion",
-      "name": "Corrosion",
+      "name": "ふしょく",
       "affectsTypes": false
     },
     "form": null,
@@ -13620,7 +13620,7 @@
     ],
     "ability": {
       "id": "corrosion",
-      "name": "Corrosion",
+      "name": "ふしょく",
       "affectsTypes": false
     },
     "form": null,
@@ -13667,7 +13667,7 @@
     ],
     "ability": {
       "id": "leaf_guard",
-      "name": "Leaf Guard",
+      "name": "リーフガード",
       "affectsTypes": false
     },
     "form": null,
@@ -13682,7 +13682,7 @@
     ],
     "ability": {
       "id": "leaf_guard",
-      "name": "Leaf Guard",
+      "name": "リーフガード",
       "affectsTypes": false
     },
     "form": null,
@@ -13697,7 +13697,7 @@
     ],
     "ability": {
       "id": "leaf_guard",
-      "name": "Leaf Guard",
+      "name": "リーフガード",
       "affectsTypes": false
     },
     "form": null,
@@ -13712,7 +13712,7 @@
     ],
     "ability": {
       "id": "flower_veil",
-      "name": "Flower Veil",
+      "name": "フラワーベール",
       "affectsTypes": false
     },
     "form": null,
@@ -13728,7 +13728,7 @@
     ],
     "ability": {
       "id": "inner_focus",
-      "name": "Inner Focus",
+      "name": "せいしんりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -13743,7 +13743,7 @@
     ],
     "ability": {
       "id": "receiver",
-      "name": "Receiver",
+      "name": "レシーバー",
       "affectsTypes": false
     },
     "form": null,
@@ -13759,7 +13759,7 @@
     ],
     "ability": {
       "id": "wimp_out",
-      "name": "Wimp Out",
+      "name": "にげごし",
       "affectsTypes": false
     },
     "form": null,
@@ -13775,7 +13775,7 @@
     ],
     "ability": {
       "id": "emergency_exit",
-      "name": "Emergency Exit",
+      "name": "ききかいひ",
       "affectsTypes": false
     },
     "form": null,
@@ -13791,7 +13791,7 @@
     ],
     "ability": {
       "id": "emergency_exit",
-      "name": "Emergency Exit",
+      "name": "ききかいひ",
       "affectsTypes": false
     },
     "form": "Mega",
@@ -13807,7 +13807,7 @@
     ],
     "ability": {
       "id": "water_compaction",
-      "name": "Water Compaction",
+      "name": "みずがため",
       "affectsTypes": false
     },
     "form": null,
@@ -13823,7 +13823,7 @@
     ],
     "ability": {
       "id": "water_compaction",
-      "name": "Water Compaction",
+      "name": "みずがため",
       "affectsTypes": false
     },
     "form": null,
@@ -13838,7 +13838,7 @@
     ],
     "ability": {
       "id": "innards_out",
-      "name": "Innards Out",
+      "name": "とびだすなかみ",
       "affectsTypes": false
     },
     "form": null,
@@ -13853,7 +13853,7 @@
     ],
     "ability": {
       "id": "battle_armor",
-      "name": "Battle Armor",
+      "name": "カブトアーマー",
       "affectsTypes": false
     },
     "form": null,
@@ -13868,7 +13868,7 @@
     ],
     "ability": {
       "id": "rks_system",
-      "name": "RKS System",
+      "name": "ＡＲシステム",
       "affectsTypes": false
     },
     "form": null,
@@ -13883,7 +13883,7 @@
     ],
     "ability": {
       "id": "rks_system",
-      "name": "RKS System",
+      "name": "ＡＲシステム",
       "affectsTypes": false
     },
     "form": "Bug",
@@ -13898,7 +13898,7 @@
     ],
     "ability": {
       "id": "rks_system",
-      "name": "RKS System",
+      "name": "ＡＲシステム",
       "affectsTypes": false
     },
     "form": "Dark",
@@ -13913,7 +13913,7 @@
     ],
     "ability": {
       "id": "rks_system",
-      "name": "RKS System",
+      "name": "ＡＲシステム",
       "affectsTypes": false
     },
     "form": "Dragon",
@@ -13928,7 +13928,7 @@
     ],
     "ability": {
       "id": "rks_system",
-      "name": "RKS System",
+      "name": "ＡＲシステム",
       "affectsTypes": false
     },
     "form": "Electric",
@@ -13943,7 +13943,7 @@
     ],
     "ability": {
       "id": "rks_system",
-      "name": "RKS System",
+      "name": "ＡＲシステム",
       "affectsTypes": false
     },
     "form": "Fairy",
@@ -13958,7 +13958,7 @@
     ],
     "ability": {
       "id": "rks_system",
-      "name": "RKS System",
+      "name": "ＡＲシステム",
       "affectsTypes": false
     },
     "form": "Fighting",
@@ -13973,7 +13973,7 @@
     ],
     "ability": {
       "id": "rks_system",
-      "name": "RKS System",
+      "name": "ＡＲシステム",
       "affectsTypes": false
     },
     "form": "Fire",
@@ -13988,7 +13988,7 @@
     ],
     "ability": {
       "id": "rks_system",
-      "name": "RKS System",
+      "name": "ＡＲシステム",
       "affectsTypes": false
     },
     "form": "Flying",
@@ -14003,7 +14003,7 @@
     ],
     "ability": {
       "id": "rks_system",
-      "name": "RKS System",
+      "name": "ＡＲシステム",
       "affectsTypes": false
     },
     "form": "Ghost",
@@ -14018,7 +14018,7 @@
     ],
     "ability": {
       "id": "rks_system",
-      "name": "RKS System",
+      "name": "ＡＲシステム",
       "affectsTypes": false
     },
     "form": "Grass",
@@ -14033,7 +14033,7 @@
     ],
     "ability": {
       "id": "rks_system",
-      "name": "RKS System",
+      "name": "ＡＲシステム",
       "affectsTypes": false
     },
     "form": "Ground",
@@ -14048,7 +14048,7 @@
     ],
     "ability": {
       "id": "rks_system",
-      "name": "RKS System",
+      "name": "ＡＲシステム",
       "affectsTypes": false
     },
     "form": "Ice",
@@ -14063,7 +14063,7 @@
     ],
     "ability": {
       "id": "rks_system",
-      "name": "RKS System",
+      "name": "ＡＲシステム",
       "affectsTypes": false
     },
     "form": "Poison",
@@ -14078,7 +14078,7 @@
     ],
     "ability": {
       "id": "rks_system",
-      "name": "RKS System",
+      "name": "ＡＲシステム",
       "affectsTypes": false
     },
     "form": "Psychic",
@@ -14093,7 +14093,7 @@
     ],
     "ability": {
       "id": "rks_system",
-      "name": "RKS System",
+      "name": "ＡＲシステム",
       "affectsTypes": false
     },
     "form": "Rock",
@@ -14108,7 +14108,7 @@
     ],
     "ability": {
       "id": "rks_system",
-      "name": "RKS System",
+      "name": "ＡＲシステム",
       "affectsTypes": false
     },
     "form": "Steel",
@@ -14123,7 +14123,7 @@
     ],
     "ability": {
       "id": "rks_system",
-      "name": "RKS System",
+      "name": "ＡＲシステム",
       "affectsTypes": false
     },
     "form": "Water",
@@ -14139,7 +14139,7 @@
     ],
     "ability": {
       "id": "shields_down",
-      "name": "Shields Down",
+      "name": "リミットシールド",
       "affectsTypes": false
     },
     "form": null,
@@ -14154,7 +14154,7 @@
     ],
     "ability": {
       "id": "comatose",
-      "name": "Comatose",
+      "name": "ぜったいねむり",
       "affectsTypes": false
     },
     "form": null,
@@ -14170,7 +14170,7 @@
     ],
     "ability": {
       "id": "shell_armor",
-      "name": "Shell Armor",
+      "name": "シェルアーマー",
       "affectsTypes": false
     },
     "form": null,
@@ -14202,7 +14202,7 @@
     ],
     "ability": {
       "id": "sturdy",
-      "name": "Sturdy",
+      "name": "がんじょう",
       "affectsTypes": false
     },
     "form": "Totem",
@@ -14218,7 +14218,7 @@
     ],
     "ability": {
       "id": "disguise",
-      "name": "Disguise",
+      "name": "ばけのかわ",
       "affectsTypes": false
     },
     "form": null,
@@ -14234,7 +14234,7 @@
     ],
     "ability": {
       "id": "dazzling",
-      "name": "Dazzling",
+      "name": "ビビッドボディ",
       "affectsTypes": false
     },
     "form": null,
@@ -14266,7 +14266,7 @@
     ],
     "ability": {
       "id": "berserk",
-      "name": "Berserk",
+      "name": "ぎゃくじょう",
       "affectsTypes": false
     },
     "form": "Mega",
@@ -14282,7 +14282,7 @@
     ],
     "ability": {
       "id": "steelworker",
-      "name": "Steelworker",
+      "name": "はがねつかい",
       "affectsTypes": false
     },
     "form": null,
@@ -14297,7 +14297,7 @@
     ],
     "ability": {
       "id": "bulletproof",
-      "name": "Bulletproof",
+      "name": "ぼうだん",
       "affectsTypes": false
     },
     "form": null,
@@ -14313,7 +14313,7 @@
     ],
     "ability": {
       "id": "bulletproof",
-      "name": "Bulletproof",
+      "name": "ぼうだん",
       "affectsTypes": false
     },
     "form": null,
@@ -14329,7 +14329,7 @@
     ],
     "ability": {
       "id": "bulletproof",
-      "name": "Bulletproof",
+      "name": "ぼうだん",
       "affectsTypes": false
     },
     "form": null,
@@ -14345,7 +14345,7 @@
     ],
     "ability": {
       "id": "electric_surge",
-      "name": "Electric Surge",
+      "name": "エレキメイカー",
       "affectsTypes": false
     },
     "form": null,
@@ -14361,7 +14361,7 @@
     ],
     "ability": {
       "id": "psychic_surge",
-      "name": "Psychic Surge",
+      "name": "サイコメイカー",
       "affectsTypes": false
     },
     "form": null,
@@ -14377,7 +14377,7 @@
     ],
     "ability": {
       "id": "grassy_surge",
-      "name": "Grassy Surge",
+      "name": "グラスメイカー",
       "affectsTypes": false
     },
     "form": null,
@@ -14393,7 +14393,7 @@
     ],
     "ability": {
       "id": "misty_surge",
-      "name": "Misty Surge",
+      "name": "ミストメイカー",
       "affectsTypes": false
     },
     "form": null,
@@ -14408,7 +14408,7 @@
     ],
     "ability": {
       "id": "unaware",
-      "name": "Unaware",
+      "name": "てんねん",
       "affectsTypes": false
     },
     "form": null,
@@ -14423,7 +14423,7 @@
     ],
     "ability": {
       "id": "sturdy",
-      "name": "Sturdy",
+      "name": "がんじょう",
       "affectsTypes": false
     },
     "form": null,
@@ -14439,7 +14439,7 @@
     ],
     "ability": {
       "id": "full_metal_body",
-      "name": "Full Metal Body",
+      "name": "メタルプロテクト",
       "affectsTypes": false
     },
     "form": null,
@@ -14455,7 +14455,7 @@
     ],
     "ability": {
       "id": "shadow_shield",
-      "name": "Shadow Shield",
+      "name": "ファントムガード",
       "affectsTypes": false
     },
     "form": null,
@@ -14471,7 +14471,7 @@
     ],
     "ability": {
       "id": "beast_boost",
-      "name": "Beast Boost",
+      "name": "ビーストブースト",
       "affectsTypes": false
     },
     "form": null,
@@ -14487,7 +14487,7 @@
     ],
     "ability": {
       "id": "beast_boost",
-      "name": "Beast Boost",
+      "name": "ビーストブースト",
       "affectsTypes": false
     },
     "form": null,
@@ -14503,7 +14503,7 @@
     ],
     "ability": {
       "id": "beast_boost",
-      "name": "Beast Boost",
+      "name": "ビーストブースト",
       "affectsTypes": false
     },
     "form": null,
@@ -14518,7 +14518,7 @@
     ],
     "ability": {
       "id": "beast_boost",
-      "name": "Beast Boost",
+      "name": "ビーストブースト",
       "affectsTypes": false
     },
     "form": null,
@@ -14534,7 +14534,7 @@
     ],
     "ability": {
       "id": "beast_boost",
-      "name": "Beast Boost",
+      "name": "ビーストブースト",
       "affectsTypes": false
     },
     "form": null,
@@ -14550,7 +14550,7 @@
     ],
     "ability": {
       "id": "beast_boost",
-      "name": "Beast Boost",
+      "name": "ビーストブースト",
       "affectsTypes": false
     },
     "form": null,
@@ -14566,7 +14566,7 @@
     ],
     "ability": {
       "id": "beast_boost",
-      "name": "Beast Boost",
+      "name": "ビーストブースト",
       "affectsTypes": false
     },
     "form": null,
@@ -14629,7 +14629,7 @@
     ],
     "ability": {
       "id": "neuroforce",
-      "name": "Neuroforce",
+      "name": "ブレインフォース",
       "affectsTypes": false
     },
     "form": "Ultra",
@@ -14645,7 +14645,7 @@
     ],
     "ability": {
       "id": "soul_heart",
-      "name": "Soul-Heart",
+      "name": "ソウルハート",
       "affectsTypes": false
     },
     "form": null,
@@ -14661,7 +14661,7 @@
     ],
     "ability": {
       "id": "technician",
-      "name": "Technician",
+      "name": "テクニシャン",
       "affectsTypes": false
     },
     "form": null,
@@ -14676,7 +14676,7 @@
     ],
     "ability": {
       "id": "beast_boost",
-      "name": "Beast Boost",
+      "name": "ビーストブースト",
       "affectsTypes": false
     },
     "form": null,
@@ -14692,7 +14692,7 @@
     ],
     "ability": {
       "id": "beast_boost",
-      "name": "Beast Boost",
+      "name": "ビーストブースト",
       "affectsTypes": false
     },
     "form": null,
@@ -14708,7 +14708,7 @@
     ],
     "ability": {
       "id": "beast_boost",
-      "name": "Beast Boost",
+      "name": "ビーストブースト",
       "affectsTypes": false
     },
     "form": null,
@@ -14724,7 +14724,7 @@
     ],
     "ability": {
       "id": "beast_boost",
-      "name": "Beast Boost",
+      "name": "ビーストブースト",
       "affectsTypes": false
     },
     "form": null,
@@ -14754,7 +14754,7 @@
     ],
     "ability": {
       "id": "magnet_pull",
-      "name": "Magnet Pull",
+      "name": "じりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -14769,7 +14769,7 @@
     ],
     "ability": {
       "id": "iron_fist",
-      "name": "Iron Fist",
+      "name": "てつのこぶし",
       "affectsTypes": false
     },
     "form": null,
@@ -14784,7 +14784,7 @@
     ],
     "ability": {
       "id": "overgrow",
-      "name": "Overgrow",
+      "name": "しんりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -14799,7 +14799,7 @@
     ],
     "ability": {
       "id": "overgrow",
-      "name": "Overgrow",
+      "name": "しんりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -14814,7 +14814,7 @@
     ],
     "ability": {
       "id": "overgrow",
-      "name": "Overgrow",
+      "name": "しんりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -14829,7 +14829,7 @@
     ],
     "ability": {
       "id": "blaze",
-      "name": "Blaze",
+      "name": "もうか",
       "affectsTypes": false
     },
     "form": null,
@@ -14844,7 +14844,7 @@
     ],
     "ability": {
       "id": "blaze",
-      "name": "Blaze",
+      "name": "もうか",
       "affectsTypes": false
     },
     "form": null,
@@ -14859,7 +14859,7 @@
     ],
     "ability": {
       "id": "blaze",
-      "name": "Blaze",
+      "name": "もうか",
       "affectsTypes": false
     },
     "form": null,
@@ -14874,7 +14874,7 @@
     ],
     "ability": {
       "id": "torrent",
-      "name": "Torrent",
+      "name": "げきりゅう",
       "affectsTypes": false
     },
     "form": null,
@@ -14889,7 +14889,7 @@
     ],
     "ability": {
       "id": "torrent",
-      "name": "Torrent",
+      "name": "げきりゅう",
       "affectsTypes": false
     },
     "form": null,
@@ -14904,7 +14904,7 @@
     ],
     "ability": {
       "id": "torrent",
-      "name": "Torrent",
+      "name": "げきりゅう",
       "affectsTypes": false
     },
     "form": null,
@@ -14919,7 +14919,7 @@
     ],
     "ability": {
       "id": "cheek_pouch",
-      "name": "Cheek Pouch",
+      "name": "ほおぶくろ",
       "affectsTypes": false
     },
     "form": null,
@@ -14934,7 +14934,7 @@
     ],
     "ability": {
       "id": "cheek_pouch",
-      "name": "Cheek Pouch",
+      "name": "ほおぶくろ",
       "affectsTypes": false
     },
     "form": null,
@@ -14949,7 +14949,7 @@
     ],
     "ability": {
       "id": "keen_eye",
-      "name": "Keen Eye",
+      "name": "するどいめ",
       "affectsTypes": false
     },
     "form": null,
@@ -14964,7 +14964,7 @@
     ],
     "ability": {
       "id": "keen_eye",
-      "name": "Keen Eye",
+      "name": "するどいめ",
       "affectsTypes": false
     },
     "form": null,
@@ -14980,7 +14980,7 @@
     ],
     "ability": {
       "id": "pressure",
-      "name": "Pressure",
+      "name": "プレッシャー",
       "affectsTypes": false
     },
     "form": null,
@@ -14995,7 +14995,7 @@
     ],
     "ability": {
       "id": "swarm",
-      "name": "Swarm",
+      "name": "むしのしらせ",
       "affectsTypes": false
     },
     "form": null,
@@ -15011,7 +15011,7 @@
     ],
     "ability": {
       "id": "swarm",
-      "name": "Swarm",
+      "name": "むしのしらせ",
       "affectsTypes": false
     },
     "form": null,
@@ -15027,7 +15027,7 @@
     ],
     "ability": {
       "id": "swarm",
-      "name": "Swarm",
+      "name": "むしのしらせ",
       "affectsTypes": false
     },
     "form": null,
@@ -15042,7 +15042,7 @@
     ],
     "ability": {
       "id": "run_away",
-      "name": "Run Away",
+      "name": "にげあし",
       "affectsTypes": false
     },
     "form": null,
@@ -15057,7 +15057,7 @@
     ],
     "ability": {
       "id": "run_away",
-      "name": "Run Away",
+      "name": "にげあし",
       "affectsTypes": false
     },
     "form": null,
@@ -15072,7 +15072,7 @@
     ],
     "ability": {
       "id": "cotton_down",
-      "name": "Cotton Down",
+      "name": "わたげ",
       "affectsTypes": false
     },
     "form": null,
@@ -15087,7 +15087,7 @@
     ],
     "ability": {
       "id": "cotton_down",
-      "name": "Cotton Down",
+      "name": "わたげ",
       "affectsTypes": false
     },
     "form": null,
@@ -15132,7 +15132,7 @@
     ],
     "ability": {
       "id": "strong_jaw",
-      "name": "Strong Jaw",
+      "name": "がんじょうあご",
       "affectsTypes": false
     },
     "form": null,
@@ -15148,7 +15148,7 @@
     ],
     "ability": {
       "id": "strong_jaw",
-      "name": "Strong Jaw",
+      "name": "がんじょうあご",
       "affectsTypes": false
     },
     "form": null,
@@ -15163,7 +15163,7 @@
     ],
     "ability": {
       "id": "ball_fetch",
-      "name": "Ball Fetch",
+      "name": "たまひろい",
       "affectsTypes": false
     },
     "form": null,
@@ -15178,7 +15178,7 @@
     ],
     "ability": {
       "id": "strong_jaw",
-      "name": "Strong Jaw",
+      "name": "がんじょうあご",
       "affectsTypes": false
     },
     "form": null,
@@ -15241,7 +15241,7 @@
     ],
     "ability": {
       "id": "ripen",
-      "name": "Ripen",
+      "name": "じゅくせい",
       "affectsTypes": false
     },
     "form": null,
@@ -15257,7 +15257,7 @@
     ],
     "ability": {
       "id": "ripen",
-      "name": "Ripen",
+      "name": "じゅくせい",
       "affectsTypes": false
     },
     "form": null,
@@ -15288,7 +15288,7 @@
     ],
     "ability": {
       "id": "sand_spit",
-      "name": "Sand Spit",
+      "name": "すなはき",
       "affectsTypes": false
     },
     "form": null,
@@ -15303,7 +15303,7 @@
     ],
     "ability": {
       "id": "sand_spit",
-      "name": "Sand Spit",
+      "name": "すなはき",
       "affectsTypes": false
     },
     "form": null,
@@ -15319,7 +15319,7 @@
     ],
     "ability": {
       "id": "gulp_missile",
-      "name": "Gulp Missile",
+      "name": "うのミサイル",
       "affectsTypes": false
     },
     "form": null,
@@ -15334,7 +15334,7 @@
     ],
     "ability": {
       "id": "swift_swim",
-      "name": "Swift Swim",
+      "name": "すいすい",
       "affectsTypes": false
     },
     "form": null,
@@ -15349,7 +15349,7 @@
     ],
     "ability": {
       "id": "swift_swim",
-      "name": "Swift Swim",
+      "name": "すいすい",
       "affectsTypes": false
     },
     "form": null,
@@ -15365,7 +15365,7 @@
     ],
     "ability": {
       "id": "rattled",
-      "name": "Rattled",
+      "name": "びびり",
       "affectsTypes": false
     },
     "form": null,
@@ -15381,7 +15381,7 @@
     ],
     "ability": {
       "id": "punk_rock",
-      "name": "Punk Rock",
+      "name": "パンクロック",
       "affectsTypes": false
     },
     "form": null,
@@ -15428,7 +15428,7 @@
     ],
     "ability": {
       "id": "limber",
-      "name": "Limber",
+      "name": "じゅうなん",
       "affectsTypes": false
     },
     "form": null,
@@ -15443,7 +15443,7 @@
     ],
     "ability": {
       "id": "limber",
-      "name": "Limber",
+      "name": "じゅうなん",
       "affectsTypes": false
     },
     "form": null,
@@ -15458,7 +15458,7 @@
     ],
     "ability": {
       "id": "weak_armor",
-      "name": "Weak Armor",
+      "name": "くだけるよろい",
       "affectsTypes": false
     },
     "form": null,
@@ -15473,7 +15473,7 @@
     ],
     "ability": {
       "id": "weak_armor",
-      "name": "Weak Armor",
+      "name": "くだけるよろい",
       "affectsTypes": false
     },
     "form": null,
@@ -15488,7 +15488,7 @@
     ],
     "ability": {
       "id": "healer",
-      "name": "Healer",
+      "name": "いやしのこころ",
       "affectsTypes": false
     },
     "form": null,
@@ -15503,7 +15503,7 @@
     ],
     "ability": {
       "id": "healer",
-      "name": "Healer",
+      "name": "いやしのこころ",
       "affectsTypes": false
     },
     "form": null,
@@ -15519,7 +15519,7 @@
     ],
     "ability": {
       "id": "healer",
-      "name": "Healer",
+      "name": "いやしのこころ",
       "affectsTypes": false
     },
     "form": null,
@@ -15535,7 +15535,7 @@
     ],
     "ability": {
       "id": "prankster",
-      "name": "Prankster",
+      "name": "いたずらごころ",
       "affectsTypes": false
     },
     "form": null,
@@ -15551,7 +15551,7 @@
     ],
     "ability": {
       "id": "prankster",
-      "name": "Prankster",
+      "name": "いたずらごころ",
       "affectsTypes": false
     },
     "form": null,
@@ -15567,7 +15567,7 @@
     ],
     "ability": {
       "id": "prankster",
-      "name": "Prankster",
+      "name": "いたずらごころ",
       "affectsTypes": false
     },
     "form": null,
@@ -15583,7 +15583,7 @@
     ],
     "ability": {
       "id": "reckless",
-      "name": "Reckless",
+      "name": "すてみ",
       "affectsTypes": false
     },
     "form": null,
@@ -15598,7 +15598,7 @@
     ],
     "ability": {
       "id": "battle_armor",
-      "name": "Battle Armor",
+      "name": "カブトアーマー",
       "affectsTypes": false
     },
     "form": null,
@@ -15613,7 +15613,7 @@
     ],
     "ability": {
       "id": "weak_armor",
-      "name": "Weak Armor",
+      "name": "くだけるよろい",
       "affectsTypes": false
     },
     "form": null,
@@ -15628,7 +15628,7 @@
     ],
     "ability": {
       "id": "steadfast",
-      "name": "Steadfast",
+      "name": "ふくつのこころ",
       "affectsTypes": false
     },
     "form": null,
@@ -15644,7 +15644,7 @@
     ],
     "ability": {
       "id": "tangled_feet",
-      "name": "Tangled Feet",
+      "name": "ちどりあし",
       "affectsTypes": false
     },
     "form": null,
@@ -15660,7 +15660,7 @@
     ],
     "ability": {
       "id": "wandering_spirit",
-      "name": "Wandering Spirit",
+      "name": "さまようたましい",
       "affectsTypes": false
     },
     "form": null,
@@ -15675,7 +15675,7 @@
     ],
     "ability": {
       "id": "sweet_veil",
-      "name": "Sweet Veil",
+      "name": "スイートベール",
       "affectsTypes": false
     },
     "form": null,
@@ -15690,7 +15690,7 @@
     ],
     "ability": {
       "id": "sweet_veil",
-      "name": "Sweet Veil",
+      "name": "スイートベール",
       "affectsTypes": false
     },
     "form": null,
@@ -15705,7 +15705,7 @@
     ],
     "ability": {
       "id": "battle_armor",
-      "name": "Battle Armor",
+      "name": "カブトアーマー",
       "affectsTypes": false
     },
     "form": null,
@@ -15736,7 +15736,7 @@
     ],
     "ability": {
       "id": "shield_dust",
-      "name": "Shield Dust",
+      "name": "りんぷん",
       "affectsTypes": false
     },
     "form": null,
@@ -15752,7 +15752,7 @@
     ],
     "ability": {
       "id": "shield_dust",
-      "name": "Shield Dust",
+      "name": "りんぷん",
       "affectsTypes": false
     },
     "form": null,
@@ -15767,7 +15767,7 @@
     ],
     "ability": {
       "id": "power_spot",
-      "name": "Power Spot",
+      "name": "パワースポット",
       "affectsTypes": false
     },
     "form": null,
@@ -15782,7 +15782,7 @@
     ],
     "ability": {
       "id": "ice_face",
-      "name": "Ice Face",
+      "name": "アイスフェイス",
       "affectsTypes": false
     },
     "form": null,
@@ -15798,7 +15798,7 @@
     ],
     "ability": {
       "id": "inner_focus",
-      "name": "Inner Focus",
+      "name": "せいしんりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -15814,7 +15814,7 @@
     ],
     "ability": {
       "id": "hunger_switch",
-      "name": "Hunger Switch",
+      "name": "はらぺこスイッチ",
       "affectsTypes": false
     },
     "form": null,
@@ -15829,7 +15829,7 @@
     ],
     "ability": {
       "id": "sheer_force",
-      "name": "Sheer Force",
+      "name": "ちからずく",
       "affectsTypes": false
     },
     "form": null,
@@ -15844,7 +15844,7 @@
     ],
     "ability": {
       "id": "sheer_force",
-      "name": "Sheer Force",
+      "name": "ちからずく",
       "affectsTypes": false
     },
     "form": null,
@@ -15924,7 +15924,7 @@
     ],
     "ability": {
       "id": "light_metal",
-      "name": "Light Metal",
+      "name": "ライトメタル",
       "affectsTypes": false
     },
     "form": null,
@@ -15940,7 +15940,7 @@
     ],
     "ability": {
       "id": "clear_body",
-      "name": "Clear Body",
+      "name": "クリアボディ",
       "affectsTypes": false
     },
     "form": null,
@@ -15956,7 +15956,7 @@
     ],
     "ability": {
       "id": "clear_body",
-      "name": "Clear Body",
+      "name": "クリアボディ",
       "affectsTypes": false
     },
     "form": null,
@@ -15972,7 +15972,7 @@
     ],
     "ability": {
       "id": "clear_body",
-      "name": "Clear Body",
+      "name": "クリアボディ",
       "affectsTypes": false
     },
     "form": null,
@@ -15987,7 +15987,7 @@
     ],
     "ability": {
       "id": "intrepid_sword",
-      "name": "Intrepid Sword",
+      "name": "ふとうのけん",
       "affectsTypes": false
     },
     "form": null,
@@ -16003,7 +16003,7 @@
     ],
     "ability": {
       "id": "intrepid_sword",
-      "name": "Intrepid Sword",
+      "name": "ふとうのけん",
       "affectsTypes": false
     },
     "form": "Crowned",
@@ -16018,7 +16018,7 @@
     ],
     "ability": {
       "id": "dauntless_shield",
-      "name": "Dauntless Shield",
+      "name": "ふくつのたて",
       "affectsTypes": false
     },
     "form": null,
@@ -16034,7 +16034,7 @@
     ],
     "ability": {
       "id": "dauntless_shield",
-      "name": "Dauntless Shield",
+      "name": "ふくつのたて",
       "affectsTypes": false
     },
     "form": "Crowned",
@@ -16050,7 +16050,7 @@
     ],
     "ability": {
       "id": "pressure",
-      "name": "Pressure",
+      "name": "プレッシャー",
       "affectsTypes": false
     },
     "form": null,
@@ -16065,7 +16065,7 @@
     ],
     "ability": {
       "id": "inner_focus",
-      "name": "Inner Focus",
+      "name": "せいしんりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -16081,7 +16081,7 @@
     ],
     "ability": {
       "id": "unseen_fist",
-      "name": "Unseen Fist",
+      "name": "ふかしのこぶし",
       "affectsTypes": false
     },
     "form": null,
@@ -16097,7 +16097,7 @@
     ],
     "ability": {
       "id": "unseen_fist",
-      "name": "Unseen Fist",
+      "name": "ふかしのこぶし",
       "affectsTypes": false
     },
     "form": "Rapid-Strike",
@@ -16113,7 +16113,7 @@
     ],
     "ability": {
       "id": "leaf_guard",
-      "name": "Leaf Guard",
+      "name": "リーフガード",
       "affectsTypes": false
     },
     "form": null,
@@ -16128,7 +16128,7 @@
     ],
     "ability": {
       "id": "transistor",
-      "name": "Transistor",
+      "name": "トランジスタ",
       "affectsTypes": false
     },
     "form": null,
@@ -16143,7 +16143,7 @@
     ],
     "ability": {
       "id": "dragon_s_maw",
-      "name": "Dragon's Maw",
+      "name": "りゅうのあぎと",
       "affectsTypes": false
     },
     "form": null,
@@ -16158,7 +16158,7 @@
     ],
     "ability": {
       "id": "chilling_neigh",
-      "name": "Chilling Neigh",
+      "name": "しろのいななき",
       "affectsTypes": false
     },
     "form": null,
@@ -16173,7 +16173,7 @@
     ],
     "ability": {
       "id": "grim_neigh",
-      "name": "Grim Neigh",
+      "name": "くろのいななき",
       "affectsTypes": false
     },
     "form": null,
@@ -16189,7 +16189,7 @@
     ],
     "ability": {
       "id": "unnerve",
-      "name": "Unnerve",
+      "name": "きんちょうかん",
       "affectsTypes": false
     },
     "form": null,
@@ -16205,7 +16205,7 @@
     ],
     "ability": {
       "id": "as_one_glastrier_",
-      "name": "As One (Glastrier)",
+      "name": "じんばいったい",
       "affectsTypes": false
     },
     "form": "Ice",
@@ -16221,7 +16221,7 @@
     ],
     "ability": {
       "id": "as_one_spectrier_",
-      "name": "As One (Spectrier)",
+      "name": "じんばいったい",
       "affectsTypes": false
     },
     "form": "Shadow",
@@ -16253,7 +16253,7 @@
     ],
     "ability": {
       "id": "swarm",
-      "name": "Swarm",
+      "name": "むしのしらせ",
       "affectsTypes": false
     },
     "form": null,
@@ -16269,7 +16269,7 @@
     ],
     "ability": {
       "id": "guts",
-      "name": "Guts",
+      "name": "こんじょう",
       "affectsTypes": false
     },
     "form": null,
@@ -16285,7 +16285,7 @@
     ],
     "ability": {
       "id": "swift_swim",
-      "name": "Swift Swim",
+      "name": "すいすい",
       "affectsTypes": false
     },
     "form": null,
@@ -16301,7 +16301,7 @@
     ],
     "ability": {
       "id": "pressure",
-      "name": "Pressure",
+      "name": "プレッシャー",
       "affectsTypes": false
     },
     "form": null,
@@ -16317,7 +16317,7 @@
     ],
     "ability": {
       "id": "poison_point",
-      "name": "Poison Point",
+      "name": "どくのトゲ",
       "affectsTypes": false
     },
     "form": null,
@@ -16333,7 +16333,7 @@
     ],
     "ability": {
       "id": "cute_charm",
-      "name": "Cute Charm",
+      "name": "メロメロボディ",
       "affectsTypes": false
     },
     "form": null,
@@ -16348,7 +16348,7 @@
     ],
     "ability": {
       "id": "overgrow",
-      "name": "Overgrow",
+      "name": "しんりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -16363,7 +16363,7 @@
     ],
     "ability": {
       "id": "overgrow",
-      "name": "Overgrow",
+      "name": "しんりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -16379,7 +16379,7 @@
     ],
     "ability": {
       "id": "overgrow",
-      "name": "Overgrow",
+      "name": "しんりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -16394,7 +16394,7 @@
     ],
     "ability": {
       "id": "blaze",
-      "name": "Blaze",
+      "name": "もうか",
       "affectsTypes": false
     },
     "form": null,
@@ -16409,7 +16409,7 @@
     ],
     "ability": {
       "id": "blaze",
-      "name": "Blaze",
+      "name": "もうか",
       "affectsTypes": false
     },
     "form": null,
@@ -16425,7 +16425,7 @@
     ],
     "ability": {
       "id": "blaze",
-      "name": "Blaze",
+      "name": "もうか",
       "affectsTypes": false
     },
     "form": null,
@@ -16440,7 +16440,7 @@
     ],
     "ability": {
       "id": "torrent",
-      "name": "Torrent",
+      "name": "げきりゅう",
       "affectsTypes": false
     },
     "form": null,
@@ -16455,7 +16455,7 @@
     ],
     "ability": {
       "id": "torrent",
-      "name": "Torrent",
+      "name": "げきりゅう",
       "affectsTypes": false
     },
     "form": null,
@@ -16471,7 +16471,7 @@
     ],
     "ability": {
       "id": "torrent",
-      "name": "Torrent",
+      "name": "げきりゅう",
       "affectsTypes": false
     },
     "form": null,
@@ -16516,7 +16516,7 @@
     ],
     "ability": {
       "id": "insomnia",
-      "name": "Insomnia",
+      "name": "ふみん",
       "affectsTypes": false
     },
     "form": null,
@@ -16531,7 +16531,7 @@
     ],
     "ability": {
       "id": "insomnia",
-      "name": "Insomnia",
+      "name": "ふみん",
       "affectsTypes": false
     },
     "form": null,
@@ -16546,7 +16546,7 @@
     ],
     "ability": {
       "id": "swarm",
-      "name": "Swarm",
+      "name": "むしのしらせ",
       "affectsTypes": false
     },
     "form": null,
@@ -16562,7 +16562,7 @@
     ],
     "ability": {
       "id": "swarm",
-      "name": "Swarm",
+      "name": "むしのしらせ",
       "affectsTypes": false
     },
     "form": null,
@@ -16577,7 +16577,7 @@
     ],
     "ability": {
       "id": "static",
-      "name": "Static",
+      "name": "せいでんき",
       "affectsTypes": false
     },
     "form": null,
@@ -16624,7 +16624,7 @@
     ],
     "ability": {
       "id": "run_away",
-      "name": "Run Away",
+      "name": "にげあし",
       "affectsTypes": false
     },
     "form": null,
@@ -16639,7 +16639,7 @@
     ],
     "ability": {
       "id": "friend_guard",
-      "name": "Friend Guard",
+      "name": "フレンドガード",
       "affectsTypes": false
     },
     "form": "Four",
@@ -16654,7 +16654,7 @@
     ],
     "ability": {
       "id": "own_tempo",
-      "name": "Own Tempo",
+      "name": "マイペース",
       "affectsTypes": false
     },
     "form": null,
@@ -16685,7 +16685,7 @@
     ],
     "ability": {
       "id": "early_bird",
-      "name": "Early Bird",
+      "name": "はやおき",
       "affectsTypes": false
     },
     "form": null,
@@ -16701,7 +16701,7 @@
     ],
     "ability": {
       "id": "early_bird",
-      "name": "Early Bird",
+      "name": "はやおき",
       "affectsTypes": false
     },
     "form": null,
@@ -16717,7 +16717,7 @@
     ],
     "ability": {
       "id": "seed_sower",
-      "name": "Seed Sower",
+      "name": "こぼれダネ",
       "affectsTypes": false
     },
     "form": null,
@@ -16733,7 +16733,7 @@
     ],
     "ability": {
       "id": "intimidate",
-      "name": "Intimidate",
+      "name": "いかく",
       "affectsTypes": false
     },
     "form": null,
@@ -16840,7 +16840,7 @@
     ],
     "ability": {
       "id": "own_tempo",
-      "name": "Own Tempo",
+      "name": "マイペース",
       "affectsTypes": false
     },
     "form": null,
@@ -16855,7 +16855,7 @@
     ],
     "ability": {
       "id": "electromorphosis",
-      "name": "Electromorphosis",
+      "name": "でんきにかえる",
       "affectsTypes": false
     },
     "form": null,
@@ -16902,7 +16902,7 @@
     ],
     "ability": {
       "id": "intimidate",
-      "name": "Intimidate",
+      "name": "いかく",
       "affectsTypes": false
     },
     "form": null,
@@ -16917,7 +16917,7 @@
     ],
     "ability": {
       "id": "intimidate",
-      "name": "Intimidate",
+      "name": "いかく",
       "affectsTypes": false
     },
     "form": null,
@@ -16933,7 +16933,7 @@
     ],
     "ability": {
       "id": "unburden",
-      "name": "Unburden",
+      "name": "かるわざ",
       "affectsTypes": false
     },
     "form": null,
@@ -16949,7 +16949,7 @@
     ],
     "ability": {
       "id": "unburden",
-      "name": "Unburden",
+      "name": "かるわざ",
       "affectsTypes": false
     },
     "form": null,
@@ -16965,7 +16965,7 @@
     ],
     "ability": {
       "id": "wind_rider",
-      "name": "Wind Rider",
+      "name": "かぜのり",
       "affectsTypes": false
     },
     "form": null,
@@ -16981,7 +16981,7 @@
     ],
     "ability": {
       "id": "wind_rider",
-      "name": "Wind Rider",
+      "name": "かぜのり",
       "affectsTypes": false
     },
     "form": null,
@@ -16997,7 +16997,7 @@
     ],
     "ability": {
       "id": "mycelium_might",
-      "name": "Mycelium Might",
+      "name": "きんしのちから",
       "affectsTypes": false
     },
     "form": null,
@@ -17013,7 +17013,7 @@
     ],
     "ability": {
       "id": "mycelium_might",
-      "name": "Mycelium Might",
+      "name": "きんしのちから",
       "affectsTypes": false
     },
     "form": null,
@@ -17028,7 +17028,7 @@
     ],
     "ability": {
       "id": "anger_shell",
-      "name": "Anger Shell",
+      "name": "いかりのこうら",
       "affectsTypes": false
     },
     "form": null,
@@ -17043,7 +17043,7 @@
     ],
     "ability": {
       "id": "chlorophyll",
-      "name": "Chlorophyll",
+      "name": "ようりょくそ",
       "affectsTypes": false
     },
     "form": null,
@@ -17059,7 +17059,7 @@
     ],
     "ability": {
       "id": "chlorophyll",
-      "name": "Chlorophyll",
+      "name": "ようりょくそ",
       "affectsTypes": false
     },
     "form": null,
@@ -17074,7 +17074,7 @@
     ],
     "ability": {
       "id": "compound_eyes",
-      "name": "Compound Eyes",
+      "name": "ふくがん",
       "affectsTypes": false
     },
     "form": null,
@@ -17090,7 +17090,7 @@
     ],
     "ability": {
       "id": "synchronize",
-      "name": "Synchronize",
+      "name": "シンクロ",
       "affectsTypes": false
     },
     "form": null,
@@ -17105,7 +17105,7 @@
     ],
     "ability": {
       "id": "anticipation",
-      "name": "Anticipation",
+      "name": "きけんよち",
       "affectsTypes": false
     },
     "form": null,
@@ -17120,7 +17120,7 @@
     ],
     "ability": {
       "id": "opportunist",
-      "name": "Opportunist",
+      "name": "びんじょう",
       "affectsTypes": false
     },
     "form": null,
@@ -17136,7 +17136,7 @@
     ],
     "ability": {
       "id": "mold_breaker",
-      "name": "Mold Breaker",
+      "name": "かたやぶり",
       "affectsTypes": false
     },
     "form": null,
@@ -17152,7 +17152,7 @@
     ],
     "ability": {
       "id": "mold_breaker",
-      "name": "Mold Breaker",
+      "name": "かたやぶり",
       "affectsTypes": false
     },
     "form": null,
@@ -17168,7 +17168,7 @@
     ],
     "ability": {
       "id": "mold_breaker",
-      "name": "Mold Breaker",
+      "name": "かたやぶり",
       "affectsTypes": false
     },
     "form": null,
@@ -17183,7 +17183,7 @@
     ],
     "ability": {
       "id": "gooey",
-      "name": "Gooey",
+      "name": "ぬめぬめ",
       "affectsTypes": false
     },
     "form": null,
@@ -17198,7 +17198,7 @@
     ],
     "ability": {
       "id": "gooey",
-      "name": "Gooey",
+      "name": "ぬめぬめ",
       "affectsTypes": false
     },
     "form": null,
@@ -17214,7 +17214,7 @@
     ],
     "ability": {
       "id": "big_pecks",
-      "name": "Big Pecks",
+      "name": "はとむね",
       "affectsTypes": false
     },
     "form": null,
@@ -17229,7 +17229,7 @@
     ],
     "ability": {
       "id": "water_veil",
-      "name": "Water Veil",
+      "name": "みずのベール",
       "affectsTypes": false
     },
     "form": null,
@@ -17244,7 +17244,7 @@
     ],
     "ability": {
       "id": "zero_to_hero",
-      "name": "Zero to Hero",
+      "name": "マイティチェンジ",
       "affectsTypes": false
     },
     "form": null,
@@ -17260,7 +17260,7 @@
     ],
     "ability": {
       "id": "overcoat",
-      "name": "Overcoat",
+      "name": "ぼうじん",
       "affectsTypes": false
     },
     "form": null,
@@ -17292,7 +17292,7 @@
     ],
     "ability": {
       "id": "shed_skin",
-      "name": "Shed Skin",
+      "name": "だっぴ",
       "affectsTypes": false
     },
     "form": null,
@@ -17323,7 +17323,7 @@
     ],
     "ability": {
       "id": "toxic_debris",
-      "name": "Toxic Debris",
+      "name": "どくげしょう",
       "affectsTypes": false
     },
     "form": null,
@@ -17339,7 +17339,7 @@
     ],
     "ability": {
       "id": "toxic_debris",
-      "name": "Toxic Debris",
+      "name": "どくげしょう",
       "affectsTypes": false
     },
     "form": null,
@@ -17385,7 +17385,7 @@
     ],
     "ability": {
       "id": "scrappy",
-      "name": "Scrappy",
+      "name": "きもったま",
       "affectsTypes": false
     },
     "form": null,
@@ -17431,7 +17431,7 @@
     ],
     "ability": {
       "id": "mold_breaker",
-      "name": "Mold Breaker",
+      "name": "かたやぶり",
       "affectsTypes": false
     },
     "form": null,
@@ -17446,7 +17446,7 @@
     ],
     "ability": {
       "id": "unaware",
-      "name": "Unaware",
+      "name": "てんねん",
       "affectsTypes": false
     },
     "form": null,
@@ -17478,7 +17478,7 @@
     ],
     "ability": {
       "id": "vital_spirit",
-      "name": "Vital Spirit",
+      "name": "やるき",
       "affectsTypes": false
     },
     "form": null,
@@ -17525,7 +17525,7 @@
     ],
     "ability": {
       "id": "serene_grace",
-      "name": "Serene Grace",
+      "name": "てんのめぐみ",
       "affectsTypes": false
     },
     "form": null,
@@ -17541,7 +17541,7 @@
     ],
     "ability": {
       "id": "defiant",
-      "name": "Defiant",
+      "name": "まけんき",
       "affectsTypes": false
     },
     "form": null,
@@ -17557,7 +17557,7 @@
     ],
     "ability": {
       "id": "protosynthesis",
-      "name": "Protosynthesis",
+      "name": "こだいかっせい",
       "affectsTypes": false
     },
     "form": null,
@@ -17573,7 +17573,7 @@
     ],
     "ability": {
       "id": "protosynthesis",
-      "name": "Protosynthesis",
+      "name": "こだいかっせい",
       "affectsTypes": false
     },
     "form": null,
@@ -17589,7 +17589,7 @@
     ],
     "ability": {
       "id": "protosynthesis",
-      "name": "Protosynthesis",
+      "name": "こだいかっせい",
       "affectsTypes": false
     },
     "form": null,
@@ -17605,7 +17605,7 @@
     ],
     "ability": {
       "id": "protosynthesis",
-      "name": "Protosynthesis",
+      "name": "こだいかっせい",
       "affectsTypes": false
     },
     "form": null,
@@ -17621,7 +17621,7 @@
     ],
     "ability": {
       "id": "protosynthesis",
-      "name": "Protosynthesis",
+      "name": "こだいかっせい",
       "affectsTypes": false
     },
     "form": null,
@@ -17637,7 +17637,7 @@
     ],
     "ability": {
       "id": "protosynthesis",
-      "name": "Protosynthesis",
+      "name": "こだいかっせい",
       "affectsTypes": false
     },
     "form": null,
@@ -17653,7 +17653,7 @@
     ],
     "ability": {
       "id": "quark_drive",
-      "name": "Quark Drive",
+      "name": "クォークチャージ",
       "affectsTypes": false
     },
     "form": null,
@@ -17669,7 +17669,7 @@
     ],
     "ability": {
       "id": "quark_drive",
-      "name": "Quark Drive",
+      "name": "クォークチャージ",
       "affectsTypes": false
     },
     "form": null,
@@ -17685,7 +17685,7 @@
     ],
     "ability": {
       "id": "quark_drive",
-      "name": "Quark Drive",
+      "name": "クォークチャージ",
       "affectsTypes": false
     },
     "form": null,
@@ -17701,7 +17701,7 @@
     ],
     "ability": {
       "id": "quark_drive",
-      "name": "Quark Drive",
+      "name": "クォークチャージ",
       "affectsTypes": false
     },
     "form": null,
@@ -17717,7 +17717,7 @@
     ],
     "ability": {
       "id": "quark_drive",
-      "name": "Quark Drive",
+      "name": "クォークチャージ",
       "affectsTypes": false
     },
     "form": null,
@@ -17733,7 +17733,7 @@
     ],
     "ability": {
       "id": "quark_drive",
-      "name": "Quark Drive",
+      "name": "クォークチャージ",
       "affectsTypes": false
     },
     "form": null,
@@ -17749,7 +17749,7 @@
     ],
     "ability": {
       "id": "thermal_exchange",
-      "name": "Thermal Exchange",
+      "name": "ねつこうかん",
       "affectsTypes": false
     },
     "form": null,
@@ -17765,7 +17765,7 @@
     ],
     "ability": {
       "id": "thermal_exchange",
-      "name": "Thermal Exchange",
+      "name": "ねつこうかん",
       "affectsTypes": false
     },
     "form": null,
@@ -17781,7 +17781,7 @@
     ],
     "ability": {
       "id": "thermal_exchange",
-      "name": "Thermal Exchange",
+      "name": "ねつこうかん",
       "affectsTypes": false
     },
     "form": null,
@@ -17796,7 +17796,7 @@
     ],
     "ability": {
       "id": "rattled",
-      "name": "Rattled",
+      "name": "びびり",
       "affectsTypes": false
     },
     "form": null,
@@ -17812,7 +17812,7 @@
     ],
     "ability": {
       "id": "good_as_gold",
-      "name": "Good as Gold",
+      "name": "おうごんのからだ",
       "affectsTypes": false
     },
     "form": null,
@@ -17828,7 +17828,7 @@
     ],
     "ability": {
       "id": "tablets_of_ruin",
-      "name": "Tablets of Ruin",
+      "name": "わざわいのおふだ",
       "affectsTypes": false
     },
     "form": null,
@@ -17844,7 +17844,7 @@
     ],
     "ability": {
       "id": "sword_of_ruin",
-      "name": "Sword of Ruin",
+      "name": "わざわいのつるぎ",
       "affectsTypes": false
     },
     "form": null,
@@ -17860,7 +17860,7 @@
     ],
     "ability": {
       "id": "vessel_of_ruin",
-      "name": "Vessel of Ruin",
+      "name": "わざわいのうつわ",
       "affectsTypes": false
     },
     "form": null,
@@ -17876,7 +17876,7 @@
     ],
     "ability": {
       "id": "beads_of_ruin",
-      "name": "Beads of Ruin",
+      "name": "わざわいのたま",
       "affectsTypes": false
     },
     "form": null,
@@ -17892,7 +17892,7 @@
     ],
     "ability": {
       "id": "protosynthesis",
-      "name": "Protosynthesis",
+      "name": "こだいかっせい",
       "affectsTypes": false
     },
     "form": null,
@@ -17908,7 +17908,7 @@
     ],
     "ability": {
       "id": "quark_drive",
-      "name": "Quark Drive",
+      "name": "クォークチャージ",
       "affectsTypes": false
     },
     "form": null,
@@ -17924,7 +17924,7 @@
     ],
     "ability": {
       "id": "orichalcum_pulse",
-      "name": "Orichalcum Pulse",
+      "name": "ひひいろのこどう",
       "affectsTypes": false
     },
     "form": null,
@@ -17940,7 +17940,7 @@
     ],
     "ability": {
       "id": "hadron_engine",
-      "name": "Hadron Engine",
+      "name": "ハドロンエンジン",
       "affectsTypes": false
     },
     "form": null,
@@ -17956,7 +17956,7 @@
     ],
     "ability": {
       "id": "protosynthesis",
-      "name": "Protosynthesis",
+      "name": "こだいかっせい",
       "affectsTypes": false
     },
     "form": null,
@@ -17972,7 +17972,7 @@
     ],
     "ability": {
       "id": "quark_drive",
-      "name": "Quark Drive",
+      "name": "クォークチャージ",
       "affectsTypes": false
     },
     "form": null,
@@ -17988,7 +17988,7 @@
     ],
     "ability": {
       "id": "supersweet_syrup",
-      "name": "Supersweet Syrup",
+      "name": "かんろなミツ",
       "affectsTypes": false
     },
     "form": null,
@@ -18036,7 +18036,7 @@
     ],
     "ability": {
       "id": "toxic_chain",
-      "name": "Toxic Chain",
+      "name": "どくのくさり",
       "affectsTypes": false
     },
     "form": null,
@@ -18052,7 +18052,7 @@
     ],
     "ability": {
       "id": "toxic_chain",
-      "name": "Toxic Chain",
+      "name": "どくのくさり",
       "affectsTypes": false
     },
     "form": null,
@@ -18068,7 +18068,7 @@
     ],
     "ability": {
       "id": "toxic_chain",
-      "name": "Toxic Chain",
+      "name": "どくのくさり",
       "affectsTypes": false
     },
     "form": null,
@@ -18083,7 +18083,7 @@
     ],
     "ability": {
       "id": "defiant",
-      "name": "Defiant",
+      "name": "まけんき",
       "affectsTypes": false
     },
     "form": null,
@@ -18099,7 +18099,7 @@
     ],
     "ability": {
       "id": "sturdy",
-      "name": "Sturdy",
+      "name": "がんじょう",
       "affectsTypes": false
     },
     "form": "Cornerstone",
@@ -18115,7 +18115,7 @@
     ],
     "ability": {
       "id": "mold_breaker",
-      "name": "Mold Breaker",
+      "name": "かたやぶり",
       "affectsTypes": false
     },
     "form": "Hearthflame",
@@ -18147,7 +18147,7 @@
     ],
     "ability": {
       "id": "stamina",
-      "name": "Stamina",
+      "name": "じきゅうりょく",
       "affectsTypes": false
     },
     "form": null,
@@ -18163,7 +18163,7 @@
     ],
     "ability": {
       "id": "supersweet_syrup",
-      "name": "Supersweet Syrup",
+      "name": "かんろなミツ",
       "affectsTypes": false
     },
     "form": null,
@@ -18179,7 +18179,7 @@
     ],
     "ability": {
       "id": "protosynthesis",
-      "name": "Protosynthesis",
+      "name": "こだいかっせい",
       "affectsTypes": false
     },
     "form": null,
@@ -18195,7 +18195,7 @@
     ],
     "ability": {
       "id": "protosynthesis",
-      "name": "Protosynthesis",
+      "name": "こだいかっせい",
       "affectsTypes": false
     },
     "form": null,
@@ -18211,7 +18211,7 @@
     ],
     "ability": {
       "id": "quark_drive",
-      "name": "Quark Drive",
+      "name": "クォークチャージ",
       "affectsTypes": false
     },
     "form": null,
@@ -18227,7 +18227,7 @@
     ],
     "ability": {
       "id": "quark_drive",
-      "name": "Quark Drive",
+      "name": "クォークチャージ",
       "affectsTypes": false
     },
     "form": null,
@@ -18242,7 +18242,7 @@
     ],
     "ability": {
       "id": "tera_shift",
-      "name": "Tera Shift",
+      "name": "テラスチェンジ",
       "affectsTypes": false
     },
     "form": null,
@@ -18258,7 +18258,7 @@
     ],
     "ability": {
       "id": "poison_puppeteer",
-      "name": "Poison Puppeteer",
+      "name": "どくくぐつ",
       "affectsTypes": false
     },
     "form": null,

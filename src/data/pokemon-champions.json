@@ -40,7 +40,7 @@
     ],
     "ability": {
       "id": "blaze",
-      "name": "Blaze",
+      "name": "もうか",
       "affectsTypes": false
     },
     "form": null,
@@ -184,7 +184,7 @@
     ],
     "ability": {
       "id": "oblivious",
-      "name": "Oblivious",
+      "name": "どんかん",
       "affectsTypes": false
     },
     "form": null,
@@ -648,7 +648,7 @@
     ],
     "ability": {
       "id": "keen_eye",
-      "name": "Keen Eye",
+      "name": "するどいめ",
       "affectsTypes": false
     },
     "form": null,
@@ -920,7 +920,7 @@
     ],
     "ability": {
       "id": "steadfast",
-      "name": "Steadfast",
+      "name": "ふくつのこころ",
       "affectsTypes": false
     },
     "form": null,
@@ -952,7 +952,7 @@
     ],
     "ability": {
       "id": "snow_warning",
-      "name": "Snow Warning",
+      "name": "ゆきふらし",
       "affectsTypes": false
     },
     "form": null,
@@ -1048,7 +1048,7 @@
     ],
     "ability": {
       "id": "snow_cloak",
-      "name": "Snow Cloak",
+      "name": "ゆきがくれ",
       "affectsTypes": false
     },
     "form": null,
@@ -1592,7 +1592,7 @@
     ],
     "ability": {
       "id": "limber",
-      "name": "Limber",
+      "name": "じゅうなん",
       "affectsTypes": false
     },
     "form": null,

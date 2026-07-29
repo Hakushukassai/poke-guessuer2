@@ -5,6 +5,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { abilityNameJa } from './ability-ja.mjs'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const root = path.join(__dirname, '..')
@@ -54,6 +55,7 @@ const TYPE_ABILITY_IDS = {
   'Solid Rock': 'solid_rock',
   'Prism Armor': 'prism_armor',
   'Wonder Guard': 'wonder_guard',
+  Eelevate: 'eelevate',
 }
 
 const poke = JSON.parse(fs.readFileSync(pokePath, 'utf8'))
@@ -75,9 +77,10 @@ function pickAbility(abilities) {
   }
   const first = abilities[0]
   const a = ablByName[first]
+  const id = a?.id || first.toLowerCase().replace(/[^a-z0-9]+/g, '_')
   return {
-    id: a?.id || first.toLowerCase().replace(/[^a-z0-9]+/g, '_'),
-    name: a?.nameJa || first,
+    id,
+    name: a?.nameJa || abilityNameJa(id, first),
     affectsTypes: false,
   }
 }
