@@ -6,7 +6,7 @@ function poke(
   types: [Pokemon['types'][0], Pokemon['types'][1]],
   ability: Pokemon['ability'],
 ): Pokemon {
-  return { id: 'test', name: 'テスト', types, ability, form: null }
+  return { id: 'test', name: 'テスト', types: [...types], ability, form: null }
 }
 
 describe('calcEffectiveness', () => {

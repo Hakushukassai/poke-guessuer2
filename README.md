@@ -2,7 +2,18 @@
 
 複合タイプポケモンを使い、技タイプへの相性から相手のポケモンを当てる 1v1 推理ゲームです。
 
-**同じ端末** と **インターネット対戦** をホームで切り替えできます。
+ホームで **チャンピオンズ／全国** を正面に選び、お題パックやバン・質問上限は格納した味変として任意で付けられます。
+**同じ端末** と **インターネット対戦** も切り替えできます。
+
+## 遊び方（GitHub Pages）
+
+公開 URL（初回は Actions 成功後）:
+
+https://hakushukassai.github.io/poke-guessuer2/
+
+「同じ端末」で遊べます。インターネット対戦は PartyKit サーバが別途必要なので、Pages だけでは使えません。
+
+リポジトリの **Settings → Pages → Source** を **GitHub Actions** にしてください（初回のみ）。`main` へ push すると自動デプロイされます。
 
 ## 遊び方（ローカル）
 
@@ -10,25 +21,12 @@
 2. 「同じ端末」で名前・図鑑を選んで開始
 3. 交互に端末を渡してプレイ
 
-## 遊び方（オンライン）
+## 遊び方（オンライン・任意）
 
 1. `npm run dev`（Vite + PartyKit が同時起動）
 2. 「インターネット」→ 部屋をつくる / 部屋コードで参加
-3. 各自の端末で選出・質問・解答（相手の選出は結果まで見えない）
 
-オンラインの同期サーバは [PartyKit](https://partykit.io) です。
-
-### 本番向け
-
-1. PartyKit をデプロイ: `npm run deploy:party`（要ログイン）
-2. フロントの環境変数にホストを設定してビルド:
-
-```bash
-# 例: xxx.username.partykit.dev
-VITE_PARTY_HOST=your-project.yourname.partykit.dev npm run build
-```
-
-3. `dist/` を GitHub Pages などに公開
+オンラインの同期サーバは [PartyKit](https://partykit.io) です。共有ホストが使えない場合は自分の Cloudflare へのデプロイが必要です。
 
 ## ルール要約
 
@@ -39,8 +37,17 @@ VITE_PARTY_HOST=your-project.yourname.partykit.dev npm run build
 ## データ
 
 - `src/data/pokemon-champions.json` / `pokemon-national.json`
+- お題パック: `pokemon-legendary.json` / `pokemon-starters.json` / `pokemon-spooky.json`（`node scripts/build-theme-packs.mjs` で再生成）
 - 選出母集団: 同系統で相性同じフォルム除外 → 最終進化中心
 - `src/data/type-chart.json` / `type-abilities.json`
+- 対戦推理の使用率: `src/data/champions-usage.json`（Smogon Champions OU）
+
+```bash
+curl -sL https://www.smogon.com/stats/2026-04/chaos/gen9championsou-1500.json.gz \
+  | gzip -dc > /tmp/champ_ou.json
+node scripts/build-champions-usage.mjs
+```
+
 
 ## コマンド
 

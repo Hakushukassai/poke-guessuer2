@@ -1488,22 +1488,6 @@
     "num": 395
   },
   {
-    "id": "ogerponwellspringtera",
-    "name": "オーガポン(いどのめん・テラスタル)",
-    "types": [
-      "くさ",
-      "みず"
-    ],
-    "ability": {
-      "id": "embody_aspect_wellspring_",
-      "name": "Embody Aspect (Wellspring)",
-      "affectsTypes": false
-    },
-    "form": "Wellspring-Tera",
-    "sprite": "ogerponwellspringtera",
-    "num": 1017
-  },
-  {
     "id": "ogerponwellspring",
     "name": "オーガポン(いどのめん)",
     "types": [
@@ -1520,22 +1504,6 @@
     "num": 1017
   },
   {
-    "id": "ogerponcornerstonetera",
-    "name": "オーガポン(いわののめん・テラスタル)",
-    "types": [
-      "くさ",
-      "いわ"
-    ],
-    "ability": {
-      "id": "embody_aspect_cornerstone_",
-      "name": "Embody Aspect (Cornerstone)",
-      "affectsTypes": false
-    },
-    "form": "Cornerstone-Tera",
-    "sprite": "ogerponcornerstonetera",
-    "num": 1017
-  },
-  {
     "id": "ogerponcornerstone",
     "name": "オーガポン(いわののめん)",
     "types": [
@@ -1549,22 +1517,6 @@
     },
     "form": "Cornerstone",
     "sprite": "ogerponcornerstone",
-    "num": 1017
-  },
-  {
-    "id": "ogerponhearthflametera",
-    "name": "オーガポン(かまどのめん・テラスタル)",
-    "types": [
-      "くさ",
-      "ほのお"
-    ],
-    "ability": {
-      "id": "embody_aspect_hearthflame_",
-      "name": "Embody Aspect (Hearthflame)",
-      "affectsTypes": false
-    },
-    "form": "Hearthflame-Tera",
-    "sprite": "ogerponhearthflametera",
     "num": 1017
   },
   {

@@ -132,6 +132,8 @@ export function OnlineSession({
           state={gameState}
           onProbe={(moveType) => send({ type: 'probe', moveType })}
           onDexCompare={(pivotId) => send({ type: 'dex_compare', pivotId })}
+          onTraitProbe={() => {}}
+          onStatCompare={() => {}}
           onGuess={(pokemonId) => send({ type: 'guess', pokemonId })}
         />
       </>

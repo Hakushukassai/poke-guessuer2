@@ -11,7 +11,7 @@ import {
 function poke(
   id: string,
   name: string,
-  types: [Pokemon['types'][0], Pokemon['types'][1]],
+  types: Pokemon['types'],
   ability: Pokemon['ability'],
   form: string | null = null,
 ): Pokemon {
@@ -42,6 +42,8 @@ describe('pokemonPool', () => {
     expect(baseSpeciesKey('genesectburn')).toBe('genesect')
     expect(baseSpeciesKey('keldeoresolute')).toBe('keldeo')
     expect(baseSpeciesKey('zygarde10')).toBe('zygarde')
+    expect(baseSpeciesKey('mausholdfour')).toBe('maushold')
+    expect(baseSpeciesKey('palafinhero')).toBe('palafin')
   })
 
   it('相性が同じメガは除外し、ベースを残す', () => {
@@ -139,5 +141,35 @@ describe('pokemonPool', () => {
       poke('garchompmega', 'メガガブリアス', ['ドラゴン', 'じめん'], none, 'メガ'),
     ])
     expect(list.map((p) => p.id)).toEqual(['garchomp'])
+  })
+
+  it('オーガポンのテラスタルは除外し、めんフォルムを残す', () => {
+    const waterAbsorb = {
+      id: 'water_absorb',
+      name: 'ちょすい',
+      affectsTypes: true,
+    }
+    const embody = {
+      id: 'embody_aspect_wellspring_',
+      name: 'Embody Aspect',
+      affectsTypes: false,
+    }
+    const list = preparePool([
+      poke(
+        'ogerponwellspring',
+        'オーガポン(いどのめん)',
+        ['くさ', 'みず'],
+        waterAbsorb,
+        'Wellspring',
+      ),
+      poke(
+        'ogerponwellspringtera',
+        'オーガポン(いどのめん・テラスタル)',
+        ['くさ', 'みず'],
+        embody,
+        'Wellspring-Tera',
+      ),
+    ])
+    expect(list.map((p) => p.id)).toEqual(['ogerponwellspring'])
   })
 })

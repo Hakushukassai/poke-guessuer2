@@ -98,6 +98,10 @@ export function baseSpeciesKey(id: string): string {
       .replace(/wellspring$/i, '')
       .replace(/cornerstone$/i, '')
       .replace(/hearthflame$/i, '')
+      // Family / battle-only alts that share the competitive identity
+      .replace(/four$/i, '')
+      .replace(/hero$/i, '')
+      .replace(/antique$/i, '')
 
     for (const [re, rep] of cosmetic) {
       s = s.replace(re, rep)
@@ -120,6 +124,8 @@ function preferenceScore(p: Pokemon): number {
   const id = p.id.toLowerCase()
   if (!id.includes('mega')) score += 200
   if (!p.form) score += 80
+  // Prefer Maushold Family of Four over Family of Three if both appear
+  if (/four$/i.test(id)) score += 60
   if (
     !/(alola|galar|hisui|paldea|wash|heat|frost|fan|mow|blade|busted|hangry|large|super|small|masterpiece|fancy|pokeball|totem|primal|therian)/.test(
       id,
@@ -248,8 +254,18 @@ export function filterPreEvolutions(list: Pokemon[]): Pokemon[] {
 
 /** Apply form-dedupe then pre-evolution filter. */
 export function preparePool(list: Pokemon[]): Pokemon[] {
-  const prepared = filterPreEvolutions(dedupeIndistinguishableForms(list))
+  const withoutTera = list.filter((p) => !isTeraBattleForm(p))
+  const prepared = filterPreEvolutions(dedupeIndistinguishableForms(withoutTera))
   const byId = new Map<string, Pokemon>()
   for (const p of prepared) byId.set(p.id, p)
   return [...byId.values()].sort((a, b) => a.name.localeCompare(b.name, 'ja'))
+}
+
+/** Ogerpon などのテラスタル戦フォルム（めんと被る）を除外 */
+export function isTeraBattleForm(p: Pokemon): boolean {
+  const id = p.id.toLowerCase()
+  const form = (p.form ?? '').toLowerCase()
+  if (form.includes('tera') || p.name.includes('テラスタル')) return true
+  // ogerponwellspringtera など（teravolt 特性の id は触れない）
+  return /tera$/.test(id)
 }

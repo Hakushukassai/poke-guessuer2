@@ -47,7 +47,8 @@ export interface PokemonAbility {
 export interface Pokemon {
   id: string
   name: string
-  types: [PokemonType, PokemonType]
+  /** 1 type (mono) or 2 types (dual). Type mode pools are dual-only. */
+  types: PokemonType[]
   ability: PokemonAbility
   form: string | null
   /** Showdown dex sprite slug when known */

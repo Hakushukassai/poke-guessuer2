@@ -1,5 +1,9 @@
 import championsData from '../data/pokemon-champions.json'
+import championsMonoData from '../data/pokemon-champions-mono.json'
 import nationalData from '../data/pokemon-national.json'
+import legendaryData from '../data/pokemon-legendary.json'
+import startersData from '../data/pokemon-starters.json'
+import spookyData from '../data/pokemon-spooky.json'
 import type {
   DexCompareRecord,
   GuessRecord,
@@ -9,25 +13,114 @@ import type {
   ProbeRecord,
 } from '../data/types'
 import { EFFECTIVENESS_LABEL_JA } from '../data/types'
+import {
+  getCompetitiveMeta,
+  matchesStatCompare,
+  matchesTraitProbe,
+  statCompareLabel,
+  traitProbeLabel,
+  type CompetitiveStatId,
+  type CompetitiveTraitId,
+  type StatCompareRecord,
+  type TraitProbeRecord,
+} from './competitive'
 import { calcEffectiveness, matchesProbe } from './effectiveness'
 import { preparePool } from './pokemonPool'
 
-export type DexPool = 'champions' | 'national'
+export type DexPool =
+  | 'champions'
+  | 'national'
+  | 'legendary'
+  | 'starters'
+  | 'spooky'
+
+/** Type-chart deduction vs battle-knowledge deduction. */
+export type QuizMode = 'type' | 'competitive'
+
+export const QUIZ_MODE_LABEL: Record<QuizMode, string> = {
+  type: 'タイプ相性',
+  competitive: '対戦推理',
+}
+
+export const QUIZ_MODE_BLURB: Record<QuizMode, string> = {
+  type: '相性と図鑑番号で絞る',
+  competitive: '単タイプ込みで「設置ある？」',
+}
+
+export const POOL_ORDER: DexPool[] = [
+  'champions',
+  'national',
+  'legendary',
+  'starters',
+  'spooky',
+]
+
+/** Primary pools shown up front on home. */
+export const MAIN_POOLS: DexPool[] = ['champions', 'national']
+
+/** Theme packs tucked behind a disclosure. */
+export const THEME_POOLS: DexPool[] = ['legendary', 'starters', 'spooky']
+
+export const DEFAULT_QUESTION_LIMIT = 8
+
+export interface GameOptions {
+  /** Each player bans 1 type before picks. */
+  banEnabled: boolean
+  /** Max type+dex questions per player; null = unlimited. */
+  questionLimit: number | null
+}
+
+export const DEFAULT_OPTIONS: GameOptions = {
+  banEnabled: false,
+  questionLimit: null,
+}
+
+export function clampQuestionLimit(raw: number): number {
+  if (!Number.isFinite(raw)) return DEFAULT_QUESTION_LIMIT
+  return Math.min(18, Math.max(1, Math.floor(raw)))
+}
 
 export const POOL_LABEL: Record<DexPool, string> = {
   champions: 'チャンピオンズ',
   national: '全国図鑑',
+  legendary: '伝説・幻',
+  starters: '御三家',
+  spooky: 'あく・ゴースト',
 }
 
+export const POOL_BLURB: Record<DexPool, string> = {
+  champions: '対戦でよく見る顔ぶれ',
+  national: '複合タイプぜんぶ',
+  legendary: '伝説・幻・パラドックスなど',
+  starters: '御三家の最終進化',
+  spooky: 'あくかゴーストを持つポケモン',
+}
+
+const championsDual = preparePool(championsData as Pokemon[])
+/** 対戦推理用: 複合 + 単タイプ（チャンピオンズ収録） */
+const championsCompetitive = preparePool([
+  ...(championsData as Pokemon[]),
+  ...(championsMonoData as Pokemon[]),
+])
+
 const POOLS: Record<DexPool, Pokemon[]> = {
-  champions: preparePool(championsData as Pokemon[]),
+  champions: championsDual,
   national: preparePool(nationalData as Pokemon[]),
+  legendary: preparePool(legendaryData as Pokemon[]),
+  starters: preparePool(startersData as Pokemon[]),
+  spooky: preparePool(spookyData as Pokemon[]),
 }
 
 /** @deprecated use pokemonIn(pool) — kept for tests defaulting to champions */
 export const POKEMON = POOLS.champions
 
-export function pokemonIn(pool: DexPool): Pokemon[] {
+export function pokemonIn(
+  pool: DexPool,
+  quizMode: QuizMode = 'type',
+): Pokemon[] {
+  if (pool === 'champions' && quizMode === 'competitive') {
+    return championsCompetitive
+  }
   return POOLS[pool]
 }
 
@@ -35,11 +128,22 @@ export function poolCounts(): Record<DexPool, number> {
   return {
     champions: POOLS.champions.length,
     national: POOLS.national.length,
+    legendary: POOLS.legendary.length,
+    starters: POOLS.starters.length,
+    spooky: POOLS.spooky.length,
   }
+}
+
+export function competitiveChampionsCount(): number {
+  return championsCompetitive.length
 }
 
 export type Phase =
   | 'home'
+  | 'ban_p1'
+  | 'handoff_ban_p2'
+  | 'ban_p2'
+  | 'handoff_pick_p1'
   | 'pick_p1'
   | 'handoff_p2'
   | 'pick_p2'
@@ -52,11 +156,17 @@ export type Phase =
 export interface GameState {
   phase: Phase
   pool: DexPool
+  quizMode: QuizMode
   names: { p1: string; p2: string }
+  options: GameOptions
+  /** Types banned from the shared pick pool (species with either type). */
+  bannedTypes: PokemonType[]
   picks: { p1: string | null; p2: string | null }
   currentPlayer: PlayerId
   probes: ProbeRecord[]
   dexCompares: DexCompareRecord[]
+  traitProbes: TraitProbeRecord[]
+  statCompares: StatCompareRecord[]
   guesses: GuessRecord[]
   eliminated: { p1: string[]; p2: string[] }
   winner: PlayerId | null
@@ -86,11 +196,16 @@ export function initialState(): GameState {
   return {
     phase: 'home',
     pool: 'champions',
+    quizMode: 'type',
     names: { ...DEFAULT_NAMES },
+    options: { ...DEFAULT_OPTIONS },
+    bannedTypes: [],
     picks: { p1: null, p2: null },
     currentPlayer: 'p1',
     probes: [],
     dexCompares: [],
+    traitProbes: [],
+    statCompares: [],
     guesses: [],
     eliminated: { p1: [], p2: [] },
     winner: null,
@@ -102,8 +217,9 @@ export function initialState(): GameState {
 export function getPokemon(
   id: string,
   pool: DexPool = 'champions',
+  quizMode: QuizMode = 'type',
 ): Pokemon | undefined {
-  return pokemonIn(pool).find((p) => p.id === id)
+  return pokemonIn(pool, quizMode).find((p) => p.id === id)
 }
 
 export function opponentOf(player: PlayerId): PlayerId {
@@ -133,6 +249,20 @@ export function dexComparesBy(
   return state.dexCompares.filter((c) => c.by === asker)
 }
 
+export function traitProbesBy(
+  state: GameState,
+  asker: PlayerId,
+): TraitProbeRecord[] {
+  return state.traitProbes.filter((p) => p.by === asker)
+}
+
+export function statComparesBy(
+  state: GameState,
+  asker: PlayerId,
+): StatCompareRecord[] {
+  return state.statCompares.filter((c) => c.by === asker)
+}
+
 export function matchesDexCompare(
   pokemon: Pokemon,
   compare: DexCompareRecord,
@@ -141,17 +271,64 @@ export function matchesDexCompare(
   return compare.greater ? num > compare.pivotNum : num <= compare.pivotNum
 }
 
+export function questionUses(state: GameState, player: PlayerId): number {
+  if (state.quizMode === 'competitive') {
+    return (
+      traitProbesBy(state, player).length + statComparesBy(state, player).length
+    )
+  }
+  const probes = state.probes.filter((p) => p.by === player).length
+  const dex = state.dexCompares.filter((c) => c.by === player).length
+  return probes + dex
+}
+
+export function questionsRemaining(
+  state: GameState,
+  player: PlayerId,
+): number | null {
+  const limit = state.options.questionLimit
+  if (limit == null) return null
+  return Math.max(0, limit - questionUses(state, player))
+}
+
+export function canAskQuestion(state: GameState, player: PlayerId): boolean {
+  const left = questionsRemaining(state, player)
+  return left == null || left > 0
+}
+
+export function isTypeBanned(
+  pokemon: Pokemon,
+  bannedTypes: PokemonType[],
+): boolean {
+  if (bannedTypes.length === 0) return false
+  const banned = new Set(bannedTypes)
+  return pokemon.types.some((t) => banned.has(t))
+}
+
 export function filterCandidates(
   state: GameState,
   forPlayer: PlayerId,
 ): Pokemon[] {
   const targetOwner = opponentOf(forPlayer)
-  const probes = probesAgainst(state, targetOwner)
-  const compares = dexComparesBy(state, forPlayer)
   const eliminated = new Set(state.eliminated[forPlayer])
 
-  return pokemonIn(state.pool).filter((poke) => {
+  return pokemonIn(state.pool, state.quizMode).filter((poke) => {
+    if (isTypeBanned(poke, state.bannedTypes)) return false
     if (eliminated.has(poke.id)) return false
+
+    if (state.quizMode === 'competitive') {
+      if (!getCompetitiveMeta(poke.id)) return false
+      const traits = traitProbesBy(state, forPlayer)
+      const stats = statComparesBy(state, forPlayer)
+      if (!traits.every((probe) => matchesTraitProbe(poke, probe))) return false
+      return stats.every((compare) => matchesStatCompare(poke, compare))
+    }
+
+    // Type mode is dual-type deduction; skip any mono that slipped in.
+    if (poke.types.length !== 2) return false
+
+    const probes = probesAgainst(state, targetOwner)
+    const compares = dexComparesBy(state, forPlayer)
     if (
       !probes.every((probe) =>
         matchesProbe(poke, probe.moveType, probe.result),
@@ -164,32 +341,62 @@ export function filterCandidates(
 }
 
 export type Action =
-  | { type: 'START'; pool: DexPool; names?: { p1?: string; p2?: string } }
+  | {
+      type: 'START'
+      pool: DexPool
+      quizMode?: QuizMode
+      names?: { p1?: string; p2?: string }
+      options?: Partial<GameOptions>
+    }
+  | { type: 'BAN'; bannedType: PokemonType }
   | { type: 'PICK'; pokemonId: string }
   | { type: 'CONFIRM_HANDOFF' }
   | { type: 'PROBE'; moveType: PokemonType }
   | { type: 'DEX_COMPARE'; pivotId: string }
+  | { type: 'TRAIT_PROBE'; traitId: CompetitiveTraitId }
+  | { type: 'STAT_COMPARE'; pivotId: string; stat: CompetitiveStatId }
   | { type: 'GUESS'; pokemonId: string }
   | { type: 'RESET' }
 
 export function reducer(state: GameState, action: Action): GameState {
   switch (action.type) {
-    case 'START':
+    case 'START': {
+      const quizMode: QuizMode = action.quizMode ?? 'type'
+      const pool: DexPool =
+        quizMode === 'competitive' ? 'champions' : action.pool
+      const options: GameOptions = {
+        ...DEFAULT_OPTIONS,
+        ...action.options,
+      }
+      if (options.questionLimit != null) {
+        options.questionLimit = clampQuestionLimit(options.questionLimit)
+      }
       return {
         ...initialState(),
-        phase: 'pick_p1',
-        pool: action.pool,
+        phase: options.banEnabled ? 'ban_p1' : 'pick_p1',
+        pool,
+        quizMode,
         names: resolveNames(action.names ?? {}),
+        options,
       }
+    }
 
     case 'RESET':
       return {
         ...initialState(),
         pool: state.pool,
+        quizMode: state.quizMode,
         names: state.names,
+        options: state.options,
       }
 
     case 'CONFIRM_HANDOFF': {
+      if (state.phase === 'handoff_ban_p2') {
+        return { ...state, phase: 'ban_p2', lastMessage: null }
+      }
+      if (state.phase === 'handoff_pick_p1') {
+        return { ...state, phase: 'pick_p1', lastMessage: null }
+      }
       if (state.phase === 'handoff_p2') {
         return { ...state, phase: 'pick_p2', lastMessage: null }
       }
@@ -212,7 +419,42 @@ export function reducer(state: GameState, action: Action): GameState {
       return state
     }
 
+    case 'BAN': {
+      if (!state.options.banEnabled) return state
+      if (state.phase !== 'ban_p1' && state.phase !== 'ban_p2') return state
+      if (state.bannedTypes.includes(action.bannedType)) return state
+
+      const bannedTypes = [...state.bannedTypes, action.bannedType]
+      const remain = pokemonIn(state.pool, state.quizMode).filter(
+        (p) => !isTypeBanned(p, bannedTypes),
+      ).length
+      if (remain < 2) return state
+
+      if (state.phase === 'ban_p1') {
+        return {
+          ...state,
+          bannedTypes,
+          phase: 'handoff_ban_p2',
+          lastMessage: `【公開バン】${action.bannedType}タイプを禁止。${state.names.p2}に渡してください`,
+        }
+      }
+      return {
+        ...state,
+        bannedTypes,
+        phase: 'handoff_pick_p1',
+        lastMessage: `【公開バン】${action.bannedType}タイプを禁止。選出は${state.names.p1}から`,
+      }
+    }
+
     case 'PICK': {
+      const pick = getPokemon(action.pokemonId, state.pool, state.quizMode)
+      if (!pick || isTypeBanned(pick, state.bannedTypes)) return state
+      if (
+        state.quizMode === 'type' &&
+        pick.types.length !== 2
+      ) {
+        return state
+      }
       if (state.phase === 'pick_p1') {
         return {
           ...state,
@@ -233,11 +475,14 @@ export function reducer(state: GameState, action: Action): GameState {
     }
 
     case 'PROBE': {
+      if (state.quizMode !== 'type') return state
       if (state.phase !== 'battle' || !state.picks.p1 || !state.picks.p2) {
         return state
       }
+      if (!canAskQuestion(state, state.currentPlayer)) return state
+
       const targetId = state.picks[opponentOf(state.currentPlayer)]
-      const target = getPokemon(targetId!, state.pool)
+      const target = getPokemon(targetId!, state.pool, state.quizMode)
       if (!target) return state
 
       const { label } = calcEffectiveness(action.moveType, target)
@@ -256,18 +501,21 @@ export function reducer(state: GameState, action: Action): GameState {
     }
 
     case 'DEX_COMPARE': {
+      if (state.quizMode !== 'type') return state
       if (state.phase !== 'battle' || !state.picks.p1 || !state.picks.p2) {
         return state
       }
+      if (!canAskQuestion(state, state.currentPlayer)) return state
+
       const already = state.dexCompares.some(
         (c) =>
           c.by === state.currentPlayer && c.pivotId === action.pivotId,
       )
       if (already) return state
 
-      const pivot = getPokemon(action.pivotId, state.pool)
+      const pivot = getPokemon(action.pivotId, state.pool, state.quizMode)
       const targetId = state.picks[opponentOf(state.currentPlayer)]
-      const target = getPokemon(targetId!, state.pool)
+      const target = getPokemon(targetId!, state.pool, state.quizMode)
       if (!pivot || !target || pivot.num == null || target.num == null) {
         return state
       }
@@ -287,6 +535,79 @@ export function reducer(state: GameState, action: Action): GameState {
         lastMessage: greater
           ? `#${pivot.num}より大きい`
           : `#${pivot.num}以下`,
+      }
+    }
+
+    case 'TRAIT_PROBE': {
+      if (state.quizMode !== 'competitive') return state
+      if (state.phase !== 'battle' || !state.picks.p1 || !state.picks.p2) {
+        return state
+      }
+      if (!canAskQuestion(state, state.currentPlayer)) return state
+
+      const already = state.traitProbes.some(
+        (p) =>
+          p.by === state.currentPlayer && p.traitId === action.traitId,
+      )
+      if (already) return state
+
+      const targetId = state.picks[opponentOf(state.currentPlayer)]
+      const target = getPokemon(targetId!, state.pool, state.quizMode)
+      const meta = target ? getCompetitiveMeta(target.id) : undefined
+      if (!target || !meta) return state
+
+      const hasTrait = Boolean(meta.traits[action.traitId])
+      const probe: TraitProbeRecord = {
+        by: state.currentPlayer,
+        traitId: action.traitId,
+        hasTrait,
+      }
+
+      return {
+        ...state,
+        traitProbes: [...state.traitProbes, probe],
+        currentPlayer: opponentOf(state.currentPlayer),
+        lastMessage: traitProbeLabel(probe),
+      }
+    }
+
+    case 'STAT_COMPARE': {
+      if (state.quizMode !== 'competitive') return state
+      if (state.phase !== 'battle' || !state.picks.p1 || !state.picks.p2) {
+        return state
+      }
+      if (!canAskQuestion(state, state.currentPlayer)) return state
+
+      const already = state.statCompares.some(
+        (c) =>
+          c.by === state.currentPlayer &&
+          c.pivotId === action.pivotId &&
+          c.stat === action.stat,
+      )
+      if (already) return state
+
+      const pivot = getPokemon(action.pivotId, state.pool, state.quizMode)
+      const pivotMeta = pivot ? getCompetitiveMeta(pivot.id) : undefined
+      const targetId = state.picks[opponentOf(state.currentPlayer)]
+      const target = getPokemon(targetId!, state.pool, state.quizMode)
+      const targetMeta = target ? getCompetitiveMeta(target.id) : undefined
+      if (!pivot || !pivotMeta || !target || !targetMeta) return state
+
+      const pivotValue = pivotMeta[action.stat]
+      const greater = targetMeta[action.stat] > pivotValue
+      const compare: StatCompareRecord = {
+        by: state.currentPlayer,
+        pivotId: pivot.id,
+        stat: action.stat,
+        pivotValue,
+        greater,
+      }
+
+      return {
+        ...state,
+        statCompares: [...state.statCompares, compare],
+        currentPlayer: opponentOf(state.currentPlayer),
+        lastMessage: statCompareLabel(compare, pivot.name),
       }
     }
 

@@ -1,0 +1,7075 @@
+{
+  "source": {
+    "metagame": "gen9championsou",
+    "cutoff": 1500,
+    "month": "2026-04",
+    "battles": 302270,
+    "label": "Smogon Champions OU 1500（2026-04）"
+  },
+  "pokemon": {
+    "garchomp": {
+      "usage": 0.3970704,
+      "rank": 1,
+      "topMoves": [
+        {
+          "id": "earthquake",
+          "name": "じしん"
+        },
+        {
+          "id": "stealthrock",
+          "name": "ステルスロック"
+        },
+        {
+          "id": "dragontail",
+          "name": "ドラゴンテール"
+        }
+      ],
+      "topItem": {
+        "id": "sitrusberry",
+        "name": "オボンのみ"
+      },
+      "roles": [
+        "設置"
+      ],
+      "blurb": "設置枠 · じしん＋ステルスロック / オボンのみ"
+    },
+    "corviknight": {
+      "usage": 0.35156329999999997,
+      "rank": 2,
+      "topMoves": [
+        {
+          "id": "roost",
+          "name": "はねやすめ"
+        },
+        {
+          "id": "defog",
+          "name": "ぼうじん"
+        },
+        {
+          "id": "uturn",
+          "name": "とんぼがえり"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "除去",
+        "サイクル",
+        "受け"
+      ],
+      "blurb": "除去・サイクル枠 · はねやすめ＋ぼうじん / たべのこし"
+    },
+    "kingambit": {
+      "usage": 0.2568909,
+      "rank": 3,
+      "topMoves": [
+        {
+          "id": "suckerpunch",
+          "name": "ふいうち"
+        },
+        {
+          "id": "swordsdance",
+          "name": "つるぎのまい"
+        },
+        {
+          "id": "kowtowcleave",
+          "name": "ドゲザン"
+        }
+      ],
+      "topItem": {
+        "id": "blackglasses",
+        "name": "くろいメガネ"
+      },
+      "roles": [
+        "設置",
+        "積み",
+        "先制"
+      ],
+      "blurb": "設置・積み枠 · ふいうち＋つるぎのまい / くろいメガネ"
+    },
+    "dragapult": {
+      "usage": 0.1866931,
+      "rank": 4,
+      "topMoves": [
+        {
+          "id": "uturn",
+          "name": "とんぼがえり"
+        },
+        {
+          "id": "dracometeor",
+          "name": "りゅうせいぐん"
+        },
+        {
+          "id": "willowisp",
+          "name": "おにび"
+        }
+      ],
+      "topItem": {
+        "id": "spelltag",
+        "name": "のろいのおふだ"
+      },
+      "roles": [
+        "サイクル",
+        "先制"
+      ],
+      "blurb": "サイクル・先制枠 · とんぼがえり＋りゅうせいぐん / のろいのおふだ"
+    },
+    "sneasler": {
+      "usage": 0.1762669,
+      "rank": 5,
+      "topMoves": [
+        {
+          "id": "closecombat",
+          "name": "インファイト"
+        },
+        {
+          "id": "direclaw",
+          "name": "どくどくのツメ"
+        },
+        {
+          "id": "swordsdance",
+          "name": "つるぎのまい"
+        }
+      ],
+      "topItem": {
+        "id": "whiteherb",
+        "name": "しろいハーブ"
+      },
+      "roles": [
+        "設置",
+        "積み",
+        "サイクル"
+      ],
+      "blurb": "設置・積み枠 · インファイト＋どくどくのツメ / しろいハーブ"
+    },
+    "aegislashblade": {
+      "usage": 0.1743301,
+      "rank": 6,
+      "topMoves": [
+        {
+          "id": "shadowsneak",
+          "name": "かげうち"
+        },
+        {
+          "id": "poltergeist",
+          "name": "ポルターガイスト"
+        },
+        {
+          "id": "kingsshield",
+          "name": "キングシールド"
+        }
+      ],
+      "topItem": {
+        "id": "spelltag",
+        "name": "のろいのおふだ"
+      },
+      "roles": [
+        "先制"
+      ],
+      "blurb": "先制枠 · かげうち＋ポルターガイスト / のろいのおふだ"
+    },
+    "excadrill": {
+      "usage": 0.1577887,
+      "rank": 7,
+      "topMoves": [
+        {
+          "id": "earthquake",
+          "name": "じしん"
+        },
+        {
+          "id": "rapidspin",
+          "name": "こうそくスピン"
+        },
+        {
+          "id": "ironhead",
+          "name": "アイアンヘッド"
+        }
+      ],
+      "topItem": {
+        "id": "focussash",
+        "name": "きあいのタスキ"
+      },
+      "roles": [
+        "設置",
+        "除去"
+      ],
+      "blurb": "設置・除去枠 · じしん＋こうそくスピン / きあいのタスキ"
+    },
+    "samurotthisui": {
+      "usage": 0.154355,
+      "rank": 8,
+      "topMoves": [
+        {
+          "id": "ceaselessedge",
+          "name": "ひけん・ちえなみ"
+        },
+        {
+          "id": "flipturn",
+          "name": "クイックターン"
+        },
+        {
+          "id": "razorshell",
+          "name": "シェルブレード"
+        }
+      ],
+      "topItem": {
+        "id": "choicescarf",
+        "name": "こだわりスカーフ"
+      },
+      "roles": [
+        "設置",
+        "サイクル",
+        "先制"
+      ],
+      "blurb": "設置・サイクル枠 · ひけん・ちえなみ＋クイックターン / こだわりスカーフ"
+    },
+    "slowkinggalar": {
+      "usage": 0.1435129,
+      "rank": 9,
+      "topMoves": [
+        {
+          "id": "chillyreception",
+          "name": "さむいギャグ"
+        },
+        {
+          "id": "sludgebomb",
+          "name": "sludgebomb"
+        },
+        {
+          "id": "futuresight",
+          "name": "みらいよち"
+        }
+      ],
+      "topItem": {
+        "id": "colburberry",
+        "name": "colburberry"
+      },
+      "roles": [
+        "設置",
+        "サイクル"
+      ],
+      "blurb": "設置・サイクル枠 · さむいギャグ＋sludgebomb / colburberry"
+    },
+    "glimmora": {
+      "usage": 0.1400791,
+      "rank": 10,
+      "topMoves": [
+        {
+          "id": "mortalspin",
+          "name": "キラースピン"
+        },
+        {
+          "id": "stealthrock",
+          "name": "ステルスロック"
+        },
+        {
+          "id": "powergem",
+          "name": "powergem"
+        }
+      ],
+      "topItem": {
+        "id": "focussash",
+        "name": "きあいのタスキ"
+      },
+      "roles": [
+        "設置",
+        "除去"
+      ],
+      "blurb": "設置・除去枠 · キラースピン＋ステルスロック / きあいのタスキ"
+    },
+    "rotomwash": {
+      "usage": 0.1371346,
+      "rank": 11,
+      "topMoves": [
+        {
+          "id": "hydropump",
+          "name": "ハイドロポンプ"
+        },
+        {
+          "id": "voltswitch",
+          "name": "ボルトチェンジ"
+        },
+        {
+          "id": "willowisp",
+          "name": "おにび"
+        }
+      ],
+      "topItem": {
+        "id": "choicescarf",
+        "name": "こだわりスカーフ"
+      },
+      "roles": [
+        "サイクル"
+      ],
+      "blurb": "サイクル枠 · ハイドロポンプ＋ボルトチェンジ / こだわりスカーフ"
+    },
+    "meowscarada": {
+      "usage": 0.1353949,
+      "rank": 12,
+      "topMoves": [
+        {
+          "id": "flowertrick",
+          "name": "flowertrick"
+        },
+        {
+          "id": "uturn",
+          "name": "とんぼがえり"
+        },
+        {
+          "id": "knockoff",
+          "name": "はたきおとす"
+        }
+      ],
+      "topItem": {
+        "id": "choicescarf",
+        "name": "こだわりスカーフ"
+      },
+      "roles": [
+        "設置",
+        "サイクル",
+        "先制"
+      ],
+      "blurb": "設置・サイクル枠 · flowertrick＋とんぼがえり / こだわりスカーフ"
+    },
+    "hatterene": {
+      "usage": 0.11086560000000001,
+      "rank": 13,
+      "topMoves": [
+        {
+          "id": "drainingkiss",
+          "name": "drainingkiss"
+        },
+        {
+          "id": "nuzzle",
+          "name": "nuzzle"
+        },
+        {
+          "id": "psychicnoise",
+          "name": "サイコノイズ"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "対面"
+      ],
+      "blurb": "対面枠 · drainingkiss＋nuzzle / たべのこし"
+    },
+    "ceruledge": {
+      "usage": 0.10443540000000001,
+      "rank": 14,
+      "topMoves": [
+        {
+          "id": "bitterblade",
+          "name": "bitterblade"
+        },
+        {
+          "id": "swordsdance",
+          "name": "つるぎのまい"
+        },
+        {
+          "id": "shadowsneak",
+          "name": "かげうち"
+        }
+      ],
+      "topItem": {
+        "id": "focussash",
+        "name": "きあいのタスキ"
+      },
+      "roles": [
+        "積み",
+        "先制"
+      ],
+      "blurb": "積み・先制枠 · bitterblade＋つるぎのまい / きあいのタスキ"
+    },
+    "meganiummega": {
+      "usage": 0.099157,
+      "rank": 15,
+      "topMoves": [
+        {
+          "id": "solarbeam",
+          "name": "solarbeam"
+        },
+        {
+          "id": "weatherball",
+          "name": "weatherball"
+        },
+        {
+          "id": "synthesis",
+          "name": "こうごうせい"
+        }
+      ],
+      "topItem": {
+        "id": "meganiumite",
+        "name": "meganiumite"
+      },
+      "roles": [
+        "受け",
+        "先制"
+      ],
+      "blurb": "受け・先制枠 · solarbeam＋weatherball / meganiumite"
+    },
+    "volcarona": {
+      "usage": 0.089745,
+      "rank": 16,
+      "topMoves": [
+        {
+          "id": "quiverdance",
+          "name": "ちょうのまい"
+        },
+        {
+          "id": "bugbuzz",
+          "name": "bugbuzz"
+        },
+        {
+          "id": "fierydance",
+          "name": "fierydance"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "除去",
+        "積み",
+        "サイクル"
+      ],
+      "blurb": "除去・積み枠 · ちょうのまい＋bugbuzz / たべのこし"
+    },
+    "primarina": {
+      "usage": 0.0871732,
+      "rank": 17,
+      "topMoves": [
+        {
+          "id": "moonblast",
+          "name": "ムーンフォース"
+        },
+        {
+          "id": "calmmind",
+          "name": "めいそう"
+        },
+        {
+          "id": "surf",
+          "name": "surf"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "積み",
+        "サイクル",
+        "先制"
+      ],
+      "blurb": "積み・サイクル枠 · ムーンフォース＋めいそう / たべのこし"
+    },
+    "dragonite": {
+      "usage": 0.087072,
+      "rank": 18,
+      "topMoves": [
+        {
+          "id": "dragondance",
+          "name": "りゅうのまい"
+        },
+        {
+          "id": "earthquake",
+          "name": "じしん"
+        },
+        {
+          "id": "extremespeed",
+          "name": "しんそく"
+        }
+      ],
+      "topItem": {
+        "id": "lumberry",
+        "name": "ラムのみ"
+      },
+      "roles": [
+        "除去",
+        "積み",
+        "先制"
+      ],
+      "blurb": "除去・積み枠 · りゅうのまい＋じしん / ラムのみ"
+    },
+    "palafin": {
+      "usage": 0.0861502,
+      "rank": 19,
+      "topMoves": [
+        {
+          "id": "jetpunch",
+          "name": "ジェットパンチ"
+        },
+        {
+          "id": "bulkup",
+          "name": "ビルドアップ"
+        },
+        {
+          "id": "drainpunch",
+          "name": "drainpunch"
+        }
+      ],
+      "topItem": {
+        "id": "mysticwater",
+        "name": "mysticwater"
+      },
+      "roles": [
+        "積み",
+        "サイクル",
+        "先制"
+      ],
+      "blurb": "積み・サイクル枠 · ジェットパンチ＋ビルドアップ / mysticwater"
+    },
+    "archaludon": {
+      "usage": 0.08145580000000001,
+      "rank": 20,
+      "topMoves": [
+        {
+          "id": "flashcannon",
+          "name": "flashcannon"
+        },
+        {
+          "id": "dracometeor",
+          "name": "りゅうせいぐん"
+        },
+        {
+          "id": "electroshot",
+          "name": "electroshot"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "設置"
+      ],
+      "blurb": "設置枠 · flashcannon＋りゅうせいぐん / たべのこし"
+    },
+    "scizor": {
+      "usage": 0.076417,
+      "rank": 21,
+      "topMoves": [
+        {
+          "id": "bulletpunch",
+          "name": "バレットパンチ"
+        },
+        {
+          "id": "uturn",
+          "name": "とんぼがえり"
+        },
+        {
+          "id": "swordsdance",
+          "name": "つるぎのまい"
+        }
+      ],
+      "topItem": {
+        "id": "metalcoat",
+        "name": "metalcoat"
+      },
+      "roles": [
+        "除去",
+        "積み",
+        "サイクル"
+      ],
+      "blurb": "除去・積み枠 · バレットパンチ＋とんぼがえり / metalcoat"
+    },
+    "clefable": {
+      "usage": 0.0723462,
+      "rank": 22,
+      "topMoves": [
+        {
+          "id": "moonblast",
+          "name": "ムーンフォース"
+        },
+        {
+          "id": "moonlight",
+          "name": "つきのひかり"
+        },
+        {
+          "id": "stealthrock",
+          "name": "ステルスロック"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "設置",
+        "サイクル",
+        "受け"
+      ],
+      "blurb": "設置・サイクル枠 · ムーンフォース＋つきのひかり / たべのこし"
+    },
+    "araquanid": {
+      "usage": 0.072087,
+      "rank": 23,
+      "topMoves": [
+        {
+          "id": "stickyweb",
+          "name": "ねばねばネット"
+        },
+        {
+          "id": "liquidation",
+          "name": "liquidation"
+        },
+        {
+          "id": "leechlife",
+          "name": "leechlife"
+        }
+      ],
+      "topItem": {
+        "id": "mentalherb",
+        "name": "メンタルハーブ"
+      },
+      "roles": [
+        "設置"
+      ],
+      "blurb": "設置枠 · ねばねばネット＋liquidation / メンタルハーブ"
+    },
+    "pelipper": {
+      "usage": 0.0660849,
+      "rank": 24,
+      "topMoves": [
+        {
+          "id": "hurricane",
+          "name": "hurricane"
+        },
+        {
+          "id": "uturn",
+          "name": "とんぼがえり"
+        },
+        {
+          "id": "weatherball",
+          "name": "weatherball"
+        }
+      ],
+      "topItem": {
+        "id": "sitrusberry",
+        "name": "オボンのみ"
+      },
+      "roles": [
+        "除去",
+        "サイクル"
+      ],
+      "blurb": "除去・サイクル枠 · hurricane＋とんぼがえり / オボンのみ"
+    },
+    "blastoisemega": {
+      "usage": 0.0638493,
+      "rank": 25,
+      "topMoves": [
+        {
+          "id": "shellsmash",
+          "name": "からをやぶる"
+        },
+        {
+          "id": "darkpulse",
+          "name": "darkpulse"
+        },
+        {
+          "id": "waterpulse",
+          "name": "waterpulse"
+        }
+      ],
+      "topItem": {
+        "id": "blastoisinite",
+        "name": "blastoisinite"
+      },
+      "roles": [
+        "除去",
+        "積み",
+        "サイクル"
+      ],
+      "blurb": "除去・積み枠 · からをやぶる＋darkpulse / blastoisinite"
+    },
+    "hydreigon": {
+      "usage": 0.0630978,
+      "rank": 26,
+      "topMoves": [
+        {
+          "id": "darkpulse",
+          "name": "darkpulse"
+        },
+        {
+          "id": "dracometeor",
+          "name": "りゅうせいぐん"
+        },
+        {
+          "id": "uturn",
+          "name": "とんぼがえり"
+        }
+      ],
+      "topItem": {
+        "id": "choicescarf",
+        "name": "こだわりスカーフ"
+      },
+      "roles": [
+        "設置",
+        "除去",
+        "サイクル"
+      ],
+      "blurb": "設置・除去枠 · darkpulse＋りゅうせいぐん / こだわりスカーフ"
+    },
+    "starmiemega": {
+      "usage": 0.0565343,
+      "rank": 27,
+      "topMoves": [
+        {
+          "id": "liquidation",
+          "name": "liquidation"
+        },
+        {
+          "id": "zenheadbutt",
+          "name": "zenheadbutt"
+        },
+        {
+          "id": "aquajet",
+          "name": "アクアジェット"
+        }
+      ],
+      "topItem": {
+        "id": "starminite",
+        "name": "starminite"
+      },
+      "roles": [
+        "除去",
+        "サイクル",
+        "先制"
+      ],
+      "blurb": "除去・サイクル枠 · liquidation＋zenheadbutt / starminite"
+    },
+    "toxapex": {
+      "usage": 0.0556048,
+      "rank": 28,
+      "topMoves": [
+        {
+          "id": "recover",
+          "name": "じこさいせい"
+        },
+        {
+          "id": "haze",
+          "name": "haze"
+        },
+        {
+          "id": "toxic",
+          "name": "どくどく"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "設置",
+        "受け"
+      ],
+      "blurb": "設置・受け枠 · じこさいせい＋haze / たべのこし"
+    },
+    "delphoxmega": {
+      "usage": 0.0527965,
+      "rank": 29,
+      "topMoves": [
+        {
+          "id": "nastyplot",
+          "name": "わるだくみ"
+        },
+        {
+          "id": "flamethrower",
+          "name": "flamethrower"
+        },
+        {
+          "id": "psyshock",
+          "name": "psyshock"
+        }
+      ],
+      "topItem": {
+        "id": "delphoxite",
+        "name": "delphoxite"
+      },
+      "roles": [
+        "積み"
+      ],
+      "blurb": "積み枠 · わるだくみ＋flamethrower / delphoxite"
+    },
+    "lucariomega": {
+      "usage": 0.0520739,
+      "rank": 30,
+      "topMoves": [
+        {
+          "id": "closecombat",
+          "name": "インファイト"
+        },
+        {
+          "id": "swordsdance",
+          "name": "つるぎのまい"
+        },
+        {
+          "id": "bulletpunch",
+          "name": "バレットパンチ"
+        }
+      ],
+      "topItem": {
+        "id": "lucarionite",
+        "name": "lucarionite"
+      },
+      "roles": [
+        "積み",
+        "先制"
+      ],
+      "blurb": "積み・先制枠 · インファイト＋つるぎのまい / lucarionite"
+    },
+    "tyranitar": {
+      "usage": 0.0495823,
+      "rank": 31,
+      "topMoves": [
+        {
+          "id": "knockoff",
+          "name": "はたきおとす"
+        },
+        {
+          "id": "stealthrock",
+          "name": "ステルスロック"
+        },
+        {
+          "id": "stoneedge",
+          "name": "stoneedge"
+        }
+      ],
+      "topItem": {
+        "id": "chopleberry",
+        "name": "chopleberry"
+      },
+      "roles": [
+        "設置"
+      ],
+      "blurb": "設置枠 · はたきおとす＋ステルスロック / chopleberry"
+    },
+    "lopunnymega": {
+      "usage": 0.043987899999999996,
+      "rank": 32,
+      "topMoves": [
+        {
+          "id": "closecombat",
+          "name": "インファイト"
+        },
+        {
+          "id": "fakeout",
+          "name": "ねこだまし"
+        },
+        {
+          "id": "tripleaxel",
+          "name": "tripleaxel"
+        }
+      ],
+      "topItem": {
+        "id": "lopunnite",
+        "name": "lopunnite"
+      },
+      "roles": [
+        "サイクル",
+        "先制"
+      ],
+      "blurb": "サイクル・先制枠 · インファイト＋ねこだまし / lopunnite"
+    },
+    "rotomheat": {
+      "usage": 0.043398000000000006,
+      "rank": 33,
+      "topMoves": [
+        {
+          "id": "overheat",
+          "name": "overheat"
+        },
+        {
+          "id": "voltswitch",
+          "name": "ボルトチェンジ"
+        },
+        {
+          "id": "willowisp",
+          "name": "おにび"
+        }
+      ],
+      "topItem": {
+        "id": "choicescarf",
+        "name": "こだわりスカーフ"
+      },
+      "roles": [
+        "サイクル"
+      ],
+      "blurb": "サイクル枠 · overheat＋ボルトチェンジ / こだわりスカーフ"
+    },
+    "gengarmega": {
+      "usage": 0.042365700000000006,
+      "rank": 34,
+      "topMoves": [
+        {
+          "id": "shadowball",
+          "name": "シャドーボール"
+        },
+        {
+          "id": "sludgewave",
+          "name": "sludgewave"
+        },
+        {
+          "id": "sludgebomb",
+          "name": "sludgebomb"
+        }
+      ],
+      "topItem": {
+        "id": "gengarite",
+        "name": "gengarite"
+      },
+      "roles": [
+        "設置",
+        "先制"
+      ],
+      "blurb": "設置・先制枠 · シャドーボール＋sludgewave / gengarite"
+    },
+    "quaquaval": {
+      "usage": 0.041566200000000005,
+      "rank": 35,
+      "topMoves": [
+        {
+          "id": "aquastep",
+          "name": "aquastep"
+        },
+        {
+          "id": "closecombat",
+          "name": "インファイト"
+        },
+        {
+          "id": "rapidspin",
+          "name": "こうそくスピン"
+        }
+      ],
+      "topItem": {
+        "id": "mysticwater",
+        "name": "mysticwater"
+      },
+      "roles": [
+        "除去",
+        "サイクル",
+        "先制"
+      ],
+      "blurb": "除去・サイクル枠 · aquastep＋インファイト / mysticwater"
+    },
+    "arcaninehisui": {
+      "usage": 0.0403959,
+      "rank": 36,
+      "topMoves": [
+        {
+          "id": "flareblitz",
+          "name": "フレアドライブ"
+        },
+        {
+          "id": "headsmash",
+          "name": "headsmash"
+        },
+        {
+          "id": "extremespeed",
+          "name": "しんそく"
+        }
+      ],
+      "topItem": {
+        "id": "choicescarf",
+        "name": "こだわりスカーフ"
+      },
+      "roles": [
+        "設置",
+        "先制"
+      ],
+      "blurb": "設置・先制枠 · フレアドライブ＋headsmash / こだわりスカーフ"
+    },
+    "basculegion": {
+      "usage": 0.0348636,
+      "rank": 37,
+      "topMoves": [
+        {
+          "id": "wavecrash",
+          "name": "ウェーブタックル"
+        },
+        {
+          "id": "flipturn",
+          "name": "クイックターン"
+        },
+        {
+          "id": "aquajet",
+          "name": "アクアジェット"
+        }
+      ],
+      "topItem": {
+        "id": "mysticwater",
+        "name": "mysticwater"
+      },
+      "roles": [
+        "サイクル",
+        "先制"
+      ],
+      "blurb": "サイクル・先制枠 · ウェーブタックル＋クイックターン / mysticwater"
+    },
+    "froslassmega": {
+      "usage": 0.0346666,
+      "rank": 38,
+      "topMoves": [
+        {
+          "id": "blizzard",
+          "name": "blizzard"
+        },
+        {
+          "id": "shadowball",
+          "name": "シャドーボール"
+        },
+        {
+          "id": "auroraveil",
+          "name": "auroraveil"
+        }
+      ],
+      "topItem": {
+        "id": "froslassite",
+        "name": "froslassite"
+      },
+      "roles": [
+        "設置",
+        "先制"
+      ],
+      "blurb": "設置・先制枠 · blizzard＋シャドーボール / froslassite"
+    },
+    "charizardmegay": {
+      "usage": 0.0345612,
+      "rank": 39,
+      "topMoves": [
+        {
+          "id": "solarbeam",
+          "name": "solarbeam"
+        },
+        {
+          "id": "weatherball",
+          "name": "weatherball"
+        },
+        {
+          "id": "roost",
+          "name": "はねやすめ"
+        }
+      ],
+      "topItem": {
+        "id": "charizarditey",
+        "name": "charizarditey"
+      },
+      "roles": [
+        "除去"
+      ],
+      "blurb": "除去枠 · solarbeam＋weatherball / charizarditey"
+    },
+    "greninjamega": {
+      "usage": 0.0339162,
+      "rank": 40,
+      "topMoves": [
+        {
+          "id": "icebeam",
+          "name": "icebeam"
+        },
+        {
+          "id": "darkpulse",
+          "name": "darkpulse"
+        },
+        {
+          "id": "sludgewave",
+          "name": "sludgewave"
+        }
+      ],
+      "topItem": {
+        "id": "greninjite",
+        "name": "greninjite"
+      },
+      "roles": [
+        "設置",
+        "サイクル",
+        "先制"
+      ],
+      "blurb": "設置・サイクル枠 · icebeam＋darkpulse / greninjite"
+    },
+    "alakazammega": {
+      "usage": 0.0331779,
+      "rank": 41,
+      "topMoves": [
+        {
+          "id": "psychic",
+          "name": "psychic"
+        },
+        {
+          "id": "nastyplot",
+          "name": "わるだくみ"
+        },
+        {
+          "id": "focusblast",
+          "name": "きあいだま"
+        }
+      ],
+      "topItem": {
+        "id": "alakazite",
+        "name": "alakazite"
+      },
+      "roles": [
+        "積み",
+        "サイクル"
+      ],
+      "blurb": "積み・サイクル枠 · psychic＋わるだくみ / alakazite"
+    },
+    "sinistchamasterpiece": {
+      "usage": 0.0320915,
+      "rank": 42,
+      "topMoves": [
+        {
+          "id": "matchagotcha",
+          "name": "matchagotcha"
+        },
+        {
+          "id": "strengthsap",
+          "name": "ちからをすいとる"
+        },
+        {
+          "id": "shadowball",
+          "name": "シャドーボール"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "受け"
+      ],
+      "blurb": "受け枠 · matchagotcha＋ちからをすいとる / たべのこし"
+    },
+    "skeledirge": {
+      "usage": 0.0319357,
+      "rank": 43,
+      "topMoves": [
+        {
+          "id": "torchsong",
+          "name": "torchsong"
+        },
+        {
+          "id": "slackoff",
+          "name": "なまける"
+        },
+        {
+          "id": "willowisp",
+          "name": "おにび"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "受け"
+      ],
+      "blurb": "受け枠 · torchsong＋なまける / たべのこし"
+    },
+    "hippowdon": {
+      "usage": 0.0312991,
+      "rank": 44,
+      "topMoves": [
+        {
+          "id": "earthquake",
+          "name": "じしん"
+        },
+        {
+          "id": "slackoff",
+          "name": "なまける"
+        },
+        {
+          "id": "stealthrock",
+          "name": "ステルスロック"
+        }
+      ],
+      "topItem": {
+        "id": "passhoberry",
+        "name": "passhoberry"
+      },
+      "roles": [
+        "設置"
+      ],
+      "blurb": "設置枠 · じしん＋なまける / passhoberry"
+    },
+    "scizormega": {
+      "usage": 0.029148800000000002,
+      "rank": 45,
+      "topMoves": [
+        {
+          "id": "bulletpunch",
+          "name": "バレットパンチ"
+        },
+        {
+          "id": "swordsdance",
+          "name": "つるぎのまい"
+        },
+        {
+          "id": "roost",
+          "name": "はねやすめ"
+        }
+      ],
+      "topItem": {
+        "id": "scizorite",
+        "name": "scizorite"
+      },
+      "roles": [
+        "除去",
+        "積み",
+        "サイクル"
+      ],
+      "blurb": "除去・積み枠 · バレットパンチ＋つるぎのまい / scizorite"
+    },
+    "feraligatrmega": {
+      "usage": 0.0289805,
+      "rank": 46,
+      "topMoves": [
+        {
+          "id": "liquidation",
+          "name": "liquidation"
+        },
+        {
+          "id": "dragondance",
+          "name": "りゅうのまい"
+        },
+        {
+          "id": "doubleedge",
+          "name": "doubleedge"
+        }
+      ],
+      "topItem": {
+        "id": "feraligite",
+        "name": "feraligite"
+      },
+      "roles": [
+        "積み",
+        "サイクル"
+      ],
+      "blurb": "積み・サイクル枠 · liquidation＋りゅうのまい / feraligite"
+    },
+    "glimmoramega": {
+      "usage": 0.0288362,
+      "rank": 47,
+      "topMoves": [
+        {
+          "id": "powergem",
+          "name": "powergem"
+        },
+        {
+          "id": "earthpower",
+          "name": "earthpower"
+        },
+        {
+          "id": "sludgewave",
+          "name": "sludgewave"
+        }
+      ],
+      "topItem": {
+        "id": "glimmoranite",
+        "name": "glimmoranite"
+      },
+      "roles": [
+        "設置",
+        "除去"
+      ],
+      "blurb": "設置・除去枠 · powergem＋earthpower / glimmoranite"
+    },
+    "espathra": {
+      "usage": 0.0285597,
+      "rank": 48,
+      "topMoves": [
+        {
+          "id": "calmmind",
+          "name": "めいそう"
+        },
+        {
+          "id": "storedpower",
+          "name": "storedpower"
+        },
+        {
+          "id": "dazzlinggleam",
+          "name": "dazzlinggleam"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "積み",
+        "サイクル"
+      ],
+      "blurb": "積み・サイクル枠 · めいそう＋storedpower / たべのこし"
+    },
+    "clefablemega": {
+      "usage": 0.0285093,
+      "rank": 49,
+      "topMoves": [
+        {
+          "id": "moonblast",
+          "name": "ムーンフォース"
+        },
+        {
+          "id": "moonlight",
+          "name": "つきのひかり"
+        },
+        {
+          "id": "calmmind",
+          "name": "めいそう"
+        }
+      ],
+      "topItem": {
+        "id": "clefablite",
+        "name": "clefablite"
+      },
+      "roles": [
+        "設置",
+        "積み",
+        "サイクル"
+      ],
+      "blurb": "設置・積み枠 · ムーンフォース＋つきのひかり / clefablite"
+    },
+    "umbreon": {
+      "usage": 0.0283187,
+      "rank": 50,
+      "topMoves": [
+        {
+          "id": "foulplay",
+          "name": "foulplay"
+        },
+        {
+          "id": "wish",
+          "name": "ねがいごと"
+        },
+        {
+          "id": "protect",
+          "name": "まもる"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "受け",
+        "先制"
+      ],
+      "blurb": "受け・先制枠 · foulplay＋ねがいごと / たべのこし"
+    },
+    "alakazam": {
+      "usage": 0.027993999999999998,
+      "rank": 51,
+      "topMoves": [
+        {
+          "id": "psychic",
+          "name": "psychic"
+        },
+        {
+          "id": "focusblast",
+          "name": "きあいだま"
+        },
+        {
+          "id": "shadowball",
+          "name": "シャドーボール"
+        }
+      ],
+      "topItem": {
+        "id": "focussash",
+        "name": "きあいのタスキ"
+      },
+      "roles": [
+        "サイクル"
+      ],
+      "blurb": "サイクル枠 · psychic＋きあいだま / きあいのタスキ"
+    },
+    "greninja": {
+      "usage": 0.0274019,
+      "rank": 52,
+      "topMoves": [
+        {
+          "id": "icebeam",
+          "name": "icebeam"
+        },
+        {
+          "id": "darkpulse",
+          "name": "darkpulse"
+        },
+        {
+          "id": "uturn",
+          "name": "とんぼがえり"
+        }
+      ],
+      "topItem": {
+        "id": "choicescarf",
+        "name": "こだわりスカーフ"
+      },
+      "roles": [
+        "設置",
+        "サイクル",
+        "先制"
+      ],
+      "blurb": "設置・サイクル枠 · icebeam＋darkpulse / こだわりスカーフ"
+    },
+    "charizardmegax": {
+      "usage": 0.026492300000000003,
+      "rank": 53,
+      "topMoves": [
+        {
+          "id": "dragondance",
+          "name": "りゅうのまい"
+        },
+        {
+          "id": "flareblitz",
+          "name": "フレアドライブ"
+        },
+        {
+          "id": "dragonclaw",
+          "name": "dragonclaw"
+        }
+      ],
+      "topItem": {
+        "id": "charizarditex",
+        "name": "charizarditex"
+      },
+      "roles": [
+        "除去",
+        "積み"
+      ],
+      "blurb": "除去・積み枠 · りゅうのまい＋フレアドライブ / charizarditex"
+    },
+    "azumarill": {
+      "usage": 0.026467,
+      "rank": 54,
+      "topMoves": [
+        {
+          "id": "aquajet",
+          "name": "アクアジェット"
+        },
+        {
+          "id": "playrough",
+          "name": "playrough"
+        },
+        {
+          "id": "bellydrum",
+          "name": "bellydrum"
+        }
+      ],
+      "topItem": {
+        "id": "sitrusberry",
+        "name": "オボンのみ"
+      },
+      "roles": [
+        "先制"
+      ],
+      "blurb": "先制枠 · アクアジェット＋playrough / オボンのみ"
+    },
+    "starmie": {
+      "usage": 0.025909599999999998,
+      "rank": 55,
+      "topMoves": [
+        {
+          "id": "rapidspin",
+          "name": "こうそくスピン"
+        },
+        {
+          "id": "icebeam",
+          "name": "icebeam"
+        },
+        {
+          "id": "thunderbolt",
+          "name": "thunderbolt"
+        }
+      ],
+      "topItem": {
+        "id": "mysticwater",
+        "name": "mysticwater"
+      },
+      "roles": [
+        "除去",
+        "サイクル"
+      ],
+      "blurb": "除去・サイクル枠 · こうそくスピン＋icebeam / mysticwater"
+    },
+    "incineroar": {
+      "usage": 0.02483,
+      "rank": 56,
+      "topMoves": [
+        {
+          "id": "partingshot",
+          "name": "つぶやき"
+        },
+        {
+          "id": "flareblitz",
+          "name": "フレアドライブ"
+        },
+        {
+          "id": "fakeout",
+          "name": "ねこだまし"
+        }
+      ],
+      "topItem": {
+        "id": "sitrusberry",
+        "name": "オボンのみ"
+      },
+      "roles": [
+        "サイクル",
+        "先制"
+      ],
+      "blurb": "サイクル・先制枠 · つぶやき＋フレアドライブ / オボンのみ"
+    },
+    "mamoswine": {
+      "usage": 0.0234205,
+      "rank": 57,
+      "topMoves": [
+        {
+          "id": "earthquake",
+          "name": "じしん"
+        },
+        {
+          "id": "iceshard",
+          "name": "こおりのつぶて"
+        },
+        {
+          "id": "iciclecrash",
+          "name": "iciclecrash"
+        }
+      ],
+      "topItem": {
+        "id": "focussash",
+        "name": "きあいのタスキ"
+      },
+      "roles": [
+        "設置",
+        "先制"
+      ],
+      "blurb": "設置・先制枠 · じしん＋こおりのつぶて / きあいのタスキ"
+    },
+    "hydrapple": {
+      "usage": 0.0232753,
+      "rank": 58,
+      "topMoves": [
+        {
+          "id": "earthpower",
+          "name": "earthpower"
+        },
+        {
+          "id": "ficklebeam",
+          "name": "ficklebeam"
+        },
+        {
+          "id": "gigadrain",
+          "name": "gigadrain"
+        }
+      ],
+      "topItem": {
+        "id": "yacheberry",
+        "name": "ヤチェのみ"
+      },
+      "roles": [
+        "先制"
+      ],
+      "blurb": "先制枠 · earthpower＋ficklebeam / ヤチェのみ"
+    },
+    "ninetalesalola": {
+      "usage": 0.023092,
+      "rank": 59,
+      "topMoves": [
+        {
+          "id": "auroraveil",
+          "name": "auroraveil"
+        },
+        {
+          "id": "moonblast",
+          "name": "ムーンフォース"
+        },
+        {
+          "id": "blizzard",
+          "name": "blizzard"
+        }
+      ],
+      "topItem": {
+        "id": "nevermeltice",
+        "name": "nevermeltice"
+      },
+      "roles": [
+        "先制"
+      ],
+      "blurb": "先制枠 · auroraveil＋ムーンフォース / nevermeltice"
+    },
+    "gengar": {
+      "usage": 0.0230279,
+      "rank": 60,
+      "topMoves": [
+        {
+          "id": "shadowball",
+          "name": "シャドーボール"
+        },
+        {
+          "id": "sludgewave",
+          "name": "sludgewave"
+        },
+        {
+          "id": "focusblast",
+          "name": "きあいだま"
+        }
+      ],
+      "topItem": {
+        "id": "focussash",
+        "name": "きあいのタスキ"
+      },
+      "roles": [
+        "設置",
+        "先制"
+      ],
+      "blurb": "設置・先制枠 · シャドーボール＋sludgewave / きあいのタスキ"
+    },
+    "zoroarkhisui": {
+      "usage": 0.022901400000000002,
+      "rank": 61,
+      "topMoves": [
+        {
+          "id": "hypervoice",
+          "name": "hypervoice"
+        },
+        {
+          "id": "shadowball",
+          "name": "シャドーボール"
+        },
+        {
+          "id": "flamethrower",
+          "name": "flamethrower"
+        }
+      ],
+      "topItem": {
+        "id": "focussash",
+        "name": "きあいのタスキ"
+      },
+      "roles": [
+        "サイクル",
+        "先制"
+      ],
+      "blurb": "サイクル・先制枠 · hypervoice＋シャドーボール / きあいのタスキ"
+    },
+    "conkeldurr": {
+      "usage": 0.0228677,
+      "rank": 62,
+      "topMoves": [
+        {
+          "id": "machpunch",
+          "name": "マッハパンチ"
+        },
+        {
+          "id": "drainpunch",
+          "name": "drainpunch"
+        },
+        {
+          "id": "knockoff",
+          "name": "はたきおとす"
+        }
+      ],
+      "topItem": {
+        "id": "blackbelt",
+        "name": "blackbelt"
+      },
+      "roles": [
+        "先制"
+      ],
+      "blurb": "先制枠 · マッハパンチ＋drainpunch / blackbelt"
+    },
+    "weavile": {
+      "usage": 0.0228046,
+      "rank": 63,
+      "topMoves": [
+        {
+          "id": "knockoff",
+          "name": "はたきおとす"
+        },
+        {
+          "id": "tripleaxel",
+          "name": "tripleaxel"
+        },
+        {
+          "id": "iceshard",
+          "name": "こおりのつぶて"
+        }
+      ],
+      "topItem": {
+        "id": "focussash",
+        "name": "きあいのタスキ"
+      },
+      "roles": [
+        "先制"
+      ],
+      "blurb": "先制枠 · はたきおとす＋tripleaxel / きあいのタスキ"
+    },
+    "forretress": {
+      "usage": 0.022257799999999998,
+      "rank": 64,
+      "topMoves": [
+        {
+          "id": "rapidspin",
+          "name": "こうそくスピン"
+        },
+        {
+          "id": "stealthrock",
+          "name": "ステルスロック"
+        },
+        {
+          "id": "voltswitch",
+          "name": "ボルトチェンジ"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "設置",
+        "除去",
+        "サイクル"
+      ],
+      "blurb": "設置・除去枠 · こうそくスピン＋ステルスロック / たべのこし"
+    },
+    "kleavor": {
+      "usage": 0.0218971,
+      "rank": 65,
+      "topMoves": [
+        {
+          "id": "stoneaxe",
+          "name": "がんせきアックス"
+        },
+        {
+          "id": "uturn",
+          "name": "とんぼがえり"
+        },
+        {
+          "id": "closecombat",
+          "name": "インファイト"
+        }
+      ],
+      "topItem": {
+        "id": "choicescarf",
+        "name": "こだわりスカーフ"
+      },
+      "roles": [
+        "設置",
+        "サイクル",
+        "先制"
+      ],
+      "blurb": "設置・サイクル枠 · がんせきアックス＋とんぼがえり / こだわりスカーフ"
+    },
+    "serperior": {
+      "usage": 0.021398,
+      "rank": 66,
+      "topMoves": [
+        {
+          "id": "leafstorm",
+          "name": "leafstorm"
+        },
+        {
+          "id": "glare",
+          "name": "glare"
+        },
+        {
+          "id": "substitute",
+          "name": "みがわり"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "除去",
+        "受け",
+        "先制"
+      ],
+      "blurb": "除去・受け枠 · leafstorm＋glare / たべのこし"
+    },
+    "kommoo": {
+      "usage": 0.020628,
+      "rank": 67,
+      "topMoves": [
+        {
+          "id": "clangingscales",
+          "name": "clangingscales"
+        },
+        {
+          "id": "clangoroussoul",
+          "name": "ソウルビート"
+        },
+        {
+          "id": "drainpunch",
+          "name": "drainpunch"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "設置",
+        "積み",
+        "先制"
+      ],
+      "blurb": "設置・積み枠 · clangingscales＋ソウルビート / たべのこし"
+    },
+    "dragonitemega": {
+      "usage": 0.0199465,
+      "rank": 68,
+      "topMoves": [
+        {
+          "id": "hurricane",
+          "name": "hurricane"
+        },
+        {
+          "id": "dracometeor",
+          "name": "りゅうせいぐん"
+        },
+        {
+          "id": "roost",
+          "name": "はねやすめ"
+        }
+      ],
+      "topItem": {
+        "id": "dragoninite",
+        "name": "dragoninite"
+      },
+      "roles": [
+        "除去",
+        "先制"
+      ],
+      "blurb": "除去・先制枠 · hurricane＋りゅうせいぐん / dragoninite"
+    },
+    "goodrahisui": {
+      "usage": 0.0197851,
+      "rank": 69,
+      "topMoves": [
+        {
+          "id": "dracometeor",
+          "name": "りゅうせいぐん"
+        },
+        {
+          "id": "flashcannon",
+          "name": "flashcannon"
+        },
+        {
+          "id": "heavyslam",
+          "name": "heavyslam"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "対面"
+      ],
+      "blurb": "対面枠 · りゅうせいぐん＋flashcannon / たべのこし"
+    },
+    "slowking": {
+      "usage": 0.0196638,
+      "rank": 70,
+      "topMoves": [
+        {
+          "id": "chillyreception",
+          "name": "さむいギャグ"
+        },
+        {
+          "id": "scald",
+          "name": "ねっとう"
+        },
+        {
+          "id": "futuresight",
+          "name": "みらいよち"
+        }
+      ],
+      "topItem": {
+        "id": "colburberry",
+        "name": "colburberry"
+      },
+      "roles": [
+        "サイクル"
+      ],
+      "blurb": "サイクル枠 · さむいギャグ＋ねっとう / colburberry"
+    },
+    "skarmory": {
+      "usage": 0.018974,
+      "rank": 71,
+      "topMoves": [
+        {
+          "id": "roost",
+          "name": "はねやすめ"
+        },
+        {
+          "id": "bodypress",
+          "name": "ボディプレス"
+        },
+        {
+          "id": "spikes",
+          "name": "まきびし"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "設置",
+        "除去",
+        "受け"
+      ],
+      "blurb": "設置・除去枠 · はねやすめ＋ボディプレス / たべのこし"
+    },
+    "krookodile": {
+      "usage": 0.0180639,
+      "rank": 72,
+      "topMoves": [
+        {
+          "id": "earthquake",
+          "name": "じしん"
+        },
+        {
+          "id": "knockoff",
+          "name": "はたきおとす"
+        },
+        {
+          "id": "stealthrock",
+          "name": "ステルスロック"
+        }
+      ],
+      "topItem": {
+        "id": "choicescarf",
+        "name": "こだわりスカーフ"
+      },
+      "roles": [
+        "設置"
+      ],
+      "blurb": "設置枠 · じしん＋はたきおとす / こだわりスカーフ"
+    },
+    "aerodactyl": {
+      "usage": 0.0177261,
+      "rank": 73,
+      "topMoves": [
+        {
+          "id": "stealthrock",
+          "name": "ステルスロック"
+        },
+        {
+          "id": "taunt",
+          "name": "ちょうはつ"
+        },
+        {
+          "id": "dualwingbeat",
+          "name": "dualwingbeat"
+        }
+      ],
+      "topItem": {
+        "id": "focussash",
+        "name": "きあいのタスキ"
+      },
+      "roles": [
+        "設置",
+        "除去"
+      ],
+      "blurb": "設置・除去枠 · ステルスロック＋ちょうはつ / きあいのタスキ"
+    },
+    "mimikyubusted": {
+      "usage": 0.0175024,
+      "rank": 74,
+      "topMoves": [
+        {
+          "id": "playrough",
+          "name": "playrough"
+        },
+        {
+          "id": "shadowsneak",
+          "name": "かげうち"
+        },
+        {
+          "id": "swordsdance",
+          "name": "つるぎのまい"
+        }
+      ],
+      "topItem": {
+        "id": "spelltag",
+        "name": "のろいのおふだ"
+      },
+      "roles": [
+        "積み",
+        "先制"
+      ],
+      "blurb": "積み・先制枠 · playrough＋かげうち / のろいのおふだ"
+    },
+    "gyarados": {
+      "usage": 0.0169495,
+      "rank": 75,
+      "topMoves": [
+        {
+          "id": "waterfall",
+          "name": "waterfall"
+        },
+        {
+          "id": "dragondance",
+          "name": "りゅうのまい"
+        },
+        {
+          "id": "earthquake",
+          "name": "じしん"
+        }
+      ],
+      "topItem": {
+        "id": "sitrusberry",
+        "name": "オボンのみ"
+      },
+      "roles": [
+        "積み"
+      ],
+      "blurb": "積み枠 · waterfall＋りゅうのまい / オボンのみ"
+    },
+    "empoleon": {
+      "usage": 0.0166091,
+      "rank": 76,
+      "topMoves": [
+        {
+          "id": "surf",
+          "name": "surf"
+        },
+        {
+          "id": "roost",
+          "name": "はねやすめ"
+        },
+        {
+          "id": "stealthrock",
+          "name": "ステルスロック"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "設置",
+        "除去",
+        "サイクル"
+      ],
+      "blurb": "設置・除去枠 · surf＋はねやすめ / たべのこし"
+    },
+    "scovillainmega": {
+      "usage": 0.0156513,
+      "rank": 77,
+      "topMoves": [
+        {
+          "id": "leechseed",
+          "name": "leechseed"
+        },
+        {
+          "id": "gigadrain",
+          "name": "gigadrain"
+        },
+        {
+          "id": "protect",
+          "name": "まもる"
+        }
+      ],
+      "topItem": {
+        "id": "scovillainite",
+        "name": "scovillainite"
+      },
+      "roles": [
+        "先制"
+      ],
+      "blurb": "先制枠 · leechseed＋gigadrain / scovillainite"
+    },
+    "beedrillmega": {
+      "usage": 0.015147299999999999,
+      "rank": 78,
+      "topMoves": [
+        {
+          "id": "poisonjab",
+          "name": "poisonjab"
+        },
+        {
+          "id": "uturn",
+          "name": "とんぼがえり"
+        },
+        {
+          "id": "drillrun",
+          "name": "drillrun"
+        }
+      ],
+      "topItem": {
+        "id": "beedrillite",
+        "name": "beedrillite"
+      },
+      "roles": [
+        "設置",
+        "除去",
+        "サイクル"
+      ],
+      "blurb": "設置・除去枠 · poisonjab＋とんぼがえり / beedrillite"
+    },
+    "tinkaton": {
+      "usage": 0.014790900000000001,
+      "rank": 79,
+      "topMoves": [
+        {
+          "id": "gigatonhammer",
+          "name": "gigatonhammer"
+        },
+        {
+          "id": "stealthrock",
+          "name": "ステルスロック"
+        },
+        {
+          "id": "thunderwave",
+          "name": "でんじは"
+        }
+      ],
+      "topItem": {
+        "id": "shucaberry",
+        "name": "shucaberry"
+      },
+      "roles": [
+        "設置",
+        "先制"
+      ],
+      "blurb": "設置・先制枠 · gigatonhammer＋ステルスロック / shucaberry"
+    },
+    "infernape": {
+      "usage": 0.014721699999999999,
+      "rank": 80,
+      "topMoves": [
+        {
+          "id": "closecombat",
+          "name": "インファイト"
+        },
+        {
+          "id": "flareblitz",
+          "name": "フレアドライブ"
+        },
+        {
+          "id": "uturn",
+          "name": "とんぼがえり"
+        }
+      ],
+      "topItem": {
+        "id": "focussash",
+        "name": "きあいのタスキ"
+      },
+      "roles": [
+        "設置",
+        "サイクル",
+        "先制"
+      ],
+      "blurb": "設置・サイクル枠 · インファイト＋フレアドライブ / きあいのタスキ"
+    },
+    "kangaskhanmega": {
+      "usage": 0.0145436,
+      "rank": 81,
+      "topMoves": [
+        {
+          "id": "fakeout",
+          "name": "ねこだまし"
+        },
+        {
+          "id": "suckerpunch",
+          "name": "ふいうち"
+        },
+        {
+          "id": "bodyslam",
+          "name": "bodyslam"
+        }
+      ],
+      "topItem": {
+        "id": "kangaskhanite",
+        "name": "kangaskhanite"
+      },
+      "roles": [
+        "先制"
+      ],
+      "blurb": "先制枠 · ねこだまし＋ふいうち / kangaskhanite"
+    },
+    "milotic": {
+      "usage": 0.014434800000000001,
+      "rank": 82,
+      "topMoves": [
+        {
+          "id": "recover",
+          "name": "じこさいせい"
+        },
+        {
+          "id": "scald",
+          "name": "ねっとう"
+        },
+        {
+          "id": "icebeam",
+          "name": "icebeam"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "サイクル",
+        "受け"
+      ],
+      "blurb": "サイクル・受け枠 · じこさいせい＋ねっとう / たべのこし"
+    },
+    "gliscor": {
+      "usage": 0.014096500000000001,
+      "rank": 83,
+      "topMoves": [
+        {
+          "id": "earthquake",
+          "name": "じしん"
+        },
+        {
+          "id": "stealthrock",
+          "name": "ステルスロック"
+        },
+        {
+          "id": "toxic",
+          "name": "どくどく"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "設置",
+        "除去",
+        "サイクル"
+      ],
+      "blurb": "設置・除去枠 · じしん＋ステルスロック / たべのこし"
+    },
+    "basculegionf": {
+      "usage": 0.0138653,
+      "rank": 84,
+      "topMoves": [
+        {
+          "id": "shadowball",
+          "name": "シャドーボール"
+        },
+        {
+          "id": "icebeam",
+          "name": "icebeam"
+        },
+        {
+          "id": "flipturn",
+          "name": "クイックターン"
+        }
+      ],
+      "topItem": {
+        "id": "choicescarf",
+        "name": "こだわりスカーフ"
+      },
+      "roles": [
+        "サイクル",
+        "先制"
+      ],
+      "blurb": "サイクル・先制枠 · シャドーボール＋icebeam / こだわりスカーフ"
+    },
+    "chandelure": {
+      "usage": 0.013865,
+      "rank": 85,
+      "topMoves": [
+        {
+          "id": "shadowball",
+          "name": "シャドーボール"
+        },
+        {
+          "id": "energyball",
+          "name": "energyball"
+        },
+        {
+          "id": "flamethrower",
+          "name": "flamethrower"
+        }
+      ],
+      "topItem": {
+        "id": "choicescarf",
+        "name": "こだわりスカーフ"
+      },
+      "roles": [
+        "対面"
+      ],
+      "blurb": "対面枠 · シャドーボール＋energyball / こだわりスカーフ"
+    },
+    "garganacl": {
+      "usage": 0.013066500000000002,
+      "rank": 86,
+      "topMoves": [
+        {
+          "id": "saltcure",
+          "name": "saltcure"
+        },
+        {
+          "id": "recover",
+          "name": "じこさいせい"
+        },
+        {
+          "id": "stealthrock",
+          "name": "ステルスロック"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "設置",
+        "受け"
+      ],
+      "blurb": "設置・受け枠 · saltcure＋じこさいせい / たべのこし"
+    },
+    "whimsicott": {
+      "usage": 0.0129221,
+      "rank": 87,
+      "topMoves": [
+        {
+          "id": "moonblast",
+          "name": "ムーンフォース"
+        },
+        {
+          "id": "encore",
+          "name": "アンコール"
+        },
+        {
+          "id": "tailwind",
+          "name": "tailwind"
+        }
+      ],
+      "topItem": {
+        "id": "focussash",
+        "name": "きあいのタスキ"
+      },
+      "roles": [
+        "除去",
+        "サイクル",
+        "先制"
+      ],
+      "blurb": "除去・サイクル枠 · ムーンフォース＋アンコール / きあいのタスキ"
+    },
+    "skarmorymega": {
+      "usage": 0.012559599999999999,
+      "rank": 88,
+      "topMoves": [
+        {
+          "id": "swordsdance",
+          "name": "つるぎのまい"
+        },
+        {
+          "id": "bravebird",
+          "name": "bravebird"
+        },
+        {
+          "id": "drillrun",
+          "name": "drillrun"
+        }
+      ],
+      "topItem": {
+        "id": "skarmorite",
+        "name": "skarmorite"
+      },
+      "roles": [
+        "設置",
+        "除去",
+        "積み"
+      ],
+      "blurb": "設置・除去枠 · つるぎのまい＋bravebird / skarmorite"
+    },
+    "jolteon": {
+      "usage": 0.0124662,
+      "rank": 89,
+      "topMoves": [
+        {
+          "id": "voltswitch",
+          "name": "ボルトチェンジ"
+        },
+        {
+          "id": "alluringvoice",
+          "name": "alluringvoice"
+        },
+        {
+          "id": "thunderbolt",
+          "name": "thunderbolt"
+        }
+      ],
+      "topItem": {
+        "id": "magnet",
+        "name": "magnet"
+      },
+      "roles": [
+        "サイクル"
+      ],
+      "blurb": "サイクル枠 · ボルトチェンジ＋alluringvoice / magnet"
+    },
+    "crabominablemega": {
+      "usage": 0.0121346,
+      "rank": 90,
+      "topMoves": [
+        {
+          "id": "icehammer",
+          "name": "icehammer"
+        },
+        {
+          "id": "machpunch",
+          "name": "マッハパンチ"
+        },
+        {
+          "id": "drainpunch",
+          "name": "drainpunch"
+        }
+      ],
+      "topItem": {
+        "id": "crabominite",
+        "name": "crabominite"
+      },
+      "roles": [
+        "先制"
+      ],
+      "blurb": "先制枠 · icehammer＋マッハパンチ / crabominite"
+    },
+    "aggronmega": {
+      "usage": 0.012103999999999998,
+      "rank": 91,
+      "topMoves": [
+        {
+          "id": "bodypress",
+          "name": "ボディプレス"
+        },
+        {
+          "id": "irondefense",
+          "name": "irondefense"
+        },
+        {
+          "id": "heavyslam",
+          "name": "heavyslam"
+        }
+      ],
+      "topItem": {
+        "id": "aggronite",
+        "name": "aggronite"
+      },
+      "roles": [
+        "設置"
+      ],
+      "blurb": "設置枠 · ボディプレス＋irondefense / aggronite"
+    },
+    "gallade": {
+      "usage": 0.011926,
+      "rank": 92,
+      "topMoves": [
+        {
+          "id": "sacredsword",
+          "name": "せいなるつるぎ"
+        },
+        {
+          "id": "psychocut",
+          "name": "psychocut"
+        },
+        {
+          "id": "leafblade",
+          "name": "leafblade"
+        }
+      ],
+      "topItem": {
+        "id": "choicescarf",
+        "name": "こだわりスカーフ"
+      },
+      "roles": [
+        "サイクル",
+        "先制"
+      ],
+      "blurb": "サイクル・先制枠 · せいなるつるぎ＋psychocut / こだわりスカーフ"
+    },
+    "victreebelmega": {
+      "usage": 0.0118655,
+      "rank": 93,
+      "topMoves": [
+        {
+          "id": "strengthsap",
+          "name": "ちからをすいとる"
+        },
+        {
+          "id": "powerwhip",
+          "name": "powerwhip"
+        },
+        {
+          "id": "gigadrain",
+          "name": "gigadrain"
+        }
+      ],
+      "topItem": {
+        "id": "victreebelite",
+        "name": "victreebelite"
+      },
+      "roles": [
+        "受け",
+        "先制"
+      ],
+      "blurb": "受け・先制枠 · ちからをすいとる＋powerwhip / victreebelite"
+    },
+    "chesnaughtmega": {
+      "usage": 0.011805900000000001,
+      "rank": 94,
+      "topMoves": [
+        {
+          "id": "bodypress",
+          "name": "ボディプレス"
+        },
+        {
+          "id": "synthesis",
+          "name": "こうごうせい"
+        },
+        {
+          "id": "irondefense",
+          "name": "irondefense"
+        }
+      ],
+      "topItem": {
+        "id": "chesnaughtite",
+        "name": "chesnaughtite"
+      },
+      "roles": [
+        "設置",
+        "先制"
+      ],
+      "blurb": "設置・先制枠 · ボディプレス＋こうごうせい / chesnaughtite"
+    },
+    "venusaur": {
+      "usage": 0.0117638,
+      "rank": 95,
+      "topMoves": [
+        {
+          "id": "weatherball",
+          "name": "weatherball"
+        },
+        {
+          "id": "gigadrain",
+          "name": "gigadrain"
+        },
+        {
+          "id": "growth",
+          "name": "growth"
+        }
+      ],
+      "topItem": {
+        "id": "miracleseed",
+        "name": "miracleseed"
+      },
+      "roles": [
+        "先制"
+      ],
+      "blurb": "先制枠 · weatherball＋gigadrain / miracleseed"
+    },
+    "blastoise": {
+      "usage": 0.011737899999999999,
+      "rank": 96,
+      "topMoves": [
+        {
+          "id": "icebeam",
+          "name": "icebeam"
+        },
+        {
+          "id": "shellsmash",
+          "name": "からをやぶる"
+        },
+        {
+          "id": "rapidspin",
+          "name": "こうそくスピン"
+        }
+      ],
+      "topItem": {
+        "id": "whiteherb",
+        "name": "しろいハーブ"
+      },
+      "roles": [
+        "除去",
+        "積み",
+        "サイクル"
+      ],
+      "blurb": "除去・積み枠 · icebeam＋からをやぶる / しろいハーブ"
+    },
+    "bellibolt": {
+      "usage": 0.0117065,
+      "rank": 97,
+      "topMoves": [
+        {
+          "id": "slackoff",
+          "name": "なまける"
+        },
+        {
+          "id": "voltswitch",
+          "name": "ボルトチェンジ"
+        },
+        {
+          "id": "paraboliccharge",
+          "name": "paraboliccharge"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "サイクル",
+        "受け",
+        "先制"
+      ],
+      "blurb": "サイクル・受け枠 · なまける＋ボルトチェンジ / たべのこし"
+    },
+    "torkoal": {
+      "usage": 0.0116608,
+      "rank": 98,
+      "topMoves": [
+        {
+          "id": "rapidspin",
+          "name": "こうそくスピン"
+        },
+        {
+          "id": "stealthrock",
+          "name": "ステルスロック"
+        },
+        {
+          "id": "lavaplume",
+          "name": "lavaplume"
+        }
+      ],
+      "topItem": {
+        "id": "charcoal",
+        "name": "charcoal"
+      },
+      "roles": [
+        "設置",
+        "除去"
+      ],
+      "blurb": "設置・除去枠 · こうそくスピン＋ステルスロック / charcoal"
+    },
+    "excadrillmega": {
+      "usage": 0.0113118,
+      "rank": 99,
+      "topMoves": [
+        {
+          "id": "earthquake",
+          "name": "じしん"
+        },
+        {
+          "id": "ironhead",
+          "name": "アイアンヘッド"
+        },
+        {
+          "id": "rapidspin",
+          "name": "こうそくスピン"
+        }
+      ],
+      "topItem": {
+        "id": "excadrite",
+        "name": "excadrite"
+      },
+      "roles": [
+        "設置",
+        "除去"
+      ],
+      "blurb": "設置・除去枠 · じしん＋アイアンヘッド / excadrite"
+    },
+    "tyranitarmega": {
+      "usage": 0.010548599999999998,
+      "rank": 100,
+      "topMoves": [
+        {
+          "id": "knockoff",
+          "name": "はたきおとす"
+        },
+        {
+          "id": "stoneedge",
+          "name": "stoneedge"
+        },
+        {
+          "id": "dragondance",
+          "name": "りゅうのまい"
+        }
+      ],
+      "topItem": {
+        "id": "tyranitarite",
+        "name": "tyranitarite"
+      },
+      "roles": [
+        "設置",
+        "積み"
+      ],
+      "blurb": "設置・積み枠 · はたきおとす＋stoneedge / tyranitarite"
+    },
+    "tsareena": {
+      "usage": 0.0103691,
+      "rank": 101,
+      "topMoves": [
+        {
+          "id": "rapidspin",
+          "name": "こうそくスピン"
+        },
+        {
+          "id": "tropkick",
+          "name": "tropkick"
+        },
+        {
+          "id": "tripleaxel",
+          "name": "tripleaxel"
+        }
+      ],
+      "topItem": {
+        "id": "sitrusberry",
+        "name": "オボンのみ"
+      },
+      "roles": [
+        "除去",
+        "サイクル",
+        "先制"
+      ],
+      "blurb": "除去・サイクル枠 · こうそくスピン＋tropkick / オボンのみ"
+    },
+    "chimechomega": {
+      "usage": 0.0103319,
+      "rank": 102,
+      "topMoves": [
+        {
+          "id": "recover",
+          "name": "じこさいせい"
+        },
+        {
+          "id": "calmmind",
+          "name": "めいそう"
+        },
+        {
+          "id": "psychicnoise",
+          "name": "サイコノイズ"
+        }
+      ],
+      "topItem": {
+        "id": "chimechite",
+        "name": "chimechite"
+      },
+      "roles": [
+        "除去",
+        "積み"
+      ],
+      "blurb": "除去・積み枠 · じこさいせい＋めいそう / chimechite"
+    },
+    "vaporeon": {
+      "usage": 0.0102995,
+      "rank": 103,
+      "topMoves": [
+        {
+          "id": "wish",
+          "name": "ねがいごと"
+        },
+        {
+          "id": "scald",
+          "name": "ねっとう"
+        },
+        {
+          "id": "protect",
+          "name": "まもる"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "サイクル",
+        "受け"
+      ],
+      "blurb": "サイクル・受け枠 · ねがいごと＋ねっとう / たべのこし"
+    },
+    "floetteeternal": {
+      "usage": 0.0102101,
+      "rank": 104,
+      "topMoves": [
+        {
+          "id": "moonblast",
+          "name": "ムーンフォース"
+        },
+        {
+          "id": "lightofruin",
+          "name": "lightofruin"
+        },
+        {
+          "id": "psychic",
+          "name": "psychic"
+        }
+      ],
+      "topItem": {
+        "id": "choicescarf",
+        "name": "こだわりスカーフ"
+      },
+      "roles": [
+        "対面"
+      ],
+      "blurb": "対面枠 · ムーンフォース＋lightofruin / こだわりスカーフ"
+    },
+    "sylveon": {
+      "usage": 0.009963699999999999,
+      "rank": 105,
+      "topMoves": [
+        {
+          "id": "hypervoice",
+          "name": "hypervoice"
+        },
+        {
+          "id": "wish",
+          "name": "ねがいごと"
+        },
+        {
+          "id": "mysticalfire",
+          "name": "mysticalfire"
+        }
+      ],
+      "topItem": {
+        "id": "fairyfeather",
+        "name": "fairyfeather"
+      },
+      "roles": [
+        "受け"
+      ],
+      "blurb": "受け枠 · hypervoice＋ねがいごと / fairyfeather"
+    },
+    "typhlosionhisui": {
+      "usage": 0.0097431,
+      "rank": 106,
+      "topMoves": [
+        {
+          "id": "eruption",
+          "name": "eruption"
+        },
+        {
+          "id": "shadowball",
+          "name": "シャドーボール"
+        },
+        {
+          "id": "focusblast",
+          "name": "きあいだま"
+        }
+      ],
+      "topItem": {
+        "id": "choicescarf",
+        "name": "こだわりスカーフ"
+      },
+      "roles": [
+        "対面"
+      ],
+      "blurb": "対面枠 · eruption＋シャドーボール / こだわりスカーフ"
+    },
+    "talonflame": {
+      "usage": 0.0097192,
+      "rank": 107,
+      "topMoves": [
+        {
+          "id": "roost",
+          "name": "はねやすめ"
+        },
+        {
+          "id": "defog",
+          "name": "ぼうじん"
+        },
+        {
+          "id": "uturn",
+          "name": "とんぼがえり"
+        }
+      ],
+      "topItem": {
+        "id": "sitrusberry",
+        "name": "オボンのみ"
+      },
+      "roles": [
+        "除去",
+        "サイクル"
+      ],
+      "blurb": "除去・サイクル枠 · はねやすめ＋ぼうじん / オボンのみ"
+    },
+    "hawlucha": {
+      "usage": 0.009270800000000001,
+      "rank": 108,
+      "topMoves": [
+        {
+          "id": "acrobatics",
+          "name": "acrobatics"
+        },
+        {
+          "id": "closecombat",
+          "name": "インファイト"
+        },
+        {
+          "id": "swordsdance",
+          "name": "つるぎのまい"
+        }
+      ],
+      "topItem": {
+        "id": "whiteherb",
+        "name": "しろいハーブ"
+      },
+      "roles": [
+        "除去",
+        "積み",
+        "サイクル"
+      ],
+      "blurb": "除去・積み枠 · acrobatics＋インファイト / しろいハーブ"
+    },
+    "chesnaught": {
+      "usage": 0.0091324,
+      "rank": 109,
+      "topMoves": [
+        {
+          "id": "bodypress",
+          "name": "ボディプレス"
+        },
+        {
+          "id": "leechseed",
+          "name": "leechseed"
+        },
+        {
+          "id": "synthesis",
+          "name": "こうごうせい"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "設置",
+        "受け",
+        "先制"
+      ],
+      "blurb": "設置・受け枠 · ボディプレス＋leechseed / たべのこし"
+    },
+    "diggersby": {
+      "usage": 0.009004,
+      "rank": 110,
+      "topMoves": [
+        {
+          "id": "earthquake",
+          "name": "じしん"
+        },
+        {
+          "id": "quickattack",
+          "name": "quickattack"
+        },
+        {
+          "id": "bodyslam",
+          "name": "bodyslam"
+        }
+      ],
+      "topItem": {
+        "id": "choicescarf",
+        "name": "こだわりスカーフ"
+      },
+      "roles": [
+        "設置",
+        "サイクル"
+      ],
+      "blurb": "設置・サイクル枠 · じしん＋quickattack / こだわりスカーフ"
+    },
+    "slurpuff": {
+      "usage": 0.0089826,
+      "rank": 111,
+      "topMoves": [
+        {
+          "id": "stickyweb",
+          "name": "ねばねばネット"
+        },
+        {
+          "id": "endeavor",
+          "name": "endeavor"
+        },
+        {
+          "id": "mistyexplosion",
+          "name": "mistyexplosion"
+        }
+      ],
+      "topItem": {
+        "id": "focussash",
+        "name": "きあいのタスキ"
+      },
+      "roles": [
+        "設置"
+      ],
+      "blurb": "設置枠 · ねばねばネット＋endeavor / きあいのタスキ"
+    },
+    "gyaradosmega": {
+      "usage": 0.0089351,
+      "rank": 112,
+      "topMoves": [
+        {
+          "id": "dragondance",
+          "name": "りゅうのまい"
+        },
+        {
+          "id": "waterfall",
+          "name": "waterfall"
+        },
+        {
+          "id": "crunch",
+          "name": "crunch"
+        }
+      ],
+      "topItem": {
+        "id": "gyaradosite",
+        "name": "gyaradosite"
+      },
+      "roles": [
+        "積み"
+      ],
+      "blurb": "積み枠 · りゅうのまい＋waterfall / gyaradosite"
+    },
+    "slowbro": {
+      "usage": 0.0088138,
+      "rank": 113,
+      "topMoves": [
+        {
+          "id": "scald",
+          "name": "ねっとう"
+        },
+        {
+          "id": "slackoff",
+          "name": "なまける"
+        },
+        {
+          "id": "thunderwave",
+          "name": "でんじは"
+        }
+      ],
+      "topItem": {
+        "id": "colburberry",
+        "name": "colburberry"
+      },
+      "roles": [
+        "サイクル"
+      ],
+      "blurb": "サイクル枠 · ねっとう＋なまける / colburberry"
+    },
+    "heliolisk": {
+      "usage": 0.0086153,
+      "rank": 114,
+      "topMoves": [
+        {
+          "id": "voltswitch",
+          "name": "ボルトチェンジ"
+        },
+        {
+          "id": "hypervoice",
+          "name": "hypervoice"
+        },
+        {
+          "id": "thunderbolt",
+          "name": "thunderbolt"
+        }
+      ],
+      "topItem": {
+        "id": "choicescarf",
+        "name": "こだわりスカーフ"
+      },
+      "roles": [
+        "サイクル"
+      ],
+      "blurb": "サイクル枠 · ボルトチェンジ＋hypervoice / こだわりスカーフ"
+    },
+    "aerodactylmega": {
+      "usage": 0.0085971,
+      "rank": 115,
+      "topMoves": [
+        {
+          "id": "dualwingbeat",
+          "name": "dualwingbeat"
+        },
+        {
+          "id": "stoneedge",
+          "name": "stoneedge"
+        },
+        {
+          "id": "dragondance",
+          "name": "りゅうのまい"
+        }
+      ],
+      "topItem": {
+        "id": "aerodactylite",
+        "name": "aerodactylite"
+      },
+      "roles": [
+        "設置",
+        "除去",
+        "積み"
+      ],
+      "blurb": "設置・除去枠 · dualwingbeat＋stoneedge / aerodactylite"
+    },
+    "rotommow": {
+      "usage": 0.0084792,
+      "rank": 116,
+      "topMoves": [
+        {
+          "id": "leafstorm",
+          "name": "leafstorm"
+        },
+        {
+          "id": "voltswitch",
+          "name": "ボルトチェンジ"
+        },
+        {
+          "id": "willowisp",
+          "name": "おにび"
+        }
+      ],
+      "topItem": {
+        "id": "choicescarf",
+        "name": "こだわりスカーフ"
+      },
+      "roles": [
+        "サイクル"
+      ],
+      "blurb": "サイクル枠 · leafstorm＋ボルトチェンジ / こだわりスカーフ"
+    },
+    "mausholdfour": {
+      "usage": 0.0082966,
+      "rank": 117,
+      "topMoves": [
+        {
+          "id": "populationbomb",
+          "name": "ネズミざん"
+        },
+        {
+          "id": "tidyup",
+          "name": "おかたづけ"
+        },
+        {
+          "id": "bite",
+          "name": "かみつく"
+        }
+      ],
+      "topItem": {
+        "id": "kingsrock",
+        "name": "おうじゃのしるし"
+      },
+      "roles": [
+        "除去",
+        "サイクル"
+      ],
+      "blurb": "除去・サイクル枠 · ネズミざん＋おかたづけ / おうじゃのしるし"
+    },
+    "venusaurmega": {
+      "usage": 0.0081067,
+      "rank": 118,
+      "topMoves": [
+        {
+          "id": "gigadrain",
+          "name": "gigadrain"
+        },
+        {
+          "id": "sludgebomb",
+          "name": "sludgebomb"
+        },
+        {
+          "id": "earthpower",
+          "name": "earthpower"
+        }
+      ],
+      "topItem": {
+        "id": "venusaurite",
+        "name": "venusaurite"
+      },
+      "roles": [
+        "先制"
+      ],
+      "blurb": "先制枠 · gigadrain＋sludgebomb / venusaurite"
+    },
+    "medichammega": {
+      "usage": 0.007914,
+      "rank": 119,
+      "topMoves": [
+        {
+          "id": "closecombat",
+          "name": "インファイト"
+        },
+        {
+          "id": "fakeout",
+          "name": "ねこだまし"
+        },
+        {
+          "id": "zenheadbutt",
+          "name": "zenheadbutt"
+        }
+      ],
+      "topItem": {
+        "id": "medichamite",
+        "name": "medichamite"
+      },
+      "roles": [
+        "先制"
+      ],
+      "blurb": "先制枠 · インファイト＋ねこだまし / medichamite"
+    },
+    "garchompmega": {
+      "usage": 0.0078987,
+      "rank": 120,
+      "topMoves": [
+        {
+          "id": "earthquake",
+          "name": "じしん"
+        },
+        {
+          "id": "swordsdance",
+          "name": "つるぎのまい"
+        },
+        {
+          "id": "scaleshot",
+          "name": "scaleshot"
+        }
+      ],
+      "topItem": {
+        "id": "garchompite",
+        "name": "garchompite"
+      },
+      "roles": [
+        "設置",
+        "積み"
+      ],
+      "blurb": "設置・積み枠 · じしん＋つるぎのまい / garchompite"
+    },
+    "decidueyehisui": {
+      "usage": 0.007869899999999999,
+      "rank": 121,
+      "topMoves": [
+        {
+          "id": "triplearrows",
+          "name": "triplearrows"
+        },
+        {
+          "id": "leafblade",
+          "name": "leafblade"
+        },
+        {
+          "id": "defog",
+          "name": "ぼうじん"
+        }
+      ],
+      "topItem": {
+        "id": "choicescarf",
+        "name": "こだわりスカーフ"
+      },
+      "roles": [
+        "除去",
+        "サイクル",
+        "先制"
+      ],
+      "blurb": "除去・サイクル枠 · triplearrows＋leafblade / こだわりスカーフ"
+    },
+    "chandeluremega": {
+      "usage": 0.007456000000000001,
+      "rank": 122,
+      "topMoves": [
+        {
+          "id": "shadowball",
+          "name": "シャドーボール"
+        },
+        {
+          "id": "flamethrower",
+          "name": "flamethrower"
+        },
+        {
+          "id": "energyball",
+          "name": "energyball"
+        }
+      ],
+      "topItem": {
+        "id": "chandelurite",
+        "name": "chandelurite"
+      },
+      "roles": [
+        "対面"
+      ],
+      "blurb": "対面枠 · シャドーボール＋flamethrower / chandelurite"
+    },
+    "sableyemega": {
+      "usage": 0.006886,
+      "rank": 123,
+      "topMoves": [
+        {
+          "id": "willowisp",
+          "name": "おにび"
+        },
+        {
+          "id": "recover",
+          "name": "じこさいせい"
+        },
+        {
+          "id": "knockoff",
+          "name": "はたきおとす"
+        }
+      ],
+      "topItem": {
+        "id": "sablenite",
+        "name": "sablenite"
+      },
+      "roles": [
+        "受け",
+        "先制"
+      ],
+      "blurb": "受け・先制枠 · おにび＋じこさいせい / sablenite"
+    },
+    "gardevoir": {
+      "usage": 0.006714,
+      "rank": 124,
+      "topMoves": [
+        {
+          "id": "moonblast",
+          "name": "ムーンフォース"
+        },
+        {
+          "id": "psychic",
+          "name": "psychic"
+        },
+        {
+          "id": "trick",
+          "name": "trick"
+        }
+      ],
+      "topItem": {
+        "id": "choicescarf",
+        "name": "こだわりスカーフ"
+      },
+      "roles": [
+        "サイクル",
+        "先制"
+      ],
+      "blurb": "サイクル・先制枠 · ムーンフォース＋psychic / こだわりスカーフ"
+    },
+    "armarouge": {
+      "usage": 0.0066574,
+      "rank": 125,
+      "topMoves": [
+        {
+          "id": "armorcannon",
+          "name": "armorcannon"
+        },
+        {
+          "id": "psychic",
+          "name": "psychic"
+        },
+        {
+          "id": "calmmind",
+          "name": "めいそう"
+        }
+      ],
+      "topItem": {
+        "id": "focussash",
+        "name": "きあいのタスキ"
+      },
+      "roles": [
+        "積み"
+      ],
+      "blurb": "積み枠 · armorcannon＋psychic / きあいのタスキ"
+    },
+    "gardevoirmega": {
+      "usage": 0.006633900000000001,
+      "rank": 126,
+      "topMoves": [
+        {
+          "id": "hypervoice",
+          "name": "hypervoice"
+        },
+        {
+          "id": "psyshock",
+          "name": "psyshock"
+        },
+        {
+          "id": "mysticalfire",
+          "name": "mysticalfire"
+        }
+      ],
+      "topItem": {
+        "id": "gardevoirite",
+        "name": "gardevoirite"
+      },
+      "roles": [
+        "サイクル",
+        "先制"
+      ],
+      "blurb": "サイクル・先制枠 · hypervoice＋psyshock / gardevoirite"
+    },
+    "hawluchamega": {
+      "usage": 0.0061842,
+      "rank": 127,
+      "topMoves": [
+        {
+          "id": "highjumpkick",
+          "name": "highjumpkick"
+        },
+        {
+          "id": "swordsdance",
+          "name": "つるぎのまい"
+        },
+        {
+          "id": "stoneedge",
+          "name": "stoneedge"
+        }
+      ],
+      "topItem": {
+        "id": "hawluchanite",
+        "name": "hawluchanite"
+      },
+      "roles": [
+        "除去",
+        "積み",
+        "サイクル"
+      ],
+      "blurb": "除去・積み枠 · highjumpkick＋つるぎのまい / hawluchanite"
+    },
+    "cofagrigus": {
+      "usage": 0.005988599999999999,
+      "rank": 128,
+      "topMoves": [
+        {
+          "id": "willowisp",
+          "name": "おにび"
+        },
+        {
+          "id": "hex",
+          "name": "たたりめ"
+        },
+        {
+          "id": "bodypress",
+          "name": "ボディプレス"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "設置"
+      ],
+      "blurb": "設置枠 · おにび＋たたりめ / たべのこし"
+    },
+    "runerigus": {
+      "usage": 0.005724900000000001,
+      "rank": 129,
+      "topMoves": [
+        {
+          "id": "stealthrock",
+          "name": "ステルスロック"
+        },
+        {
+          "id": "earthquake",
+          "name": "じしん"
+        },
+        {
+          "id": "willowisp",
+          "name": "おにび"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "設置"
+      ],
+      "blurb": "設置枠 · ステルスロック＋じしん / たべのこし"
+    },
+    "orthworm": {
+      "usage": 0.0057220000000000005,
+      "rank": 130,
+      "topMoves": [
+        {
+          "id": "bodypress",
+          "name": "ボディプレス"
+        },
+        {
+          "id": "stealthrock",
+          "name": "ステルスロック"
+        },
+        {
+          "id": "spikes",
+          "name": "まきびし"
+        }
+      ],
+      "topItem": {
+        "id": "sitrusberry",
+        "name": "オボンのみ"
+      },
+      "roles": [
+        "設置",
+        "サイクル"
+      ],
+      "blurb": "設置・サイクル枠 · ボディプレス＋ステルスロック / オボンのみ"
+    },
+    "klefki": {
+      "usage": 0.0057213,
+      "rank": 131,
+      "topMoves": [
+        {
+          "id": "thunderwave",
+          "name": "でんじは"
+        },
+        {
+          "id": "lightscreen",
+          "name": "lightscreen"
+        },
+        {
+          "id": "reflect",
+          "name": "reflect"
+        }
+      ],
+      "topItem": {
+        "id": "mentalherb",
+        "name": "メンタルハーブ"
+      },
+      "roles": [
+        "設置",
+        "除去"
+      ],
+      "blurb": "設置・除去枠 · でんじは＋lightscreen / メンタルハーブ"
+    },
+    "altariamega": {
+      "usage": 0.0056665,
+      "rank": 132,
+      "topMoves": [
+        {
+          "id": "roost",
+          "name": "はねやすめ"
+        },
+        {
+          "id": "dragondance",
+          "name": "りゅうのまい"
+        },
+        {
+          "id": "earthquake",
+          "name": "じしん"
+        }
+      ],
+      "topItem": {
+        "id": "altarianite",
+        "name": "altarianite"
+      },
+      "roles": [
+        "除去",
+        "積み"
+      ],
+      "blurb": "除去・積み枠 · はねやすめ＋りゅうのまい / altarianite"
+    },
+    "espeon": {
+      "usage": 0.005665099999999999,
+      "rank": 133,
+      "topMoves": [
+        {
+          "id": "psychic",
+          "name": "psychic"
+        },
+        {
+          "id": "alluringvoice",
+          "name": "alluringvoice"
+        },
+        {
+          "id": "shadowball",
+          "name": "シャドーボール"
+        }
+      ],
+      "topItem": {
+        "id": "choicescarf",
+        "name": "こだわりスカーフ"
+      },
+      "roles": [
+        "対面"
+      ],
+      "blurb": "対面枠 · psychic＋alluringvoice / こだわりスカーフ"
+    },
+    "emboarmega": {
+      "usage": 0.005293,
+      "rank": 134,
+      "topMoves": [
+        {
+          "id": "bulkup",
+          "name": "ビルドアップ"
+        },
+        {
+          "id": "drainpunch",
+          "name": "drainpunch"
+        },
+        {
+          "id": "suckerpunch",
+          "name": "ふいうち"
+        }
+      ],
+      "topItem": {
+        "id": "emboarite",
+        "name": "emboarite"
+      },
+      "roles": [
+        "積み",
+        "先制"
+      ],
+      "blurb": "積み・先制枠 · ビルドアップ＋drainpunch / emboarite"
+    },
+    "arcanine": {
+      "usage": 0.005288500000000001,
+      "rank": 135,
+      "topMoves": [
+        {
+          "id": "flareblitz",
+          "name": "フレアドライブ"
+        },
+        {
+          "id": "extremespeed",
+          "name": "しんそく"
+        },
+        {
+          "id": "morningsun",
+          "name": "あさのひざし"
+        }
+      ],
+      "topItem": {
+        "id": "sitrusberry",
+        "name": "オボンのみ"
+      },
+      "roles": [
+        "サイクル",
+        "先制"
+      ],
+      "blurb": "サイクル・先制枠 · フレアドライブ＋しんそく / オボンのみ"
+    },
+    "ariados": {
+      "usage": 0.005135999999999999,
+      "rank": 136,
+      "topMoves": [
+        {
+          "id": "stickyweb",
+          "name": "ねばねばネット"
+        },
+        {
+          "id": "firstimpression",
+          "name": "であいがしら"
+        },
+        {
+          "id": "toxicthread",
+          "name": "toxicthread"
+        }
+      ],
+      "topItem": {
+        "id": "focussash",
+        "name": "きあいのタスキ"
+      },
+      "roles": [
+        "設置",
+        "先制"
+      ],
+      "blurb": "設置・先制枠 · ねばねばネット＋であいがしら / きあいのタスキ"
+    },
+    "banettemega": {
+      "usage": 0.0049614,
+      "rank": 137,
+      "topMoves": [
+        {
+          "id": "poltergeist",
+          "name": "ポルターガイスト"
+        },
+        {
+          "id": "destinybond",
+          "name": "destinybond"
+        },
+        {
+          "id": "shadowsneak",
+          "name": "かげうち"
+        }
+      ],
+      "topItem": {
+        "id": "banettite",
+        "name": "banettite"
+      },
+      "roles": [
+        "先制"
+      ],
+      "blurb": "先制枠 · ポルターガイスト＋destinybond / banettite"
+    },
+    "noivern": {
+      "usage": 0.0048537,
+      "rank": 138,
+      "topMoves": [
+        {
+          "id": "dracometeor",
+          "name": "りゅうせいぐん"
+        },
+        {
+          "id": "defog",
+          "name": "ぼうじん"
+        },
+        {
+          "id": "uturn",
+          "name": "とんぼがえり"
+        }
+      ],
+      "topItem": {
+        "id": "choicescarf",
+        "name": "こだわりスカーフ"
+      },
+      "roles": [
+        "除去",
+        "サイクル"
+      ],
+      "blurb": "除去・サイクル枠 · りゅうせいぐん＋ぼうじん / こだわりスカーフ"
+    },
+    "politoed": {
+      "usage": 0.004726,
+      "rank": 139,
+      "topMoves": [
+        {
+          "id": "icebeam",
+          "name": "icebeam"
+        },
+        {
+          "id": "weatherball",
+          "name": "weatherball"
+        },
+        {
+          "id": "encore",
+          "name": "アンコール"
+        }
+      ],
+      "topItem": {
+        "id": "mysticwater",
+        "name": "mysticwater"
+      },
+      "roles": [
+        "対面"
+      ],
+      "blurb": "対面枠 · icebeam＋weatherball / mysticwater"
+    },
+    "snorlax": {
+      "usage": 0.0046626,
+      "rank": 140,
+      "topMoves": [
+        {
+          "id": "bodyslam",
+          "name": "bodyslam"
+        },
+        {
+          "id": "rest",
+          "name": "rest"
+        },
+        {
+          "id": "curse",
+          "name": "curse"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "対面"
+      ],
+      "blurb": "対面枠 · bodyslam＋rest / たべのこし"
+    },
+    "salazzle": {
+      "usage": 0.0044341,
+      "rank": 141,
+      "topMoves": [
+        {
+          "id": "toxic",
+          "name": "どくどく"
+        },
+        {
+          "id": "flamethrower",
+          "name": "flamethrower"
+        },
+        {
+          "id": "sludgewave",
+          "name": "sludgewave"
+        }
+      ],
+      "topItem": {
+        "id": "focussash",
+        "name": "きあいのタスキ"
+      },
+      "roles": [
+        "設置",
+        "先制"
+      ],
+      "blurb": "設置・先制枠 · どくどく＋flamethrower / きあいのタスキ"
+    },
+    "sableye": {
+      "usage": 0.0044057,
+      "rank": 142,
+      "topMoves": [
+        {
+          "id": "willowisp",
+          "name": "おにび"
+        },
+        {
+          "id": "recover",
+          "name": "じこさいせい"
+        },
+        {
+          "id": "encore",
+          "name": "アンコール"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "受け",
+        "先制"
+      ],
+      "blurb": "受け・先制枠 · おにび＋じこさいせい / たべのこし"
+    },
+    "taurospaldeablaze": {
+      "usage": 0.0043797,
+      "rank": 143,
+      "topMoves": [
+        {
+          "id": "closecombat",
+          "name": "インファイト"
+        },
+        {
+          "id": "ragingbull",
+          "name": "ragingbull"
+        },
+        {
+          "id": "earthquake",
+          "name": "じしん"
+        }
+      ],
+      "topItem": {
+        "id": "sitrusberry",
+        "name": "オボンのみ"
+      },
+      "roles": [
+        "対面"
+      ],
+      "blurb": "対面枠 · インファイト＋ragingbull / オボンのみ"
+    },
+    "polteageist": {
+      "usage": 0.0043472,
+      "rank": 144,
+      "topMoves": [
+        {
+          "id": "shellsmash",
+          "name": "からをやぶる"
+        },
+        {
+          "id": "shadowball",
+          "name": "シャドーボール"
+        },
+        {
+          "id": "storedpower",
+          "name": "storedpower"
+        }
+      ],
+      "topItem": {
+        "id": "focussash",
+        "name": "きあいのタスキ"
+      },
+      "roles": [
+        "積み",
+        "先制"
+      ],
+      "blurb": "積み・先制枠 · からをやぶる＋シャドーボール / きあいのタスキ"
+    },
+    "lycanrocdusk": {
+      "usage": 0.0043077,
+      "rank": 145,
+      "topMoves": [
+        {
+          "id": "accelerock",
+          "name": "アクセルロック"
+        },
+        {
+          "id": "closecombat",
+          "name": "インファイト"
+        },
+        {
+          "id": "swordsdance",
+          "name": "つるぎのまい"
+        }
+      ],
+      "topItem": {
+        "id": "focussash",
+        "name": "きあいのタスキ"
+      },
+      "roles": [
+        "設置",
+        "積み",
+        "先制"
+      ],
+      "blurb": "設置・積み枠 · アクセルロック＋インファイト / きあいのタスキ"
+    },
+    "slowbrogalar": {
+      "usage": 0.0042835,
+      "rank": 146,
+      "topMoves": [
+        {
+          "id": "shellsidearm",
+          "name": "shellsidearm"
+        },
+        {
+          "id": "flamethrower",
+          "name": "flamethrower"
+        },
+        {
+          "id": "nastyplot",
+          "name": "わるだくみ"
+        }
+      ],
+      "topItem": {
+        "id": "quickclaw",
+        "name": "quickclaw"
+      },
+      "roles": [
+        "積み"
+      ],
+      "blurb": "積み枠 · shellsidearm＋flamethrower / quickclaw"
+    },
+    "golurkmega": {
+      "usage": 0.0042496,
+      "rank": 147,
+      "topMoves": [
+        {
+          "id": "poltergeist",
+          "name": "ポルターガイスト"
+        },
+        {
+          "id": "headlongrush",
+          "name": "headlongrush"
+        },
+        {
+          "id": "earthquake",
+          "name": "じしん"
+        }
+      ],
+      "topItem": {
+        "id": "golurkite",
+        "name": "golurkite"
+      },
+      "roles": [
+        "設置"
+      ],
+      "blurb": "設置枠 · ポルターガイスト＋headlongrush / golurkite"
+    },
+    "pinsirmega": {
+      "usage": 0.004203200000000001,
+      "rank": 148,
+      "topMoves": [
+        {
+          "id": "quickattack",
+          "name": "quickattack"
+        },
+        {
+          "id": "swordsdance",
+          "name": "つるぎのまい"
+        },
+        {
+          "id": "bodyslam",
+          "name": "bodyslam"
+        }
+      ],
+      "topItem": {
+        "id": "pinsirite",
+        "name": "pinsirite"
+      },
+      "roles": [
+        "設置",
+        "積み"
+      ],
+      "blurb": "設置・積み枠 · quickattack＋つるぎのまい / pinsirite"
+    },
+    "heracrossmega": {
+      "usage": 0.0041470000000000005,
+      "rank": 149,
+      "topMoves": [
+        {
+          "id": "closecombat",
+          "name": "インファイト"
+        },
+        {
+          "id": "rockblast",
+          "name": "rockblast"
+        },
+        {
+          "id": "pinmissile",
+          "name": "pinmissile"
+        }
+      ],
+      "topItem": {
+        "id": "heracronite",
+        "name": "heracronite"
+      },
+      "roles": [
+        "設置",
+        "先制"
+      ],
+      "blurb": "設置・先制枠 · インファイト＋rockblast / heracronite"
+    },
+    "beartic": {
+      "usage": 0.0040257,
+      "rank": 150,
+      "topMoves": [
+        {
+          "id": "iciclecrash",
+          "name": "iciclecrash"
+        },
+        {
+          "id": "closecombat",
+          "name": "インファイト"
+        },
+        {
+          "id": "swordsdance",
+          "name": "つるぎのまい"
+        }
+      ],
+      "topItem": {
+        "id": "nevermeltice",
+        "name": "nevermeltice"
+      },
+      "roles": [
+        "積み",
+        "先制"
+      ],
+      "blurb": "積み・先制枠 · iciclecrash＋インファイト / nevermeltice"
+    },
+    "torterra": {
+      "usage": 0.0039123000000000005,
+      "rank": 151,
+      "topMoves": [
+        {
+          "id": "shellsmash",
+          "name": "からをやぶる"
+        },
+        {
+          "id": "headlongrush",
+          "name": "headlongrush"
+        },
+        {
+          "id": "woodhammer",
+          "name": "woodhammer"
+        }
+      ],
+      "topItem": {
+        "id": "whiteherb",
+        "name": "しろいハーブ"
+      },
+      "roles": [
+        "設置",
+        "積み",
+        "先制"
+      ],
+      "blurb": "設置・積み枠 · からをやぶる＋headlongrush / しろいハーブ"
+    },
+    "decidueye": {
+      "usage": 0.0038895,
+      "rank": 152,
+      "topMoves": [
+        {
+          "id": "leafblade",
+          "name": "leafblade"
+        },
+        {
+          "id": "spiritshackle",
+          "name": "spiritshackle"
+        },
+        {
+          "id": "shadowsneak",
+          "name": "かげうち"
+        }
+      ],
+      "topItem": {
+        "id": "spelltag",
+        "name": "のろいのおふだ"
+      },
+      "roles": [
+        "除去",
+        "サイクル",
+        "先制"
+      ],
+      "blurb": "除去・サイクル枠 · leafblade＋spiritshackle / のろいのおふだ"
+    },
+    "reuniclus": {
+      "usage": 0.0038728,
+      "rank": 153,
+      "topMoves": [
+        {
+          "id": "focusblast",
+          "name": "きあいだま"
+        },
+        {
+          "id": "calmmind",
+          "name": "めいそう"
+        },
+        {
+          "id": "recover",
+          "name": "じこさいせい"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "積み",
+        "受け"
+      ],
+      "blurb": "積み・受け枠 · きあいだま＋めいそう / たべのこし"
+    },
+    "florges": {
+      "usage": 0.0038217,
+      "rank": 154,
+      "topMoves": [
+        {
+          "id": "moonblast",
+          "name": "ムーンフォース"
+        },
+        {
+          "id": "calmmind",
+          "name": "めいそう"
+        },
+        {
+          "id": "wish",
+          "name": "ねがいごと"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "除去",
+        "積み",
+        "受け"
+      ],
+      "blurb": "除去・積み枠 · ムーンフォース＋めいそう / たべのこし"
+    },
+    "toxicroak": {
+      "usage": 0.0037261,
+      "rank": 155,
+      "topMoves": [
+        {
+          "id": "suckerpunch",
+          "name": "ふいうち"
+        },
+        {
+          "id": "closecombat",
+          "name": "インファイト"
+        },
+        {
+          "id": "poisonjab",
+          "name": "poisonjab"
+        }
+      ],
+      "topItem": {
+        "id": "focussash",
+        "name": "きあいのタスキ"
+      },
+      "roles": [
+        "先制"
+      ],
+      "blurb": "先制枠 · ふいうち＋インファイト / きあいのタスキ"
+    },
+    "taurospaldeaaqua": {
+      "usage": 0.0036561,
+      "rank": 156,
+      "topMoves": [
+        {
+          "id": "closecombat",
+          "name": "インファイト"
+        },
+        {
+          "id": "aquajet",
+          "name": "アクアジェット"
+        },
+        {
+          "id": "bulkup",
+          "name": "ビルドアップ"
+        }
+      ],
+      "topItem": {
+        "id": "sitrusberry",
+        "name": "オボンのみ"
+      },
+      "roles": [
+        "積み",
+        "先制"
+      ],
+      "blurb": "積み・先制枠 · インファイト＋アクアジェット / オボンのみ"
+    },
+    "slowbromega": {
+      "usage": 0.0036393,
+      "rank": 157,
+      "topMoves": [
+        {
+          "id": "slackoff",
+          "name": "なまける"
+        },
+        {
+          "id": "irondefense",
+          "name": "irondefense"
+        },
+        {
+          "id": "scald",
+          "name": "ねっとう"
+        }
+      ],
+      "topItem": {
+        "id": "slowbronite",
+        "name": "slowbronite"
+      },
+      "roles": [
+        "サイクル"
+      ],
+      "blurb": "サイクル枠 · なまける＋irondefense / slowbronite"
+    },
+    "manectricmega": {
+      "usage": 0.0035616999999999997,
+      "rank": 158,
+      "topMoves": [
+        {
+          "id": "voltswitch",
+          "name": "ボルトチェンジ"
+        },
+        {
+          "id": "thunderbolt",
+          "name": "thunderbolt"
+        },
+        {
+          "id": "flamethrower",
+          "name": "flamethrower"
+        }
+      ],
+      "topItem": {
+        "id": "manectite",
+        "name": "manectite"
+      },
+      "roles": [
+        "サイクル"
+      ],
+      "blurb": "サイクル枠 · ボルトチェンジ＋thunderbolt / manectite"
+    },
+    "lucario": {
+      "usage": 0.0034885,
+      "rank": 159,
+      "topMoves": [
+        {
+          "id": "closecombat",
+          "name": "インファイト"
+        },
+        {
+          "id": "swordsdance",
+          "name": "つるぎのまい"
+        },
+        {
+          "id": "extremespeed",
+          "name": "しんそく"
+        }
+      ],
+      "topItem": {
+        "id": "focussash",
+        "name": "きあいのタスキ"
+      },
+      "roles": [
+        "積み",
+        "先制"
+      ],
+      "blurb": "積み・先制枠 · インファイト＋つるぎのまい / きあいのタスキ"
+    },
+    "farigiraf": {
+      "usage": 0.0034081,
+      "rank": 160,
+      "topMoves": [
+        {
+          "id": "trickroom",
+          "name": "trickroom"
+        },
+        {
+          "id": "hypervoice",
+          "name": "hypervoice"
+        },
+        {
+          "id": "psychic",
+          "name": "psychic"
+        }
+      ],
+      "topItem": {
+        "id": "sitrusberry",
+        "name": "オボンのみ"
+      },
+      "roles": [
+        "対面"
+      ],
+      "blurb": "対面枠 · trickroom＋hypervoice / オボンのみ"
+    },
+    "goodra": {
+      "usage": 0.0034044999999999995,
+      "rank": 161,
+      "topMoves": [
+        {
+          "id": "toxic",
+          "name": "どくどく"
+        },
+        {
+          "id": "dracometeor",
+          "name": "りゅうせいぐん"
+        },
+        {
+          "id": "rest",
+          "name": "rest"
+        }
+      ],
+      "topItem": {
+        "id": "chestoberry",
+        "name": "chestoberry"
+      },
+      "roles": [
+        "対面"
+      ],
+      "blurb": "対面枠 · どくどく＋りゅうせいぐん / chestoberry"
+    },
+    "sharpedomega": {
+      "usage": 0.0032768999999999997,
+      "rank": 162,
+      "topMoves": [
+        {
+          "id": "crunch",
+          "name": "crunch"
+        },
+        {
+          "id": "protect",
+          "name": "まもる"
+        },
+        {
+          "id": "psychicfangs",
+          "name": "psychicfangs"
+        }
+      ],
+      "topItem": {
+        "id": "sharpedonite",
+        "name": "sharpedonite"
+      },
+      "roles": [
+        "サイクル",
+        "先制"
+      ],
+      "blurb": "サイクル・先制枠 · crunch＋まもる / sharpedonite"
+    },
+    "pidgeotmega": {
+      "usage": 0.0030521999999999997,
+      "rank": 163,
+      "topMoves": [
+        {
+          "id": "heatwave",
+          "name": "heatwave"
+        },
+        {
+          "id": "hurricane",
+          "name": "hurricane"
+        },
+        {
+          "id": "uturn",
+          "name": "とんぼがえり"
+        }
+      ],
+      "topItem": {
+        "id": "pidgeotite",
+        "name": "pidgeotite"
+      },
+      "roles": [
+        "除去",
+        "サイクル"
+      ],
+      "blurb": "除去・サイクル枠 · heatwave＋hurricane / pidgeotite"
+    },
+    "froslass": {
+      "usage": 0.0029648,
+      "rank": 164,
+      "topMoves": [
+        {
+          "id": "destinybond",
+          "name": "destinybond"
+        },
+        {
+          "id": "spikes",
+          "name": "まきびし"
+        },
+        {
+          "id": "icebeam",
+          "name": "icebeam"
+        }
+      ],
+      "topItem": {
+        "id": "focussash",
+        "name": "きあいのタスキ"
+      },
+      "roles": [
+        "設置",
+        "先制"
+      ],
+      "blurb": "設置・先制枠 · destinybond＋まきびし / きあいのタスキ"
+    },
+    "heracross": {
+      "usage": 0.0029360999999999996,
+      "rank": 165,
+      "topMoves": [
+        {
+          "id": "closecombat",
+          "name": "インファイト"
+        },
+        {
+          "id": "earthquake",
+          "name": "じしん"
+        },
+        {
+          "id": "megahorn",
+          "name": "megahorn"
+        }
+      ],
+      "topItem": {
+        "id": "choicescarf",
+        "name": "こだわりスカーフ"
+      },
+      "roles": [
+        "設置",
+        "先制"
+      ],
+      "blurb": "設置・先制枠 · インファイト＋じしん / こだわりスカーフ"
+    },
+    "morpekohangry": {
+      "usage": 0.0029327999999999997,
+      "rank": 166,
+      "topMoves": [
+        {
+          "id": "aurawheel",
+          "name": "aurawheel"
+        },
+        {
+          "id": "rapidspin",
+          "name": "こうそくスピン"
+        },
+        {
+          "id": "partingshot",
+          "name": "つぶやき"
+        }
+      ],
+      "topItem": {
+        "id": "focussash",
+        "name": "きあいのタスキ"
+      },
+      "roles": [
+        "除去",
+        "サイクル",
+        "先制"
+      ],
+      "blurb": "除去・サイクル枠 · aurawheel＋こうそくスピン / きあいのタスキ"
+    },
+    "drampamega": {
+      "usage": 0.0028376,
+      "rank": 167,
+      "topMoves": [
+        {
+          "id": "hypervoice",
+          "name": "hypervoice"
+        },
+        {
+          "id": "roost",
+          "name": "はねやすめ"
+        },
+        {
+          "id": "calmmind",
+          "name": "めいそう"
+        }
+      ],
+      "topItem": {
+        "id": "drampanite",
+        "name": "drampanite"
+      },
+      "roles": [
+        "除去",
+        "積み"
+      ],
+      "blurb": "除去・積み枠 · hypervoice＋はねやすめ / drampanite"
+    },
+    "rotomfrost": {
+      "usage": 0.0028352,
+      "rank": 168,
+      "topMoves": [
+        {
+          "id": "blizzard",
+          "name": "blizzard"
+        },
+        {
+          "id": "voltswitch",
+          "name": "ボルトチェンジ"
+        },
+        {
+          "id": "thunderbolt",
+          "name": "thunderbolt"
+        }
+      ],
+      "topItem": {
+        "id": "choicescarf",
+        "name": "こだわりスカーフ"
+      },
+      "roles": [
+        "サイクル"
+      ],
+      "blurb": "サイクル枠 · blizzard＋ボルトチェンジ / こだわりスカーフ"
+    },
+    "audino": {
+      "usage": 0.0027335,
+      "rank": 169,
+      "topMoves": [
+        {
+          "id": "trickroom",
+          "name": "trickroom"
+        },
+        {
+          "id": "wish",
+          "name": "ねがいごと"
+        },
+        {
+          "id": "healingwish",
+          "name": "healingwish"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "受け"
+      ],
+      "blurb": "受け枠 · trickroom＋ねがいごと / たべのこし"
+    },
+    "clawitzer": {
+      "usage": 0.0026688000000000003,
+      "rank": 170,
+      "topMoves": [
+        {
+          "id": "waterpulse",
+          "name": "waterpulse"
+        },
+        {
+          "id": "darkpulse",
+          "name": "darkpulse"
+        },
+        {
+          "id": "aurasphere",
+          "name": "aurasphere"
+        }
+      ],
+      "topItem": {
+        "id": "choicescarf",
+        "name": "こだわりスカーフ"
+      },
+      "roles": [
+        "サイクル",
+        "先制"
+      ],
+      "blurb": "サイクル・先制枠 · waterpulse＋darkpulse / こだわりスカーフ"
+    },
+    "absolmega": {
+      "usage": 0.0026033000000000002,
+      "rank": 171,
+      "topMoves": [
+        {
+          "id": "knockoff",
+          "name": "はたきおとす"
+        },
+        {
+          "id": "suckerpunch",
+          "name": "ふいうち"
+        },
+        {
+          "id": "closecombat",
+          "name": "インファイト"
+        }
+      ],
+      "topItem": {
+        "id": "absolite",
+        "name": "absolite"
+      },
+      "roles": [
+        "先制"
+      ],
+      "blurb": "先制枠 · はたきおとす＋ふいうち / absolite"
+    },
+    "roserade": {
+      "usage": 0.0025834,
+      "rank": 172,
+      "topMoves": [
+        {
+          "id": "sludgebomb",
+          "name": "sludgebomb"
+        },
+        {
+          "id": "leafstorm",
+          "name": "leafstorm"
+        },
+        {
+          "id": "spikes",
+          "name": "まきびし"
+        }
+      ],
+      "topItem": {
+        "id": "focussash",
+        "name": "きあいのタスキ"
+      },
+      "roles": [
+        "設置",
+        "先制"
+      ],
+      "blurb": "設置・先制枠 · sludgebomb＋leafstorm / きあいのタスキ"
+    },
+    "gallademega": {
+      "usage": 0.0024747,
+      "rank": 173,
+      "topMoves": [
+        {
+          "id": "closecombat",
+          "name": "インファイト"
+        },
+        {
+          "id": "swordsdance",
+          "name": "つるぎのまい"
+        },
+        {
+          "id": "psychocut",
+          "name": "psychocut"
+        }
+      ],
+      "topItem": {
+        "id": "galladite",
+        "name": "galladite"
+      },
+      "roles": [
+        "積み",
+        "サイクル",
+        "先制"
+      ],
+      "blurb": "積み・サイクル枠 · インファイト＋つるぎのまい / galladite"
+    },
+    "spiritomb": {
+      "usage": 0.0024737,
+      "rank": 174,
+      "topMoves": [
+        {
+          "id": "willowisp",
+          "name": "おにび"
+        },
+        {
+          "id": "suckerpunch",
+          "name": "ふいうち"
+        },
+        {
+          "id": "poltergeist",
+          "name": "ポルターガイスト"
+        }
+      ],
+      "topItem": {
+        "id": "shellbell",
+        "name": "shellbell"
+      },
+      "roles": [
+        "先制"
+      ],
+      "blurb": "先制枠 · おにび＋ふいうち / shellbell"
+    },
+    "rhyperior": {
+      "usage": 0.0024462,
+      "rank": 175,
+      "topMoves": [
+        {
+          "id": "earthquake",
+          "name": "じしん"
+        },
+        {
+          "id": "stoneedge",
+          "name": "stoneedge"
+        },
+        {
+          "id": "swordsdance",
+          "name": "つるぎのまい"
+        }
+      ],
+      "topItem": {
+        "id": "passhoberry",
+        "name": "passhoberry"
+      },
+      "roles": [
+        "設置",
+        "積み"
+      ],
+      "blurb": "設置・積み枠 · じしん＋stoneedge / passhoberry"
+    },
+    "mudsdale": {
+      "usage": 0.0023769,
+      "rank": 176,
+      "topMoves": [
+        {
+          "id": "bodypress",
+          "name": "ボディプレス"
+        },
+        {
+          "id": "earthquake",
+          "name": "じしん"
+        },
+        {
+          "id": "stealthrock",
+          "name": "ステルスロック"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "設置"
+      ],
+      "blurb": "設置枠 · ボディプレス＋じしん / たべのこし"
+    },
+    "ninetales": {
+      "usage": 0.0022768,
+      "rank": 177,
+      "topMoves": [
+        {
+          "id": "encore",
+          "name": "アンコール"
+        },
+        {
+          "id": "solarbeam",
+          "name": "solarbeam"
+        },
+        {
+          "id": "willowisp",
+          "name": "おにび"
+        }
+      ],
+      "topItem": {
+        "id": "charcoal",
+        "name": "charcoal"
+      },
+      "roles": [
+        "対面"
+      ],
+      "blurb": "対面枠 · アンコール＋solarbeam / charcoal"
+    },
+    "mrrime": {
+      "usage": 0.0021879,
+      "rank": 178,
+      "topMoves": [
+        {
+          "id": "rapidspin",
+          "name": "こうそくスピン"
+        },
+        {
+          "id": "freezedry",
+          "name": "freezedry"
+        },
+        {
+          "id": "psychic",
+          "name": "psychic"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "除去",
+        "受け",
+        "先制"
+      ],
+      "blurb": "除去・受け枠 · こうそくスピン＋freezedry / たべのこし"
+    },
+    "toucannon": {
+      "usage": 0.0021168000000000003,
+      "rank": 179,
+      "topMoves": [
+        {
+          "id": "beakblast",
+          "name": "beakblast"
+        },
+        {
+          "id": "bulletseed",
+          "name": "bulletseed"
+        },
+        {
+          "id": "rockblast",
+          "name": "rockblast"
+        }
+      ],
+      "topItem": {
+        "id": "kingsrock",
+        "name": "おうじゃのしるし"
+      },
+      "roles": [
+        "除去",
+        "サイクル"
+      ],
+      "blurb": "除去・サイクル枠 · beakblast＋bulletseed / おうじゃのしるし"
+    },
+    "ampharosmega": {
+      "usage": 0.0020477,
+      "rank": 180,
+      "topMoves": [
+        {
+          "id": "dragonpulse",
+          "name": "dragonpulse"
+        },
+        {
+          "id": "voltswitch",
+          "name": "ボルトチェンジ"
+        },
+        {
+          "id": "thunderbolt",
+          "name": "thunderbolt"
+        }
+      ],
+      "topItem": {
+        "id": "ampharosite",
+        "name": "ampharosite"
+      },
+      "roles": [
+        "サイクル"
+      ],
+      "blurb": "サイクル枠 · dragonpulse＋ボルトチェンジ / ampharosite"
+    },
+    "absol": {
+      "usage": 0.0020456,
+      "rank": 181,
+      "topMoves": [
+        {
+          "id": "suckerpunch",
+          "name": "ふいうち"
+        },
+        {
+          "id": "nightslash",
+          "name": "nightslash"
+        },
+        {
+          "id": "closecombat",
+          "name": "インファイト"
+        }
+      ],
+      "topItem": {
+        "id": "scopelens",
+        "name": "scopelens"
+      },
+      "roles": [
+        "先制"
+      ],
+      "blurb": "先制枠 · ふいうち＋nightslash / scopelens"
+    },
+    "tyrantrum": {
+      "usage": 0.0020223,
+      "rank": 182,
+      "topMoves": [
+        {
+          "id": "headsmash",
+          "name": "headsmash"
+        },
+        {
+          "id": "earthquake",
+          "name": "じしん"
+        },
+        {
+          "id": "closecombat",
+          "name": "インファイト"
+        }
+      ],
+      "topItem": {
+        "id": "choicescarf",
+        "name": "こだわりスカーフ"
+      },
+      "roles": [
+        "設置"
+      ],
+      "blurb": "設置枠 · headsmash＋じしん / こだわりスカーフ"
+    },
+    "avalugg": {
+      "usage": 0.0019775,
+      "rank": 183,
+      "topMoves": [
+        {
+          "id": "bodypress",
+          "name": "ボディプレス"
+        },
+        {
+          "id": "recover",
+          "name": "じこさいせい"
+        },
+        {
+          "id": "rapidspin",
+          "name": "こうそくスピン"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "除去",
+        "受け"
+      ],
+      "blurb": "除去・受け枠 · ボディプレス＋じこさいせい / たべのこし"
+    },
+    "trevenant": {
+      "usage": 0.0019681,
+      "rank": 184,
+      "topMoves": [
+        {
+          "id": "leechseed",
+          "name": "leechseed"
+        },
+        {
+          "id": "protect",
+          "name": "まもる"
+        },
+        {
+          "id": "poltergeist",
+          "name": "ポルターガイスト"
+        }
+      ],
+      "topItem": {
+        "id": "sitrusberry",
+        "name": "オボンのみ"
+      },
+      "roles": [
+        "先制"
+      ],
+      "blurb": "先制枠 · leechseed＋まもる / オボンのみ"
+    },
+    "appletun": {
+      "usage": 0.0019238,
+      "rank": 185,
+      "topMoves": [
+        {
+          "id": "appleacid",
+          "name": "appleacid"
+        },
+        {
+          "id": "leechseed",
+          "name": "leechseed"
+        },
+        {
+          "id": "recover",
+          "name": "じこさいせい"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "受け",
+        "先制"
+      ],
+      "blurb": "受け・先制枠 · appleacid＋leechseed / たべのこし"
+    },
+    "cameruptmega": {
+      "usage": 0.0018540000000000002,
+      "rank": 186,
+      "topMoves": [
+        {
+          "id": "earthpower",
+          "name": "earthpower"
+        },
+        {
+          "id": "fireblast",
+          "name": "fireblast"
+        },
+        {
+          "id": "eruption",
+          "name": "eruption"
+        }
+      ],
+      "topItem": {
+        "id": "cameruptite",
+        "name": "cameruptite"
+      },
+      "roles": [
+        "設置"
+      ],
+      "blurb": "設置枠 · earthpower＋fireblast / cameruptite"
+    },
+    "altaria": {
+      "usage": 0.0018515,
+      "rank": 187,
+      "topMoves": [
+        {
+          "id": "roost",
+          "name": "はねやすめ"
+        },
+        {
+          "id": "defog",
+          "name": "ぼうじん"
+        },
+        {
+          "id": "willowisp",
+          "name": "おにび"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "除去",
+        "受け"
+      ],
+      "blurb": "除去・受け枠 · はねやすめ＋ぼうじん / たべのこし"
+    },
+    "vanilluxe": {
+      "usage": 0.0018024,
+      "rank": 188,
+      "topMoves": [
+        {
+          "id": "blizzard",
+          "name": "blizzard"
+        },
+        {
+          "id": "freezedry",
+          "name": "freezedry"
+        },
+        {
+          "id": "auroraveil",
+          "name": "auroraveil"
+        }
+      ],
+      "topItem": {
+        "id": "choicescarf",
+        "name": "こだわりスカーフ"
+      },
+      "roles": [
+        "対面"
+      ],
+      "blurb": "対面枠 · blizzard＋freezedry / こだわりスカーフ"
+    },
+    "machamp": {
+      "usage": 0.0017519,
+      "rank": 189,
+      "topMoves": [
+        {
+          "id": "dynamicpunch",
+          "name": "dynamicpunch"
+        },
+        {
+          "id": "stoneedge",
+          "name": "stoneedge"
+        },
+        {
+          "id": "bulletpunch",
+          "name": "バレットパンチ"
+        }
+      ],
+      "topItem": {
+        "id": "blackbelt",
+        "name": "blackbelt"
+      },
+      "roles": [
+        "先制"
+      ],
+      "blurb": "先制枠 · dynamicpunch＋stoneedge / blackbelt"
+    },
+    "aurorus": {
+      "usage": 0.0017502000000000001,
+      "rank": 190,
+      "topMoves": [
+        {
+          "id": "auroraveil",
+          "name": "auroraveil"
+        },
+        {
+          "id": "blizzard",
+          "name": "blizzard"
+        },
+        {
+          "id": "stealthrock",
+          "name": "ステルスロック"
+        }
+      ],
+      "topItem": {
+        "id": "focussash",
+        "name": "きあいのタスキ"
+      },
+      "roles": [
+        "設置"
+      ],
+      "blurb": "設置枠 · auroraveil＋blizzard / きあいのタスキ"
+    },
+    "meowstic": {
+      "usage": 0.0016979,
+      "rank": 191,
+      "topMoves": [
+        {
+          "id": "thunderwave",
+          "name": "でんじは"
+        },
+        {
+          "id": "reflect",
+          "name": "reflect"
+        },
+        {
+          "id": "lightscreen",
+          "name": "lightscreen"
+        }
+      ],
+      "topItem": {
+        "id": "focussash",
+        "name": "きあいのタスキ"
+      },
+      "roles": [
+        "先制"
+      ],
+      "blurb": "先制枠 · でんじは＋reflect / きあいのタスキ"
+    },
+    "golurk": {
+      "usage": 0.0016494,
+      "rank": 192,
+      "topMoves": [
+        {
+          "id": "poltergeist",
+          "name": "ポルターガイスト"
+        },
+        {
+          "id": "dynamicpunch",
+          "name": "dynamicpunch"
+        },
+        {
+          "id": "headlongrush",
+          "name": "headlongrush"
+        }
+      ],
+      "topItem": {
+        "id": "quickclaw",
+        "name": "quickclaw"
+      },
+      "roles": [
+        "設置"
+      ],
+      "blurb": "設置枠 · ポルターガイスト＋dynamicpunch / quickclaw"
+    },
+    "aggron": {
+      "usage": 0.0016399,
+      "rank": 193,
+      "topMoves": [
+        {
+          "id": "bodypress",
+          "name": "ボディプレス"
+        },
+        {
+          "id": "stealthrock",
+          "name": "ステルスロック"
+        },
+        {
+          "id": "heavyslam",
+          "name": "heavyslam"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "設置"
+      ],
+      "blurb": "設置枠 · ボディプレス＋ステルスロック / たべのこし"
+    },
+    "avalugghisui": {
+      "usage": 0.0016184,
+      "rank": 194,
+      "topMoves": [
+        {
+          "id": "rapidspin",
+          "name": "こうそくスピン"
+        },
+        {
+          "id": "mountaingale",
+          "name": "mountaingale"
+        },
+        {
+          "id": "bodypress",
+          "name": "ボディプレス"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "設置",
+        "除去",
+        "受け"
+      ],
+      "blurb": "設置・除去枠 · こうそくスピン＋mountaingale / たべのこし"
+    },
+    "pikachu": {
+      "usage": 0.0016017000000000002,
+      "rank": 195,
+      "topMoves": [
+        {
+          "id": "volttackle",
+          "name": "volttackle"
+        },
+        {
+          "id": "fakeout",
+          "name": "ねこだまし"
+        },
+        {
+          "id": "knockoff",
+          "name": "はたきおとす"
+        }
+      ],
+      "topItem": {
+        "id": "lightball",
+        "name": "lightball"
+      },
+      "roles": [
+        "サイクル",
+        "先制"
+      ],
+      "blurb": "サイクル・先制枠 · volttackle＋ねこだまし / lightball"
+    },
+    "stunfisk": {
+      "usage": 0.0015886,
+      "rank": 196,
+      "topMoves": [
+        {
+          "id": "stealthrock",
+          "name": "ステルスロック"
+        },
+        {
+          "id": "discharge",
+          "name": "discharge"
+        },
+        {
+          "id": "earthpower",
+          "name": "earthpower"
+        }
+      ],
+      "topItem": {
+        "id": "sitrusberry",
+        "name": "オボンのみ"
+      },
+      "roles": [
+        "設置",
+        "先制"
+      ],
+      "blurb": "設置・先制枠 · ステルスロック＋discharge / オボンのみ"
+    },
+    "sharpedo": {
+      "usage": 0.0015673,
+      "rank": 197,
+      "topMoves": [
+        {
+          "id": "crunch",
+          "name": "crunch"
+        },
+        {
+          "id": "destinybond",
+          "name": "destinybond"
+        },
+        {
+          "id": "protect",
+          "name": "まもる"
+        }
+      ],
+      "topItem": {
+        "id": "focussash",
+        "name": "きあいのタスキ"
+      },
+      "roles": [
+        "サイクル",
+        "先制"
+      ],
+      "blurb": "サイクル・先制枠 · crunch＋destinybond / きあいのタスキ"
+    },
+    "pangoro": {
+      "usage": 0.0014984,
+      "rank": 198,
+      "topMoves": [
+        {
+          "id": "knockoff",
+          "name": "はたきおとす"
+        },
+        {
+          "id": "closecombat",
+          "name": "インファイト"
+        },
+        {
+          "id": "bulletpunch",
+          "name": "バレットパンチ"
+        }
+      ],
+      "topItem": {
+        "id": "blackglasses",
+        "name": "くろいメガネ"
+      },
+      "roles": [
+        "サイクル",
+        "先制"
+      ],
+      "blurb": "サイクル・先制枠 · はたきおとす＋インファイト / くろいメガネ"
+    },
+    "raichu": {
+      "usage": 0.0014829,
+      "rank": 199,
+      "topMoves": [
+        {
+          "id": "voltswitch",
+          "name": "ボルトチェンジ"
+        },
+        {
+          "id": "surf",
+          "name": "surf"
+        },
+        {
+          "id": "thunderbolt",
+          "name": "thunderbolt"
+        }
+      ],
+      "topItem": {
+        "id": "magnet",
+        "name": "magnet"
+      },
+      "roles": [
+        "サイクル",
+        "先制"
+      ],
+      "blurb": "サイクル・先制枠 · ボルトチェンジ＋surf / magnet"
+    },
+    "gourgeistsuper": {
+      "usage": 0.0014779,
+      "rank": 200,
+      "topMoves": [
+        {
+          "id": "leechseed",
+          "name": "leechseed"
+        },
+        {
+          "id": "willowisp",
+          "name": "おにび"
+        },
+        {
+          "id": "poltergeist",
+          "name": "ポルターガイスト"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "受け",
+        "先制"
+      ],
+      "blurb": "受け・先制枠 · leechseed＋おにび / たべのこし"
+    },
+    "drampa": {
+      "usage": 0.0014659,
+      "rank": 201,
+      "topMoves": [
+        {
+          "id": "dracometeor",
+          "name": "りゅうせいぐん"
+        },
+        {
+          "id": "hypervoice",
+          "name": "hypervoice"
+        },
+        {
+          "id": "thunderbolt",
+          "name": "thunderbolt"
+        }
+      ],
+      "topItem": {
+        "id": "sitrusberry",
+        "name": "オボンのみ"
+      },
+      "roles": [
+        "除去"
+      ],
+      "blurb": "除去枠 · りゅうせいぐん＋hypervoice / オボンのみ"
+    },
+    "zoroark": {
+      "usage": 0.0014338,
+      "rank": 202,
+      "topMoves": [
+        {
+          "id": "flamethrower",
+          "name": "flamethrower"
+        },
+        {
+          "id": "darkpulse",
+          "name": "darkpulse"
+        },
+        {
+          "id": "suckerpunch",
+          "name": "ふいうち"
+        }
+      ],
+      "topItem": {
+        "id": "blackglasses",
+        "name": "くろいメガネ"
+      },
+      "roles": [
+        "サイクル",
+        "先制"
+      ],
+      "blurb": "サイクル・先制枠 · flamethrower＋darkpulse / くろいメガネ"
+    },
+    "abomasnowmega": {
+      "usage": 0.0014299,
+      "rank": 203,
+      "topMoves": [
+        {
+          "id": "blizzard",
+          "name": "blizzard"
+        },
+        {
+          "id": "iceshard",
+          "name": "こおりのつぶて"
+        },
+        {
+          "id": "gigadrain",
+          "name": "gigadrain"
+        }
+      ],
+      "topItem": {
+        "id": "abomasite",
+        "name": "abomasite"
+      },
+      "roles": [
+        "先制"
+      ],
+      "blurb": "先制枠 · blizzard＋こおりのつぶて / abomasite"
+    },
+    "typhlosion": {
+      "usage": 0.0014198,
+      "rank": 204,
+      "topMoves": [
+        {
+          "id": "eruption",
+          "name": "eruption"
+        },
+        {
+          "id": "scorchingsands",
+          "name": "scorchingsands"
+        },
+        {
+          "id": "flamethrower",
+          "name": "flamethrower"
+        }
+      ],
+      "topItem": {
+        "id": "choicescarf",
+        "name": "こだわりスカーフ"
+      },
+      "roles": [
+        "対面"
+      ],
+      "blurb": "対面枠 · eruption＋scorchingsands / こだわりスカーフ"
+    },
+    "glaceon": {
+      "usage": 0.0013169,
+      "rank": 205,
+      "topMoves": [
+        {
+          "id": "freezedry",
+          "name": "freezedry"
+        },
+        {
+          "id": "blizzard",
+          "name": "blizzard"
+        },
+        {
+          "id": "shadowball",
+          "name": "シャドーボール"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "先制"
+      ],
+      "blurb": "先制枠 · freezedry＋blizzard / たべのこし"
+    },
+    "raichualola": {
+      "usage": 0.0013049,
+      "rank": 206,
+      "topMoves": [
+        {
+          "id": "voltswitch",
+          "name": "ボルトチェンジ"
+        },
+        {
+          "id": "psychic",
+          "name": "psychic"
+        },
+        {
+          "id": "thunderbolt",
+          "name": "thunderbolt"
+        }
+      ],
+      "topItem": {
+        "id": "magnet",
+        "name": "magnet"
+      },
+      "roles": [
+        "サイクル",
+        "先制"
+      ],
+      "blurb": "サイクル・先制枠 · ボルトチェンジ＋psychic / magnet"
+    },
+    "emboar": {
+      "usage": 0.0012845999999999999,
+      "rank": 207,
+      "topMoves": [
+        {
+          "id": "flareblitz",
+          "name": "フレアドライブ"
+        },
+        {
+          "id": "closecombat",
+          "name": "インファイト"
+        },
+        {
+          "id": "headsmash",
+          "name": "headsmash"
+        }
+      ],
+      "topItem": {
+        "id": "choicescarf",
+        "name": "こだわりスカーフ"
+      },
+      "roles": [
+        "対面"
+      ],
+      "blurb": "対面枠 · フレアドライブ＋インファイト / こだわりスカーフ"
+    },
+    "alcremie": {
+      "usage": 0.0012787999999999999,
+      "rank": 208,
+      "topMoves": [
+        {
+          "id": "calmmind",
+          "name": "めいそう"
+        },
+        {
+          "id": "drainingkiss",
+          "name": "drainingkiss"
+        },
+        {
+          "id": "acidarmor",
+          "name": "acidarmor"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "積み",
+        "受け"
+      ],
+      "blurb": "積み・受け枠 · めいそう＋drainingkiss / たべのこし"
+    },
+    "scovillain": {
+      "usage": 0.0012345000000000001,
+      "rank": 209,
+      "topMoves": [
+        {
+          "id": "flamethrower",
+          "name": "flamethrower"
+        },
+        {
+          "id": "solarbeam",
+          "name": "solarbeam"
+        },
+        {
+          "id": "gigadrain",
+          "name": "gigadrain"
+        }
+      ],
+      "topItem": {
+        "id": "charcoal",
+        "name": "charcoal"
+      },
+      "roles": [
+        "先制"
+      ],
+      "blurb": "先制枠 · flamethrower＋solarbeam / charcoal"
+    },
+    "emolga": {
+      "usage": 0.0012165,
+      "rank": 210,
+      "topMoves": [
+        {
+          "id": "defog",
+          "name": "ぼうじん"
+        },
+        {
+          "id": "nuzzle",
+          "name": "nuzzle"
+        },
+        {
+          "id": "voltswitch",
+          "name": "ボルトチェンジ"
+        }
+      ],
+      "topItem": {
+        "id": "magnet",
+        "name": "magnet"
+      },
+      "roles": [
+        "除去",
+        "サイクル"
+      ],
+      "blurb": "除去・サイクル枠 · ぼうじん＋nuzzle / magnet"
+    },
+    "delphox": {
+      "usage": 0.0011874,
+      "rank": 211,
+      "topMoves": [
+        {
+          "id": "psychic",
+          "name": "psychic"
+        },
+        {
+          "id": "flamethrower",
+          "name": "flamethrower"
+        },
+        {
+          "id": "dazzlinggleam",
+          "name": "dazzlinggleam"
+        }
+      ],
+      "topItem": {
+        "id": "choicescarf",
+        "name": "こだわりスカーフ"
+      },
+      "roles": [
+        "対面"
+      ],
+      "blurb": "対面枠 · psychic＋flamethrower / こだわりスカーフ"
+    },
+    "steelix": {
+      "usage": 0.0011518000000000001,
+      "rank": 212,
+      "topMoves": [
+        {
+          "id": "earthquake",
+          "name": "じしん"
+        },
+        {
+          "id": "stealthrock",
+          "name": "ステルスロック"
+        },
+        {
+          "id": "bodypress",
+          "name": "ボディプレス"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "設置"
+      ],
+      "blurb": "設置枠 · じしん＋ステルスロック / たべのこし"
+    },
+    "arbok": {
+      "usage": 0.0011049,
+      "rank": 213,
+      "topMoves": [
+        {
+          "id": "coil",
+          "name": "とぐろをまく"
+        },
+        {
+          "id": "gunkshot",
+          "name": "gunkshot"
+        },
+        {
+          "id": "glare",
+          "name": "glare"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "設置",
+        "積み",
+        "先制"
+      ],
+      "blurb": "設置・積み枠 · とぐろをまく＋gunkshot / たべのこし"
+    },
+    "abomasnow": {
+      "usage": 0.0010788,
+      "rank": 214,
+      "topMoves": [
+        {
+          "id": "blizzard",
+          "name": "blizzard"
+        },
+        {
+          "id": "auroraveil",
+          "name": "auroraveil"
+        },
+        {
+          "id": "iceshard",
+          "name": "こおりのつぶて"
+        }
+      ],
+      "topItem": {
+        "id": "focussash",
+        "name": "きあいのタスキ"
+      },
+      "roles": [
+        "先制"
+      ],
+      "blurb": "先制枠 · blizzard＋auroraveil / きあいのタスキ"
+    },
+    "houndoom": {
+      "usage": 0.0010651,
+      "rank": 215,
+      "topMoves": [
+        {
+          "id": "darkpulse",
+          "name": "darkpulse"
+        },
+        {
+          "id": "flamethrower",
+          "name": "flamethrower"
+        },
+        {
+          "id": "sludgebomb",
+          "name": "sludgebomb"
+        }
+      ],
+      "topItem": {
+        "id": "choicescarf",
+        "name": "こだわりスカーフ"
+      },
+      "roles": [
+        "先制"
+      ],
+      "blurb": "先制枠 · darkpulse＋flamethrower / こだわりスカーフ"
+    },
+    "rampardos": {
+      "usage": 0.0010594,
+      "rank": 216,
+      "topMoves": [
+        {
+          "id": "earthquake",
+          "name": "じしん"
+        },
+        {
+          "id": "headsmash",
+          "name": "headsmash"
+        },
+        {
+          "id": "firepunch",
+          "name": "firepunch"
+        }
+      ],
+      "topItem": {
+        "id": "choicescarf",
+        "name": "こだわりスカーフ"
+      },
+      "roles": [
+        "設置"
+      ],
+      "blurb": "設置枠 · じしん＋headsmash / こだわりスカーフ"
+    },
+    "charizard": {
+      "usage": 0.0010554,
+      "rank": 217,
+      "topMoves": [
+        {
+          "id": "flamethrower",
+          "name": "flamethrower"
+        },
+        {
+          "id": "airslash",
+          "name": "airslash"
+        },
+        {
+          "id": "scorchingsands",
+          "name": "scorchingsands"
+        }
+      ],
+      "topItem": {
+        "id": "choicescarf",
+        "name": "こだわりスカーフ"
+      },
+      "roles": [
+        "除去"
+      ],
+      "blurb": "除去枠 · flamethrower＋airslash / こだわりスカーフ"
+    },
+    "meowsticmmega": {
+      "usage": 0.0010494,
+      "rank": 218,
+      "topMoves": [
+        {
+          "id": "alluringvoice",
+          "name": "alluringvoice"
+        },
+        {
+          "id": "nastyplot",
+          "name": "わるだくみ"
+        },
+        {
+          "id": "darkpulse",
+          "name": "darkpulse"
+        }
+      ],
+      "topItem": {
+        "id": "meowsticite",
+        "name": "meowsticite"
+      },
+      "roles": [
+        "積み",
+        "先制"
+      ],
+      "blurb": "積み・先制枠 · alluringvoice＋わるだくみ / meowsticite"
+    },
+    "manectric": {
+      "usage": 0.0010037,
+      "rank": 219,
+      "topMoves": [
+        {
+          "id": "voltswitch",
+          "name": "ボルトチェンジ"
+        },
+        {
+          "id": "flamethrower",
+          "name": "flamethrower"
+        },
+        {
+          "id": "switcheroo",
+          "name": "switcheroo"
+        }
+      ],
+      "topItem": {
+        "id": "choicescarf",
+        "name": "こだわりスカーフ"
+      },
+      "roles": [
+        "サイクル"
+      ],
+      "blurb": "サイクル枠 · ボルトチェンジ＋flamethrower / こだわりスカーフ"
+    },
+    "bastiodon": {
+      "usage": 0.0009935,
+      "rank": 220,
+      "topMoves": [
+        {
+          "id": "bodypress",
+          "name": "ボディプレス"
+        },
+        {
+          "id": "stealthrock",
+          "name": "ステルスロック"
+        },
+        {
+          "id": "irondefense",
+          "name": "irondefense"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "設置"
+      ],
+      "blurb": "設置枠 · ボディプレス＋ステルスロック / たべのこし"
+    },
+    "lycanroc": {
+      "usage": 0.0009868000000000001,
+      "rank": 221,
+      "topMoves": [
+        {
+          "id": "accelerock",
+          "name": "アクセルロック"
+        },
+        {
+          "id": "stealthrock",
+          "name": "ステルスロック"
+        },
+        {
+          "id": "closecombat",
+          "name": "インファイト"
+        }
+      ],
+      "topItem": {
+        "id": "focussash",
+        "name": "きあいのタスキ"
+      },
+      "roles": [
+        "設置",
+        "先制"
+      ],
+      "blurb": "設置・先制枠 · アクセルロック＋ステルスロック / きあいのタスキ"
+    },
+    "liepard": {
+      "usage": 0.0009729000000000001,
+      "rank": 222,
+      "topMoves": [
+        {
+          "id": "encore",
+          "name": "アンコール"
+        },
+        {
+          "id": "thunderwave",
+          "name": "でんじは"
+        },
+        {
+          "id": "knockoff",
+          "name": "はたきおとす"
+        }
+      ],
+      "topItem": {
+        "id": "focussash",
+        "name": "きあいのタスキ"
+      },
+      "roles": [
+        "サイクル",
+        "先制"
+      ],
+      "blurb": "サイクル・先制枠 · アンコール＋でんじは / きあいのタスキ"
+    },
+    "victreebel": {
+      "usage": 0.0009028,
+      "rank": 223,
+      "topMoves": [
+        {
+          "id": "growth",
+          "name": "growth"
+        },
+        {
+          "id": "weatherball",
+          "name": "weatherball"
+        },
+        {
+          "id": "sludgewave",
+          "name": "sludgewave"
+        }
+      ],
+      "topItem": {
+        "id": "focussash",
+        "name": "きあいのタスキ"
+      },
+      "roles": [
+        "先制"
+      ],
+      "blurb": "先制枠 · growth＋weatherball / きあいのタスキ"
+    },
+    "crabominable": {
+      "usage": 0.0008952000000000001,
+      "rank": 224,
+      "topMoves": [
+        {
+          "id": "icehammer",
+          "name": "icehammer"
+        },
+        {
+          "id": "drainpunch",
+          "name": "drainpunch"
+        },
+        {
+          "id": "machpunch",
+          "name": "マッハパンチ"
+        }
+      ],
+      "topItem": {
+        "id": "blackbelt",
+        "name": "blackbelt"
+      },
+      "roles": [
+        "先制"
+      ],
+      "blurb": "先制枠 · icehammer＋drainpunch / blackbelt"
+    },
+    "feraligatr": {
+      "usage": 0.0008931999999999999,
+      "rank": 225,
+      "topMoves": [
+        {
+          "id": "liquidation",
+          "name": "liquidation"
+        },
+        {
+          "id": "icepunch",
+          "name": "icepunch"
+        },
+        {
+          "id": "dragondance",
+          "name": "りゅうのまい"
+        }
+      ],
+      "topItem": {
+        "id": "mysticwater",
+        "name": "mysticwater"
+      },
+      "roles": [
+        "積み",
+        "サイクル"
+      ],
+      "blurb": "積み・サイクル枠 · liquidation＋icepunch / mysticwater"
+    },
+    "sandaconda": {
+      "usage": 0.0008910999999999999,
+      "rank": 226,
+      "topMoves": [
+        {
+          "id": "earthquake",
+          "name": "じしん"
+        },
+        {
+          "id": "glare",
+          "name": "glare"
+        },
+        {
+          "id": "stealthrock",
+          "name": "ステルスロック"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "設置"
+      ],
+      "blurb": "設置枠 · じしん＋glare / たべのこし"
+    },
+    "houndoommega": {
+      "usage": 0.0008870999999999999,
+      "rank": 227,
+      "topMoves": [
+        {
+          "id": "darkpulse",
+          "name": "darkpulse"
+        },
+        {
+          "id": "flamethrower",
+          "name": "flamethrower"
+        },
+        {
+          "id": "nastyplot",
+          "name": "わるだくみ"
+        }
+      ],
+      "topItem": {
+        "id": "houndoominite",
+        "name": "houndoominite"
+      },
+      "roles": [
+        "積み",
+        "先制"
+      ],
+      "blurb": "積み・先制枠 · darkpulse＋flamethrower / houndoominite"
+    },
+    "wyrdeer": {
+      "usage": 0.000879,
+      "rank": 228,
+      "topMoves": [
+        {
+          "id": "psyshieldbash",
+          "name": "psyshieldbash"
+        },
+        {
+          "id": "bodyslam",
+          "name": "bodyslam"
+        },
+        {
+          "id": "earthquake",
+          "name": "じしん"
+        }
+      ],
+      "topItem": {
+        "id": "choicescarf",
+        "name": "こだわりスカーフ"
+      },
+      "roles": [
+        "対面"
+      ],
+      "blurb": "対面枠 · psyshieldbash＋bodyslam / こだわりスカーフ"
+    },
+    "rotomfan": {
+      "usage": 0.0008696,
+      "rank": 229,
+      "topMoves": [
+        {
+          "id": "airslash",
+          "name": "airslash"
+        },
+        {
+          "id": "willowisp",
+          "name": "おにび"
+        },
+        {
+          "id": "voltswitch",
+          "name": "ボルトチェンジ"
+        }
+      ],
+      "topItem": {
+        "id": "sitrusberry",
+        "name": "オボンのみ"
+      },
+      "roles": [
+        "サイクル"
+      ],
+      "blurb": "サイクル枠 · airslash＋おにび / オボンのみ"
+    },
+    "leafeon": {
+      "usage": 0.0008536,
+      "rank": 230,
+      "topMoves": [
+        {
+          "id": "knockoff",
+          "name": "はたきおとす"
+        },
+        {
+          "id": "swordsdance",
+          "name": "つるぎのまい"
+        },
+        {
+          "id": "solarblade",
+          "name": "solarblade"
+        }
+      ],
+      "topItem": {
+        "id": "miracleseed",
+        "name": "miracleseed"
+      },
+      "roles": [
+        "積み",
+        "先制"
+      ],
+      "blurb": "積み・先制枠 · はたきおとす＋つるぎのまい / miracleseed"
+    },
+    "steelixmega": {
+      "usage": 0.0008439000000000001,
+      "rank": 231,
+      "topMoves": [
+        {
+          "id": "earthquake",
+          "name": "じしん"
+        },
+        {
+          "id": "bodypress",
+          "name": "ボディプレス"
+        },
+        {
+          "id": "heavyslam",
+          "name": "heavyslam"
+        }
+      ],
+      "topItem": {
+        "id": "steelixite",
+        "name": "steelixite"
+      },
+      "roles": [
+        "設置"
+      ],
+      "blurb": "設置枠 · じしん＋ボディプレス / steelixite"
+    },
+    "passimian": {
+      "usage": 0.0007888000000000001,
+      "rank": 232,
+      "topMoves": [
+        {
+          "id": "closecombat",
+          "name": "インファイト"
+        },
+        {
+          "id": "knockoff",
+          "name": "はたきおとす"
+        },
+        {
+          "id": "uturn",
+          "name": "とんぼがえり"
+        }
+      ],
+      "topItem": {
+        "id": "choicescarf",
+        "name": "こだわりスカーフ"
+      },
+      "roles": [
+        "サイクル",
+        "先制"
+      ],
+      "blurb": "サイクル・先制枠 · インファイト＋はたきおとす / こだわりスカーフ"
+    },
+    "kangaskhan": {
+      "usage": 0.0007886999999999999,
+      "rank": 233,
+      "topMoves": [
+        {
+          "id": "",
+          "name": ""
+        },
+        {
+          "id": "fakeout",
+          "name": "ねこだまし"
+        },
+        {
+          "id": "lastresort",
+          "name": "lastresort"
+        }
+      ],
+      "topItem": {
+        "id": "silkscarf",
+        "name": "silkscarf"
+      },
+      "roles": [
+        "先制"
+      ],
+      "blurb": "先制枠 · ＋ねこだまし / silkscarf"
+    },
+    "rotom": {
+      "usage": 0.0007833,
+      "rank": 234,
+      "topMoves": [
+        {
+          "id": "willowisp",
+          "name": "おにび"
+        },
+        {
+          "id": "voltswitch",
+          "name": "ボルトチェンジ"
+        },
+        {
+          "id": "hex",
+          "name": "たたりめ"
+        }
+      ],
+      "topItem": {
+        "id": "sitrusberry",
+        "name": "オボンのみ"
+      },
+      "roles": [
+        "除去",
+        "サイクル",
+        "先制"
+      ],
+      "blurb": "除去・サイクル枠 · おにび＋ボルトチェンジ / オボンのみ"
+    },
+    "ampharos": {
+      "usage": 0.000713,
+      "rank": 235,
+      "topMoves": [
+        {
+          "id": "dazzlinggleam",
+          "name": "dazzlinggleam"
+        },
+        {
+          "id": "voltswitch",
+          "name": "ボルトチェンジ"
+        },
+        {
+          "id": "thunderbolt",
+          "name": "thunderbolt"
+        }
+      ],
+      "topItem": {
+        "id": "magnet",
+        "name": "magnet"
+      },
+      "roles": [
+        "サイクル"
+      ],
+      "blurb": "サイクル枠 · dazzlinggleam＋ボルトチェンジ / magnet"
+    },
+    "luxray": {
+      "usage": 0.0006737,
+      "rank": 236,
+      "topMoves": [
+        {
+          "id": "supercellslam",
+          "name": "supercellslam"
+        },
+        {
+          "id": "voltswitch",
+          "name": "ボルトチェンジ"
+        },
+        {
+          "id": "playrough",
+          "name": "playrough"
+        }
+      ],
+      "topItem": {
+        "id": "magnet",
+        "name": "magnet"
+      },
+      "roles": [
+        "サイクル"
+      ],
+      "blurb": "サイクル枠 · supercellslam＋ボルトチェンジ / magnet"
+    },
+    "glaliemega": {
+      "usage": 0.0005991,
+      "rank": 237,
+      "topMoves": [
+        {
+          "id": "explosion",
+          "name": "explosion"
+        },
+        {
+          "id": "bodyslam",
+          "name": "bodyslam"
+        },
+        {
+          "id": "earthquake",
+          "name": "じしん"
+        }
+      ],
+      "topItem": {
+        "id": "glalitite",
+        "name": "glalitite"
+      },
+      "roles": [
+        "設置",
+        "先制"
+      ],
+      "blurb": "設置・先制枠 · explosion＋bodyslam / glalitite"
+    },
+    "aromatisse": {
+      "usage": 0.0005036,
+      "rank": 238,
+      "topMoves": [
+        {
+          "id": "trickroom",
+          "name": "trickroom"
+        },
+        {
+          "id": "moonblast",
+          "name": "ムーンフォース"
+        },
+        {
+          "id": "wish",
+          "name": "ねがいごと"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "受け"
+      ],
+      "blurb": "受け枠 · trickroom＋ムーンフォース / たべのこし"
+    },
+    "garbodor": {
+      "usage": 0.00048689999999999996,
+      "rank": 239,
+      "topMoves": [
+        {
+          "id": "gunkshot",
+          "name": "gunkshot"
+        },
+        {
+          "id": "toxicspikes",
+          "name": "どくびし"
+        },
+        {
+          "id": "explosion",
+          "name": "explosion"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "設置"
+      ],
+      "blurb": "設置枠 · gunkshot＋どくびし / たべのこし"
+    },
+    "medicham": {
+      "usage": 0.000474,
+      "rank": 240,
+      "topMoves": [
+        {
+          "id": "closecombat",
+          "name": "インファイト"
+        },
+        {
+          "id": "zenheadbutt",
+          "name": "zenheadbutt"
+        },
+        {
+          "id": "icepunch",
+          "name": "icepunch"
+        }
+      ],
+      "topItem": {
+        "id": "choicescarf",
+        "name": "こだわりスカーフ"
+      },
+      "roles": [
+        "先制"
+      ],
+      "blurb": "先制枠 · インファイト＋zenheadbutt / こだわりスカーフ"
+    },
+    "vivillonfancy": {
+      "usage": 0.0004686,
+      "rank": 241,
+      "topMoves": [
+        {
+          "id": "quiverdance",
+          "name": "ちょうのまい"
+        },
+        {
+          "id": "hurricane",
+          "name": "hurricane"
+        },
+        {
+          "id": "bugbuzz",
+          "name": "bugbuzz"
+        }
+      ],
+      "topItem": {
+        "id": "focussash",
+        "name": "きあいのタスキ"
+      },
+      "roles": [
+        "除去",
+        "積み",
+        "サイクル"
+      ],
+      "blurb": "除去・積み枠 · ちょうのまい＋hurricane / きあいのタスキ"
+    },
+    "gourgeistlarge": {
+      "usage": 0.0004156,
+      "rank": 242,
+      "topMoves": [
+        {
+          "id": "willowisp",
+          "name": "おにび"
+        },
+        {
+          "id": "poltergeist",
+          "name": "ポルターガイスト"
+        },
+        {
+          "id": "leechseed",
+          "name": "leechseed"
+        }
+      ],
+      "topItem": {
+        "id": "colburberry",
+        "name": "colburberry"
+      },
+      "roles": [
+        "先制"
+      ],
+      "blurb": "先制枠 · おにび＋ポルターガイスト / colburberry"
+    },
+    "flapple": {
+      "usage": 0.000397,
+      "rank": 243,
+      "topMoves": [
+        {
+          "id": "gravapple",
+          "name": "gravapple"
+        },
+        {
+          "id": "suckerpunch",
+          "name": "ふいうち"
+        },
+        {
+          "id": "dragondance",
+          "name": "りゅうのまい"
+        }
+      ],
+      "topItem": {
+        "id": "choicescarf",
+        "name": "こだわりスカーフ"
+      },
+      "roles": [
+        "積み",
+        "サイクル",
+        "先制"
+      ],
+      "blurb": "積み・サイクル枠 · gravapple＋ふいうち / こだわりスカーフ"
+    },
+    "chimecho": {
+      "usage": 0.0003903,
+      "rank": 244,
+      "topMoves": [
+        {
+          "id": "recover",
+          "name": "じこさいせい"
+        },
+        {
+          "id": "healbell",
+          "name": "healbell"
+        },
+        {
+          "id": "encore",
+          "name": "アンコール"
+        }
+      ],
+      "topItem": {
+        "id": "mentalherb",
+        "name": "メンタルハーブ"
+      },
+      "roles": [
+        "除去"
+      ],
+      "blurb": "除去枠 · じこさいせい＋healbell / メンタルハーブ"
+    },
+    "tauros": {
+      "usage": 0.0003813,
+      "rank": 245,
+      "topMoves": [
+        {
+          "id": "closecombat",
+          "name": "インファイト"
+        },
+        {
+          "id": "earthquake",
+          "name": "じしん"
+        },
+        {
+          "id": "bodyslam",
+          "name": "bodyslam"
+        }
+      ],
+      "topItem": {
+        "id": "silkscarf",
+        "name": "silkscarf"
+      },
+      "roles": [
+        "対面"
+      ],
+      "blurb": "対面枠 · インファイト＋じしん / silkscarf"
+    },
+    "camerupt": {
+      "usage": 0.0003723,
+      "rank": 246,
+      "topMoves": [
+        {
+          "id": "earthpower",
+          "name": "earthpower"
+        },
+        {
+          "id": "stealthrock",
+          "name": "ステルスロック"
+        },
+        {
+          "id": "overheat",
+          "name": "overheat"
+        }
+      ],
+      "topItem": {
+        "id": "passhoberry",
+        "name": "passhoberry"
+      },
+      "roles": [
+        "設置"
+      ],
+      "blurb": "設置枠 · earthpower＋ステルスロック / passhoberry"
+    },
+    "furfrou": {
+      "usage": 0.00037,
+      "rank": 247,
+      "topMoves": [
+        {
+          "id": "cottonguard",
+          "name": "cottonguard"
+        },
+        {
+          "id": "thunderwave",
+          "name": "でんじは"
+        },
+        {
+          "id": "roar",
+          "name": "roar"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "サイクル",
+        "先制"
+      ],
+      "blurb": "サイクル・先制枠 · cottonguard＋でんじは / たべのこし"
+    },
+    "dedenne": {
+      "usage": 0.0003688,
+      "rank": 248,
+      "topMoves": [
+        {
+          "id": "nuzzle",
+          "name": "nuzzle"
+        },
+        {
+          "id": "dazzlinggleam",
+          "name": "dazzlinggleam"
+        },
+        {
+          "id": "superfang",
+          "name": "superfang"
+        }
+      ],
+      "topItem": {
+        "id": "sitrusberry",
+        "name": "オボンのみ"
+      },
+      "roles": [
+        "サイクル"
+      ],
+      "blurb": "サイクル枠 · nuzzle＋dazzlinggleam / オボンのみ"
+    },
+    "audinomega": {
+      "usage": 0.0003338,
+      "rank": 249,
+      "topMoves": [
+        {
+          "id": "calmmind",
+          "name": "めいそう"
+        },
+        {
+          "id": "drainingkiss",
+          "name": "drainingkiss"
+        },
+        {
+          "id": "wish",
+          "name": "ねがいごと"
+        }
+      ],
+      "topItem": {
+        "id": "audinite",
+        "name": "audinite"
+      },
+      "roles": [
+        "積み"
+      ],
+      "blurb": "積み枠 · めいそう＋drainingkiss / audinite"
+    },
+    "glalie": {
+      "usage": 0.0002785,
+      "rank": 250,
+      "topMoves": [
+        {
+          "id": "freezedry",
+          "name": "freezedry"
+        },
+        {
+          "id": "substitute",
+          "name": "みがわり"
+        },
+        {
+          "id": "protect",
+          "name": "まもる"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "設置",
+        "先制"
+      ],
+      "blurb": "設置・先制枠 · freezedry＋みがわり / たべのこし"
+    },
+    "simisear": {
+      "usage": 0.000275,
+      "rank": 251,
+      "topMoves": [
+        {
+          "id": "fakeout",
+          "name": "ねこだまし"
+        },
+        {
+          "id": "willowisp",
+          "name": "おにび"
+        },
+        {
+          "id": "flareblitz",
+          "name": "フレアドライブ"
+        }
+      ],
+      "topItem": {
+        "id": "sitrusberry",
+        "name": "オボンのみ"
+      },
+      "roles": [
+        "先制"
+      ],
+      "blurb": "先制枠 · ねこだまし＋おにび / オボンのみ"
+    },
+    "simipour": {
+      "usage": 0.0002622,
+      "rank": 252,
+      "topMoves": [
+        {
+          "id": "icebeam",
+          "name": "icebeam"
+        },
+        {
+          "id": "nastyplot",
+          "name": "わるだくみ"
+        },
+        {
+          "id": "scald",
+          "name": "ねっとう"
+        }
+      ],
+      "topItem": {
+        "id": "sitrusberry",
+        "name": "オボンのみ"
+      },
+      "roles": [
+        "積み"
+      ],
+      "blurb": "積み枠 · icebeam＋わるだくみ / オボンのみ"
+    },
+    "gourgeist": {
+      "usage": 0.000256,
+      "rank": 253,
+      "topMoves": [
+        {
+          "id": "poltergeist",
+          "name": "ポルターガイスト"
+        },
+        {
+          "id": "willowisp",
+          "name": "おにび"
+        },
+        {
+          "id": "leechseed",
+          "name": "leechseed"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "受け",
+        "先制"
+      ],
+      "blurb": "受け・先制枠 · ポルターガイスト＋おにび / たべのこし"
+    },
+    "flareon": {
+      "usage": 0.0002279,
+      "rank": 254,
+      "topMoves": [
+        {
+          "id": "flareblitz",
+          "name": "フレアドライブ"
+        },
+        {
+          "id": "wish",
+          "name": "ねがいごと"
+        },
+        {
+          "id": "protect",
+          "name": "まもる"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "受け"
+      ],
+      "blurb": "受け枠 · フレアドライブ＋ねがいごと / たべのこし"
+    },
+    "lycanrocmidnight": {
+      "usage": 0.0002245,
+      "rank": 255,
+      "topMoves": [
+        {
+          "id": "stoneedge",
+          "name": "stoneedge"
+        },
+        {
+          "id": "closecombat",
+          "name": "インファイト"
+        },
+        {
+          "id": "suckerpunch",
+          "name": "ふいうち"
+        }
+      ],
+      "topItem": {
+        "id": "focussash",
+        "name": "きあいのタスキ"
+      },
+      "roles": [
+        "設置",
+        "先制"
+      ],
+      "blurb": "設置・先制枠 · stoneedge＋インファイト / きあいのタスキ"
+    },
+    "taurospaldeacombat": {
+      "usage": 0.0002099,
+      "rank": 256,
+      "topMoves": [
+        {
+          "id": "closecombat",
+          "name": "インファイト"
+        },
+        {
+          "id": "ironhead",
+          "name": "アイアンヘッド"
+        },
+        {
+          "id": "earthquake",
+          "name": "じしん"
+        }
+      ],
+      "topItem": {
+        "id": "whiteherb",
+        "name": "しろいハーブ"
+      },
+      "roles": [
+        "対面"
+      ],
+      "blurb": "対面枠 · インファイト＋アイアンヘッド / しろいハーブ"
+    },
+    "simisage": {
+      "usage": 0.0002033,
+      "rank": 257,
+      "topMoves": [
+        {
+          "id": "nastyplot",
+          "name": "わるだくみ"
+        },
+        {
+          "id": "gigadrain",
+          "name": "gigadrain"
+        },
+        {
+          "id": "focusblast",
+          "name": "きあいだま"
+        }
+      ],
+      "topItem": {
+        "id": "miracleseed",
+        "name": "miracleseed"
+      },
+      "roles": [
+        "積み"
+      ],
+      "blurb": "積み枠 · わるだくみ＋gigadrain / miracleseed"
+    },
+    "stunfiskgalar": {
+      "usage": 0.00020150000000000002,
+      "rank": 258,
+      "topMoves": [
+        {
+          "id": "stealthrock",
+          "name": "ステルスロック"
+        },
+        {
+          "id": "snaptrap",
+          "name": "snaptrap"
+        },
+        {
+          "id": "thunderwave",
+          "name": "でんじは"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "設置",
+        "先制"
+      ],
+      "blurb": "設置・先制枠 · ステルスロック＋snaptrap / たべのこし"
+    },
+    "oranguru": {
+      "usage": 0.00019679999999999999,
+      "rank": 259,
+      "topMoves": [
+        {
+          "id": "trickroom",
+          "name": "trickroom"
+        },
+        {
+          "id": "instruct",
+          "name": "instruct"
+        },
+        {
+          "id": "protect",
+          "name": "まもる"
+        }
+      ],
+      "topItem": {
+        "id": "mentalherb",
+        "name": "メンタルハーブ"
+      },
+      "roles": [
+        "対面"
+      ],
+      "blurb": "対面枠 · trickroom＋instruct / メンタルハーブ"
+    },
+    "lopunny": {
+      "usage": 0.00017020000000000002,
+      "rank": 260,
+      "topMoves": [
+        {
+          "id": "fakeout",
+          "name": "ねこだまし"
+        },
+        {
+          "id": "switcheroo",
+          "name": "switcheroo"
+        },
+        {
+          "id": "healingwish",
+          "name": "healingwish"
+        }
+      ],
+      "topItem": {
+        "id": "choicescarf",
+        "name": "こだわりスカーフ"
+      },
+      "roles": [
+        "サイクル",
+        "先制"
+      ],
+      "blurb": "サイクル・先制枠 · ねこだまし＋switcheroo / こだわりスカーフ"
+    },
+    "pinsir": {
+      "usage": 0.0001548,
+      "rank": 261,
+      "topMoves": [
+        {
+          "id": "earthquake",
+          "name": "じしん"
+        },
+        {
+          "id": "closecombat",
+          "name": "インファイト"
+        },
+        {
+          "id": "lunge",
+          "name": "lunge"
+        }
+      ],
+      "topItem": {
+        "id": "choicescarf",
+        "name": "こだわりスカーフ"
+      },
+      "roles": [
+        "設置"
+      ],
+      "blurb": "設置枠 · じしん＋インファイト / こだわりスカーフ"
+    },
+    "meganium": {
+      "usage": 0.000153,
+      "rank": 262,
+      "topMoves": [
+        {
+          "id": "leechseed",
+          "name": "leechseed"
+        },
+        {
+          "id": "synthesis",
+          "name": "こうごうせい"
+        },
+        {
+          "id": "gigadrain",
+          "name": "gigadrain"
+        }
+      ],
+      "topItem": {
+        "id": "leftovers",
+        "name": "たべのこし"
+      },
+      "roles": [
+        "受け",
+        "先制"
+      ],
+      "blurb": "受け・先制枠 · leechseed＋こうごうせい / たべのこし"
+    },
+    "watchog": {
+      "usage": 0.0001515,
+      "rank": 263,
+      "topMoves": [
+        {
+          "id": "doubleedge",
+          "name": "doubleedge"
+        },
+        {
+          "id": "crunch",
+          "name": "crunch"
+        },
+        {
+          "id": "swordsdance",
+          "name": "つるぎのまい"
+        }
+      ],
+      "topItem": {
+        "id": "silkscarf",
+        "name": "silkscarf"
+      },
+      "roles": [
+        "積み"
+      ],
+      "blurb": "積み枠 · doubleedge＋crunch / silkscarf"
+    },
+    "gourgeistsmall": {
+      "usage": 0.0001297,
+      "rank": 264,
+      "topMoves": [
+        {
+          "id": "willowisp",
+          "name": "おにび"
+        },
+        {
+          "id": "trick",
+          "name": "trick"
+        },
+        {
+          "id": "destinybond",
+          "name": "destinybond"
+        }
+      ],
+      "topItem": {
+        "id": "choicescarf",
+        "name": "こだわりスカーフ"
+      },
+      "roles": [
+        "先制"
+      ],
+      "blurb": "先制枠 · おにび＋trick / こだわりスカーフ"
+    }
+  }
+}

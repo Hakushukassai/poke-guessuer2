@@ -348,9 +348,6 @@ function displayName(id, p) {
       Cornerstone: `${baseJa}(いわののめん)`,
       Hearthflame: `${baseJa}(かまどのめん)`,
       Wellspring: `${baseJa}(いどのめん)`,
-      'Cornerstone-Tera': `${baseJa}(いわののめん・テラスタル)`,
-      'Hearthflame-Tera': `${baseJa}(かまどのめん・テラスタル)`,
-      'Wellspring-Tera': `${baseJa}(いどのめん・テラスタル)`,
       Eternamax: `${baseJa}(ムゲンダイマックス)`,
       Gorging: `${baseJa}(うのみのすがた)`,
       Gulping: `${baseJa}(まるのみのすがた)`,
@@ -416,6 +413,11 @@ for (const [id, p] of Object.entries(dex)) {
   if (String(p.forme || '')
     .toLowerCase()
     .includes('gmax'))
+    continue
+  // オーガポンのめんフォルムと被るテラスタル戦フォルムは除外
+  if (String(p.forme || '')
+    .toLowerCase()
+    .includes('tera'))
     continue
   if (p.types.some((t) => !VALID.has(t))) continue
   if (p.num <= 0) continue

@@ -123,6 +123,42 @@ describe('game reducer', () => {
     expect(s.eliminated.p1).toContain('garchomp')
     expect(s.currentPlayer).toBe('p2')
   })
+
+  it('選出前タイプバンで該当タイプが選出不可', () => {
+    let s = reducer(initialState(), {
+      type: 'START',
+      pool: 'champions',
+      options: { banEnabled: true },
+    })
+    expect(s.phase).toBe('ban_p1')
+    s = reducer(s, { type: 'BAN', bannedType: 'ドラゴン' })
+    expect(s.bannedTypes).toContain('ドラゴン')
+    s = reducer(s, { type: 'CONFIRM_HANDOFF' })
+    expect(s.phase).toBe('ban_p2')
+    s = reducer(s, { type: 'BAN', bannedType: 'みず' })
+    s = reducer(s, { type: 'CONFIRM_HANDOFF' })
+    expect(s.phase).toBe('pick_p1')
+    s = reducer(s, { type: 'PICK', pokemonId: 'garchomp' })
+    expect(s.phase).toBe('pick_p1')
+    expect(s.picks.p1).toBeNull()
+  })
+
+  it('質問上限は指定した回数で制限される', () => {
+    let s = withPicks(initialState())
+    s = {
+      ...s,
+      options: { banEnabled: false, questionLimit: 2 },
+    }
+    s = reducer(s, { type: 'PROBE', moveType: 'こおり' })
+    expect(s.probes).toHaveLength(1)
+    s = { ...s, currentPlayer: 'p1' }
+    s = reducer(s, { type: 'PROBE', moveType: 'ほのお' })
+    expect(s.probes).toHaveLength(2)
+    s = { ...s, currentPlayer: 'p1' }
+    const before = s.probes.length
+    s = reducer(s, { type: 'PROBE', moveType: 'くさ' })
+    expect(s.probes).toHaveLength(before)
+  })
 })
 
 describe('filterCandidates', () => {

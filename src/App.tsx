@@ -1,6 +1,7 @@
 import { useReducer, useState } from 'react'
 import {
   BattleScreen,
+  BanTypeScreen,
   HandoffScreen,
   HomeScreen,
   PickScreen,
@@ -11,6 +12,7 @@ import {
   initialState,
   reducer,
   type DexPool,
+  type GameOptions,
 } from './lib/game'
 import { makeRoomCode } from './lib/partyHost'
 import './App.css'
@@ -49,9 +51,9 @@ function App() {
       <div className="app-shell" key="home">
         <HomeScreen
           initialNames={state.names}
-          onStartLocal={(pool, names) => {
+          onStartLocal={(pool, names, options: GameOptions, quizMode) => {
             setSession({ kind: 'local' })
-            dispatch({ type: 'START', pool, names })
+            dispatch({ type: 'START', pool, names, options, quizMode })
           }}
           onCreateOnline={(pool, name) => {
             setSession({
@@ -78,11 +80,53 @@ function App() {
 
   return (
     <div className="app-shell" key={state.phase}>
+      {state.phase === 'ban_p1' && (
+        <BanTypeScreen
+          player="p1"
+          pool={state.pool}
+          names={state.names}
+          bannedTypes={state.bannedTypes}
+          quizMode={state.quizMode}
+          onBan={(bannedType) => dispatch({ type: 'BAN', bannedType })}
+        />
+      )}
+
+      {state.phase === 'handoff_ban_p2' && (
+        <HandoffScreen
+          toPlayer="p2"
+          names={state.names}
+          bannedTypes={state.bannedTypes}
+          onConfirm={() => dispatch({ type: 'CONFIRM_HANDOFF' })}
+        />
+      )}
+
+      {state.phase === 'ban_p2' && (
+        <BanTypeScreen
+          player="p2"
+          pool={state.pool}
+          names={state.names}
+          bannedTypes={state.bannedTypes}
+          quizMode={state.quizMode}
+          onBan={(bannedType) => dispatch({ type: 'BAN', bannedType })}
+        />
+      )}
+
+      {state.phase === 'handoff_pick_p1' && (
+        <HandoffScreen
+          toPlayer="p1"
+          names={state.names}
+          bannedTypes={state.bannedTypes}
+          onConfirm={() => dispatch({ type: 'CONFIRM_HANDOFF' })}
+        />
+      )}
+
       {state.phase === 'pick_p1' && (
         <PickScreen
           player="p1"
           pool={state.pool}
           names={state.names}
+          bannedTypes={state.bannedTypes}
+          quizMode={state.quizMode}
           onPick={(pokemonId) => dispatch({ type: 'PICK', pokemonId })}
         />
       )}
@@ -91,6 +135,7 @@ function App() {
         <HandoffScreen
           toPlayer="p2"
           names={state.names}
+          bannedTypes={state.bannedTypes}
           onConfirm={() => dispatch({ type: 'CONFIRM_HANDOFF' })}
         />
       )}
@@ -100,6 +145,8 @@ function App() {
           player="p2"
           pool={state.pool}
           names={state.names}
+          bannedTypes={state.bannedTypes}
+          quizMode={state.quizMode}
           onPick={(pokemonId) => dispatch({ type: 'PICK', pokemonId })}
         />
       )}
@@ -108,6 +155,7 @@ function App() {
         <HandoffScreen
           toPlayer="p1"
           names={state.names}
+          bannedTypes={state.bannedTypes}
           onConfirm={() => dispatch({ type: 'CONFIRM_HANDOFF' })}
         />
       )}
@@ -117,6 +165,7 @@ function App() {
           toPlayer="p2"
           names={state.names}
           variant="catchup"
+          bannedTypes={state.bannedTypes}
           onConfirm={() => dispatch({ type: 'CONFIRM_HANDOFF' })}
         />
       )}
@@ -127,6 +176,12 @@ function App() {
           onProbe={(moveType) => dispatch({ type: 'PROBE', moveType })}
           onDexCompare={(pivotId) =>
             dispatch({ type: 'DEX_COMPARE', pivotId })
+          }
+          onTraitProbe={(traitId) =>
+            dispatch({ type: 'TRAIT_PROBE', traitId })
+          }
+          onStatCompare={(pivotId, stat) =>
+            dispatch({ type: 'STAT_COMPARE', pivotId, stat })
           }
           onGuess={(pokemonId) => dispatch({ type: 'GUESS', pokemonId })}
         />
