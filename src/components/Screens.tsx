@@ -101,6 +101,100 @@ function TypeBadge({ type }: { type: string }) {
   )
 }
 
+function typeMatchupRows(pokemon: Pokemon) {
+  return TYPES.map((t) => ({
+    type: t,
+    ...calcEffectiveness(t, pokemon),
+  }))
+}
+
+/** 全18タイプの相性グリッド（クリック詳細用） */
+function TypeMatchupGrid({ pokemon }: { pokemon: Pokemon }) {
+  const rows = useMemo(() => typeMatchupRows(pokemon), [pokemon])
+  return (
+    <div className="matchup-grid" role="list" aria-label={`${pokemon.name}のタイプ相性`}>
+      {rows.map((row) => (
+        <span
+          key={row.type}
+          role="listitem"
+          className={`matchup-cell result-${row.label}`}
+          style={{ ['--cell' as string]: TYPE_COLORS[row.type] }}
+          title={`${row.type}：${EFFECTIVENESS_LABEL_JA[row.label]}`}
+        >
+          <span className="matchup-cell-type">{row.type}</span>
+          <span className="matchup-cell-mark" aria-hidden>
+            {RESULT_MARK[row.label]}
+          </span>
+        </span>
+      ))}
+    </div>
+  )
+}
+
+function TypeMatchupSheet({
+  pokemon,
+  onClose,
+  primaryAction,
+}: {
+  pokemon: Pokemon
+  onClose: () => void
+  primaryAction?: { label: string; onClick: () => void }
+}) {
+  return (
+    <div
+      className="sheet-backdrop"
+      role="presentation"
+      onClick={onClose}
+    >
+      <div
+        className="sheet matchup-sheet"
+        role="dialog"
+        aria-modal="true"
+        aria-label={`${pokemon.name}のタイプ相性`}
+        onClick={(e) => e.stopPropagation()}
+      >
+        <PokemonSprite pokemon={pokemon} name={pokemon.name} size={88} />
+        <p className="sheet-title">{pokemon.name}</p>
+        <span className="type-row center">
+          {pokemon.types.map((t) => (
+            <TypeBadge key={t} type={t} />
+          ))}
+        </span>
+        <p className="sheet-sub matchup-sheet-lead">
+          タイプ相性
+          {pokemon.ability.affectsTypes
+            ? ` · 特性「${pokemon.ability.name}」反映`
+            : ''}
+        </p>
+        <TypeMatchupGrid pokemon={pokemon} />
+        <p className="matchup-legend" aria-label="記号の見方">
+          <span>×無効</span>
+          <span>▽いまひとつ</span>
+          <span>－等倍</span>
+          <span>▲ばつぐん</span>
+        </p>
+        <div className="sheet-actions">
+          <button type="button" className="btn ghost" onClick={onClose}>
+            閉じる
+          </button>
+          {primaryAction && (
+            <button
+              type="button"
+              className="btn primary"
+              onClick={() => {
+                primaryAction.onClick()
+                onClose()
+              }}
+            >
+              {primaryAction.label}
+            </button>
+          )}
+        </div>
+      </div>
+    </div>
+  )
+}
+
 /** タイプバンは双方公開。選出〜対戦まで常に明示する */
 function BannedTypesBanner({
   bannedTypes,
@@ -1084,6 +1178,7 @@ export function OnlineWatchScreen({
     [gameState, you],
   )
   const [candQuery, setCandQuery] = useState('')
+  const [inspectCand, setInspectCand] = useState<Pokemon | null>(null)
   const activeList = candTab === 'rival' ? rivalCandidates : myCandidates
   const visibleCand = useMemo(() => {
     const q = candQuery.trim()
@@ -1096,6 +1191,7 @@ export function OnlineWatchScreen({
 
   useEffect(() => {
     setCandQuery('')
+    setInspectCand(null)
   }, [candTab])
 
   return (
@@ -1172,7 +1268,13 @@ export function OnlineWatchScreen({
         ) : (
           <div className="poke-tray compact rival-tray">
             {visibleCand.map((p) => (
-              <div key={p.id} className="poke-tile is-static">
+              <button
+                key={p.id}
+                type="button"
+                className="poke-tile"
+                onClick={() => setInspectCand(p)}
+                aria-label={`${p.name}のタイプ相性を見る`}
+              >
                 <PokemonSprite pokemon={p} name={p.name} size={56} />
                 <span className="poke-name">{p.name}</span>
                 <span className="type-row">
@@ -1180,11 +1282,18 @@ export function OnlineWatchScreen({
                     <TypeBadge key={t} type={t} />
                   ))}
                 </span>
-              </div>
+              </button>
             ))}
           </div>
         )}
       </section>
+
+      {inspectCand && (
+        <TypeMatchupSheet
+          pokemon={inspectCand}
+          onClose={() => setInspectCand(null)}
+        />
+      )}
 
       {myPokemon && (
         <SecretPickCard pokemon={myPokemon} probesOnYou={probesOnYou} />
@@ -1542,7 +1651,7 @@ export function PickScreen({
       )}
 
       {selected && (
-        <div className="dock">
+        <div className="dock has-matchup">
           <PokemonSprite pokemon={selected} name={selected.name} size={52} />
           <div className="dock-text">
             <strong>{selected.name}</strong>
@@ -1594,6 +1703,10 @@ export function PickScreen({
           >
             これに決める
           </button>
+          <div className="dock-matchup">
+            <p className="dock-matchup-label">タイプ相性</p>
+            <TypeMatchupGrid pokemon={selected} />
+          </div>
         </div>
       )}
 
@@ -2138,6 +2251,8 @@ export function BattleScreen({
               <br />
               聞くと相手の番になるよ。
             </p>
+            <p className="sheet-sub matchup-sheet-lead">タイプ相性</p>
+            <TypeMatchupGrid pokemon={pendingDex} />
             <div className="sheet-actions">
               <button
                 type="button"
@@ -2195,6 +2310,8 @@ export function BattleScreen({
               <br />
               聞くと相手の番になるよ。
             </p>
+            <p className="sheet-sub matchup-sheet-lead">タイプ相性</p>
+            <TypeMatchupGrid pokemon={pendingStat} />
             <div className="sheet-actions">
               <button
                 type="button"
@@ -2247,6 +2364,8 @@ export function BattleScreen({
                 ? 'これに解答する？ 当たれば引き分け、外すと先行の勝ち。'
                 : 'これに解答する？ 外すと相手の番になるよ。'}
             </p>
+            <p className="sheet-sub matchup-sheet-lead">タイプ相性</p>
+            <TypeMatchupGrid pokemon={pendingGuess} />
             <div className="sheet-actions">
               <button
                 type="button"
