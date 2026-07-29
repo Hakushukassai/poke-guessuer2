@@ -240,6 +240,32 @@ export function getPokemon(
   return pokemonIn(pool, quizMode).find((p) => p.id === id)
 }
 
+/** プールやモードに依存せず ID から引く（リザルト公開用）。 */
+const POKEMON_BY_ID: Map<string, Pokemon> = (() => {
+  const map = new Map<string, Pokemon>()
+  const lists = [
+    nationalData,
+    championsData,
+    championsMonoData,
+    legendaryData,
+    startersData,
+    spookyData,
+  ] as Pokemon[][]
+  for (const list of lists) {
+    for (const p of list) {
+      if (!map.has(p.id)) map.set(p.id, p)
+    }
+  }
+  return map
+})()
+
+export function findPokemonById(
+  id: string | null | undefined,
+): Pokemon | undefined {
+  if (!id) return undefined
+  return POKEMON_BY_ID.get(id)
+}
+
 export function opponentOf(player: PlayerId): PlayerId {
   return player === 'p1' ? 'p2' : 'p1'
 }

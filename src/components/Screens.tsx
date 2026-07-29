@@ -21,6 +21,7 @@ import {
   canAskQuestion,
   clampQuestionLimit,
   filterCandidates,
+  findPokemonById,
   getPokemon,
   isTypeBanned,
   opponentOf,
@@ -1068,7 +1069,7 @@ export function OnlineWatchScreen({
   const you = view.you!
   const active = view.currentPlayer
   const myPokemon = view.myPick
-    ? getPokemon(view.myPick, view.pool, 'type')
+    ? getPokemon(view.myPick, view.pool, view.quizMode)
     : null
   const probesOnYou = view.probes.filter((p) => p.by !== you)
   const [pulse, setPulse] = useState(0)
@@ -1222,7 +1223,7 @@ export function OnlinePickWaitScreen({
 }) {
   const you = view.you!
   const myPokemon = view.myPick
-    ? getPokemon(view.myPick, view.pool, 'type')
+    ? getPokemon(view.myPick, view.pool, view.quizMode)
     : null
 
   return (
@@ -2279,8 +2280,12 @@ export function ResultScreen({
   state: GameState
   onReset: () => void
 }) {
-  const p1 = getPokemon(state.picks.p1!, state.pool, state.quizMode)
-  const p2 = getPokemon(state.picks.p2!, state.pool, state.quizMode)
+  const p1 =
+    findPokemonById(state.picks.p1) ??
+    getPokemon(state.picks.p1 ?? '', state.pool, state.quizMode)
+  const p2 =
+    findPokemonById(state.picks.p2) ??
+    getPokemon(state.picks.p2 ?? '', state.pool, state.quizMode)
   const misses = state.guesses.filter((g) => !g.correct).length
 
   return (
@@ -2297,11 +2302,13 @@ export function ResultScreen({
 
       <BannedTypesBanner bannedTypes={state.bannedTypes} />
 
+      <h3 className="result-reveal-title">選出ポケモン公開</h3>
       <div className="reveal-row">
         <RevealBlock
           player="p1"
           names={state.names}
           pokemon={p1}
+          pickId={state.picks.p1}
           winner={state.draw || state.winner === 'p1'}
           draw={state.draw}
         />
@@ -2309,6 +2316,7 @@ export function ResultScreen({
           player="p2"
           names={state.names}
           pokemon={p2}
+          pickId={state.picks.p2}
           winner={state.draw || state.winner === 'p2'}
           draw={state.draw}
         />
@@ -2336,37 +2344,45 @@ function RevealBlock({
   player,
   names,
   pokemon,
+  pickId,
   winner,
   draw = false,
 }: {
   player: PlayerId
   names: { p1: string; p2: string }
   pokemon: Pokemon | undefined
+  pickId: string | null
   winner: boolean
   draw?: boolean
 }) {
-  if (!pokemon) return null
+  const name = pokemon?.name ?? (pickId ? `??? (${pickId})` : '未選出')
   return (
     <div className={`reveal-block ${winner ? 'is-winner' : ''} tone-${player}`}>
       <p className="reveal-label">
         <PlayerTag player={player} names={names} />
-        {draw ? (
-          <span className="win-flag">正解</span>
-        ) : winner ? (
-          <span className="win-flag">正解</span>
-        ) : null}
+        {draw || winner ? <span className="win-flag">正解</span> : null}
       </p>
-      <PokemonSprite pokemon={pokemon} name={pokemon.name} size={110} />
-      <p className="poke-name">{pokemon.name}</p>
-      <span className="type-row center">
-        {pokemon.types.map((t) => (
-          <TypeBadge key={t} type={t} />
-        ))}
-      </span>
-      <p className="dock-ability">
-        特性 {pokemon.ability.name}
-        {pokemon.ability.affectsTypes ? ' · 相性に影響' : ''}
-      </p>
+      {pokemon ? (
+        <PokemonSprite pokemon={pokemon} name={name} size={110} />
+      ) : (
+        <PokemonSprite id={pickId ?? undefined} name={name} size={110} />
+      )}
+      <p className="poke-name">{name}</p>
+      {pokemon ? (
+        <>
+          <span className="type-row center">
+            {pokemon.types.map((t) => (
+              <TypeBadge key={t} type={t} />
+            ))}
+          </span>
+          <p className="dock-ability">
+            特性 {pokemon.ability.name}
+            {pokemon.ability.affectsTypes ? ' · 相性に影響' : ''}
+          </p>
+        </>
+      ) : (
+        <p className="dock-ability">タイプ情報なし</p>
+      )}
     </div>
   )
 }

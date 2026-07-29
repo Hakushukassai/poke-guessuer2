@@ -24,7 +24,14 @@ export function onlineViewToGameState(view: OnlineClientView): GameState {
     names: view.names,
     options: { banEnabled: false, questionLimit: null },
     bannedTypes: [],
-    picks: view.picks,
+    picks: {
+      p1:
+        view.picks.p1 ??
+        (view.phase === 'result' && view.you === 'p1' ? view.myPick : null),
+      p2:
+        view.picks.p2 ??
+        (view.phase === 'result' && view.you === 'p2' ? view.myPick : null),
+    },
     currentPlayer: view.currentPlayer,
     probes: view.probes,
     dexCompares: view.dexCompares,

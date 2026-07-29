@@ -82,20 +82,41 @@ export function OnlineSession({
   if (view.phase === 'picking') {
     if (!view.myPick) {
       return (
-        <PickScreen
-          player={view.you}
-          pool={view.pool}
-          names={view.names}
-          onPick={(pokemonId) => send({ type: 'pick', pokemonId })}
-        />
+        <>
+          {error && (
+            <p className="online-error" role="alert">
+              {error}
+              <button type="button" onClick={clearError}>
+                閉じる
+              </button>
+            </p>
+          )}
+          <PickScreen
+            player={view.you}
+            pool={view.pool}
+            quizMode={view.quizMode}
+            names={view.names}
+            onPick={(pokemonId) => send({ type: 'pick', pokemonId })}
+          />
+        </>
       )
     }
     return (
-      <OnlinePickWaitScreen
-        view={view}
-        roomCode={roomCode}
-        onLeave={onLeave}
-      />
+      <>
+        {error && (
+          <p className="online-error" role="alert">
+            {error}
+            <button type="button" onClick={clearError}>
+              閉じる
+            </button>
+          </p>
+        )}
+        <OnlinePickWaitScreen
+          view={view}
+          roomCode={roomCode}
+          onLeave={onLeave}
+        />
+      </>
     )
   }
 

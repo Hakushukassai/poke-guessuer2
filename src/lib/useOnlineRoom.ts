@@ -63,7 +63,11 @@ export function useOnlineRoom({
 
   const sendToGuest = useCallback((payload: ServerMessage) => {
     const conn = guestConnRef.current
-    if (conn?.open) conn.send(JSON.stringify(payload))
+    if (conn?.open) {
+      conn.send(JSON.stringify(payload))
+      return true
+    }
+    return false
   }, [])
 
   const broadcastHost = useCallback(() => {
@@ -239,7 +243,10 @@ export function useOnlineRoom({
         setConnected(true)
         setError(null)
         hostIdRef.current = id
-        roomRef.current = createOnlineRoom(poolRef.current)
+        roomRef.current = createOnlineRoom(
+          poolRef.current,
+          quizModeRef.current,
+        )
         const claimMsg = pendingClaim.current ?? {
           type: 'claim' as const,
           name: displayNameRef.current,
@@ -272,8 +279,10 @@ export function useOnlineRoom({
 
         guestConnRef.current = conn
         conn.on('open', () => {
+          // 接続完了時に必ず最新部屋状態を送る（選出待ち中の取りこぼし防止）
           broadcastHostRef.current()
         })
+        // PeerJS は open 前に data が来る場合があるため、先に listener を付ける
         conn.on('data', (raw) => {
           try {
             const msg = JSON.parse(String(raw)) as ClientMessage
@@ -287,6 +296,8 @@ export function useOnlineRoom({
           roomRef.current = disconnectSeat(roomRef.current, conn.peer)
           broadcastHostRef.current()
         })
+        // すでに open 済みなら直後に同期
+        if (conn.open) broadcastHostRef.current()
       })
     }
 
