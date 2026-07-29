@@ -1,5 +1,6 @@
 import type {
   DexCompareRecord,
+  EvoProbeRecord,
   GuessRecord,
   PlayerId,
   PokemonType,
@@ -9,6 +10,7 @@ import { EFFECTIVENESS_LABEL_JA } from '../data/types'
 import { calcEffectiveness } from './effectiveness'
 import {
   DEFAULT_NAMES,
+  evoProbeLabel,
   filterCandidates,
   getPokemon,
   opponentOf,
@@ -18,6 +20,7 @@ import {
   type GameState,
   type QuizMode,
 } from './game'
+import { isFinalEvolution } from './pokemonPool'
 
 export type OnlinePhase =
   | 'lobby'
@@ -37,6 +40,7 @@ export interface OnlineRoomState {
   currentPlayer: PlayerId
   probes: ProbeRecord[]
   dexCompares: DexCompareRecord[]
+  evoProbes: EvoProbeRecord[]
   guesses: GuessRecord[]
   eliminated: { p1: string[]; p2: string[] }
   winner: PlayerId | null
@@ -59,6 +63,7 @@ export interface OnlineClientView {
   currentPlayer: PlayerId
   probes: ProbeRecord[]
   dexCompares: DexCompareRecord[]
+  evoProbes: EvoProbeRecord[]
   guesses: GuessRecord[]
   eliminated: { p1: string[]; p2: string[] }
   winner: PlayerId | null
@@ -78,6 +83,7 @@ export type ClientMessage =
   | { type: 'pick'; pokemonId: string }
   | { type: 'probe'; moveType: PokemonType }
   | { type: 'dex_compare'; pivotId: string }
+  | { type: 'evo_probe' }
   | { type: 'guess'; pokemonId: string }
   | { type: 'play_again' }
 
@@ -99,6 +105,7 @@ export function createOnlineRoom(
     currentPlayer: 'p1',
     probes: [],
     dexCompares: [],
+    evoProbes: [],
     guesses: [],
     eliminated: { p1: [], p2: [] },
     winner: null,
@@ -134,6 +141,7 @@ function toCountState(state: OnlineRoomState): GameState {
     currentPlayer: state.currentPlayer,
     probes: state.probes,
     dexCompares: state.dexCompares,
+    evoProbes: state.evoProbes,
     traitProbes: [],
     statCompares: [],
     guesses: state.guesses,
@@ -182,6 +190,7 @@ export function toClientView(
     currentPlayer: state.currentPlayer,
     probes: state.probes,
     dexCompares: state.dexCompares,
+    evoProbes: state.evoProbes,
     guesses: state.guesses,
     eliminated: state.eliminated,
     winner: state.winner,
@@ -215,6 +224,7 @@ function clearMatch(state: OnlineRoomState): OnlineRoomState {
     currentPlayer: 'p1',
     probes: [],
     dexCompares: [],
+    evoProbes: [],
     guesses: [],
     eliminated: { p1: [], p2: [] },
     winner: null,
@@ -419,6 +429,37 @@ export function applyClientMessage(
           lastMessage: greater
             ? `#${pivot.num}より大きい`
             : `#${pivot.num}以下`,
+        },
+      }
+    }
+
+    case 'evo_probe': {
+      const seat = seatOf(state, connectionId)
+      if (!seat) return { state, error: '席がありません' }
+      if (state.phase !== 'battle') return { state, error: 'バトル中ではありません' }
+      if (state.currentPlayer !== seat) return { state, error: 'あなたの番ではありません' }
+      if (!state.picks.p1 || !state.picks.p2) return { state, error: '選出が未完了です' }
+      if (state.quizMode === 'competitive') {
+        return { state, error: '対戦推理では使えません' }
+      }
+
+      const already = state.evoProbes.some((p) => p.by === seat)
+      if (already) return { state, error: '最終進化はもう聞いています' }
+
+      const targetId = state.picks[opponentOf(seat)]!
+      const target = getPokemon(targetId, state.pool, state.quizMode)
+      if (!target) return { state, error: '対象が見つかりません' }
+
+      const probe: EvoProbeRecord = {
+        by: seat,
+        isFinal: isFinalEvolution(target),
+      }
+      return {
+        state: {
+          ...state,
+          evoProbes: [...state.evoProbes, probe],
+          currentPlayer: opponentOf(seat),
+          lastMessage: evoProbeLabel(probe),
         },
       }
     }

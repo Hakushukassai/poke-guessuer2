@@ -182,6 +182,7 @@ function App() {
           onDexCompare={(pivotId) =>
             dispatch({ type: 'DEX_COMPARE', pivotId })
           }
+          onEvoProbe={() => dispatch({ type: 'EVO_PROBE' })}
           onTraitProbe={(traitId) =>
             dispatch({ type: 'TRAIT_PROBE', traitId })
           }

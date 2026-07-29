@@ -6,6 +6,7 @@ import startersData from '../data/pokemon-starters.json'
 import spookyData from '../data/pokemon-spooky.json'
 import type {
   DexCompareRecord,
+  EvoProbeRecord,
   GuessRecord,
   PlayerId,
   Pokemon,
@@ -25,7 +26,7 @@ import {
   type TraitProbeRecord,
 } from './competitive'
 import { calcEffectiveness, matchesProbe } from './effectiveness'
-import { preparePool } from './pokemonPool'
+import { isFinalEvolution, preparePool } from './pokemonPool'
 
 export type DexPool =
   | 'champions'
@@ -44,8 +45,8 @@ export const QUIZ_MODE_LABEL: Record<QuizMode, string> = {
 }
 
 export const QUIZ_MODE_BLURB: Record<QuizMode, string> = {
-  type: '単タイプ込みで相性と図鑑番号',
-  type_dual: '複合タイプだけで相性と図鑑番号',
+  type: '単タイプ込みで相性・図鑑・進化',
+  type_dual: '複合タイプだけで相性・図鑑・進化',
   competitive: '単タイプ込みで「設置ある？」',
 }
 
@@ -180,6 +181,7 @@ export interface GameState {
   currentPlayer: PlayerId
   probes: ProbeRecord[]
   dexCompares: DexCompareRecord[]
+  evoProbes: EvoProbeRecord[]
   traitProbes: TraitProbeRecord[]
   statCompares: StatCompareRecord[]
   guesses: GuessRecord[]
@@ -219,6 +221,7 @@ export function initialState(): GameState {
     currentPlayer: 'p1',
     probes: [],
     dexCompares: [],
+    evoProbes: [],
     traitProbes: [],
     statCompares: [],
     guesses: [],
@@ -264,6 +267,13 @@ export function dexComparesBy(
   return state.dexCompares.filter((c) => c.by === asker)
 }
 
+export function evoProbesBy(
+  state: GameState,
+  asker: PlayerId,
+): EvoProbeRecord[] {
+  return state.evoProbes.filter((p) => p.by === asker)
+}
+
 export function traitProbesBy(
   state: GameState,
   asker: PlayerId,
@@ -286,6 +296,17 @@ export function matchesDexCompare(
   return compare.greater ? num > compare.pivotNum : num <= compare.pivotNum
 }
 
+export function matchesEvoProbe(
+  pokemon: Pokemon,
+  probe: EvoProbeRecord,
+): boolean {
+  return isFinalEvolution(pokemon) === probe.isFinal
+}
+
+export function evoProbeLabel(probe: EvoProbeRecord): string {
+  return probe.isFinal ? '最終進化 ○ はい' : '最終進化 × いいえ'
+}
+
 export function questionUses(state: GameState, player: PlayerId): number {
   if (state.quizMode === 'competitive') {
     return (
@@ -294,7 +315,8 @@ export function questionUses(state: GameState, player: PlayerId): number {
   }
   const probes = state.probes.filter((p) => p.by === player).length
   const dex = state.dexCompares.filter((c) => c.by === player).length
-  return probes + dex
+  const evo = state.evoProbes.filter((p) => p.by === player).length
+  return probes + dex + evo
 }
 
 export function questionsRemaining(
@@ -343,6 +365,7 @@ export function filterCandidates(
 
     const probes = probesAgainst(state, targetOwner)
     const compares = dexComparesBy(state, forPlayer)
+    const evoProbes = evoProbesBy(state, forPlayer)
     if (
       !probes.every((probe) =>
         matchesProbe(poke, probe.moveType, probe.result),
@@ -350,7 +373,10 @@ export function filterCandidates(
     ) {
       return false
     }
-    return compares.every((compare) => matchesDexCompare(poke, compare))
+    if (!compares.every((compare) => matchesDexCompare(poke, compare))) {
+      return false
+    }
+    return evoProbes.every((probe) => matchesEvoProbe(poke, probe))
   })
 }
 
@@ -367,6 +393,7 @@ export type Action =
   | { type: 'CONFIRM_HANDOFF' }
   | { type: 'PROBE'; moveType: PokemonType }
   | { type: 'DEX_COMPARE'; pivotId: string }
+  | { type: 'EVO_PROBE' }
   | { type: 'TRAIT_PROBE'; traitId: CompetitiveTraitId }
   | { type: 'STAT_COMPARE'; pivotId: string; stat: CompetitiveStatId }
   | { type: 'GUESS'; pokemonId: string }
@@ -546,6 +573,36 @@ export function reducer(state: GameState, action: Action): GameState {
         lastMessage: greater
           ? `#${pivot.num}より大きい`
           : `#${pivot.num}以下`,
+      }
+    }
+
+    case 'EVO_PROBE': {
+      if (state.quizMode === 'competitive') return state
+      if (state.phase !== 'battle' || !state.picks.p1 || !state.picks.p2) {
+        return state
+      }
+      if (!canAskQuestion(state, state.currentPlayer)) return state
+
+      const already = state.evoProbes.some(
+        (p) => p.by === state.currentPlayer,
+      )
+      if (already) return state
+
+      const targetId = state.picks[opponentOf(state.currentPlayer)]
+      const target = getPokemon(targetId!, state.pool, state.quizMode)
+      if (!target) return state
+
+      const isFinal = isFinalEvolution(target)
+      const probe: EvoProbeRecord = {
+        by: state.currentPlayer,
+        isFinal,
+      }
+
+      return {
+        ...state,
+        evoProbes: [...state.evoProbes, probe],
+        currentPlayer: opponentOf(state.currentPlayer),
+        lastMessage: evoProbeLabel(probe),
       }
     }
 

@@ -28,6 +28,7 @@ export function onlineViewToGameState(view: OnlineClientView): GameState {
     currentPlayer: view.currentPlayer,
     probes: view.probes,
     dexCompares: view.dexCompares,
+    evoProbes: view.evoProbes,
     traitProbes: [],
     statCompares: [],
     guesses: view.guesses,

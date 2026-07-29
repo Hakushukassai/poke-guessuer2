@@ -176,7 +176,7 @@ const mono = arr
       num: d?.num ?? undefined,
     }
   })
-  .sort((a, b) => a.name.localeCompare(b.name, 'ja'))
+  .sort((a, b) => (a.num ?? 0) - (b.num ?? 0) || a.id.localeCompare(b.id))
 
 const out = path.join(root, 'src/data/pokemon-champions-mono.json')
 fs.writeFileSync(out, JSON.stringify(mono, null, 2) + '\n')

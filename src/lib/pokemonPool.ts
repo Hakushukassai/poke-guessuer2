@@ -64,6 +64,33 @@ export function baseSpeciesKey(id: string): string {
     [/sky$/, ''],
     [/fancy$/, ''],
     [/pokeball$/, ''],
+    // ピカチュウキャップ・コスプレなど見た目のみ
+    [/cosplay$/, ''],
+    [/rockstar$/, ''],
+    [/belle$/, ''],
+    [/popstar$/, ''],
+    [/phd$/, ''],
+    [/libre$/, ''],
+    [/hoenn$/, ''],
+    [/sinnoh$/, ''],
+    [/unova$/, ''],
+    [/kalos$/, ''],
+    [/partner$/, ''],
+    [/starter$/, ''],
+    [/world$/, ''],
+    // 同タイプの別フォルム
+    [/attack$/, ''],
+    [/defense$/, ''],
+    [/speed$/, ''],
+    [/sunny$/, ''],
+    [/rainy$/, ''],
+    [/snowy$/, ''],
+    [/sunshine$/, ''],
+    [/midnight$/, ''],
+    [/dusk$/, ''],
+    [/bluestriped$/, ''],
+    [/whitestriped$/, ''],
+    [/redstriped$/, ''],
   ] as const
 
   while (s !== prev) {
@@ -110,6 +137,14 @@ export function baseSpeciesKey(id: string): string {
   }
   if (/f$/i.test(s) && s.length > 4) s = s.slice(0, -1)
   return s || id
+}
+
+/** 図鑑番号順（同番号は id で安定化）。番号は表示しないが並びの基準にする。 */
+export function compareByDexNum(a: Pokemon, b: Pokemon): number {
+  const an = a.num ?? Number.POSITIVE_INFINITY
+  const bn = b.num ?? Number.POSITIVE_INFINITY
+  if (an !== bn) return an - bn
+  return a.id.localeCompare(b.id)
 }
 
 /** Fingerprint of type effectiveness answers for all 18 types. */
@@ -165,7 +200,7 @@ export function dedupeIndistinguishableForms(list: Pokemon[]): Pokemon[] {
     kept.push(...bestBySig.values())
   }
 
-  return kept.sort((a, b) => a.name.localeCompare(b.name, 'ja'))
+  return kept.sort(compareByDexNum)
 }
 
 function chainRoot(speciesId: string): string {
@@ -195,6 +230,12 @@ function chainSpeciesIds(root: string): string[] {
 function isFinalSpecies(speciesId: string): boolean {
   const evos = EVO[speciesId]?.evos
   return !evos || evos.length === 0
+}
+
+/** これ以上進化しない（最終進化・進化しない種）なら true。 */
+export function isFinalEvolution(pokemonOrId: Pokemon | string): boolean {
+  const id = typeof pokemonOrId === 'string' ? pokemonOrId : pokemonOrId.id
+  return isFinalSpecies(baseSpeciesKey(id))
 }
 
 /**
@@ -249,16 +290,16 @@ export function filterPreEvolutions(list: Pokemon[]): Pokemon[] {
     }
   }
 
-  return kept.sort((a, b) => a.name.localeCompare(b.name, 'ja'))
+  return kept.sort(compareByDexNum)
 }
 
-/** Apply form-dedupe then pre-evolution filter. */
+/** Apply cosmetic-form dedupe. Pre-evolutions are kept so the national roster has no dex gaps. */
 export function preparePool(list: Pokemon[]): Pokemon[] {
   const withoutTera = list.filter((p) => !isTeraBattleForm(p))
-  const prepared = filterPreEvolutions(dedupeIndistinguishableForms(withoutTera))
+  const prepared = dedupeIndistinguishableForms(withoutTera)
   const byId = new Map<string, Pokemon>()
   for (const p of prepared) byId.set(p.id, p)
-  return [...byId.values()].sort((a, b) => a.name.localeCompare(b.name, 'ja'))
+  return [...byId.values()].sort(compareByDexNum)
 }
 
 /** Ogerpon などのテラスタル戦フォルム（めんと被る）を除外 */

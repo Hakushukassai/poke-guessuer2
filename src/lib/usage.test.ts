@@ -60,7 +60,7 @@ describe('usage role filter / sort', () => {
     expect(COMMON_USAGE_THRESHOLD).toBe(0.05)
   })
 
-  it('使用率順（同率は名前）', () => {
+  it('使用率順（同率は図鑑番号）', () => {
     const roster = pokemonIn('champions', 'competitive')
     const sorted = [...roster].sort(sortByUsageThenName)
     const top = sorted[0]
@@ -73,10 +73,12 @@ describe('usage role filter / sort', () => {
     }
   })
 
-  it('タイプ相性モードの名簿は使用率ソートしない（五十音のまま）', () => {
+  it('タイプ相性モードの名簿は図鑑番号順', () => {
     const typeRoster = pokemonIn('champions', 'type')
-    const names = typeRoster.map((p) => p.name)
-    const sortedJa = [...names].sort((a, b) => a.localeCompare(b, 'ja'))
-    expect(names).toEqual(sortedJa)
+    for (let i = 1; i < typeRoster.length; i++) {
+      const prev = typeRoster[i - 1].num ?? Infinity
+      const cur = typeRoster[i].num ?? Infinity
+      expect(prev).toBeLessThanOrEqual(cur)
+    }
   })
 })

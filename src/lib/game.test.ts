@@ -8,6 +8,7 @@ import {
   reducer,
   type GameState,
 } from './game'
+import { isFinalEvolution } from './pokemonPool'
 
 function withPicks(state: GameState): GameState {
   return {
@@ -66,6 +67,47 @@ describe('game reducer', () => {
     })
     expect(s.lastMessage).toBe(`#${pivot.num}より大きい`)
     expect(s.currentPlayer).toBe('p2')
+  })
+
+  it('最終進化の質問で履歴が付きターン交代', () => {
+    let s = withPicks(initialState())
+    // p2 = rotomwash → 最終進化
+    s = reducer(s, { type: 'EVO_PROBE' })
+    expect(s.evoProbes).toHaveLength(1)
+    expect(s.evoProbes[0]).toMatchObject({ by: 'p1', isFinal: true })
+    expect(s.lastMessage).toContain('最終進化')
+    expect(s.currentPlayer).toBe('p2')
+  })
+
+  it('最終進化の再質問は無視', () => {
+    let s = withPicks(initialState())
+    s = reducer(s, { type: 'EVO_PROBE' })
+    s = { ...s, currentPlayer: 'p1' }
+    const before = s.evoProbes.length
+    s = reducer(s, { type: 'EVO_PROBE' })
+    expect(s.evoProbes).toHaveLength(before)
+    expect(s.currentPlayer).toBe('p1')
+  })
+
+  it('最終進化の答えで候補が絞られる', () => {
+    let s = withPicks({
+      ...initialState(),
+      pool: 'national',
+      quizMode: 'type',
+    })
+    // ガバイト（進化前）を秘密に
+    s = {
+      ...s,
+      phase: 'battle',
+      picks: { p1: 'garchomp', p2: 'gabite' },
+      currentPlayer: 'p1',
+    }
+    s = reducer(s, { type: 'EVO_PROBE' })
+    expect(s.evoProbes[0].isFinal).toBe(false)
+    const cands = filterCandidates(s, 'p1')
+    expect(cands.every((p) => !isFinalEvolution(p))).toBe(true)
+    expect(cands.some((p) => p.id === 'gabite')).toBe(true)
+    expect(cands.some((p) => p.id === 'garchomp')).toBe(false)
   })
 
   it('同じ基準への図鑑比較は無視', () => {

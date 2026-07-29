@@ -5,6 +5,7 @@ import {
   dedupeIndistinguishableForms,
   effectivenessSignature,
   filterPreEvolutions,
+  isFinalEvolution,
   preparePool,
 } from './pokemonPool'
 
@@ -44,6 +45,15 @@ describe('pokemonPool', () => {
     expect(baseSpeciesKey('zygarde10')).toBe('zygarde')
     expect(baseSpeciesKey('mausholdfour')).toBe('maushold')
     expect(baseSpeciesKey('palafinhero')).toBe('palafin')
+  })
+
+  it('最終進化判定', () => {
+    expect(isFinalEvolution('bulbasaur')).toBe(false)
+    expect(isFinalEvolution('ivysaur')).toBe(false)
+    expect(isFinalEvolution('venusaur')).toBe(true)
+    expect(isFinalEvolution('garchomp')).toBe(true)
+    expect(isFinalEvolution('gabite')).toBe(false)
+    expect(isFinalEvolution('mew')).toBe(true)
   })
 
   it('相性が同じメガは除外し、ベースを残す', () => {
@@ -118,7 +128,7 @@ describe('pokemonPool', () => {
     expect(list).toHaveLength(2)
   })
 
-  it('進化前は相性が同じなら除外し、最終進化を残す', () => {
+  it('進化前フィルタは相性が同じ進化前を落とせる（任意ユーティリティ）', () => {
     const list = filterPreEvolutions([
       poke('gabite', 'ガバイト', ['ドラゴン', 'じめん'], none),
       poke('garchomp', 'ガブリアス', ['ドラゴン', 'じめん'], none),
@@ -134,13 +144,13 @@ describe('pokemonPool', () => {
     expect(list.map((p) => p.id).sort()).toEqual(['scizor', 'scyther'])
   })
 
-  it('preparePool はフォーム整理と進化フィルタを通す', () => {
+  it('preparePool は同相性メガを落とし、進化前は残す', () => {
     const list = preparePool([
-      poke('gabite', 'ガバイト', ['ドラゴン', 'じめん'], none),
-      poke('garchomp', 'ガブリアス', ['ドラゴン', 'じめん'], none),
+      poke('gabite', 'ガバイト', ['ドラゴン', 'じめん'], none, null),
+      poke('garchomp', 'ガブリアス', ['ドラゴン', 'じめん'], none, null),
       poke('garchompmega', 'メガガブリアス', ['ドラゴン', 'じめん'], none, 'メガ'),
-    ])
-    expect(list.map((p) => p.id)).toEqual(['garchomp'])
+    ].map((p, i) => ({ ...p, num: 443 + i })))
+    expect(list.map((p) => p.id).sort()).toEqual(['gabite', 'garchomp'])
   })
 
   it('オーガポンのテラスタルは除外し、めんフォルムを残す', () => {

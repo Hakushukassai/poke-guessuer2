@@ -3,6 +3,7 @@ import { TYPES, EFFECTIVENESS_LABEL_JA } from '../data/types'
 import type {
   DexCompareRecord,
   EffectivenessLabel,
+  EvoProbeRecord,
   PlayerId,
   Pokemon,
   PokemonType,
@@ -163,6 +164,7 @@ function ProgressDots({ step, total }: { step: number; total: number }) {
 type FlashState =
   | { kind: 'probe'; moveType: PokemonType; result: EffectivenessLabel }
   | { kind: 'dex'; text: string }
+  | { kind: 'evo'; yes: boolean }
   | { kind: 'trait'; text: string; yes: boolean }
   | { kind: 'stat'; text: string }
   | { kind: 'miss'; name: string }
@@ -194,6 +196,19 @@ function ActionFlash({ flash }: { flash: FlashState }) {
     return (
       <div className="flash-note visual dex" role="status">
         図鑑 {flash.text}
+      </div>
+    )
+  }
+  if (flash.kind === 'evo') {
+    return (
+      <div
+        className={`flash-note visual trait ${flash.yes ? 'is-yes' : 'is-no'}`}
+        role="status"
+      >
+        <span className="flash-yn" aria-hidden>
+          {flash.yes ? '○' : '×'}
+        </span>
+        <span className="flash-trait-text">最終進化？</span>
       </div>
     )
   }
@@ -243,6 +258,7 @@ function dexCompareLabel(compare: DexCompareRecord): string {
 function ClueBoard({
   probes,
   dexCompares,
+  evoProbes = [],
   traitProbes = [],
   statCompares = [],
   quizMode,
@@ -252,6 +268,7 @@ function ClueBoard({
 }: {
   probes: ProbeRecord[]
   dexCompares: DexCompareRecord[]
+  evoProbes?: EvoProbeRecord[]
   traitProbes?: TraitProbeRecord[]
   statCompares?: StatCompareRecord[]
   quizMode: QuizMode
@@ -270,6 +287,7 @@ function ClueBoard({
         asker: 'p1' as const,
         probes: probes.filter((p) => p.by === 'p1'),
         dex: dexCompares.filter((c) => c.by === 'p1'),
+        evo: evoProbes.filter((p) => p.by === 'p1'),
         traits: traitProbes.filter((p) => p.by === 'p1'),
         stats: statCompares.filter((c) => c.by === 'p1'),
       },
@@ -278,6 +296,7 @@ function ClueBoard({
         asker: 'p2' as const,
         probes: probes.filter((p) => p.by === 'p2'),
         dex: dexCompares.filter((c) => c.by === 'p2'),
+        evo: evoProbes.filter((p) => p.by === 'p2'),
         traits: traitProbes.filter((p) => p.by === 'p2'),
         stats: statCompares.filter((c) => c.by === 'p2'),
       },
@@ -287,7 +306,7 @@ function ClueBoard({
       const bf = b.asker === currentPlayer ? 0 : 1
       return af - bf
     })
-  }, [probes, dexCompares, traitProbes, statCompares, currentPlayer])
+  }, [probes, dexCompares, evoProbes, traitProbes, statCompares, currentPlayer])
 
   useEffect(() => {
     if (expandAll) setOpenOther(true)
@@ -320,7 +339,7 @@ function ClueBoard({
           const collapsed = !expandAll && !focusing && !openOther
           const itemCount = competitive
             ? lane.traits.length + lane.stats.length
-            : lane.probes.length + lane.dex.length
+            : lane.probes.length + lane.dex.length + lane.evo.length
           return (
             <article
               key={lane.target}
@@ -364,7 +383,7 @@ function ClueBoard({
                     {focusing
                       ? competitive
                         ? 'まだ聞いていない。「設置ある？速い？」で絞ってね。'
-                        : 'まだ聞いていない。タイプか図鑑で絞ってね。'
+                        : 'まだ聞いていない。タイプ・図鑑・進化で絞ってね。'
                       : 'まだ質問なし'}
                   </p>
                 ) : (
@@ -427,16 +446,31 @@ function ClueBoard({
                             </li>
                           )
                         })
-                      : lane.dex.map((compare, i) => (
-                          <li
-                            key={`d-${compare.pivotId}-${i}`}
-                            className="clue-chip clue-chip-dex"
-                          >
-                            <span className="clue-dex-block">
-                              図鑑 {dexCompareLabel(compare)}
-                            </span>
-                          </li>
-                        ))}
+                      : (
+                        <>
+                          {lane.dex.map((compare, i) => (
+                            <li
+                              key={`d-${compare.pivotId}-${i}`}
+                              className="clue-chip clue-chip-dex"
+                            >
+                              <span className="clue-dex-block">
+                                図鑑 {dexCompareLabel(compare)}
+                              </span>
+                            </li>
+                          ))}
+                          {lane.evo.map((probe, i) => (
+                            <li
+                              key={`e-${i}`}
+                              className={`clue-chip clue-chip-yn ${probe.isFinal ? 'is-yes' : 'is-no'}`}
+                            >
+                              <span className="clue-yn" aria-hidden>
+                                {probe.isFinal ? '○' : '×'}
+                              </span>
+                              <span className="clue-dex-block">最終進化？</span>
+                            </li>
+                          ))}
+                        </>
+                      )}
                   </ul>
                 ))}
 
@@ -626,8 +660,8 @@ export function HomeScreen({
           {quizMode === 'competitive'
             ? '技・特性・速さで相手のポケモンを絞って当てる。'
             : quizMode === 'type_dual'
-              ? '複合タイプだけを、相性と図鑑番号で絞って当てる。'
-              : '単タイプ込みで、相性と図鑑番号から相手を当てる。'}
+              ? '複合タイプだけを、相性・図鑑・進化で絞って当てる。'
+              : '単タイプ込みで、相性・図鑑・進化から相手を当てる。'}
         </p>
 
         <div className="mode-switch" role="group" aria-label="プレイ方式">
@@ -806,12 +840,12 @@ export function HomeScreen({
             <strong>
               {quizMode === 'competitive'
                 ? 'できること・速さで絞る'
-                : 'タイプや図鑑番号で絞る'}
+                : 'タイプ・図鑑・進化で絞る'}
             </strong>
             <p>
               {quizMode === 'competitive'
                 ? '「設置ある？」「この子より速い？」の答えがメモに残る'
-                : '相性の答えと、図鑑番号の大小がメモに残る'}
+                : '相性・図鑑の大小・最終進化の答えがメモに残る'}
             </p>
           </div>
         </li>
@@ -1057,7 +1091,7 @@ export function OnlineWatchScreen({
 
   useEffect(() => {
     setPulse((n) => n + 1)
-  }, [view.lastMessage, view.probes.length, view.dexCompares.length, active])
+  }, [view.lastMessage, view.probes.length, view.dexCompares.length, view.evoProbes.length, active])
 
   useEffect(() => {
     setCandQuery('')
@@ -1158,6 +1192,7 @@ export function OnlineWatchScreen({
       <ClueBoard
         probes={view.probes}
         dexCompares={view.dexCompares}
+        evoProbes={view.evoProbes}
         quizMode="type"
         currentPlayer={active}
         names={view.names}
@@ -1574,6 +1609,7 @@ export function BattleScreen({
   state,
   onProbe,
   onDexCompare,
+  onEvoProbe,
   onTraitProbe,
   onStatCompare,
   onGuess,
@@ -1581,6 +1617,7 @@ export function BattleScreen({
   state: GameState
   onProbe: (t: PokemonType) => void
   onDexCompare: (pivotId: string) => void
+  onEvoProbe: () => void
   onTraitProbe: (traitId: CompetitiveTraitId) => void
   onStatCompare: (pivotId: string, stat: CompetitiveStatId) => void
   onGuess: (id: string) => void
@@ -1589,7 +1626,7 @@ export function BattleScreen({
   const catchup = state.phase === 'catchup'
   const askLeft = questionsRemaining(state, state.currentPlayer)
   const canAsk = canAskQuestion(state, state.currentPlayer)
-  type BattleTab = 'probe' | 'dex' | 'trait' | 'stat' | 'guess'
+  type BattleTab = 'probe' | 'dex' | 'evo' | 'trait' | 'stat' | 'guess'
   const defaultTab: BattleTab = catchup || !canAsk
     ? 'guess'
     : competitive
@@ -1630,6 +1667,8 @@ export function BattleScreen({
       .map((c) => c.pivotId),
   )
 
+  const askedEvo = state.evoProbes.some((p) => p.by === state.currentPlayer)
+
   const askedTraits = new Set(
     state.traitProbes
       .filter((p) => p.by === state.currentPlayer)
@@ -1646,6 +1685,7 @@ export function BattleScreen({
     if (!state.lastMessage) return
     const lastProbe = state.probes[state.probes.length - 1]
     const lastDex = state.dexCompares[state.dexCompares.length - 1]
+    const lastEvo = state.evoProbes[state.evoProbes.length - 1]
     const lastTrait = state.traitProbes[state.traitProbes.length - 1]
     const lastStat = state.statCompares[state.statCompares.length - 1]
     const lastGuess = state.guesses[state.guesses.length - 1]
@@ -1662,6 +1702,8 @@ export function BattleScreen({
         state.quizMode,
       )
       setFlash({ kind: 'miss', name: named?.name ?? 'そのポケモン' })
+    } else if (lastEvo && state.lastMessage.includes('最終進化')) {
+      setFlash({ kind: 'evo', yes: lastEvo.isFinal })
     } else if (lastTrait && state.lastMessage.includes('？')) {
       setFlash({
         kind: 'trait',
@@ -1696,6 +1738,7 @@ export function BattleScreen({
   }, [
     state.probes,
     state.dexCompares,
+    state.evoProbes,
     state.traitProbes,
     state.statCompares,
     state.guesses,
@@ -1721,6 +1764,7 @@ export function BattleScreen({
     competitive,
     state.probes.length,
     state.dexCompares.length,
+    state.evoProbes.length,
     state.traitProbes.length,
     state.statCompares.length,
     state.options.questionLimit,
@@ -1734,17 +1778,21 @@ export function BattleScreen({
         ? 'どのタイプで聞く？'
         : mode === 'dex'
           ? 'どのポケモンと比べる？'
-          : mode === 'trait'
-            ? '相手に聞けること'
-            : mode === 'stat'
-              ? '基準のポケモンを選ぶ'
-              : 'どれだと思う？'
+          : mode === 'evo'
+            ? '最終進化かどうかを聞く'
+            : mode === 'trait'
+              ? '相手に聞けること'
+              : mode === 'stat'
+                ? '基準のポケモンを選ぶ'
+                : 'どれだと思う？'
 
   const showTraitPad = mode === 'trait' && !catchup && canAsk
   const showTypePad = mode === 'probe' && !catchup && canAsk && !competitive
+  const showEvoPad = mode === 'evo' && !catchup && canAsk && !competitive
   const showList =
     !showTraitPad &&
     !showTypePad &&
+    !showEvoPad &&
     (mode === 'guess' ||
       mode === 'dex' ||
       mode === 'stat' ||
@@ -1804,7 +1852,11 @@ export function BattleScreen({
       <div className="battle-body">
         <div className="battle-main">
       {!catchup && (
-        <div className="action-switch three" role="tablist" aria-label="行動">
+        <div
+          className={`action-switch ${competitive ? 'three' : 'four'}`}
+          role="tablist"
+          aria-label="行動"
+        >
           {competitive ? (
             <>
               <button
@@ -1850,6 +1902,16 @@ export function BattleScreen({
               >
                 図鑑で絞る
               </button>
+              <button
+                type="button"
+                role="tab"
+                aria-selected={mode === 'evo'}
+                className={mode === 'evo' ? 'is-on' : ''}
+                disabled={!canAsk}
+                onClick={() => canAsk && setMode('evo')}
+              >
+                進化を聞く
+              </button>
             </>
           )}
           <button
@@ -1894,6 +1956,22 @@ export function BattleScreen({
               </button>
             )
           })}
+        </div>
+      )}
+
+      {showEvoPad && (
+        <div className="evo-pad">
+          <p className="ask-guide">
+            「これ以上進化しない？」を1回だけ聞けます。進化前と最終進化を大きく分けられます。
+          </p>
+          <button
+            type="button"
+            className={`btn primary evo-ask ${askedEvo ? 'is-used' : ''}`}
+            disabled={askedEvo}
+            onClick={() => onEvoProbe()}
+          >
+            {askedEvo ? '最終進化？ … 済' : '最終進化？'}
+          </button>
         </div>
       )}
 
@@ -2021,6 +2099,7 @@ export function BattleScreen({
       <ClueBoard
         probes={state.probes}
         dexCompares={state.dexCompares}
+        evoProbes={state.evoProbes}
         traitProbes={state.traitProbes}
         statCompares={state.statCompares}
         quizMode={state.quizMode}
@@ -2239,7 +2318,9 @@ export function ResultScreen({
         質問{' '}
         {state.quizMode === 'competitive'
           ? state.traitProbes.length + state.statCompares.length
-          : state.probes.length + state.dexCompares.length}{' '}
+          : state.probes.length +
+            state.dexCompares.length +
+            state.evoProbes.length}{' '}
         回 · 外れ解答 {misses} 回
         {state.draw ? ' · 同時正解' : ''}
       </p>

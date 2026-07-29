@@ -272,42 +272,108 @@ function looksJapanese(s) {
   return /[\u3040-\u30ff\u4e00-\u9fff]/.test(s)
 }
 
+function normalizeJaFormName(s) {
+  return String(s).replace(/[Ａ-Ｚ]/g, (c) =>
+    String.fromCharCode(c.charCodeAt(0) - 0xfee0),
+  )
+}
+
+/** ベース種族名だけで足りる「通常の姿」ラベルか */
+function isDefaultAppearanceLabel(formName, baseJa) {
+  if (!baseJa) return false
+  return formName === baseJa || formName === `${baseJa}のすがた`
+}
+
+/** 種族名を置き換える完全別名（ブラックキュレム・サトシゲッコウガ・メガ等） */
+function isFullAlternateName(formName, baseJa) {
+  if (formName.startsWith('メガ') || formName.startsWith('ゲンシ') || formName.startsWith('ウルトラ')) {
+    return true
+  }
+  if (/ロトム$/.test(formName) && formName !== 'ロトム') return true
+  if (!baseJa || formName === baseJa) return false
+  // 括弧表記すべき説明ラベルは除外
+  if (
+    formName.includes('のすがた') ||
+    formName.includes('フォルム') ||
+    formName.includes('のめん') ||
+    formName.includes('スタイル') ||
+    formName.includes('カセット') ||
+    formName.includes('モード') ||
+    formName.includes('タイプ') ||
+    formName.startsWith('タイプ')
+  ) {
+    return false
+  }
+  return formName.includes(baseJa)
+}
+
 function displayName(id, p) {
   const apiId = toPokeApiFormId(id)
   const formMeta = formIdToJa.get(apiId) || formIdToJa.get(apiId.replace(/-breed$/, ''))
   const baseJa = speciesJa.get(String(p.num)) || ''
 
+  // 通常の姿（リージョン・別フォルムでない）は種族名のみ。括弧を付けない
+  if (!p.forme && baseJa) return baseJa
+
   if (formMeta?.pokemonName && looksJapanese(formMeta.pokemonName)) {
     return formMeta.pokemonName
   }
   if (formMeta?.formName && looksJapanese(formMeta.formName)) {
-    // メガガブリアス / ウォッシュロトム などフル名
-    if (!formMeta.formName.includes('のすがた') && !formMeta.formName.includes('フォルム') && !formMeta.formName.includes('のめん') && formMeta.formName.length >= 3 && !/^[\u30a1-\u30fc]$/.test(formMeta.formName)) {
-      // If form name looks like full species (starts with メガ or is long katakana name)
-      if (
-        formMeta.formName.startsWith('メガ') ||
-        formMeta.formName.includes('ロトム') ||
-        formMeta.formName.length >= 5
-      ) {
-        return formMeta.formName.replace(/[Ａ-Ｚ]/g, (c) =>
-          String.fromCharCode(c.charCodeAt(0) - 0xfee0),
-        )
-      }
-    }
-    if (baseJa) {
-      if (formMeta.formName.includes('アローラ')) return `アローラ${baseJa}`
-      if (formMeta.formName.includes('ガラル')) return `ガラル${baseJa}`
-      if (formMeta.formName.includes('ヒスイ')) return `ヒスイ${baseJa}`
-      if (formMeta.formName.includes('パルデア')) return `${baseJa}(${formMeta.formName})`
-      return `${baseJa}(${formMeta.formName})`
-    }
-  }
+    const fn = normalizeJaFormName(formMeta.formName)
 
-  if (baseJa && !p.forme) return baseJa
+    if (isDefaultAppearanceLabel(fn, baseJa)) return baseJa
+
+    // アルセウス「こおりタイプ」/ シルヴァディ「タイプ：アイス」など
+    if (fn.endsWith('タイプ') || fn.startsWith('タイプ')) {
+      const SILVALLY_TO_JA = {
+        'タイプ：ノーマル': 'ノーマルタイプ',
+        'タイプ：ファイト': 'かくとうタイプ',
+        'タイプ：フライング': 'ひこうタイプ',
+        'タイプ：ポイズン': 'どくタイプ',
+        'タイプ：グラウンド': 'じめんタイプ',
+        'タイプ：ロック': 'いわタイプ',
+        'タイプ：バグ': 'むしタイプ',
+        'タイプ：ゴースト': 'ゴーストタイプ',
+        'タイプ：スチール': 'はがねタイプ',
+        'タイプ：ファイヤー': 'ほのおタイプ',
+        'タイプ：ウオーター': 'みずタイプ',
+        'タイプ：グラス': 'くさタイプ',
+        'タイプ：エレクトロ': 'でんきタイプ',
+        'タイプ：サイキック': 'エスパータイプ',
+        'タイプ：アイス': 'こおりタイプ',
+        'タイプ：ドラゴン': 'ドラゴンタイプ',
+        'タイプ：ダーク': 'あくタイプ',
+        'タイプ：フェアリー': 'フェアリータイプ',
+      }
+      const label = SILVALLY_TO_JA[fn] || fn
+      return baseJa ? `${baseJa}(${label})` : label
+    }
+
+    if (isFullAlternateName(fn, baseJa)) return fn
+
+    if (baseJa) {
+      if (fn.includes('アローラ')) return `アローラ${baseJa}`
+      if (fn.includes('ガラル')) return `ガラル${baseJa}`
+      if (fn.includes('ヒスイ')) return `ヒスイ${baseJa}`
+      if (fn.includes('パルデア')) return `パルデア${baseJa}`
+      return `${baseJa}(${fn})`
+    }
+    return fn
+  }
 
   // Fallbacks for common formes
   if (baseJa && p.forme) {
     const f = String(p.forme)
+    // 同名キー衝突は種族で先に分岐
+    if (f === 'White' && baseJa === 'キュレム') return 'ホワイトキュレム'
+    if (f === 'Black' && baseJa === 'キュレム') return 'ブラックキュレム'
+    if (f === 'White' && baseJa === 'イキリンコ') return `${baseJa}(ホワイトフェザー)`
+    if (f === 'Ice' && (baseJa === 'アルセウス' || baseJa === 'シルヴァディ')) {
+      return `${baseJa}(こおりタイプ)`
+    }
+    if (f === 'Ice' && baseJa === 'バドレックス') return `${baseJa}(はくばじょうのすがた)`
+    if (f === 'Ash') return 'サトシゲッコウガ'
+
     const FORME_MAP = {
       Mega: `メガ${baseJa}`,
       'Mega-X': `メガ${baseJa}X`,
@@ -329,20 +395,17 @@ function displayName(id, p) {
       Totem: `${baseJa}(ぬし)`,
       'Alola-Totem': `アローラ${baseJa}(ぬし)`,
       Primal: `ゲンシ${baseJa}`,
-      Ash: `${baseJa}(サトシゲッコウガ)`,
       Bond: `${baseJa}(きずな)`,
       Blue: `${baseJa}(ブルーフェザー)`,
       White: `${baseJa}(ホワイトフェザー)`,
       Yellow: `${baseJa}(イエローフェザー)`,
-      'Pa\'u': `${baseJa}(パウススタイル)`,
+      "Pa'u": `${baseJa}(パウススタイル)`,
       'Pom-Pom': `${baseJa}(ポムポムスタイル)`,
       Sensu: `${baseJa}(まいまいスタイル)`,
       Burn: `${baseJa}(ブレイズカセット)`,
       Chill: `${baseJa}(フリーズカセット)`,
       Douse: `${baseJa}(アクアカセット)`,
       Shock: `${baseJa}(イナズマカセット)`,
-      Black: `${baseJa}(ブラックキュレム)`,
-      // White already used for squawkabilly - kyurem white:
       Bloodmoon: `${baseJa}(アカツキ)`,
       'Rapid-Strike': `${baseJa}(れんげきのかた)`,
       'Single-Strike': `${baseJa}(いちげきのかた)`,
@@ -381,12 +444,62 @@ function displayName(id, p) {
       Meteor: `${baseJa}(りゅうせいのすがた)`,
       Pirouette: `${baseJa}(ステップフォルム)`,
       Masterpiece: `${baseJa}(傑作)`,
+      // アルセウス・シルヴァディのタイプフォーム
+      Bug: `${baseJa}(むしタイプ)`,
+      Dark: `${baseJa}(あくタイプ)`,
+      Dragon: `${baseJa}(ドラゴンタイプ)`,
+      Electric: `${baseJa}(でんきタイプ)`,
+      Fairy: `${baseJa}(フェアリータイプ)`,
+      Fighting: `${baseJa}(かくとうタイプ)`,
+      Fire: `${baseJa}(ほのおタイプ)`,
+      Flying: `${baseJa}(ひこうタイプ)`,
+      Ghost: `${baseJa}(ゴーストタイプ)`,
+      Grass: `${baseJa}(くさタイプ)`,
+      Ground: `${baseJa}(じめんタイプ)`,
+      Normal: `${baseJa}(ノーマルタイプ)`,
+      Poison: `${baseJa}(どくタイプ)`,
+      Psychic: `${baseJa}(エスパータイプ)`,
+      Rock: `${baseJa}(いわタイプ)`,
+      Steel: `${baseJa}(はがねタイプ)`,
+      Water: `${baseJa}(みずタイプ)`,
+      Stellar: `${baseJa}(ステラフォルム)`,
+      Rainy: `${baseJa}(あめのすがた)`,
+      Snowy: `${baseJa}(ゆきのすがた)`,
+      Sunny: `${baseJa}(はれのすがた)`,
+      Sunshine: `${baseJa}(てりてりのすがた)`,
+      Attack: `${baseJa}(アタックフォルム)`,
+      Defense: `${baseJa}(ディフェンスフォルム)`,
+      Speed: `${baseJa}(スピードフォルム)`,
+      Noice: `${baseJa}(ノイスフェイス)`,
+      Roaming: `${baseJa}(さすらいのすがた)`,
+      Antique: `${baseJa}(アンティークのすがた)`,
+      'Blue-Striped': `${baseJa}(あおすじ)`,
+      'White-Striped': `${baseJa}(しろすじ)`,
+      Belle: `${baseJa}(ベルのコスプレ)`,
+      Cosplay: `${baseJa}(コスプレ)`,
+      Hoenn: `${baseJa}(ホウエンキャップ)`,
+      Kalos: `${baseJa}(カロスキャップ)`,
+      Libre: `${baseJa}(リブレのコスプレ)`,
+      Partner: `${baseJa}(パートナーキャップ)`,
+      PhD: `${baseJa}(はかせのコスプレ)`,
+      'Pop-Star': `${baseJa}(ポップスターのコスプレ)`,
+      'Rock-Star': `${baseJa}(ロックスターのコスプレ)`,
+      Sinnoh: `${baseJa}(シンオウキャップ)`,
+      Starter: `${baseJa}(スターターキャップ)`,
+      Unova: `${baseJa}(イッシュキャップ)`,
+      World: `${baseJa}(ワールドキャップ)`,
+      'Spiky-eared': `${baseJa}(ギザミミ)`,
+      Eternal: `${baseJa}(えいえんのはな)`,
+      School: `${baseJa}(むれのすがた)`,
+      Dusk: `${baseJa}(たそがれのすがた)`,
+      Midnight: `${baseJa}(まよなかのすがた)`,
+      Four: `${baseJa}(4ひき)`,
+      Hero: `${baseJa}(ヒーローのすがた)`,
+      'F-Mega': `メガ${baseJa}(めす)`,
+      'M-Mega': `メガ${baseJa}(おす)`,
+      'Three-Segment': `${baseJa}(3れんのすがた)`,
     }
     if (FORME_MAP[f]) return FORME_MAP[f]
-    // Kyurem White conflicts with Squawkabilly White - handle by species
-    if (f === 'White' && baseJa === 'キュレム') return 'ホワイトキュレム'
-    if (f === 'Black' && baseJa === 'キュレム') return 'ブラックキュレム'
-    if (f === 'White' && baseJa === 'イキリンコ') return 'イキリンコ(ホワイトフェザー)'
     return `${baseJa}(${f})`
   }
 
@@ -406,11 +519,71 @@ function buildEntry(id, p) {
   }
 }
 
+/**
+ * タイプ相性クイズで性能が変わらないのに紛らわしいフォルム。
+ * （タイプが違うバトルフォルムでも、一時姿として出さないもの）
+ */
+const SKIP_COSMETIC_IDS = new Set([
+  // ポワルン：天気でタイプは変わるが一時姿のためベースのみ
+  'castformsunny',
+  'castformrainy',
+  'castformsnowy',
+])
+
+/** タイプ＋相性特性が同じなら同一性能とみなす */
+function performanceKey(entry) {
+  const ab = entry.ability?.affectsTypes ? entry.ability.id : '_'
+  return `${entry.num}|${[...entry.types].sort().join('/')}|${ab}`
+}
+
+/** 通常の姿（formeなし）を優先。例外は対戦で標準の見た目 */
+const PREFERRED_ALT_IDS = new Set([
+  'mausholdfour', // 図鑑・対戦では4ひきが標準
+])
+
+/** 通常の姿（formeなし）を優先して残す */
+function preferCanonical(a, b) {
+  if (PREFERRED_ALT_IDS.has(a.id) !== PREFERRED_ALT_IDS.has(b.id)) {
+    return PREFERRED_ALT_IDS.has(a.id) ? -1 : 1
+  }
+  const da = dex[a.id]
+  const db = dex[b.id]
+  const aBase = da && !da.forme ? 0 : 1
+  const bBase = db && !db.forme ? 0 : 1
+  if (aBase !== bBase) return aBase - bBase
+  const aBattle = da?.battleOnly ? 1 : 0
+  const bBattle = db?.battleOnly ? 1 : 0
+  if (aBattle !== bBattle) return aBattle - bBattle
+  return a.id.localeCompare(b.id)
+}
+
+/**
+ * 見た目・名前違いだけでタイプ相性が同じエントリを1つにまとめる。
+ * 例: ピカチュウのキャップ、デオキシス各フォルム、同タイプメガなど。
+ */
+function dedupeByPerformance(entries) {
+  const best = new Map()
+  for (const e of entries) {
+    const k = performanceKey(e)
+    const cur = best.get(k)
+    if (!cur || preferCanonical(e, cur) < 0) best.set(k, e)
+  }
+  const keptIds = new Set([...best.values()].map((e) => e.id))
+  const removedToKeep = new Map()
+  for (const e of entries) {
+    if (keptIds.has(e.id)) continue
+    const winner = best.get(performanceKey(e))
+    if (winner) removedToKeep.set(e.id, winner.id)
+  }
+  return { kept: [...best.values()], removedToKeep }
+}
+
 // --- national ---
-const national = []
+const nationalRaw = []
 for (const [id, p] of Object.entries(dex)) {
   if (!p.types || (p.types.length !== 1 && p.types.length !== 2)) continue
   if (p.isNonstandard && SKIP_NON.has(p.isNonstandard)) continue
+  if (SKIP_COSMETIC_IDS.has(id)) continue
   if (String(p.forme || '')
     .toLowerCase()
     .includes('gmax'))
@@ -422,26 +595,40 @@ for (const [id, p] of Object.entries(dex)) {
     continue
   if (p.types.some((t) => !VALID.has(t))) continue
   if (p.num <= 0) continue
-  national.push(buildEntry(id, p))
+  nationalRaw.push(buildEntry(id, p))
 }
-national.sort((a, b) => a.name.localeCompare(b.name, 'ja'))
 
-// --- champions: keep membership, refresh names/sprites ---
+const { kept: nationalKept, removedToKeep } = dedupeByPerformance(nationalRaw)
+const national = nationalKept
+national.sort((a, b) => (a.num - b.num) || a.id.localeCompare(b.id))
+const nationalById = new Map(national.map((p) => [p.id, p]))
+
+// --- champions: keep membership, refresh names/sprites, drop cosmetic dupes ---
 const champIds = new Set(champsExisting.map((p) => p.id))
-const champions = champsExisting.map((old) => {
-  const p = dex[old.id]
+const champions = []
+const seenChampPerf = new Set()
+for (const old of champsExisting) {
+  const keepId = nationalById.has(old.id)
+    ? old.id
+    : removedToKeep.get(old.id)
+  if (!keepId || !nationalById.has(keepId)) continue
+  const kept = nationalById.get(keepId)
+  const perf = performanceKey(kept)
+  if (seenChampPerf.has(perf)) continue
+  seenChampPerf.add(perf)
+  const p = dex[keepId]
   if (!p) {
-    return { ...old, sprite: old.sprite || toSpriteSlug(old.id) }
+    champions.push({ ...kept })
+    continue
   }
-  const built = buildEntry(old.id, p)
-  // keep ability pick from existing champions curation when present
-  return {
+  const built = buildEntry(keepId, p)
+  champions.push({
     ...built,
-    ability: old.ability?.id ? old.ability : built.ability,
+    ability: old.ability?.id && old.id === keepId ? old.ability : built.ability,
     name: looksJapanese(built.name) ? built.name : old.name,
-  }
-})
-champions.sort((a, b) => a.name.localeCompare(b.name, 'ja'))
+  })
+}
+champions.sort((a, b) => (a.num - b.num) || a.id.localeCompare(b.id))
 
 // --- evo index (base species only) ---
 const evoIndex = {}
@@ -470,7 +657,19 @@ fs.writeFileSync(
 const stillEng = national.filter(
   (p) => /[A-Za-z]/.test(p.name.replace(/[XYZ]/g, '')),
 )
-console.log('national', national.length, 'champions', champions.length)
+console.log(
+  'national',
+  national.length,
+  '(raw',
+  nationalRaw.length,
+  ', removed',
+  nationalRaw.length - national.length + ')',
+  'champions',
+  champions.length,
+)
 console.log('still latin names', stillEng.length)
-console.log(stillEng.slice(0, 30).map((p) => p.id + '|' + p.name).join('\n'))
-console.log('champ ids still valid', [...champIds].filter((id) => !dex[id]).slice(0, 10))
+if (stillEng.length) {
+  console.log(stillEng.slice(0, 30).map((p) => p.id + '|' + p.name).join('\n'))
+}
+console.log('champ ids dropped', [...champIds].filter((id) => !nationalById.has(id) && !removedToKeep.has(id)).slice(0, 10))
+console.log('sample removed', [...removedToKeep.entries()].slice(0, 15).map(([a, b]) => a + '→' + b).join(', '))

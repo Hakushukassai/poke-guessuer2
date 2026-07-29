@@ -74,6 +74,12 @@ export interface DexCompareRecord {
   greater: boolean
 }
 
+/** Ask 「最終進化？」— true when the secret cannot evolve further. */
+export interface EvoProbeRecord {
+  by: PlayerId
+  isFinal: boolean
+}
+
 export interface GuessRecord {
   by: PlayerId
   pokemonId: string

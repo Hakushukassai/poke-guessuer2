@@ -2,14 +2,14 @@ import { describe, expect, it } from 'vitest'
 import { POOL_ORDER, poolCounts, pokemonIn } from './game'
 
 describe('pool sizes', () => {
-  it('進化・フォルム整理後の件数と日本語名', () => {
+  it('フォルム整理後の件数と日本語名', () => {
     const c = poolCounts()
     const dual = poolCounts('type_dual')
     expect(c.champions).toBeGreaterThan(80)
     expect(c.champions).toBeLessThan(260)
     expect(c.champions).toBeGreaterThan(dual.champions)
-    expect(c.national).toBeGreaterThan(800)
-    expect(c.national).toBeLessThan(1000)
+    expect(c.national).toBeGreaterThan(1000)
+    expect(c.national).toBeLessThan(1300)
     expect(c.national).toBeGreaterThan(dual.national)
     expect(c.national).toBeGreaterThan(c.champions)
 
@@ -27,6 +27,19 @@ describe('pool sizes', () => {
         expect(p.sprite || p.id).toBeTruthy()
       }
     }
+  })
+
+  it('全国図鑑は図鑑番号 1〜1025 に抜けがない', () => {
+    const nums = new Set(
+      pokemonIn('national')
+        .map((p) => p.num)
+        .filter((n): n is number => typeof n === 'number'),
+    )
+    const missing: number[] = []
+    for (let i = 1; i <= 1025; i++) {
+      if (!nums.has(i)) missing.push(i)
+    }
+    expect(missing).toEqual([])
   })
 
   it('お題パックの中身がテーマに沿う', () => {

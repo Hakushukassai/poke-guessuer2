@@ -1,200 +1,5 @@
 [
   {
-    "id": "arbok",
-    "name": "アーボック",
-    "types": [
-      "どく"
-    ],
-    "ability": {
-      "id": "intimidate",
-      "name": "いかく",
-      "affectsTypes": false
-    },
-    "form": null,
-    "sprite": "arbok",
-    "num": 24
-  },
-  {
-    "id": "absol",
-    "name": "アブソル",
-    "types": [
-      "あく"
-    ],
-    "ability": {
-      "id": "pressure",
-      "name": "プレッシャー",
-      "affectsTypes": false
-    },
-    "form": null,
-    "sprite": "absol",
-    "num": 359
-  },
-  {
-    "id": "tsareena",
-    "name": "アマージョ",
-    "types": [
-      "くさ"
-    ],
-    "ability": {
-      "id": "leafguard",
-      "name": "リーフガード",
-      "affectsTypes": false
-    },
-    "form": null,
-    "sprite": "tsareena",
-    "num": 763
-  },
-  {
-    "id": "mausholdfour",
-    "name": "イッカネズミ(4ひきかぞく)",
-    "types": [
-      "ノーマル"
-    ],
-    "ability": {
-      "id": "technician",
-      "name": "テクニシャン",
-      "affectsTypes": false
-    },
-    "form": "Four",
-    "sprite": "maushold-four",
-    "num": 925
-  },
-  {
-    "id": "palafin",
-    "name": "イルカマン(ナイーブ)",
-    "types": [
-      "みず"
-    ],
-    "ability": {
-      "id": "zerotohero",
-      "name": "マイティチェンジ",
-      "affectsTypes": false
-    },
-    "form": null,
-    "sprite": "palafin",
-    "num": 964
-  },
-  {
-    "id": "arcanine",
-    "name": "ウインディ",
-    "types": [
-      "ほのお"
-    ],
-    "ability": {
-      "id": "flash_fire",
-      "name": "もらいび",
-      "affectsTypes": true
-    },
-    "form": null,
-    "sprite": "arcanine",
-    "num": 59
-  },
-  {
-    "id": "espeon",
-    "name": "エーフィ",
-    "types": [
-      "エスパー"
-    ],
-    "ability": {
-      "id": "synchronize",
-      "name": "シンクロ",
-      "affectsTypes": false
-    },
-    "form": null,
-    "sprite": "espeon",
-    "num": 196
-  },
-  {
-    "id": "feraligatr",
-    "name": "オーダイル",
-    "types": [
-      "みず"
-    ],
-    "ability": {
-      "id": "torrent",
-      "name": "げきりゅう",
-      "affectsTypes": false
-    },
-    "form": null,
-    "sprite": "feraligatr",
-    "num": 160
-  },
-  {
-    "id": "glalie",
-    "name": "オニゴーリ",
-    "types": [
-      "こおり"
-    ],
-    "ability": {
-      "id": "innerfocus",
-      "name": "せいしんりょく",
-      "affectsTypes": false
-    },
-    "form": null,
-    "sprite": "glalie",
-    "num": 362
-  },
-  {
-    "id": "machamp",
-    "name": "カイリキー",
-    "types": [
-      "かくとう"
-    ],
-    "ability": {
-      "id": "guts",
-      "name": "こんじょう",
-      "affectsTypes": false
-    },
-    "form": null,
-    "sprite": "machamp",
-    "num": 68
-  },
-  {
-    "id": "pinsir",
-    "name": "カイロス",
-    "types": [
-      "むし"
-    ],
-    "ability": {
-      "id": "hypercutter",
-      "name": "かいりきバサミ",
-      "affectsTypes": false
-    },
-    "form": null,
-    "sprite": "pinsir",
-    "num": 127
-  },
-  {
-    "id": "hippowdon",
-    "name": "カバルドン",
-    "types": [
-      "じめん"
-    ],
-    "ability": {
-      "id": "sandstream",
-      "name": "すなおこし",
-      "affectsTypes": false
-    },
-    "form": null,
-    "sprite": "hippowdon",
-    "num": 450
-  },
-  {
-    "id": "snorlax",
-    "name": "カビゴン",
-    "types": [
-      "ノーマル"
-    ],
-    "ability": {
-      "id": "thick_fat",
-      "name": "あついしぼう",
-      "affectsTypes": true
-    },
-    "form": null,
-    "sprite": "snorlax",
-    "num": 143
-  },
-  {
     "id": "blastoise",
     "name": "カメックス",
     "types": [
@@ -210,19 +15,64 @@
     "num": 9
   },
   {
-    "id": "kangaskhan",
-    "name": "ガルーラ",
+    "id": "arbok",
+    "name": "アーボック",
     "types": [
-      "ノーマル"
+      "どく"
     ],
     "ability": {
-      "id": "earlybird",
-      "name": "はやおき",
+      "id": "intimidate",
+      "name": "いかく",
       "affectsTypes": false
     },
     "form": null,
-    "sprite": "kangaskhan",
-    "num": 115
+    "sprite": "arbok",
+    "num": 24
+  },
+  {
+    "id": "pikachu",
+    "name": "ピカチュウ",
+    "types": [
+      "でんき"
+    ],
+    "ability": {
+      "id": "lightning_rod",
+      "name": "ひらいしん",
+      "affectsTypes": true
+    },
+    "form": null,
+    "sprite": "pikachu",
+    "num": 25
+  },
+  {
+    "id": "raichu",
+    "name": "ライチュウ",
+    "types": [
+      "でんき"
+    ],
+    "ability": {
+      "id": "lightning_rod",
+      "name": "ひらいしん",
+      "affectsTypes": true
+    },
+    "form": null,
+    "sprite": "raichu",
+    "num": 26
+  },
+  {
+    "id": "clefable",
+    "name": "ピクシー",
+    "types": [
+      "フェアリー"
+    ],
+    "ability": {
+      "id": "cutecharm",
+      "name": "メロメロボディ",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "clefable",
+    "num": 36
   },
   {
     "id": "ninetales",
@@ -240,64 +90,79 @@
     "num": 38
   },
   {
-    "id": "garganacl",
-    "name": "キョジオーン",
+    "id": "arcanine",
+    "name": "ウインディ",
     "types": [
-      "いわ"
+      "ほのお"
     ],
     "ability": {
-      "id": "purifying_salt",
-      "name": "きよめのしお",
+      "id": "flash_fire",
+      "name": "もらいび",
       "affectsTypes": true
     },
     "form": null,
-    "sprite": "garganacl",
-    "num": 934
+    "sprite": "arcanine",
+    "num": 59
   },
   {
-    "id": "espathra",
-    "name": "クエスパトラ",
+    "id": "alakazam",
+    "name": "フーディン",
     "types": [
       "エスパー"
     ],
     "ability": {
-      "id": "opportunist",
-      "name": "びんじょう",
+      "id": "synchronize",
+      "name": "シンクロ",
       "affectsTypes": false
     },
     "form": null,
-    "sprite": "espathra",
-    "num": 956
+    "sprite": "alakazam",
+    "num": 65
   },
   {
-    "id": "glaceon",
-    "name": "グレイシア",
+    "id": "machamp",
+    "name": "カイリキー",
     "types": [
-      "こおり"
+      "かくとう"
     ],
     "ability": {
-      "id": "snowcloak",
-      "name": "ゆきがくれ",
+      "id": "guts",
+      "name": "こんじょう",
       "affectsTypes": false
     },
     "form": null,
-    "sprite": "glaceon",
-    "num": 471
+    "sprite": "machamp",
+    "num": 68
   },
   {
-    "id": "avalugg",
-    "name": "クレベース",
+    "id": "kangaskhan",
+    "name": "ガルーラ",
     "types": [
-      "こおり"
+      "ノーマル"
     ],
     "ability": {
-      "id": "owntempo",
-      "name": "マイペース",
+      "id": "earlybird",
+      "name": "はやおき",
       "affectsTypes": false
     },
     "form": null,
-    "sprite": "avalugg",
-    "num": 713
+    "sprite": "kangaskhan",
+    "num": 115
+  },
+  {
+    "id": "pinsir",
+    "name": "カイロス",
+    "types": [
+      "むし"
+    ],
+    "ability": {
+      "id": "hypercutter",
+      "name": "かいりきバサミ",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "pinsir",
+    "num": 127
   },
   {
     "id": "tauros",
@@ -315,64 +180,19 @@
     "num": 128
   },
   {
-    "id": "torkoal",
-    "name": "コータス",
+    "id": "taurospaldeacombat",
+    "name": "パルデアケンタロス",
     "types": [
-      "ほのお"
+      "かくとう"
     ],
     "ability": {
-      "id": "whitesmoke",
-      "name": "しろいけむり",
+      "id": "intimidate",
+      "name": "いかく",
       "affectsTypes": false
     },
-    "form": null,
-    "sprite": "torkoal",
-    "num": 324
-  },
-  {
-    "id": "sandaconda",
-    "name": "サダイジャ",
-    "types": [
-      "じめん"
-    ],
-    "ability": {
-      "id": "sandspit",
-      "name": "すなはき",
-      "affectsTypes": false
-    },
-    "form": null,
-    "sprite": "sandaconda",
-    "num": 844
-  },
-  {
-    "id": "jolteon",
-    "name": "サンダース",
-    "types": [
-      "でんき"
-    ],
-    "ability": {
-      "id": "volt_absorb",
-      "name": "ちくでん",
-      "affectsTypes": true
-    },
-    "form": null,
-    "sprite": "jolteon",
-    "num": 135
-  },
-  {
-    "id": "serperior",
-    "name": "ジャローダ",
-    "types": [
-      "くさ"
-    ],
-    "ability": {
-      "id": "overgrow",
-      "name": "しんりょく",
-      "affectsTypes": false
-    },
-    "form": null,
-    "sprite": "serperior",
-    "num": 497
+    "form": "Paldea-Combat",
+    "sprite": "taurospaldeacombat",
+    "num": 128
   },
   {
     "id": "vaporeon",
@@ -390,38 +210,83 @@
     "num": 134
   },
   {
-    "id": "banette",
-    "name": "ジュペッタ",
+    "id": "jolteon",
+    "name": "サンダース",
     "types": [
-      "ゴースト"
+      "でんき"
     ],
     "ability": {
-      "id": "insomnia",
-      "name": "ふみん",
+      "id": "volt_absorb",
+      "name": "ちくでん",
+      "affectsTypes": true
+    },
+    "form": null,
+    "sprite": "jolteon",
+    "num": 135
+  },
+  {
+    "id": "flareon",
+    "name": "ブースター",
+    "types": [
+      "ほのお"
+    ],
+    "ability": {
+      "id": "flash_fire",
+      "name": "もらいび",
+      "affectsTypes": true
+    },
+    "form": null,
+    "sprite": "flareon",
+    "num": 136
+  },
+  {
+    "id": "snorlax",
+    "name": "カビゴン",
+    "types": [
+      "ノーマル"
+    ],
+    "ability": {
+      "id": "thick_fat",
+      "name": "あついしぼう",
+      "affectsTypes": true
+    },
+    "form": null,
+    "sprite": "snorlax",
+    "num": 143
+  },
+  {
+    "id": "meganium",
+    "name": "メガニウム",
+    "types": [
+      "くさ"
+    ],
+    "ability": {
+      "id": "overgrow",
+      "name": "しんりょく",
       "affectsTypes": false
     },
     "form": null,
-    "sprite": "banette",
-    "num": 354
+    "sprite": "meganium",
+    "num": 154
   },
   {
-    "id": "zoroark",
-    "name": "ゾロアーク",
+    "id": "typhlosion",
+    "name": "バクフーン",
     "types": [
-      "あく"
+      "ほのお"
     ],
     "ability": {
-      "id": "illusion",
-      "name": "イリュージョン",
-      "affectsTypes": false
+      "id": "flash_fire",
+      "name": "もらいび",
+      "affectsTypes": true
     },
     "form": null,
-    "sprite": "zoroark",
-    "num": 571
+    "sprite": "typhlosion",
+    "num": 157
   },
   {
-    "id": "samurott",
-    "name": "ダイケンキ",
+    "id": "feraligatr",
+    "name": "オーダイル",
     "types": [
       "みず"
     ],
@@ -431,83 +296,8 @@
       "affectsTypes": false
     },
     "form": null,
-    "sprite": "samurott",
-    "num": 503
-  },
-  {
-    "id": "garbodor",
-    "name": "ダストダス",
-    "types": [
-      "どく"
-    ],
-    "ability": {
-      "id": "stench",
-      "name": "あくしゅう",
-      "affectsTypes": false
-    },
-    "form": null,
-    "sprite": "garbodor",
-    "num": 569
-  },
-  {
-    "id": "audino",
-    "name": "タブンネ",
-    "types": [
-      "ノーマル"
-    ],
-    "ability": {
-      "id": "regenerator",
-      "name": "さいせいりょく",
-      "affectsTypes": false
-    },
-    "form": null,
-    "sprite": "audino",
-    "num": 531
-  },
-  {
-    "id": "chimecho",
-    "name": "チリーン",
-    "types": [
-      "エスパー"
-    ],
-    "ability": {
-      "id": "levitate",
-      "name": "ふゆう",
-      "affectsTypes": true
-    },
-    "form": null,
-    "sprite": "chimecho",
-    "num": 358
-  },
-  {
-    "id": "beartic",
-    "name": "ツンベアー",
-    "types": [
-      "こおり"
-    ],
-    "ability": {
-      "id": "snowcloak",
-      "name": "ゆきがくれ",
-      "affectsTypes": false
-    },
-    "form": null,
-    "sprite": "beartic",
-    "num": 614
-  },
-  {
-    "id": "cofagrigus",
-    "name": "デスカーン",
-    "types": [
-      "ゴースト"
-    ],
-    "ability": {
-      "id": "mummy",
-      "name": "ミイラ",
-      "affectsTypes": false
-    },
-    "form": null,
-    "sprite": "cofagrigus",
-    "num": 563
+    "sprite": "feraligatr",
+    "num": 160
   },
   {
     "id": "ampharos",
@@ -525,6 +315,531 @@
     "num": 181
   },
   {
+    "id": "politoed",
+    "name": "ニョロトノ",
+    "types": [
+      "みず"
+    ],
+    "ability": {
+      "id": "water_absorb",
+      "name": "ちょすい",
+      "affectsTypes": true
+    },
+    "form": null,
+    "sprite": "politoed",
+    "num": 186
+  },
+  {
+    "id": "espeon",
+    "name": "エーフィ",
+    "types": [
+      "エスパー"
+    ],
+    "ability": {
+      "id": "synchronize",
+      "name": "シンクロ",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "espeon",
+    "num": 196
+  },
+  {
+    "id": "umbreon",
+    "name": "ブラッキー",
+    "types": [
+      "あく"
+    ],
+    "ability": {
+      "id": "synchronize",
+      "name": "シンクロ",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "umbreon",
+    "num": 197
+  },
+  {
+    "id": "aggronmega",
+    "name": "メガボスゴドラ",
+    "types": [
+      "はがね"
+    ],
+    "ability": {
+      "id": "filter",
+      "name": "フィルター",
+      "affectsTypes": true
+    },
+    "form": "Mega",
+    "sprite": "aggron-mega",
+    "num": 306
+  },
+  {
+    "id": "manectric",
+    "name": "ライボルト",
+    "types": [
+      "でんき"
+    ],
+    "ability": {
+      "id": "lightning_rod",
+      "name": "ひらいしん",
+      "affectsTypes": true
+    },
+    "form": null,
+    "sprite": "manectric",
+    "num": 310
+  },
+  {
+    "id": "manectricmega",
+    "name": "メガライボルト",
+    "types": [
+      "でんき"
+    ],
+    "ability": {
+      "id": "intimidate",
+      "name": "いかく",
+      "affectsTypes": false
+    },
+    "form": "Mega",
+    "sprite": "manectric-mega",
+    "num": 310
+  },
+  {
+    "id": "torkoal",
+    "name": "コータス",
+    "types": [
+      "ほのお"
+    ],
+    "ability": {
+      "id": "whitesmoke",
+      "name": "しろいけむり",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "torkoal",
+    "num": 324
+  },
+  {
+    "id": "milotic",
+    "name": "ミロカロス",
+    "types": [
+      "みず"
+    ],
+    "ability": {
+      "id": "marvelscale",
+      "name": "ふしぎなうろこ",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "milotic",
+    "num": 350
+  },
+  {
+    "id": "banette",
+    "name": "ジュペッタ",
+    "types": [
+      "ゴースト"
+    ],
+    "ability": {
+      "id": "insomnia",
+      "name": "ふみん",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "banette",
+    "num": 354
+  },
+  {
+    "id": "chimecho",
+    "name": "チリーン",
+    "types": [
+      "エスパー"
+    ],
+    "ability": {
+      "id": "levitate",
+      "name": "ふゆう",
+      "affectsTypes": true
+    },
+    "form": null,
+    "sprite": "chimecho",
+    "num": 358
+  },
+  {
+    "id": "absol",
+    "name": "アブソル",
+    "types": [
+      "あく"
+    ],
+    "ability": {
+      "id": "pressure",
+      "name": "プレッシャー",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "absol",
+    "num": 359
+  },
+  {
+    "id": "glalie",
+    "name": "オニゴーリ",
+    "types": [
+      "こおり"
+    ],
+    "ability": {
+      "id": "innerfocus",
+      "name": "せいしんりょく",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "glalie",
+    "num": 362
+  },
+  {
+    "id": "luxray",
+    "name": "レントラー",
+    "types": [
+      "でんき"
+    ],
+    "ability": {
+      "id": "intimidate",
+      "name": "いかく",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "luxray",
+    "num": 405
+  },
+  {
+    "id": "rampardos",
+    "name": "ラムパルド",
+    "types": [
+      "いわ"
+    ],
+    "ability": {
+      "id": "moldbreaker",
+      "name": "かたやぶり",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "rampardos",
+    "num": 409
+  },
+  {
+    "id": "lopunny",
+    "name": "ミミロップ",
+    "types": [
+      "ノーマル"
+    ],
+    "ability": {
+      "id": "cutecharm",
+      "name": "メロメロボディ",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "lopunny",
+    "num": 428
+  },
+  {
+    "id": "hippowdon",
+    "name": "カバルドン",
+    "types": [
+      "じめん"
+    ],
+    "ability": {
+      "id": "sandstream",
+      "name": "すなおこし",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "hippowdon",
+    "num": 450
+  },
+  {
+    "id": "leafeon",
+    "name": "リーフィア",
+    "types": [
+      "くさ"
+    ],
+    "ability": {
+      "id": "leafguard",
+      "name": "リーフガード",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "leafeon",
+    "num": 470
+  },
+  {
+    "id": "glaceon",
+    "name": "グレイシア",
+    "types": [
+      "こおり"
+    ],
+    "ability": {
+      "id": "snowcloak",
+      "name": "ゆきがくれ",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "glaceon",
+    "num": 471
+  },
+  {
+    "id": "serperior",
+    "name": "ジャローダ",
+    "types": [
+      "くさ"
+    ],
+    "ability": {
+      "id": "overgrow",
+      "name": "しんりょく",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "serperior",
+    "num": 497
+  },
+  {
+    "id": "samurott",
+    "name": "ダイケンキ",
+    "types": [
+      "みず"
+    ],
+    "ability": {
+      "id": "torrent",
+      "name": "げきりゅう",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "samurott",
+    "num": 503
+  },
+  {
+    "id": "watchog",
+    "name": "ミルホッグ",
+    "types": [
+      "ノーマル"
+    ],
+    "ability": {
+      "id": "illuminate",
+      "name": "はっこう",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "watchog",
+    "num": 505
+  },
+  {
+    "id": "liepard",
+    "name": "レパルダス",
+    "types": [
+      "あく"
+    ],
+    "ability": {
+      "id": "limber",
+      "name": "じゅうなん",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "liepard",
+    "num": 510
+  },
+  {
+    "id": "simisage",
+    "name": "ヤナッキー",
+    "types": [
+      "くさ"
+    ],
+    "ability": {
+      "id": "gluttony",
+      "name": "くいしんぼう",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "simisage",
+    "num": 512
+  },
+  {
+    "id": "simisear",
+    "name": "バオッキー",
+    "types": [
+      "ほのお"
+    ],
+    "ability": {
+      "id": "gluttony",
+      "name": "くいしんぼう",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "simisear",
+    "num": 514
+  },
+  {
+    "id": "simipour",
+    "name": "ヒヤッキー",
+    "types": [
+      "みず"
+    ],
+    "ability": {
+      "id": "gluttony",
+      "name": "くいしんぼう",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "simipour",
+    "num": 516
+  },
+  {
+    "id": "audino",
+    "name": "タブンネ",
+    "types": [
+      "ノーマル"
+    ],
+    "ability": {
+      "id": "regenerator",
+      "name": "さいせいりょく",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "audino",
+    "num": 531
+  },
+  {
+    "id": "conkeldurr",
+    "name": "ローブシン",
+    "types": [
+      "かくとう"
+    ],
+    "ability": {
+      "id": "guts",
+      "name": "こんじょう",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "conkeldurr",
+    "num": 534
+  },
+  {
+    "id": "cofagrigus",
+    "name": "デスカーン",
+    "types": [
+      "ゴースト"
+    ],
+    "ability": {
+      "id": "mummy",
+      "name": "ミイラ",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "cofagrigus",
+    "num": 563
+  },
+  {
+    "id": "garbodor",
+    "name": "ダストダス",
+    "types": [
+      "どく"
+    ],
+    "ability": {
+      "id": "stench",
+      "name": "あくしゅう",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "garbodor",
+    "num": 569
+  },
+  {
+    "id": "zoroark",
+    "name": "ゾロアーク",
+    "types": [
+      "あく"
+    ],
+    "ability": {
+      "id": "illusion",
+      "name": "イリュージョン",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "zoroark",
+    "num": 571
+  },
+  {
+    "id": "reuniclus",
+    "name": "ランクルス",
+    "types": [
+      "エスパー"
+    ],
+    "ability": {
+      "id": "regenerator",
+      "name": "さいせいりょく",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "reuniclus",
+    "num": 579
+  },
+  {
+    "id": "vanilluxe",
+    "name": "バイバニラ",
+    "types": [
+      "こおり"
+    ],
+    "ability": {
+      "id": "icebody",
+      "name": "アイスボディ",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "vanilluxe",
+    "num": 584
+  },
+  {
+    "id": "beartic",
+    "name": "ツンベアー",
+    "types": [
+      "こおり"
+    ],
+    "ability": {
+      "id": "snowcloak",
+      "name": "ゆきがくれ",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "beartic",
+    "num": 614
+  },
+  {
+    "id": "floette",
+    "name": "フラエッテ",
+    "types": [
+      "フェアリー"
+    ],
+    "ability": {
+      "id": "flower_veil",
+      "name": "Flower Veil",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "floette",
+    "num": 670
+  },
+  {
+    "id": "florges",
+    "name": "フラージェス",
+    "types": [
+      "フェアリー"
+    ],
+    "ability": {
+      "id": "flowerveil",
+      "name": "フラワーベール",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "florges",
+    "num": 671
+  },
+  {
     "id": "furfrou",
     "name": "トリミアン",
     "types": [
@@ -540,23 +855,8 @@
     "num": 676
   },
   {
-    "id": "passimian",
-    "name": "ナゲツケサル",
-    "types": [
-      "かくとう"
-    ],
-    "ability": {
-      "id": "receiver",
-      "name": "レシーバー",
-      "affectsTypes": false
-    },
-    "form": null,
-    "sprite": "passimian",
-    "num": 766
-  },
-  {
     "id": "meowstic",
-    "name": "ニャオニクス(オス)",
+    "name": "ニャオニクス",
     "types": [
       "エスパー"
     ],
@@ -570,19 +870,49 @@
     "num": 678
   },
   {
-    "id": "politoed",
-    "name": "ニョロトノ",
+    "id": "aromatisse",
+    "name": "フレフワン",
+    "types": [
+      "フェアリー"
+    ],
+    "ability": {
+      "id": "healer",
+      "name": "いやしのこころ",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "aromatisse",
+    "num": 683
+  },
+  {
+    "id": "slurpuff",
+    "name": "ペロリーム",
+    "types": [
+      "フェアリー"
+    ],
+    "ability": {
+      "id": "sweetveil",
+      "name": "スイートベール",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "slurpuff",
+    "num": 685
+  },
+  {
+    "id": "clawitzer",
+    "name": "ブロスター",
     "types": [
       "みず"
     ],
     "ability": {
-      "id": "water_absorb",
-      "name": "ちょすい",
-      "affectsTypes": true
+      "id": "megalauncher",
+      "name": "メガランチャー",
+      "affectsTypes": false
     },
     "form": null,
-    "sprite": "politoed",
-    "num": 186
+    "sprite": "clawitzer",
+    "num": 693
   },
   {
     "id": "sylveon",
@@ -615,79 +945,34 @@
     "num": 706
   },
   {
-    "id": "vanilluxe",
-    "name": "バイバニラ",
+    "id": "avalugg",
+    "name": "クレベース",
     "types": [
       "こおり"
     ],
     "ability": {
-      "id": "icebody",
-      "name": "アイスボディ",
+      "id": "owntempo",
+      "name": "マイペース",
       "affectsTypes": false
     },
     "form": null,
-    "sprite": "vanilluxe",
-    "num": 584
+    "sprite": "avalugg",
+    "num": 713
   },
   {
-    "id": "simisear",
-    "name": "バオッキー",
+    "id": "lycanroc",
+    "name": "ルガルガン",
     "types": [
-      "ほのお"
+      "いわ"
     ],
     "ability": {
-      "id": "gluttony",
-      "name": "くいしんぼう",
+      "id": "keen_eye",
+      "name": "Keen Eye",
       "affectsTypes": false
     },
     "form": null,
-    "sprite": "simisear",
-    "num": 514
-  },
-  {
-    "id": "typhlosion",
-    "name": "バクフーン",
-    "types": [
-      "ほのお"
-    ],
-    "ability": {
-      "id": "flash_fire",
-      "name": "もらいび",
-      "affectsTypes": true
-    },
-    "form": null,
-    "sprite": "typhlosion",
-    "num": 157
-  },
-  {
-    "id": "bellibolt",
-    "name": "ハラバリー",
-    "types": [
-      "でんき"
-    ],
-    "ability": {
-      "id": "electromorphosis",
-      "name": "でんきにかえる",
-      "affectsTypes": false
-    },
-    "form": null,
-    "sprite": "bellibolt",
-    "num": 939
-  },
-  {
-    "id": "taurospaldeacombat",
-    "name": "パルデアケンタロス(かくとう)",
-    "types": [
-      "かくとう"
-    ],
-    "ability": {
-      "id": "intimidate",
-      "name": "いかく",
-      "affectsTypes": false
-    },
-    "form": "Paldea-Combat",
-    "sprite": "tauros-paldeacombat",
-    "num": 128
+    "sprite": "lycanroc",
+    "num": 745
   },
   {
     "id": "mudsdale",
@@ -705,169 +990,49 @@
     "num": 750
   },
   {
-    "id": "pikachu",
-    "name": "ピカチュウ",
+    "id": "tsareena",
+    "name": "アマージョ",
     "types": [
-      "でんき"
+      "くさ"
     ],
     "ability": {
-      "id": "lightning_rod",
-      "name": "ひらいしん",
-      "affectsTypes": true
-    },
-    "form": null,
-    "sprite": "pikachu",
-    "num": 25
-  },
-  {
-    "id": "clefable",
-    "name": "ピクシー",
-    "types": [
-      "フェアリー"
-    ],
-    "ability": {
-      "id": "cutecharm",
-      "name": "メロメロボディ",
+      "id": "leafguard",
+      "name": "リーフガード",
       "affectsTypes": false
     },
     "form": null,
-    "sprite": "clefable",
-    "num": 36
+    "sprite": "tsareena",
+    "num": 763
   },
   {
-    "id": "simipour",
-    "name": "ヒヤッキー",
+    "id": "passimian",
+    "name": "ナゲツケサル",
     "types": [
-      "みず"
+      "かくとう"
     ],
     "ability": {
-      "id": "gluttony",
-      "name": "くいしんぼう",
+      "id": "receiver",
+      "name": "レシーバー",
       "affectsTypes": false
     },
     "form": null,
-    "sprite": "simipour",
-    "num": 516
+    "sprite": "passimian",
+    "num": 766
   },
   {
-    "id": "flareon",
-    "name": "ブースター",
+    "id": "sandaconda",
+    "name": "サダイジャ",
     "types": [
-      "ほのお"
+      "じめん"
     ],
     "ability": {
-      "id": "flash_fire",
-      "name": "もらいび",
-      "affectsTypes": true
-    },
-    "form": null,
-    "sprite": "flareon",
-    "num": 136
-  },
-  {
-    "id": "alakazam",
-    "name": "フーディン",
-    "types": [
-      "エスパー"
-    ],
-    "ability": {
-      "id": "synchronize",
-      "name": "シンクロ",
+      "id": "sandspit",
+      "name": "すなはき",
       "affectsTypes": false
     },
     "form": null,
-    "sprite": "alakazam",
-    "num": 65
-  },
-  {
-    "id": "florges",
-    "name": "フラージェス",
-    "types": [
-      "フェアリー"
-    ],
-    "ability": {
-      "id": "flowerveil",
-      "name": "フラワーベール",
-      "affectsTypes": false
-    },
-    "form": null,
-    "sprite": "florges",
-    "num": 671
-  },
-  {
-    "id": "floetteeternal",
-    "name": "フラエッテ(えいえんのはな)",
-    "types": [
-      "フェアリー"
-    ],
-    "ability": {
-      "id": "flowerveil",
-      "name": "フラワーベール",
-      "affectsTypes": false
-    },
-    "form": "Eternal",
-    "sprite": "floetteeternal",
-    "num": 670
-  },
-  {
-    "id": "umbreon",
-    "name": "ブラッキー",
-    "types": [
-      "あく"
-    ],
-    "ability": {
-      "id": "synchronize",
-      "name": "シンクロ",
-      "affectsTypes": false
-    },
-    "form": null,
-    "sprite": "umbreon",
-    "num": 197
-  },
-  {
-    "id": "aromatisse",
-    "name": "フレフワン",
-    "types": [
-      "フェアリー"
-    ],
-    "ability": {
-      "id": "healer",
-      "name": "いやしのこころ",
-      "affectsTypes": false
-    },
-    "form": null,
-    "sprite": "aromatisse",
-    "num": 683
-  },
-  {
-    "id": "clawitzer",
-    "name": "ブロスター",
-    "types": [
-      "みず"
-    ],
-    "ability": {
-      "id": "megalauncher",
-      "name": "メガランチャー",
-      "affectsTypes": false
-    },
-    "form": null,
-    "sprite": "clawitzer",
-    "num": 693
-  },
-  {
-    "id": "slurpuff",
-    "name": "ペロリーム",
-    "types": [
-      "フェアリー"
-    ],
-    "ability": {
-      "id": "sweetveil",
-      "name": "スイートベール",
-      "affectsTypes": false
-    },
-    "form": null,
-    "sprite": "slurpuf-f",
-    "num": 685
+    "sprite": "sandaconda",
+    "num": 844
   },
   {
     "id": "polteageist",
@@ -900,6 +1065,81 @@
     "num": 869
   },
   {
+    "id": "mausholdfour",
+    "name": "イッカネズミ(4ひき)",
+    "types": [
+      "ノーマル"
+    ],
+    "ability": {
+      "id": "friend_guard",
+      "name": "Friend Guard",
+      "affectsTypes": false
+    },
+    "form": "Four",
+    "sprite": "mausholdfour",
+    "num": 925
+  },
+  {
+    "id": "garganacl",
+    "name": "キョジオーン",
+    "types": [
+      "いわ"
+    ],
+    "ability": {
+      "id": "purifying_salt",
+      "name": "きよめのしお",
+      "affectsTypes": true
+    },
+    "form": null,
+    "sprite": "garganacl",
+    "num": 934
+  },
+  {
+    "id": "bellibolt",
+    "name": "ハラバリー",
+    "types": [
+      "でんき"
+    ],
+    "ability": {
+      "id": "electromorphosis",
+      "name": "でんきにかえる",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "bellibolt",
+    "num": 939
+  },
+  {
+    "id": "espathra",
+    "name": "クエスパトラ",
+    "types": [
+      "エスパー"
+    ],
+    "ability": {
+      "id": "opportunist",
+      "name": "びんじょう",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "espathra",
+    "num": 956
+  },
+  {
+    "id": "palafin",
+    "name": "イルカマン",
+    "types": [
+      "みず"
+    ],
+    "ability": {
+      "id": "zerotohero",
+      "name": "マイティチェンジ",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "palafin",
+    "num": 964
+  },
+  {
     "id": "orthworm",
     "name": "ミミズズ",
     "types": [
@@ -913,380 +1153,5 @@
     "form": null,
     "sprite": "orthworm",
     "num": 968
-  },
-  {
-    "id": "lopunny",
-    "name": "ミミロップ",
-    "types": [
-      "ノーマル"
-    ],
-    "ability": {
-      "id": "cutecharm",
-      "name": "メロメロボディ",
-      "affectsTypes": false
-    },
-    "form": null,
-    "sprite": "lopunny",
-    "num": 428
-  },
-  {
-    "id": "watchog",
-    "name": "ミルホッグ",
-    "types": [
-      "ノーマル"
-    ],
-    "ability": {
-      "id": "illuminate",
-      "name": "はっこう",
-      "affectsTypes": false
-    },
-    "form": null,
-    "sprite": "watchog",
-    "num": 505
-  },
-  {
-    "id": "milotic",
-    "name": "ミロカロス",
-    "types": [
-      "みず"
-    ],
-    "ability": {
-      "id": "marvelscale",
-      "name": "ふしぎなうろこ",
-      "affectsTypes": false
-    },
-    "form": null,
-    "sprite": "milotic",
-    "num": 350
-  },
-  {
-    "id": "absolmega",
-    "name": "メガアブソル",
-    "types": [
-      "あく"
-    ],
-    "ability": {
-      "id": "magicbounce",
-      "name": "マジックミラー",
-      "affectsTypes": false
-    },
-    "form": "Mega",
-    "sprite": "absol-mega",
-    "num": 359
-  },
-  {
-    "id": "glaliemega",
-    "name": "メガオニゴーリ",
-    "types": [
-      "こおり"
-    ],
-    "ability": {
-      "id": "refrigerate",
-      "name": "フリーズスキン",
-      "affectsTypes": false
-    },
-    "form": "Mega",
-    "sprite": "glalie-mega",
-    "num": 362
-  },
-  {
-    "id": "blastoisemega",
-    "name": "メガカメックス",
-    "types": [
-      "みず"
-    ],
-    "ability": {
-      "id": "megalauncher",
-      "name": "メガランチャー",
-      "affectsTypes": false
-    },
-    "form": "Mega",
-    "sprite": "blastoise-mega",
-    "num": 9
-  },
-  {
-    "id": "kangaskhanmega",
-    "name": "メガガルーラ",
-    "types": [
-      "ノーマル"
-    ],
-    "ability": {
-      "id": "parentalbond",
-      "name": "おやこあい",
-      "affectsTypes": false
-    },
-    "form": "Mega",
-    "sprite": "kangaskhan-mega",
-    "num": 115
-  },
-  {
-    "id": "banettemega",
-    "name": "メガジュペッタ",
-    "types": [
-      "ゴースト"
-    ],
-    "ability": {
-      "id": "prankster",
-      "name": "いたずらごころ",
-      "affectsTypes": false
-    },
-    "form": "Mega",
-    "sprite": "banette-mega",
-    "num": 354
-  },
-  {
-    "id": "meganium",
-    "name": "メガニウム",
-    "types": [
-      "くさ"
-    ],
-    "ability": {
-      "id": "overgrow",
-      "name": "しんりょく",
-      "affectsTypes": false
-    },
-    "form": null,
-    "sprite": "meganium",
-    "num": 154
-  },
-  {
-    "id": "meowsticmmega",
-    "name": "メガニャオニクス(オス)",
-    "types": [
-      "エスパー"
-    ],
-    "ability": {
-      "id": "trace",
-      "name": "トレース",
-      "affectsTypes": false
-    },
-    "form": "M-Mega",
-    "sprite": "meowsticm-mega",
-    "num": 678
-  },
-  {
-    "id": "alakazammega",
-    "name": "メガフーディン",
-    "types": [
-      "エスパー"
-    ],
-    "ability": {
-      "id": "trace",
-      "name": "トレース",
-      "affectsTypes": false
-    },
-    "form": "Mega",
-    "sprite": "alakazam-mega",
-    "num": 65
-  },
-  {
-    "id": "aggronmega",
-    "name": "メガボスゴドラ",
-    "types": [
-      "はがね"
-    ],
-    "ability": {
-      "id": "filter",
-      "name": "フィルター",
-      "affectsTypes": true
-    },
-    "form": "Mega",
-    "sprite": "aggron-mega",
-    "num": 306
-  },
-  {
-    "id": "manectricmega",
-    "name": "メガライボルト",
-    "types": [
-      "でんき"
-    ],
-    "ability": {
-      "id": "intimidate",
-      "name": "いかく",
-      "affectsTypes": false
-    },
-    "form": "Mega",
-    "sprite": "manectric-mega",
-    "num": 310
-  },
-  {
-    "id": "simisage",
-    "name": "ヤナッキー",
-    "types": [
-      "くさ"
-    ],
-    "ability": {
-      "id": "gluttony",
-      "name": "くいしんぼう",
-      "affectsTypes": false
-    },
-    "form": null,
-    "sprite": "simisage",
-    "num": 512
-  },
-  {
-    "id": "raichu",
-    "name": "ライチュウ",
-    "types": [
-      "でんき"
-    ],
-    "ability": {
-      "id": "lightning_rod",
-      "name": "ひらいしん",
-      "affectsTypes": true
-    },
-    "form": null,
-    "sprite": "raichu",
-    "num": 26
-  },
-  {
-    "id": "manectric",
-    "name": "ライボルト",
-    "types": [
-      "でんき"
-    ],
-    "ability": {
-      "id": "lightning_rod",
-      "name": "ひらいしん",
-      "affectsTypes": true
-    },
-    "form": null,
-    "sprite": "manectric",
-    "num": 310
-  },
-  {
-    "id": "rampardos",
-    "name": "ラムパルド",
-    "types": [
-      "いわ"
-    ],
-    "ability": {
-      "id": "moldbreaker",
-      "name": "かたやぶり",
-      "affectsTypes": false
-    },
-    "form": null,
-    "sprite": "rampardos",
-    "num": 409
-  },
-  {
-    "id": "reuniclus",
-    "name": "ランクルス",
-    "types": [
-      "エスパー"
-    ],
-    "ability": {
-      "id": "regenerator",
-      "name": "さいせいりょく",
-      "affectsTypes": false
-    },
-    "form": null,
-    "sprite": "reuniclus",
-    "num": 579
-  },
-  {
-    "id": "leafeon",
-    "name": "リーフィア",
-    "types": [
-      "くさ"
-    ],
-    "ability": {
-      "id": "leafguard",
-      "name": "リーフガード",
-      "affectsTypes": false
-    },
-    "form": null,
-    "sprite": "leafeon",
-    "num": 470
-  },
-  {
-    "id": "lycanrocdusk",
-    "name": "ルガルガン(たそがれ)",
-    "types": [
-      "いわ"
-    ],
-    "ability": {
-      "id": "toughclaws",
-      "name": "かたいツメ",
-      "affectsTypes": false
-    },
-    "form": "Dusk",
-    "sprite": "lycanrocdusk",
-    "num": 745
-  },
-  {
-    "id": "lycanroc",
-    "name": "ルガルガン(まひる)",
-    "types": [
-      "いわ"
-    ],
-    "ability": {
-      "id": "keeneye",
-      "name": "するどいめ",
-      "affectsTypes": false
-    },
-    "form": null,
-    "sprite": "lycanroc",
-    "num": 745
-  },
-  {
-    "id": "lycanrocmidnight",
-    "name": "ルガルガン(まよなか)",
-    "types": [
-      "いわ"
-    ],
-    "ability": {
-      "id": "keeneye",
-      "name": "するどいめ",
-      "affectsTypes": false
-    },
-    "form": "Midnight",
-    "sprite": "lycanrocmidnight",
-    "num": 745
-  },
-  {
-    "id": "liepard",
-    "name": "レパルダス",
-    "types": [
-      "あく"
-    ],
-    "ability": {
-      "id": "limber",
-      "name": "じゅうなん",
-      "affectsTypes": false
-    },
-    "form": null,
-    "sprite": "liepard",
-    "num": 510
-  },
-  {
-    "id": "luxray",
-    "name": "レントラー",
-    "types": [
-      "でんき"
-    ],
-    "ability": {
-      "id": "intimidate",
-      "name": "いかく",
-      "affectsTypes": false
-    },
-    "form": null,
-    "sprite": "luxray",
-    "num": 405
-  },
-  {
-    "id": "conkeldurr",
-    "name": "ローブシン",
-    "types": [
-      "かくとう"
-    ],
-    "ability": {
-      "id": "guts",
-      "name": "こんじょう",
-      "affectsTypes": false
-    },
-    "form": null,
-    "sprite": "conkeldurr",
-    "num": 534
   }
 ]

@@ -1737,6 +1737,22 @@ select {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.evo-pad {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.evo-pad .evo-ask {
+  justify-self: start;
+  min-width: 12rem;
+}
+
+.evo-pad .evo-ask.is-used,
+.evo-pad .evo-ask:disabled {
+  opacity: 0.55;
+}
+
 .action-switch button {
   appearance: none;
   border: 2px solid var(--line);

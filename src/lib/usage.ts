@@ -92,7 +92,10 @@ export function sortByUsageThenName(a: Pokemon, b: Pokemon): number {
   const ua = getPokemonUsage(a.id)?.usage ?? -1
   const ub = getPokemonUsage(b.id)?.usage ?? -1
   if (ub !== ua) return ub - ua
-  return a.name.localeCompare(b.name, 'ja')
+  const an = a.num ?? Number.POSITIVE_INFINITY
+  const bn = b.num ?? Number.POSITIVE_INFINITY
+  if (an !== bn) return an - bn
+  return a.id.localeCompare(b.id)
 }
 
 export function filterAndSortCompetitivePick(
