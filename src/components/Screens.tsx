@@ -171,37 +171,6 @@ function TypeMatchupGrid({ pokemon }: { pokemon: Pokemon }) {
   )
 }
 
-/** 候補タイル用：弱点だけ一行で表示 */
-function TileWeaknesses({ pokemon }: { pokemon: Pokemon }) {
-  const weak = useMemo(
-    () =>
-      typeMatchupRows(pokemon).filter(
-        (row) => row.label === 'super' || row.label === 'double_super',
-      ),
-    [pokemon],
-  )
-  return (
-    <span className="tile-weak" aria-label="弱点">
-      <span className="tile-weak-label">弱点</span>
-      {weak.length === 0 ? (
-        <span className="tile-weak-none">なし</span>
-      ) : (
-        weak.map((w) => (
-          <span
-            key={w.type}
-            className={`tile-weak-chip result-${w.label}`}
-            style={{ background: TYPE_COLORS[w.type] }}
-            title={`${w.type}：${EFFECTIVENESS_LABEL_JA[w.label]}`}
-          >
-            {w.type}
-            <small aria-hidden>{RESULT_MARK[w.label]}</small>
-          </span>
-        ))
-      )}
-    </span>
-  )
-}
-
 function TypeMatchupSheet({
   pokemon,
   onClose,
@@ -1336,7 +1305,7 @@ export function OnlineWatchScreen({
               <button
                 key={p.id}
                 type="button"
-                className="poke-tile has-weak"
+                className="poke-tile"
                 onClick={() => setInspectCand(p)}
                 aria-label={`${p.name}のタイプ相性を見る`}
               >
@@ -1347,7 +1316,6 @@ export function OnlineWatchScreen({
                     <TypeBadge key={t} type={t} />
                   ))}
                 </span>
-                <TileWeaknesses pokemon={p} />
               </button>
             ))}
           </div>
@@ -2291,7 +2259,7 @@ export function BattleScreen({
                 <button
                   key={p.id}
                   type="button"
-                  className={`poke-tile has-weak ${used ? 'is-used' : ''}`}
+                  className={`poke-tile ${used ? 'is-used' : ''}`}
                   disabled={used}
                   onClick={() => {
                     if (!canActOnTile) {
@@ -2321,7 +2289,6 @@ export function BattleScreen({
                       <TypeBadge key={t} type={t} />
                     ))}
                   </span>
-                  <TileWeaknesses pokemon={p} />
                   {used && <small className="tile-used">比較済</small>}
                 </button>
               )

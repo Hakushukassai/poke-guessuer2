@@ -1596,52 +1596,6 @@ select {
   align-content: start;
 }
 
-.tile-weak {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 0.2rem;
-  width: 100%;
-  margin-top: 0.15rem;
-}
-
-.tile-weak-label {
-  font-size: 0.58rem;
-  font-weight: 800;
-  color: var(--muted);
-  letter-spacing: 0.02em;
-}
-
-.tile-weak-none {
-  font-size: 0.58rem;
-  font-weight: 700;
-  color: var(--muted);
-}
-
-.tile-weak-chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.1rem;
-  padding: 0.08rem 0.28rem;
-  border-radius: 999px;
-  border: 1px solid rgba(0, 0, 0, 0.18);
-  color: #fff;
-  font-size: 0.58rem;
-  font-weight: 800;
-  line-height: 1.1;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
-}
-
-.tile-weak-chip small {
-  font-size: 0.55rem;
-  font-weight: 900;
-}
-
-.poke-tile.has-weak {
-  align-content: start;
-}
-
 .candidate-browser {
   margin-top: 0.55rem;
   width: 100%;
