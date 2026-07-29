@@ -13,6 +13,7 @@ import {
   reducer,
   type DexPool,
   type GameOptions,
+  type QuizMode,
 } from './lib/game'
 import { makeRoomCode } from './lib/partyHost'
 import './App.css'
@@ -25,6 +26,7 @@ type Session =
       roomCode: string
       name: string
       pool: DexPool
+      quizMode: QuizMode
       isHost: boolean
     }
 
@@ -39,6 +41,7 @@ function App() {
           roomCode={session.roomCode}
           displayName={session.name}
           pool={session.pool}
+          quizMode={session.quizMode}
           isHost={session.isHost}
           onLeave={() => setSession({ kind: 'home' })}
         />
@@ -55,21 +58,23 @@ function App() {
             setSession({ kind: 'local' })
             dispatch({ type: 'START', pool, names, options, quizMode })
           }}
-          onCreateOnline={(pool, name) => {
+          onCreateOnline={(pool, name, quizMode) => {
             setSession({
               kind: 'online',
               roomCode: makeRoomCode(),
               name: resolvedOnlineName(name, true),
               pool,
+              quizMode,
               isHost: true,
             })
           }}
-          onJoinOnline={(roomCode, name) => {
+          onJoinOnline={(roomCode, name, quizMode) => {
             setSession({
               kind: 'online',
               roomCode: roomCode.toUpperCase(),
               name: resolvedOnlineName(name, false),
               pool: 'champions',
+              quizMode,
               isHost: false,
             })
           }}

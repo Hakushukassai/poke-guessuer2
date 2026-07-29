@@ -48,6 +48,21 @@
     "num": 947
   },
   {
+    "id": "absol",
+    "name": "アブソル",
+    "types": [
+      "あく"
+    ],
+    "ability": {
+      "id": "pressure",
+      "name": "Pressure",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "absol",
+    "num": 359
+  },
+  {
     "id": "brutebonnet",
     "name": "アラブルタケ",
     "types": [
@@ -62,6 +77,36 @@
     "form": null,
     "sprite": "brutebonnet",
     "num": 986
+  },
+  {
+    "id": "arceusdark",
+    "name": "アルセウス(Dark)",
+    "types": [
+      "あく"
+    ],
+    "ability": {
+      "id": "multitype",
+      "name": "Multitype",
+      "affectsTypes": false
+    },
+    "form": "Dark",
+    "sprite": "arceusdark",
+    "num": 493
+  },
+  {
+    "id": "arceusghost",
+    "name": "アルセウス(Ghost)",
+    "types": [
+      "ゴースト"
+    ],
+    "ability": {
+      "id": "multitype",
+      "name": "Multitype",
+      "affectsTypes": false
+    },
+    "form": "Ghost",
+    "sprite": "arceusghost",
+    "num": 493
   },
   {
     "id": "marowakalola",
@@ -112,6 +157,21 @@
     "num": 19
   },
   {
+    "id": "meowthalola",
+    "name": "アローラニャース",
+    "types": [
+      "あく"
+    ],
+    "ability": {
+      "id": "pickup",
+      "name": "Pickup",
+      "affectsTypes": false
+    },
+    "form": "Alola",
+    "sprite": "meowth-alola",
+    "num": 52
+  },
+  {
     "id": "grimeralola",
     "name": "アローラベトベター",
     "types": [
@@ -142,6 +202,21 @@
     "form": "Alola",
     "sprite": "muk-alola",
     "num": 89
+  },
+  {
+    "id": "persianalola",
+    "name": "アローラペルシアン",
+    "types": [
+      "あく"
+    ],
+    "ability": {
+      "id": "fur_coat",
+      "name": "Fur Coat",
+      "affectsTypes": false
+    },
+    "form": "Alola",
+    "sprite": "persian-alola",
+    "num": 53
   },
   {
     "id": "raticatealola",
@@ -380,8 +455,23 @@
       "affectsTypes": false
     },
     "form": "Sensu",
-    "sprite": "oricoriosensu",
+    "sprite": "oricorio-sensu",
     "num": 741
+  },
+  {
+    "id": "maschiff",
+    "name": "オラチフ",
+    "types": [
+      "あく"
+    ],
+    "ability": {
+      "id": "intimidate",
+      "name": "Intimidate",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "maschiff",
+    "num": 942
   },
   {
     "id": "incineroar",
@@ -400,6 +490,21 @@
     "num": 727
   },
   {
+    "id": "shuppet",
+    "name": "カゲボウズ",
+    "types": [
+      "ゴースト"
+    ],
+    "ability": {
+      "id": "insomnia",
+      "name": "Insomnia",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "shuppet",
+    "num": 353
+  },
+  {
     "id": "malamar",
     "name": "カラマネロ",
     "types": [
@@ -414,6 +519,21 @@
     "form": null,
     "sprite": "malamar",
     "num": 687
+  },
+  {
+    "id": "corsolagalar",
+    "name": "ガラルサニーゴ",
+    "types": [
+      "ゴースト"
+    ],
+    "ability": {
+      "id": "weak_armor",
+      "name": "Weak Armor",
+      "affectsTypes": false
+    },
+    "form": "Galar",
+    "sprite": "corsola-galar",
+    "num": 222
   },
   {
     "id": "zigzagoongalar",
@@ -592,6 +712,36 @@
     "num": 681
   },
   {
+    "id": "nickit",
+    "name": "クスネ",
+    "types": [
+      "あく"
+    ],
+    "ability": {
+      "id": "run_away",
+      "name": "Run Away",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "nickit",
+    "num": 827
+  },
+  {
+    "id": "mightyena",
+    "name": "グラエナ",
+    "types": [
+      "あく"
+    ],
+    "ability": {
+      "id": "intimidate",
+      "name": "Intimidate",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "mightyena",
+    "num": 262
+  },
+  {
     "id": "greninja",
     "name": "ゲッコウガ",
     "types": [
@@ -620,7 +770,7 @@
       "affectsTypes": false
     },
     "form": "Bond",
-    "sprite": "greninjabond",
+    "sprite": "greninja-bond",
     "num": 658
   },
   {
@@ -636,7 +786,7 @@
       "affectsTypes": false
     },
     "form": "Ash",
-    "sprite": "greninjaash",
+    "sprite": "greninja-ash",
     "num": 658
   },
   {
@@ -768,6 +918,36 @@
     "num": 623
   },
   {
+    "id": "gimmighoul",
+    "name": "コレクレー",
+    "types": [
+      "ゴースト"
+    ],
+    "ability": {
+      "id": "rattled",
+      "name": "Rattled",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "gimmighoul",
+    "num": 999
+  },
+  {
+    "id": "gimmighoulroaming",
+    "name": "コレクレー(Roaming)",
+    "types": [
+      "ゴースト"
+    ],
+    "ability": {
+      "id": "run_away",
+      "name": "Run Away",
+      "affectsTypes": false
+    },
+    "form": "Roaming",
+    "sprite": "gimmighoulroaming",
+    "num": 999
+  },
+  {
     "id": "pangoro",
     "name": "ゴロンダ",
     "types": [
@@ -814,6 +994,36 @@
     "form": null,
     "sprite": "hydreigon",
     "num": 635
+  },
+  {
+    "id": "cursola",
+    "name": "サニゴーン",
+    "types": [
+      "ゴースト"
+    ],
+    "ability": {
+      "id": "weak_armor",
+      "name": "Weak Armor",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "cursola",
+    "num": 864
+  },
+  {
+    "id": "dusclops",
+    "name": "サマヨール",
+    "types": [
+      "ゴースト"
+    ],
+    "ability": {
+      "id": "pressure",
+      "name": "Pressure",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "dusclops",
+    "num": 356
   },
   {
     "id": "sharpedo",
@@ -926,6 +1136,51 @@
     "form": null,
     "sprite": "decidueye",
     "num": 724
+  },
+  {
+    "id": "banette",
+    "name": "ジュペッタ",
+    "types": [
+      "ゴースト"
+    ],
+    "ability": {
+      "id": "insomnia",
+      "name": "Insomnia",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "banette",
+    "num": 354
+  },
+  {
+    "id": "silvallydark",
+    "name": "シルヴァディ(Dark)",
+    "types": [
+      "あく"
+    ],
+    "ability": {
+      "id": "rks_system",
+      "name": "RKS System",
+      "affectsTypes": false
+    },
+    "form": "Dark",
+    "sprite": "silvallydark",
+    "num": 773
+  },
+  {
+    "id": "silvallyghost",
+    "name": "シルヴァディ(Ghost)",
+    "types": [
+      "ゴースト"
+    ],
+    "ability": {
+      "id": "rks_system",
+      "name": "RKS System",
+      "affectsTypes": false
+    },
+    "form": "Ghost",
+    "sprite": "silvallyghost",
+    "num": 773
   },
   {
     "id": "palossand",
@@ -1056,6 +1311,51 @@
     "num": 937
   },
   {
+    "id": "zorua",
+    "name": "ゾロア",
+    "types": [
+      "あく"
+    ],
+    "ability": {
+      "id": "illusion",
+      "name": "Illusion",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "zorua",
+    "num": 570
+  },
+  {
+    "id": "zoroark",
+    "name": "ゾロアーク",
+    "types": [
+      "あく"
+    ],
+    "ability": {
+      "id": "illusion",
+      "name": "Illusion",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "zoroark",
+    "num": 571
+  },
+  {
+    "id": "darkrai",
+    "name": "ダークライ",
+    "types": [
+      "あく"
+    ],
+    "ability": {
+      "id": "bad_dreams",
+      "name": "Bad Dreams",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "darkrai",
+    "num": 491
+  },
+  {
     "id": "shiftry",
     "name": "ダーテング",
     "types": [
@@ -1184,6 +1484,21 @@
     "num": 1012
   },
   {
+    "id": "purrloin",
+    "name": "チョロネコ",
+    "types": [
+      "あく"
+    ],
+    "ability": {
+      "id": "limber",
+      "name": "Limber",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "purrloin",
+    "num": 509
+  },
+  {
     "id": "tinglu",
     "name": "ディンルー",
     "types": [
@@ -1200,6 +1515,21 @@
     "num": 1003
   },
   {
+    "id": "cofagrigus",
+    "name": "デスカーン",
+    "types": [
+      "ゴースト"
+    ],
+    "ability": {
+      "id": "mummy",
+      "name": "Mummy",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "cofagrigus",
+    "num": 563
+  },
+  {
     "id": "runerigus",
     "name": "デスバーン",
     "types": [
@@ -1214,6 +1544,21 @@
     "form": null,
     "sprite": "runerigus",
     "num": 867
+  },
+  {
+    "id": "yamask",
+    "name": "デスマス",
+    "types": [
+      "ゴースト"
+    ],
+    "ability": {
+      "id": "mummy",
+      "name": "Mummy",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "yamask",
+    "num": 562
   },
   {
     "id": "ironjugulis",
@@ -1452,7 +1797,7 @@
       "affectsTypes": true
     },
     "form": "Dawn-Wings",
-    "sprite": "necrozmadawnwings",
+    "sprite": "necrozma-dawnwings",
     "num": 800
   },
   {
@@ -1486,6 +1831,21 @@
     "form": null,
     "sprite": "chienpao",
     "num": 1002
+  },
+  {
+    "id": "houndstone",
+    "name": "ハカドッグ",
+    "types": [
+      "ゴースト"
+    ],
+    "ability": {
+      "id": "fluffy",
+      "name": "もふもふ",
+      "affectsTypes": true
+    },
+    "form": null,
+    "sprite": "houndstone",
+    "num": 972
   },
   {
     "id": "pumpkaboo",
@@ -1772,8 +2132,38 @@
       "affectsTypes": false
     },
     "form": "Unbound",
-    "sprite": "hoopaunbound",
+    "sprite": "hoopa-unbound",
     "num": 720
+  },
+  {
+    "id": "thievul",
+    "name": "フォクスライ",
+    "types": [
+      "あく"
+    ],
+    "ability": {
+      "id": "run_away",
+      "name": "Run Away",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "thievul",
+    "num": 828
+  },
+  {
+    "id": "umbreon",
+    "name": "ブラッキー",
+    "types": [
+      "あく"
+    ],
+    "ability": {
+      "id": "synchronize",
+      "name": "Synchronize",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "umbreon",
+    "num": 197
   },
   {
     "id": "frillish",
@@ -1888,6 +2278,66 @@
     "num": 708
   },
   {
+    "id": "greavard",
+    "name": "ボチ",
+    "types": [
+      "ゴースト"
+    ],
+    "ability": {
+      "id": "fluffy",
+      "name": "もふもふ",
+      "affectsTypes": true
+    },
+    "form": null,
+    "sprite": "greavard",
+    "num": 971
+  },
+  {
+    "id": "poochyena",
+    "name": "ポチエナ",
+    "types": [
+      "あく"
+    ],
+    "ability": {
+      "id": "run_away",
+      "name": "Run Away",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "poochyena",
+    "num": 261
+  },
+  {
+    "id": "polteageist",
+    "name": "ポットデス",
+    "types": [
+      "ゴースト"
+    ],
+    "ability": {
+      "id": "weak_armor",
+      "name": "Weak Armor",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "polteageist",
+    "num": 855
+  },
+  {
+    "id": "polteageistantique",
+    "name": "ポットデス(Antique)",
+    "types": [
+      "ゴースト"
+    ],
+    "ability": {
+      "id": "weak_armor",
+      "name": "Weak Armor",
+      "affectsTypes": false
+    },
+    "form": "Antique",
+    "sprite": "polteageistantique",
+    "num": 855
+  },
+  {
     "id": "inkay",
     "name": "マーイーカ",
     "types": [
@@ -1952,6 +2402,21 @@
     "num": 461
   },
   {
+    "id": "mabosstiff",
+    "name": "マフィティフ",
+    "types": [
+      "あく"
+    ],
+    "ability": {
+      "id": "intimidate",
+      "name": "Intimidate",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "mabosstiff",
+    "num": 943
+  },
+  {
     "id": "spiritomb",
     "name": "ミカルゲ",
     "types": [
@@ -2014,6 +2479,51 @@
     "form": "Busted-Totem",
     "sprite": "mimikyubustedtotem",
     "num": 778
+  },
+  {
+    "id": "misdreavus",
+    "name": "ムウマ",
+    "types": [
+      "ゴースト"
+    ],
+    "ability": {
+      "id": "levitate",
+      "name": "ふゆう",
+      "affectsTypes": true
+    },
+    "form": null,
+    "sprite": "misdreavus",
+    "num": 200
+  },
+  {
+    "id": "mismagius",
+    "name": "ムウマージ",
+    "types": [
+      "ゴースト"
+    ],
+    "ability": {
+      "id": "levitate",
+      "name": "ふゆう",
+      "affectsTypes": true
+    },
+    "form": null,
+    "sprite": "mismagius",
+    "num": 429
+  },
+  {
+    "id": "absolmega",
+    "name": "メガアブソル",
+    "types": [
+      "あく"
+    ],
+    "ability": {
+      "id": "magic_bounce",
+      "name": "Magic Bounce",
+      "affectsTypes": false
+    },
+    "form": "Mega",
+    "sprite": "absol-mega",
+    "num": 359
   },
   {
     "id": "absolmegaz",
@@ -2144,6 +2654,21 @@
     "num": 609
   },
   {
+    "id": "banettemega",
+    "name": "メガジュペッタ",
+    "types": [
+      "ゴースト"
+    ],
+    "ability": {
+      "id": "prankster",
+      "name": "Prankster",
+      "affectsTypes": false
+    },
+    "form": "Mega",
+    "sprite": "banette-mega",
+    "num": 354
+  },
+  {
     "id": "scraftymega",
     "name": "メガズルズキン",
     "types": [
@@ -2158,6 +2683,21 @@
     "form": "Mega",
     "sprite": "scrafty-mega",
     "num": 560
+  },
+  {
+    "id": "darkraimega",
+    "name": "メガダークライ",
+    "types": [
+      "あく"
+    ],
+    "ability": {
+      "id": "bad_dreams",
+      "name": "Bad Dreams",
+      "affectsTypes": false
+    },
+    "form": "Mega",
+    "sprite": "darkrai-mega",
+    "num": 491
   },
   {
     "id": "tyranitarmega",
@@ -2320,6 +2860,36 @@
     "num": 1013
   },
   {
+    "id": "sinistea",
+    "name": "ヤバチャ",
+    "types": [
+      "ゴースト"
+    ],
+    "ability": {
+      "id": "weak_armor",
+      "name": "Weak Armor",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "sinistea",
+    "num": 854
+  },
+  {
+    "id": "sinisteaantique",
+    "name": "ヤバチャ(Antique)",
+    "types": [
+      "ゴースト"
+    ],
+    "ability": {
+      "id": "weak_armor",
+      "name": "Weak Armor",
+      "affectsTypes": false
+    },
+    "form": "Antique",
+    "sprite": "sinisteaantique",
+    "num": 854
+  },
+  {
     "id": "murkrow",
     "name": "ヤミカラス",
     "types": [
@@ -2368,6 +2938,36 @@
     "num": 478
   },
   {
+    "id": "dusknoir",
+    "name": "ヨノワール",
+    "types": [
+      "ゴースト"
+    ],
+    "ability": {
+      "id": "pressure",
+      "name": "Pressure",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "dusknoir",
+    "num": 477
+  },
+  {
+    "id": "duskull",
+    "name": "ヨマワル",
+    "types": [
+      "ゴースト"
+    ],
+    "ability": {
+      "id": "levitate",
+      "name": "ふゆう",
+      "affectsTypes": true
+    },
+    "form": null,
+    "sprite": "duskull",
+    "num": 355
+  },
+  {
     "id": "skeledirge",
     "name": "ラウドボーン",
     "types": [
@@ -2414,6 +3014,36 @@
     "form": null,
     "sprite": "lunala",
     "num": 792
+  },
+  {
+    "id": "spectrier",
+    "name": "レイスポス",
+    "types": [
+      "ゴースト"
+    ],
+    "ability": {
+      "id": "grim_neigh",
+      "name": "Grim Neigh",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "spectrier",
+    "num": 897
+  },
+  {
+    "id": "liepard",
+    "name": "レパルダス",
+    "types": [
+      "あく"
+    ],
+    "ability": {
+      "id": "limber",
+      "name": "Limber",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "liepard",
+    "num": 510
   },
   {
     "id": "rotom",

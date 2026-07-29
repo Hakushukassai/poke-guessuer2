@@ -20,7 +20,7 @@ export function onlineViewToGameState(view: OnlineClientView): GameState {
   return {
     phase,
     pool: view.pool,
-    quizMode: 'type',
+    quizMode: view.quizMode,
     names: view.names,
     options: { banEnabled: false, questionLimit: null },
     bannedTypes: [],

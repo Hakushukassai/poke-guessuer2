@@ -16,6 +16,21 @@
     "num": 730
   },
   {
+    "id": "inteleon",
+    "name": "インテレオン",
+    "types": [
+      "みず"
+    ],
+    "ability": {
+      "id": "torrent",
+      "name": "Torrent",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "inteleon",
+    "num": 818
+  },
+  {
     "id": "quaquaval",
     "name": "ウェーニバル",
     "types": [
@@ -30,6 +45,21 @@
     "form": null,
     "sprite": "quaquaval",
     "num": 914
+  },
+  {
+    "id": "cinderace",
+    "name": "エースバーン",
+    "types": [
+      "ほのお"
+    ],
+    "ability": {
+      "id": "blaze",
+      "name": "Blaze",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "cinderace",
+    "num": 815
   },
   {
     "id": "emboar",
@@ -64,6 +94,21 @@
     "num": 395
   },
   {
+    "id": "feraligatr",
+    "name": "オーダイル",
+    "types": [
+      "みず"
+    ],
+    "ability": {
+      "id": "torrent",
+      "name": "Torrent",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "feraligatr",
+    "num": 160
+  },
+  {
     "id": "incineroar",
     "name": "ガオガエン",
     "types": [
@@ -78,6 +123,21 @@
     "form": null,
     "sprite": "incineroar",
     "num": 727
+  },
+  {
+    "id": "blastoise",
+    "name": "カメックス",
+    "types": [
+      "みず"
+    ],
+    "ability": {
+      "id": "torrent",
+      "name": "Torrent",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "blastoise",
+    "num": 9
   },
   {
     "id": "greninja",
@@ -108,7 +168,7 @@
       "affectsTypes": false
     },
     "form": "Bond",
-    "sprite": "greninjabond",
+    "sprite": "greninja-bond",
     "num": 658
   },
   {
@@ -124,7 +184,7 @@
       "affectsTypes": false
     },
     "form": "Ash",
-    "sprite": "greninjaash",
+    "sprite": "greninja-ash",
     "num": 658
   },
   {
@@ -144,6 +204,51 @@
     "num": 392
   },
   {
+    "id": "rillaboom",
+    "name": "ゴリランダー",
+    "types": [
+      "くさ"
+    ],
+    "ability": {
+      "id": "overgrow",
+      "name": "Overgrow",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "rillaboom",
+    "num": 812
+  },
+  {
+    "id": "serperior",
+    "name": "ジャローダ",
+    "types": [
+      "くさ"
+    ],
+    "ability": {
+      "id": "overgrow",
+      "name": "Overgrow",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "serperior",
+    "num": 497
+  },
+  {
+    "id": "sceptile",
+    "name": "ジュカイン",
+    "types": [
+      "くさ"
+    ],
+    "ability": {
+      "id": "overgrow",
+      "name": "Overgrow",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "sceptile",
+    "num": 254
+  },
+  {
     "id": "decidueye",
     "name": "ジュナイパー",
     "types": [
@@ -160,6 +265,21 @@
     "num": 724
   },
   {
+    "id": "samurott",
+    "name": "ダイケンキ",
+    "types": [
+      "みず"
+    ],
+    "ability": {
+      "id": "torrent",
+      "name": "Torrent",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "samurott",
+    "num": 503
+  },
+  {
     "id": "torterra",
     "name": "ドダイトス",
     "types": [
@@ -174,6 +294,21 @@
     "form": null,
     "sprite": "torterra",
     "num": 389
+  },
+  {
+    "id": "typhlosion",
+    "name": "バクフーン",
+    "types": [
+      "ほのお"
+    ],
+    "ability": {
+      "id": "flash_fire",
+      "name": "もらいび",
+      "affectsTypes": true
+    },
+    "form": null,
+    "sprite": "typhlosion",
+    "num": 157
   },
   {
     "id": "blaziken",
@@ -336,6 +471,21 @@
     "num": 160
   },
   {
+    "id": "blastoisemega",
+    "name": "メガカメックス",
+    "types": [
+      "みず"
+    ],
+    "ability": {
+      "id": "mega_launcher",
+      "name": "Mega Launcher",
+      "affectsTypes": false
+    },
+    "form": "Mega",
+    "sprite": "blastoise-mega",
+    "num": 9
+  },
+  {
     "id": "greninjamega",
     "name": "メガゲッコウガ",
     "types": [
@@ -366,6 +516,21 @@
     "form": "Mega",
     "sprite": "sceptile-mega",
     "num": 254
+  },
+  {
+    "id": "meganium",
+    "name": "メガニウム",
+    "types": [
+      "くさ"
+    ],
+    "ability": {
+      "id": "overgrow",
+      "name": "Overgrow",
+      "affectsTypes": false
+    },
+    "form": null,
+    "sprite": "meganium",
+    "num": 154
   },
   {
     "id": "blazikenmega",

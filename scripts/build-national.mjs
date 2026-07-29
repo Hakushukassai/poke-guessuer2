@@ -1,5 +1,6 @@
 /**
  * Build src/data/pokemon-national.json from Pokemon Showdown pokedex.
+ * Includes both mono- and dual-type Pokemon.
  * Usage:
  *   curl -sL https://play.pokemonshowdown.com/data/pokedex.json -o /tmp/pokedex.json
  *   curl -sL https://raw.githubusercontent.com/fanzeyi/pokemon.json/master/pokedex.json -o /tmp/fanzeyi.json
@@ -125,7 +126,7 @@ function displayName(id, p) {
 
 const out = []
 for (const [id, p] of Object.entries(dex)) {
-  if (!p.types || p.types.length !== 2) continue
+  if (!p.types || (p.types.length !== 1 && p.types.length !== 2)) continue
   if (p.isNonstandard && SKIP_NON.has(p.isNonstandard)) continue
   if (String(p.forme || '')
     .toLowerCase()

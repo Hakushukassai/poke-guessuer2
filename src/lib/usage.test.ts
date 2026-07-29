@@ -75,7 +75,6 @@ describe('usage role filter / sort', () => {
 
   it('タイプ相性モードの名簿は使用率ソートしない（五十音のまま）', () => {
     const typeRoster = pokemonIn('champions', 'type')
-    // Type pool is prepared without competitive usage reorder in pokemonIn
     const names = typeRoster.map((p) => p.name)
     const sortedJa = [...names].sort((a, b) => a.localeCompare(b, 'ja'))
     expect(names).toEqual(sortedJa)

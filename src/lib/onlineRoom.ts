@@ -16,6 +16,7 @@ import {
   resolvePlayerName,
   type DexPool,
   type GameState,
+  type QuizMode,
 } from './game'
 
 export type OnlinePhase =
@@ -28,6 +29,7 @@ export type OnlinePhase =
 export interface OnlineRoomState {
   phase: OnlinePhase
   pool: DexPool
+  quizMode: QuizMode
   names: { p1: string; p2: string }
   picks: { p1: string | null; p2: string | null }
   /** Connection / peer ids seated as p1 / p2 */
@@ -46,6 +48,7 @@ export interface OnlineRoomState {
 export interface OnlineClientView {
   phase: OnlinePhase
   pool: DexPool
+  quizMode: QuizMode
   names: { p1: string; p2: string }
   you: PlayerId | null
   seatIds: { p1: string | null; p2: string | null }
@@ -68,9 +71,10 @@ export interface OnlineClientView {
 }
 
 export type ClientMessage =
-  | { type: 'claim'; name?: string; pool?: DexPool }
+  | { type: 'claim'; name?: string; pool?: DexPool; quizMode?: QuizMode }
   | { type: 'set_name'; name: string }
   | { type: 'set_pool'; pool: DexPool }
+  | { type: 'set_quiz_mode'; quizMode: QuizMode }
   | { type: 'pick'; pokemonId: string }
   | { type: 'probe'; moveType: PokemonType }
   | { type: 'dex_compare'; pivotId: string }
@@ -81,10 +85,14 @@ export type ServerMessage =
   | { type: 'state'; view: OnlineClientView }
   | { type: 'error'; message: string }
 
-export function createOnlineRoom(pool: DexPool = 'champions'): OnlineRoomState {
+export function createOnlineRoom(
+  pool: DexPool = 'champions',
+  quizMode: QuizMode = 'type',
+): OnlineRoomState {
   return {
     phase: 'lobby',
     pool,
+    quizMode,
     names: { ...DEFAULT_NAMES },
     picks: { p1: null, p2: null },
     seatIds: { p1: null, p2: null },
@@ -118,7 +126,7 @@ function toCountState(state: OnlineRoomState): GameState {
   return {
     phase,
     pool: state.pool,
-    quizMode: 'type',
+    quizMode: state.quizMode,
     names: state.names,
     options: { banEnabled: false, questionLimit: null },
     bannedTypes: [],
@@ -148,7 +156,7 @@ export function toClientView(
         p2: you === 'p2' ? state.picks.p2 : null,
       }
 
-  const rosterSize = pokemonIn(state.pool, 'type').length
+  const rosterSize = pokemonIn(state.pool, state.quizMode).length
   const countState = toCountState(state)
   const inMatch =
     state.phase === 'battle' ||
@@ -164,6 +172,7 @@ export function toClientView(
   return {
     phase: state.phase,
     pool: state.pool,
+    quizMode: state.quizMode,
     names: state.names,
     you,
     seatIds: state.seatIds,
@@ -273,8 +282,12 @@ export function applyClientMessage(
       }
 
       // Host (first seater / p1) can set pool while in lobby
-      if (seat === 'p1' && msg.pool && next.phase === 'lobby') {
-        next = { ...next, pool: msg.pool }
+      if (seat === 'p1' && next.phase === 'lobby') {
+        next = {
+          ...next,
+          pool: msg.pool ?? next.pool,
+          quizMode: msg.quizMode ?? next.quizMode,
+        }
       }
 
       return { state: maybeStartPicking(next) }
@@ -307,11 +320,24 @@ export function applyClientMessage(
       return { state: { ...state, pool: msg.pool } }
     }
 
+    case 'set_quiz_mode': {
+      const seat = seatOf(state, connectionId)
+      if (seat !== 'p1') return { state, error: '部屋主だけがモードを変えられます' }
+      if (state.phase !== 'lobby' && state.phase !== 'picking') {
+        return { state, error: '対戦中はモードを変えられません' }
+      }
+      if (state.phase === 'picking' && (state.picks.p1 || state.picks.p2)) {
+        return { state, error: '選出後はモードを変えられません' }
+      }
+      const nextPool = msg.quizMode === 'competitive' ? 'champions' : state.pool
+      return { state: { ...state, pool: nextPool, quizMode: msg.quizMode } }
+    }
+
     case 'pick': {
       const seat = seatOf(state, connectionId)
       if (!seat) return { state, error: '席がありません' }
       if (state.phase !== 'picking') return { state, error: '選出フェーズではありません' }
-      if (!getPokemon(msg.pokemonId, state.pool)) {
+      if (!getPokemon(msg.pokemonId, state.pool, state.quizMode)) {
         return { state, error: 'そのポケモンはこの図鑑にいません' }
       }
       if (state.picks[seat]) return { state, error: 'すでに選出済みです' }
@@ -339,7 +365,7 @@ export function applyClientMessage(
       if (!state.picks.p1 || !state.picks.p2) return { state, error: '選出が未完了です' }
 
       const targetId = state.picks[opponentOf(seat)]!
-      const target = getPokemon(targetId, state.pool)
+      const target = getPokemon(targetId, state.pool, state.quizMode)
       if (!target) return { state, error: '対象が見つかりません' }
 
       const { label } = calcEffectiveness(msg.moveType, target)
@@ -369,9 +395,11 @@ export function applyClientMessage(
       )
       if (already) return { state, error: '同じ基準でもう聞いています' }
 
-      const pivot = getPokemon(msg.pivotId, state.pool)
+      const pivot = getPokemon(msg.pivotId, state.pool, state.quizMode)
       const targetId = state.picks[opponentOf(seat)]
-      const target = targetId ? getPokemon(targetId, state.pool) : undefined
+      const target = targetId
+        ? getPokemon(targetId, state.pool, state.quizMode)
+        : undefined
       if (!pivot || !target || pivot.num == null || target.num == null) {
         return { state, error: '比較できません' }
       }

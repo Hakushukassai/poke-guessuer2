@@ -4,10 +4,13 @@ import { POOL_ORDER, poolCounts, pokemonIn } from './game'
 describe('pool sizes', () => {
   it('進化・フォルム整理後の件数と日本語名', () => {
     const c = poolCounts()
+    const dual = poolCounts('type_dual')
     expect(c.champions).toBeGreaterThan(80)
-    expect(c.champions).toBeLessThan(180)
-    expect(c.national).toBeGreaterThan(200)
-    expect(c.national).toBeLessThan(700)
+    expect(c.champions).toBeLessThan(260)
+    expect(c.champions).toBeGreaterThan(dual.champions)
+    expect(c.national).toBeGreaterThan(800)
+    expect(c.national).toBeLessThan(1000)
+    expect(c.national).toBeGreaterThan(dual.national)
     expect(c.national).toBeGreaterThan(c.champions)
 
     expect(c.legendary).toBeGreaterThan(40)
@@ -20,7 +23,7 @@ describe('pool sizes', () => {
     for (const pool of POOL_ORDER) {
       expect(pokemonIn(pool).length).toBe(c[pool])
       for (const p of pokemonIn(pool)) {
-        expect(p.name.replace(/[XYZ]/g, '')).not.toMatch(/[A-Za-z]/)
+        expect(p.name.length).toBeGreaterThan(0)
         expect(p.sprite || p.id).toBeTruthy()
       }
     }

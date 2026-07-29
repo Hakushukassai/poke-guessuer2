@@ -35,15 +35,17 @@ export type DexPool =
   | 'spooky'
 
 /** Type-chart deduction vs battle-knowledge deduction. */
-export type QuizMode = 'type' | 'competitive'
+export type QuizMode = 'type' | 'type_dual' | 'competitive'
 
 export const QUIZ_MODE_LABEL: Record<QuizMode, string> = {
-  type: 'タイプ相性',
+  type: 'タイプ相性（全部）',
+  type_dual: 'タイプ相性（複合のみ）',
   competitive: '対戦推理',
 }
 
 export const QUIZ_MODE_BLURB: Record<QuizMode, string> = {
-  type: '相性と図鑑番号で絞る',
+  type: '単タイプ込みで相性と図鑑番号',
+  type_dual: '複合タイプだけで相性と図鑑番号',
   competitive: '単タイプ込みで「設置ある？」',
 }
 
@@ -90,29 +92,38 @@ export const POOL_LABEL: Record<DexPool, string> = {
 
 export const POOL_BLURB: Record<DexPool, string> = {
   champions: '対戦でよく見る顔ぶれ',
-  national: '複合タイプぜんぶ',
+  national: '全国の単・複合タイプぜんぶ',
   legendary: '伝説・幻・パラドックスなど',
   starters: '御三家の最終進化',
   spooky: 'あくかゴーストを持つポケモン',
 }
 
 const championsDual = preparePool(championsData as Pokemon[])
-/** 対戦推理用: 複合 + 単タイプ（チャンピオンズ収録） */
-const championsCompetitive = preparePool([
+const championsAll = preparePool([
   ...(championsData as Pokemon[]),
   ...(championsMonoData as Pokemon[]),
 ])
+/** 対戦推理用: 複合 + 単タイプ（チャンピオンズ収録） */
+const championsCompetitive = championsAll
 
-const POOLS: Record<DexPool, Pokemon[]> = {
-  champions: championsDual,
+const ALL_POOLS: Record<DexPool, Pokemon[]> = {
+  champions: championsAll,
   national: preparePool(nationalData as Pokemon[]),
   legendary: preparePool(legendaryData as Pokemon[]),
   starters: preparePool(startersData as Pokemon[]),
   spooky: preparePool(spookyData as Pokemon[]),
 }
 
+const DUAL_POOLS: Record<DexPool, Pokemon[]> = {
+  champions: championsDual,
+  national: ALL_POOLS.national.filter((p) => p.types.length === 2),
+  legendary: ALL_POOLS.legendary.filter((p) => p.types.length === 2),
+  starters: ALL_POOLS.starters.filter((p) => p.types.length === 2),
+  spooky: ALL_POOLS.spooky.filter((p) => p.types.length === 2),
+}
+
 /** @deprecated use pokemonIn(pool) — kept for tests defaulting to champions */
-export const POKEMON = POOLS.champions
+export const POKEMON = ALL_POOLS.champions
 
 export function pokemonIn(
   pool: DexPool,
@@ -121,16 +132,20 @@ export function pokemonIn(
   if (pool === 'champions' && quizMode === 'competitive') {
     return championsCompetitive
   }
-  return POOLS[pool]
+  if (quizMode === 'type_dual') return DUAL_POOLS[pool]
+  return ALL_POOLS[pool]
 }
 
-export function poolCounts(): Record<DexPool, number> {
+export function poolCounts(
+  quizMode: QuizMode = 'type',
+): Record<DexPool, number> {
+  const pools = quizMode === 'type_dual' ? DUAL_POOLS : ALL_POOLS
   return {
-    champions: POOLS.champions.length,
-    national: POOLS.national.length,
-    legendary: POOLS.legendary.length,
-    starters: POOLS.starters.length,
-    spooky: POOLS.spooky.length,
+    champions: pools.champions.length,
+    national: pools.national.length,
+    legendary: pools.legendary.length,
+    starters: pools.starters.length,
+    spooky: pools.spooky.length,
   }
 }
 
@@ -324,8 +339,7 @@ export function filterCandidates(
       return stats.every((compare) => matchesStatCompare(poke, compare))
     }
 
-    // Type mode is dual-type deduction; skip any mono that slipped in.
-    if (poke.types.length !== 2) return false
+    if (state.quizMode === 'type_dual' && poke.types.length !== 2) return false
 
     const probes = probesAgainst(state, targetOwner)
     const compares = dexComparesBy(state, forPlayer)
@@ -449,10 +463,7 @@ export function reducer(state: GameState, action: Action): GameState {
     case 'PICK': {
       const pick = getPokemon(action.pokemonId, state.pool, state.quizMode)
       if (!pick || isTypeBanned(pick, state.bannedTypes)) return state
-      if (
-        state.quizMode === 'type' &&
-        pick.types.length !== 2
-      ) {
+      if (state.quizMode === 'type_dual' && pick.types.length !== 2) {
         return state
       }
       if (state.phase === 'pick_p1') {
@@ -475,7 +486,7 @@ export function reducer(state: GameState, action: Action): GameState {
     }
 
     case 'PROBE': {
-      if (state.quizMode !== 'type') return state
+      if (state.quizMode === 'competitive') return state
       if (state.phase !== 'battle' || !state.picks.p1 || !state.picks.p2) {
         return state
       }
@@ -501,7 +512,7 @@ export function reducer(state: GameState, action: Action): GameState {
     }
 
     case 'DEX_COMPARE': {
-      if (state.quizMode !== 'type') return state
+      if (state.quizMode === 'competitive') return state
       if (state.phase !== 'battle' || !state.picks.p1 || !state.picks.p2) {
         return state
       }

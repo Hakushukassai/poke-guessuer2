@@ -4,6 +4,7 @@ import {
   filterCandidates,
   getPokemon,
   initialState,
+  pokemonIn,
   reducer,
   type GameState,
 } from './game'
@@ -184,5 +185,30 @@ describe('filterCandidates', () => {
     expect(after.every((p) => (p.num ?? 0) > pivot.num!)).toBe(true)
     expect(after.find((p) => p.id === 'rotomwash')).toBeTruthy()
     expect(after.find((p) => p.id === 'garchomp')).toBeFalsy()
+  })
+
+  it('タイプ相性（全部）は単タイプを含み、複合のみモードは除外する', () => {
+    expect(pokemonIn('champions', 'type').some((p) => p.types.length === 1)).toBe(
+      true,
+    )
+    expect(pokemonIn('champions', 'type_dual').every((p) => p.types.length === 2)).toBe(
+      true,
+    )
+
+    let allMode = reducer(initialState(), {
+      type: 'START',
+      pool: 'champions',
+      quizMode: 'type',
+    })
+    allMode = reducer(allMode, { type: 'PICK', pokemonId: 'clefable' })
+    expect(allMode.picks.p1).toBe('clefable')
+
+    let dualMode = reducer(initialState(), {
+      type: 'START',
+      pool: 'champions',
+      quizMode: 'type_dual',
+    })
+    dualMode = reducer(dualMode, { type: 'PICK', pokemonId: 'clefable' })
+    expect(dualMode.picks.p1).toBeNull()
   })
 })

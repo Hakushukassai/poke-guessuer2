@@ -31,16 +31,21 @@ describe('competitive mode', () => {
     expect(getCompetitiveMeta('skarmory')?.traits.hazard_set).toBe(true)
   })
 
-  it('対戦推理だけ単タイプを含む', () => {
+  it('タイプ相性（全部）と対戦推理は単タイプを含み、複合のみは除外する', () => {
     const typePool = pokemonIn('champions', 'type')
+    const dualPool = pokemonIn('champions', 'type_dual')
     const compPool = pokemonIn('champions', 'competitive')
-    expect(typePool.every((p) => p.types.length === 2)).toBe(true)
+    expect(typePool.some((p) => p.types.length === 1)).toBe(true)
+    expect(dualPool.every((p) => p.types.length === 2)).toBe(true)
     expect(compPool.some((p) => p.types.length === 1)).toBe(true)
-    expect(compPool.length).toBeGreaterThan(typePool.length)
+    expect(typePool.length).toBeGreaterThan(dualPool.length)
     expect(getPokemon('clefable', 'champions', 'competitive')?.types).toEqual([
       'フェアリー',
     ])
-    expect(getPokemon('clefable', 'champions', 'type')).toBeUndefined()
+    expect(getPokemon('clefable', 'champions', 'type')?.types).toEqual([
+      'フェアリー',
+    ])
+    expect(getPokemon('clefable', 'champions', 'type_dual')).toBeUndefined()
   })
 
   it('イッカネズミは4ひきかぞくのみ', () => {

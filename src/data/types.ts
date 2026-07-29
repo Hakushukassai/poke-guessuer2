@@ -47,7 +47,7 @@ export interface PokemonAbility {
 export interface Pokemon {
   id: string
   name: string
-  /** 1 type (mono) or 2 types (dual). Type mode pools are dual-only. */
+  /** 1 type (mono) or 2 types (dual). */
   types: PokemonType[]
   ability: PokemonAbility
   form: string | null

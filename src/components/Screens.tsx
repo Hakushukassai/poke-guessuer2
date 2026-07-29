@@ -459,12 +459,14 @@ export type PlayMode = 'local' | 'online'
 
 function PoolPicker({
   pool,
+  quizMode = 'type',
   onChange,
 }: {
   pool: DexPool
+  quizMode?: QuizMode
   onChange: (pool: DexPool) => void
 }) {
-  const counts = poolCounts()
+  const counts = poolCounts(quizMode)
   const themeOpen = THEME_POOLS.includes(pool)
 
   return (
@@ -589,8 +591,8 @@ export function HomeScreen({
     options: GameOptions,
     quizMode: QuizMode,
   ) => void
-  onCreateOnline: (pool: DexPool, name: string) => void
-  onJoinOnline: (roomCode: string, name: string) => void
+  onCreateOnline: (pool: DexPool, name: string, quizMode: QuizMode) => void
+  onJoinOnline: (roomCode: string, name: string, quizMode: QuizMode) => void
   initialNames?: { p1: string; p2: string }
 }) {
   const [mode, setMode] = useState<PlayMode>('local')
@@ -623,7 +625,9 @@ export function HomeScreen({
         <p className="home-line">
           {quizMode === 'competitive'
             ? '技・特性・速さで相手のポケモンを絞って当てる。'
-            : '相手の複合タイプを、相性と図鑑番号で絞って当てる。'}
+            : quizMode === 'type_dual'
+              ? '複合タイプだけを、相性と図鑑番号で絞って当てる。'
+              : '単タイプ込みで、相性と図鑑番号から相手を当てる。'}
         </p>
 
         <div className="mode-switch" role="group" aria-label="プレイ方式">
@@ -671,7 +675,7 @@ export function HomeScreen({
             </div>
 
             <div className="quiz-mode-switch" role="group" aria-label="推理モード">
-              {(['type', 'competitive'] as QuizMode[]).map((qm) => (
+              {(['type', 'type_dual', 'competitive'] as QuizMode[]).map((qm) => (
                 <button
                   key={qm}
                   type="button"
@@ -687,8 +691,8 @@ export function HomeScreen({
               ))}
             </div>
 
-            {quizMode === 'type' ? (
-              <PoolPicker pool={pool} onChange={setPool} />
+            {quizMode !== 'competitive' ? (
+              <PoolPicker pool={pool} quizMode={quizMode} onChange={setPool} />
             ) : (
               <p className="pool-locked">
                 プールは <strong>チャンピオンズ</strong> 固定 · 複合＋単タイプ
@@ -727,16 +731,30 @@ export function HomeScreen({
               />
             </label>
 
-            <PoolPicker pool={pool} onChange={setPool} />
+            <div className="quiz-mode-switch" role="group" aria-label="オンライン推理モード">
+              {(['type', 'type_dual'] as QuizMode[]).map((qm) => (
+                <button
+                  key={qm}
+                  type="button"
+                  className={quizMode === qm ? 'is-on' : ''}
+                  onClick={() => setQuizMode(qm)}
+                >
+                  <strong>{QUIZ_MODE_LABEL[qm]}</strong>
+                  <small>{QUIZ_MODE_BLURB[qm]}</small>
+                </button>
+              ))}
+            </div>
+
+            <PoolPicker pool={pool} quizMode={quizMode} onChange={setPool} />
             <p className="online-note">
-              ネット対戦はタイプ相性モードのみ。端末同士を WebRTC
+              ネット対戦はタイプ相性モードのみ。単タイプ込み / 複合のみを選べます。端末同士を WebRTC
               でつなぎます（部屋主はタブを開いたまま）。
             </p>
 
             <button
               type="button"
               className="btn primary big"
-              onClick={() => onCreateOnline(pool, onlineName)}
+              onClick={() => onCreateOnline(pool, onlineName, quizMode)}
             >
               部屋をつくる
             </button>
@@ -755,7 +773,7 @@ export function HomeScreen({
                 type="button"
                 className="btn"
                 disabled={joinCode.trim().length < 4}
-                onClick={() => onJoinOnline(joinCode.trim(), onlineName)}
+                onClick={() => onJoinOnline(joinCode.trim(), onlineName, quizMode)}
               >
                 参加
               </button>
@@ -776,7 +794,9 @@ export function HomeScreen({
             <p>
               {quizMode === 'competitive'
                 ? 'チャンピオンズ（単タイプ含む）から選出。公開タイプバンや質問上限は任意'
-                : '基本はチャンピオンズ／全国。公開タイプバンや質問上限は任意'}
+                : quizMode === 'type_dual'
+                  ? '基本はチャンピオンズ／全国の複合タイプのみ。公開タイプバンや質問上限は任意'
+                  : '基本はチャンピオンズ／全国の単・複合タイプ。公開タイプバンや質問上限は任意'}
             </p>
           </div>
         </li>

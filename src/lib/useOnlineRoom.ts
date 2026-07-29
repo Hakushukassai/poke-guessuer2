@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import Peer, { type DataConnection } from 'peerjs'
-import type { DexPool } from './game'
+import type { DexPool, QuizMode } from './game'
 import {
   applyClientMessage,
   createOnlineRoom,
@@ -19,6 +19,7 @@ type Options = {
   isHost: boolean
   displayName: string
   pool: DexPool
+  quizMode: QuizMode
 }
 
 function parseServerMessage(raw: unknown): ServerMessage | null {
@@ -36,6 +37,7 @@ export function useOnlineRoom({
   isHost,
   displayName,
   pool,
+  quizMode,
 }: Options) {
   const [view, setView] = useState<OnlineClientView | null>(null)
   const [error, setError] = useState<string | null>(null)
@@ -44,13 +46,15 @@ export function useOnlineRoom({
   const peerRef = useRef<Peer | null>(null)
   const guestConnRef = useRef<DataConnection | null>(null)
   const hostConnRef = useRef<DataConnection | null>(null)
-  const roomRef = useRef<OnlineRoomState>(createOnlineRoom(pool))
+  const roomRef = useRef<OnlineRoomState>(createOnlineRoom(pool, quizMode))
   const hostIdRef = useRef<string>('')
   const pendingClaim = useRef<ClientMessage | null>(null)
   const displayNameRef = useRef(displayName)
   const poolRef = useRef(pool)
+  const quizModeRef = useRef(quizMode)
   displayNameRef.current = displayName
   poolRef.current = pool
+  quizModeRef.current = quizMode
 
   const pushHostView = useCallback(() => {
     const you = seatOf(roomRef.current, hostIdRef.current)
@@ -120,11 +124,12 @@ export function useOnlineRoom({
   )
 
   const claim = useCallback(
-    (opts: { name?: string; pool?: DexPool }) => {
+    (opts: { name?: string; pool?: DexPool; quizMode?: QuizMode }) => {
       const msg: ClientMessage = {
         type: 'claim',
         name: opts.name,
         pool: opts.pool,
+        quizMode: opts.quizMode,
       }
       pendingClaim.current = msg
       send(msg)
@@ -239,6 +244,7 @@ export function useOnlineRoom({
           type: 'claim' as const,
           name: displayNameRef.current,
           pool: poolRef.current,
+          quizMode: quizModeRef.current,
         }
         pendingClaim.current = null
         applyAsHostRef.current(id, claimMsg)

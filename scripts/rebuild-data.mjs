@@ -1,5 +1,6 @@
 /**
  * Rebuild national dex JSON, Japanese names, and evolution index.
+ * Includes both mono- and dual-type Pokemon.
  *
  * Prerequisites:
  *   curl -sL https://play.pokemonshowdown.com/data/pokedex.json -o /tmp/pokedex.json
@@ -408,7 +409,7 @@ function buildEntry(id, p) {
 // --- national ---
 const national = []
 for (const [id, p] of Object.entries(dex)) {
-  if (!p.types || p.types.length !== 2) continue
+  if (!p.types || (p.types.length !== 1 && p.types.length !== 2)) continue
   if (p.isNonstandard && SKIP_NON.has(p.isNonstandard)) continue
   if (String(p.forme || '')
     .toLowerCase()

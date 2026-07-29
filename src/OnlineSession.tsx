@@ -7,7 +7,7 @@ import {
   ResultScreen,
   WaitingPanel,
 } from './components/Screens'
-import type { DexPool } from './lib/game'
+import type { DexPool, QuizMode } from './lib/game'
 import { resolvePlayerName, DEFAULT_NAMES } from './lib/game'
 import { onlineViewToGameState, waitingCopy } from './lib/onlineView'
 import { useOnlineRoom } from './lib/useOnlineRoom'
@@ -16,12 +16,14 @@ export function OnlineSession({
   roomCode,
   displayName,
   pool,
+  quizMode,
   isHost,
   onLeave,
 }: {
   roomCode: string
   displayName: string
   pool: DexPool
+  quizMode: QuizMode
   isHost: boolean
   onLeave: () => void
 }) {
@@ -30,14 +32,16 @@ export function OnlineSession({
     isHost,
     displayName,
     pool,
+    quizMode,
   })
 
   useEffect(() => {
     claim({
       name: displayName,
       pool: isHost ? pool : undefined,
+      quizMode: isHost ? quizMode : undefined,
     })
-  }, [claim, displayName, pool, isHost])
+  }, [claim, displayName, pool, quizMode, isHost])
 
   if (!connected || !view || !view.you) {
     return (
