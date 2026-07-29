@@ -476,6 +476,61 @@ select {
   color: var(--muted);
 }
 
+.rival-candidates {
+  border: 3px solid var(--line);
+  border-radius: 14px;
+  padding: 0.7rem 0.7rem 0.55rem;
+  background: #fff;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.rival-cand-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: space-between;
+}
+
+.rival-cand-head h3 {
+  margin: 0;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+}
+
+.rival-cand-head h3 strong {
+  font-size: 1.15rem;
+  color: var(--accent);
+}
+
+.rival-cand-head input[type='search'] {
+  flex: 1 1 9rem;
+  max-width: 16rem;
+  background: #fff;
+  border: 2px solid var(--line);
+  border-radius: 10px;
+  padding: 0.4rem 0.55rem;
+  font: inherit;
+  font-size: 0.85rem;
+}
+
+.poke-tray.rival-tray {
+  max-height: min(42vh, 420px);
+}
+
+.poke-tile.is-static {
+  cursor: default;
+  pointer-events: none;
+}
+
+.poke-tile.is-static:hover {
+  transform: none;
+  box-shadow: none;
+}
+
 .secret-pick {
   border: 3px solid var(--line);
   border-radius: 14px;

@@ -48,6 +48,7 @@ import {
 } from '../lib/competitive'
 import { calcEffectiveness } from '../lib/effectiveness'
 import type { OnlineClientView } from '../lib/onlineRoom'
+import { onlineViewToGameState } from '../lib/onlineView'
 import {
   ROLE_FILTERS,
   filterAndSortCompetitivePick,
@@ -1017,6 +1018,16 @@ export function OnlineWatchScreen({
     : null
   const probesOnYou = view.probes.filter((p) => p.by !== you)
   const [pulse, setPulse] = useState(0)
+  const gameState = useMemo(() => onlineViewToGameState(view), [view])
+  const rivalCandidates = useMemo(
+    () => filterCandidates(gameState, active),
+    [gameState, active],
+  )
+  const [candQuery, setCandQuery] = useState('')
+  const visibleRival = useMemo(() => {
+    const q = candQuery.trim()
+    return rivalCandidates.filter((p) => !q || p.name.includes(q))
+  }, [rivalCandidates, candQuery])
 
   useEffect(() => {
     setPulse((n) => n + 1)
@@ -1042,7 +1053,7 @@ export function OnlineWatchScreen({
             <i />
             <i />
           </span>
-          相手が絞っている間も、自分のタイプと公開メモは見ておけるよ
+          相手の候補リストは質問のたびに減っていくよ
         </p>
       </header>
 
@@ -1053,6 +1064,39 @@ export function OnlineWatchScreen({
         you={you}
         activePlayer={active}
       />
+
+      <section className="rival-candidates" aria-label="相手の候補">
+        <header className="rival-cand-head">
+          <h3>
+            {playerLabel(active, view.names)} の候補
+            <strong>{rivalCandidates.length}</strong>
+          </h3>
+          <input
+            type="search"
+            placeholder="名前で探す"
+            value={candQuery}
+            onChange={(e) => setCandQuery(e.target.value)}
+            aria-label="相手の候補を名前で探す"
+          />
+        </header>
+        {visibleRival.length === 0 ? (
+          <p className="empty-panel">条件に合う候補がない</p>
+        ) : (
+          <div className="poke-tray compact rival-tray">
+            {visibleRival.map((p) => (
+              <div key={p.id} className="poke-tile is-static">
+                <PokemonSprite pokemon={p} name={p.name} size={56} />
+                <span className="poke-name">{p.name}</span>
+                <span className="type-row">
+                  {p.types.map((t) => (
+                    <TypeBadge key={t} type={t} />
+                  ))}
+                </span>
+              </div>
+            ))}
+          </div>
+        )}
+      </section>
 
       {myPokemon && (
         <SecretPickCard pokemon={myPokemon} probesOnYou={probesOnYou} />
