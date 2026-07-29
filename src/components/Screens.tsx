@@ -720,7 +720,8 @@ export function HomeScreen({
 
             <PoolPicker pool={pool} onChange={setPool} />
             <p className="online-note">
-              ネット対戦はタイプ相性モードのみ。対戦推理は同じ端末で。
+              ネット対戦はタイプ相性モードのみ。端末同士を WebRTC
+              でつなぎます（部屋主はタブを開いたまま）。
             </p>
 
             <button
@@ -751,7 +752,8 @@ export function HomeScreen({
               </button>
             </div>
             <p className="online-note">
-              別端末の相手に部屋コードを伝えてね。先に部屋をつくった人が先攻。
+              別端末の相手に部屋コードを伝えてね。先に部屋をつくった人が先攻。通話は
+              Discord など別アプリでOK。
             </p>
           </>
         )}

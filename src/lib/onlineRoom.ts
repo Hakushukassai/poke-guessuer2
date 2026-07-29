@@ -27,7 +27,7 @@ export interface OnlineRoomState {
   pool: DexPool
   names: { p1: string; p2: string }
   picks: { p1: string | null; p2: string | null }
-  /** PartyKit connection ids seated as p1 / p2 */
+  /** Connection / peer ids seated as p1 / p2 */
   seatIds: { p1: string | null; p2: string | null }
   currentPlayer: PlayerId
   probes: ProbeRecord[]

@@ -11,7 +11,7 @@
 
 https://hakushukassai.github.io/poke-guessuer2/
 
-「同じ端末」で遊べます。インターネット対戦は PartyKit サーバが別途必要なので、Pages だけでは使えません。
+「同じ端末」でも「インターネット」（WebRTC）でも遊べます。インターネットは部屋主のタブが開いている必要があります。
 
 リポジトリの **Settings → Pages → Source** を **GitHub Actions** にしてください（初回のみ）。`main` へ push すると自動デプロイされます。
 
@@ -21,12 +21,13 @@ https://hakushukassai.github.io/poke-guessuer2/
 2. 「同じ端末」で名前・図鑑を選んで開始
 3. 交互に端末を渡してプレイ
 
-## 遊び方（オンライン・任意）
+## 遊び方（オンライン）
 
-1. `npm run dev`（Vite + PartyKit が同時起動）
-2. 「インターネット」→ 部屋をつくる / 部屋コードで参加
+1. `npm run dev`（または GitHub Pages）
+2. 「インターネット」→ 片方「部屋をつくる」、もう片方はコードで「参加」
+3. 通話は Discord / LINE など別アプリでOK
 
-オンラインの同期サーバは [PartyKit](https://partykit.io) です。共有ホストが使えない場合は自分の Cloudflare へのデプロイが必要です。
+同期は端末同士の WebRTC（PeerJS）です。独自サーバやドメインは不要です。部屋主がページを閉じると切断されます。
 
 ## ルール要約
 
@@ -52,10 +53,9 @@ node scripts/build-champions-usage.mjs
 ## コマンド
 
 ```bash
-npm run dev         # Web + PartyKit
-npm run dev:web     # Vite のみ
-npm run dev:party   # PartyKit のみ
-npm test
+npm run dev         # Vite
 npm run build
-npm run deploy:party
+npm test
 ```
+
+（旧 PartyKit 用の `dev:party` / `deploy:party` は残してありますが、オンライン対戦には使いません）

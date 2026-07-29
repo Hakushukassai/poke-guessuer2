@@ -23,8 +23,12 @@ export function OnlineSession({
   isHost: boolean
   onLeave: () => void
 }) {
-  const { view, error, connected, send, claim, clearError } =
-    useOnlineRoom(roomCode)
+  const { view, error, connected, send, claim, clearError } = useOnlineRoom({
+    roomCode,
+    isHost,
+    displayName,
+    pool,
+  })
 
   useEffect(() => {
     claim({
@@ -41,7 +45,9 @@ export function OnlineSession({
           error ??
           (connected
             ? undefined
-            : 'PartyKit（localhost:1999）が起動しているか確認してね')
+            : isHost
+              ? 'PeerJS 経由で部屋を開いています…'
+              : '部屋主のページを探しています…')
         }
         roomCode={roomCode}
         onLeave={onLeave}
@@ -58,7 +64,7 @@ export function OnlineSession({
         title="相手を待っています"
         detail={
           view.you === 'p1'
-            ? 'このコードを相手に送ってね'
+            ? 'このコードを通話相手に伝えてね。あなたはこのタブを開いたままに'
             : `${view.names.p1} の部屋に入りました`
         }
         roomCode={roomCode}

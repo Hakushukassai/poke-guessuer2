@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "concurrently -k -n web,party -c cyan,magenta \"vite\" \"partykit dev\"",
+    "dev": "vite",
     "dev:web": "vite",
     "dev:party": "partykit dev",
     "build": "tsc -b && vite build",
@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "partysocket": "^1.3.0",
+    "peerjs": "^1.5.5",
     "react": "^19.2.7",
     "react-dom": "^19.2.7"
   },
