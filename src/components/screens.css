@@ -2517,6 +2517,41 @@ select {
   margin-bottom: 1rem;
 }
 
+.result-last-miss {
+  margin: 0 0 1rem;
+}
+
+.last-miss-card {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  border: 2px dashed var(--line);
+  border-radius: 14px;
+  padding: 0.75rem 0.9rem;
+  background: #fff8f6;
+  text-align: left;
+}
+
+.last-miss-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  min-width: 0;
+}
+
+.last-miss-text .poke-name {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+.last-miss-note {
+  margin: 0.15rem 0 0;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--muted);
+}
+
 .reveal-block {
   border: 2px solid var(--line);
   border-radius: 14px;

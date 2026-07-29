@@ -2535,6 +2535,21 @@ export function ResultScreen({
     getPokemon(state.picks.p2 ?? '', state.pool, state.quizMode)
   const misses = state.guesses.filter((g) => !g.correct).length
 
+  const loser: PlayerId | null = state.draw
+    ? null
+    : state.winner === 'p1'
+      ? 'p2'
+      : state.winner === 'p2'
+        ? 'p1'
+        : null
+  const lastMissGuess = loser
+    ? [...state.guesses].reverse().find((g) => !g.correct && g.by === loser)
+    : null
+  const lastMissPokemon = lastMissGuess
+    ? (findPokemonById(lastMissGuess.pokemonId) ??
+      getPokemon(lastMissGuess.pokemonId, state.pool, state.quizMode))
+    : null
+
   return (
     <section className="screen result-screen">
       <p className="result-kicker">
@@ -2568,6 +2583,42 @@ export function ResultScreen({
           draw={state.draw}
         />
       </div>
+
+      {lastMissGuess && (
+        <section className="result-last-miss" aria-label="最後の外れ解答">
+          <h3 className="result-reveal-title">
+            {playerLabel(lastMissGuess.by, state.names)} の最後の外れ
+          </h3>
+          <div className="last-miss-card">
+            {lastMissPokemon ? (
+              <PokemonSprite
+                pokemon={lastMissPokemon}
+                name={lastMissPokemon.name}
+                size={88}
+              />
+            ) : (
+              <PokemonSprite
+                id={lastMissGuess.pokemonId}
+                name={lastMissGuess.pokemonId}
+                size={88}
+              />
+            )}
+            <div className="last-miss-text">
+              <p className="poke-name">
+                {lastMissPokemon?.name ?? lastMissGuess.pokemonId}
+              </p>
+              {lastMissPokemon && (
+                <span className="type-row center">
+                  {lastMissPokemon.types.map((t) => (
+                    <TypeBadge key={t} type={t} />
+                  ))}
+                </span>
+              )}
+              <p className="last-miss-note">これに解答して外した</p>
+            </div>
+          </div>
+        </section>
+      )}
 
       <p className="result-meta">
         質問{' '}
