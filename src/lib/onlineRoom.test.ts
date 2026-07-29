@@ -40,6 +40,16 @@ describe('onlineRoom', () => {
     const v2 = toClientView(s, 'p2')
     expect(v2.picks.p1).toBeNull()
     expect(v2.myPick).toBe('rotomwash')
+    expect(v2.candidateCounts.p1).toBe(v2.rosterSize)
+    expect(v2.candidateCounts.p2).toBe(v2.rosterSize)
+
+    s = applyClientMessage(s, 'c1', {
+      type: 'probe',
+      moveType: 'こおり',
+    }).state
+    const after = toClientView(s, 'p2')
+    expect(after.candidateCounts.p1).toBeLessThan(after.rosterSize)
+    expect(after.lastMessage).toMatch(/こおり/)
   })
 
   it('先攻正解で追い当て、両方正解なら引き分け', () => {

@@ -1,6 +1,8 @@
 import { useEffect } from 'react'
 import {
   BattleScreen,
+  OnlinePickWaitScreen,
+  OnlineWatchScreen,
   PickScreen,
   ResultScreen,
   WaitingPanel,
@@ -85,9 +87,8 @@ export function OnlineSession({
       )
     }
     return (
-      <WaitingPanel
-        title="選出完了"
-        detail={wait ?? '相手の選出を待っています'}
+      <OnlinePickWaitScreen
+        view={view}
         roomCode={roomCode}
         onLeave={onLeave}
       />
@@ -114,11 +115,7 @@ export function OnlineSession({
             </button>
           </p>
         )}
-        <WaitingPanel
-          title={wait}
-          detail={view.lastMessage ?? undefined}
-          roomCode={roomCode}
-        />
+        <OnlineWatchScreen view={view} roomCode={roomCode} onLeave={onLeave} />
       </>
     )
   }

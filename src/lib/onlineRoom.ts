@@ -9,10 +9,13 @@ import { EFFECTIVENESS_LABEL_JA } from '../data/types'
 import { calcEffectiveness } from './effectiveness'
 import {
   DEFAULT_NAMES,
+  filterCandidates,
   getPokemon,
   opponentOf,
+  pokemonIn,
   resolvePlayerName,
   type DexPool,
+  type GameState,
 } from './game'
 
 export type OnlinePhase =
@@ -58,6 +61,10 @@ export interface OnlineClientView {
   winner: PlayerId | null
   draw: boolean
   lastMessage: string | null
+  /** Remaining candidate counts for each asker (safe to share; does not reveal picks). */
+  candidateCounts: { p1: number; p2: number }
+  /** Pool size used as the bar maximum. */
+  rosterSize: number
 }
 
 export type ClientMessage =
@@ -101,6 +108,34 @@ export function seatOf(
   return null
 }
 
+function toCountState(state: OnlineRoomState): GameState {
+  const phase =
+    state.phase === 'catchup'
+      ? 'catchup'
+      : state.phase === 'result'
+        ? 'result'
+        : 'battle'
+  return {
+    phase,
+    pool: state.pool,
+    quizMode: 'type',
+    names: state.names,
+    options: { banEnabled: false, questionLimit: null },
+    bannedTypes: [],
+    picks: state.picks,
+    currentPlayer: state.currentPlayer,
+    probes: state.probes,
+    dexCompares: state.dexCompares,
+    traitProbes: [],
+    statCompares: [],
+    guesses: state.guesses,
+    eliminated: state.eliminated,
+    winner: state.winner,
+    draw: state.draw,
+    lastMessage: state.lastMessage,
+  }
+}
+
 export function toClientView(
   state: OnlineRoomState,
   you: PlayerId | null,
@@ -112,6 +147,19 @@ export function toClientView(
         p1: you === 'p1' ? state.picks.p1 : null,
         p2: you === 'p2' ? state.picks.p2 : null,
       }
+
+  const rosterSize = pokemonIn(state.pool, 'type').length
+  const countState = toCountState(state)
+  const inMatch =
+    state.phase === 'battle' ||
+    state.phase === 'catchup' ||
+    state.phase === 'result'
+  const candidateCounts = inMatch
+    ? {
+        p1: filterCandidates(countState, 'p1').length,
+        p2: filterCandidates(countState, 'p2').length,
+      }
+    : { p1: rosterSize, p2: rosterSize }
 
   return {
     phase: state.phase,
@@ -130,6 +178,8 @@ export function toClientView(
     winner: state.winner,
     draw: state.draw,
     lastMessage: state.lastMessage,
+    candidateCounts,
+    rosterSize,
   }
 }
 

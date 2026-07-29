@@ -46,6 +46,8 @@ import {
   type StatCompareRecord,
   type TraitProbeRecord,
 } from '../lib/competitive'
+import { calcEffectiveness } from '../lib/effectiveness'
+import type { OnlineClientView } from '../lib/onlineRoom'
 import {
   ROLE_FILTERS,
   filterAndSortCompetitivePick,
@@ -245,6 +247,7 @@ function ClueBoard({
   quizMode,
   currentPlayer,
   names,
+  expandAll = false,
 }: {
   probes: ProbeRecord[]
   dexCompares: DexCompareRecord[]
@@ -253,9 +256,11 @@ function ClueBoard({
   quizMode: QuizMode
   currentPlayer: PlayerId
   names: { p1: string; p2: string }
+  /** Keep both lanes open (online wait / spectate). */
+  expandAll?: boolean
 }) {
   const competitive = quizMode === 'competitive'
-  const [openOther, setOpenOther] = useState(false)
+  const [openOther, setOpenOther] = useState(expandAll)
 
   const lanes = useMemo(() => {
     const all = [
@@ -284,8 +289,9 @@ function ClueBoard({
   }, [probes, dexCompares, traitProbes, statCompares, currentPlayer])
 
   useEffect(() => {
-    setOpenOther(false)
-  }, [currentPlayer])
+    if (expandAll) setOpenOther(true)
+    else setOpenOther(false)
+  }, [currentPlayer, expandAll])
 
   return (
     <section className="clue-board" aria-label={competitive ? '対戦メモ' : '相性メモ'}>
@@ -310,7 +316,7 @@ function ClueBoard({
       <div className="clue-lanes">
         {lanes.map((lane, index) => {
           const focusing = lane.asker === currentPlayer
-          const collapsed = !focusing && !openOther
+          const collapsed = !expandAll && !focusing && !openOther
           const itemCount = competitive
             ? lane.traits.length + lane.stats.length
             : lane.probes.length + lane.dex.length
@@ -336,8 +342,10 @@ function ClueBoard({
                     </span>
                   </span>
                 </div>
-                {focusing ? (
-                  <span className="lane-now">いま絞る相手</span>
+                {focusing || expandAll ? (
+                  <span className="lane-now">
+                    {focusing ? 'いま動いてる' : '公開メモ'}
+                  </span>
                 ) : (
                   <button
                     type="button"
@@ -831,6 +839,301 @@ export function WaitingPanel({
   )
 }
 
+function LiveCandidateMeters({
+  names,
+  counts,
+  rosterSize,
+  you,
+  activePlayer,
+}: {
+  names: { p1: string; p2: string }
+  counts: { p1: number; p2: number }
+  rosterSize: number
+  you: PlayerId
+  activePlayer: PlayerId
+}) {
+  const max = Math.max(rosterSize, 1)
+  return (
+    <div className="live-meters" aria-label="候補の残り">
+      {(['p1', 'p2'] as PlayerId[]).map((id) => {
+        const pct = Math.round((counts[id] / max) * 100)
+        return (
+          <div
+            key={id}
+            className={`live-meter tone-${id} ${id === you ? 'is-you' : ''} ${id === activePlayer ? 'is-active' : ''}`}
+          >
+            <div className="live-meter-head">
+              <span>
+                {playerLabel(id, names)}
+                {id === you ? '（自分）' : ''}
+              </span>
+              <strong>{counts[id]}</strong>
+            </div>
+            <div className="live-meter-bar" aria-hidden>
+              <span style={{ width: `${pct}%` }} />
+            </div>
+            <p className="live-meter-cap">候補の残り</p>
+          </div>
+        )
+      })}
+    </div>
+  )
+}
+
+function SecretPickCard({
+  pokemon,
+  probesOnYou,
+}: {
+  pokemon: Pokemon
+  probesOnYou: ProbeRecord[]
+}) {
+  const weaknesses = useMemo(() => {
+    return TYPES.map((t) => ({
+      type: t,
+      ...calcEffectiveness(t, pokemon),
+    })).filter(
+      (row) =>
+        row.label === 'super' ||
+        row.label === 'double_super' ||
+        row.label === 'immune' ||
+        row.label === 'quarter' ||
+        row.label === 'half',
+    )
+  }, [pokemon])
+
+  const weak = weaknesses.filter(
+    (w) => w.label === 'super' || w.label === 'double_super',
+  )
+  const resist = weaknesses.filter(
+    (w) =>
+      w.label === 'half' ||
+      w.label === 'quarter' ||
+      w.label === 'immune',
+  )
+
+  return (
+    <section className="secret-pick" aria-label="自分の秘密ポケモン">
+      <header className="secret-pick-head">
+        <span className="live-pill">秘密（自分だけ）</span>
+        <h3>選んだポケモン</h3>
+      </header>
+      <div className="secret-pick-body">
+        <PokemonSprite pokemon={pokemon} name={pokemon.name} size={88} />
+        <div className="secret-pick-text">
+          <strong>{pokemon.name}</strong>
+          <span className="type-row">
+            {pokemon.types.map((t) => (
+              <TypeBadge key={t} type={t} />
+            ))}
+          </span>
+          <span className="secret-ability">特性 {pokemon.ability.name}</span>
+        </div>
+      </div>
+
+      <div className="secret-chart">
+        <p className="secret-chart-label">弱点・耐性（自分用メモ）</p>
+        <div className="secret-chart-row">
+          <span className="secret-chart-tag weak">弱点</span>
+          <div className="type-row">
+            {weak.length === 0 ? (
+              <span className="muted-inline">なし</span>
+            ) : (
+              weak.map((w) => (
+                <span
+                  key={w.type}
+                  className={`secret-eff result-${w.label}`}
+                  style={{ background: TYPE_COLORS[w.type] }}
+                >
+                  {w.type}
+                  <small>{RESULT_MARK[w.label]}</small>
+                </span>
+              ))
+            )}
+          </div>
+        </div>
+        <div className="secret-chart-row">
+          <span className="secret-chart-tag resist">耐性</span>
+          <div className="type-row">
+            {resist.slice(0, 8).map((w) => (
+              <span
+                key={w.type}
+                className={`secret-eff result-${w.label}`}
+                style={{ background: TYPE_COLORS[w.type] }}
+              >
+                {w.type}
+                <small>{RESULT_MARK[w.label]}</small>
+              </span>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div className="secret-probes">
+        <p className="secret-chart-label">相手が自分に聞いた相性</p>
+        {probesOnYou.length === 0 ? (
+          <p className="lane-empty">まだ聞かれていない</p>
+        ) : (
+          <ul className="clue-chips">
+            {probesOnYou.map((probe, i) => (
+              <li key={`${probe.moveType}-${i}`} className="clue-chip">
+                <span
+                  className="clue-type-block"
+                  style={{ background: TYPE_COLORS[probe.moveType] }}
+                >
+                  {probe.moveType}
+                </span>
+                <span className="clue-chip-arrow" aria-hidden>
+                  →
+                </span>
+                <span className={`clue-result-block result-${probe.result}`}>
+                  <span className="result-mark" aria-hidden>
+                    {RESULT_MARK[probe.result]}
+                  </span>
+                  {EFFECTIVENESS_LABEL_JA[probe.result]}
+                </span>
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
+    </section>
+  )
+}
+
+/** Online: wait for opponent while still seeing live board + your secret. */
+export function OnlineWatchScreen({
+  view,
+  roomCode,
+  onLeave,
+}: {
+  view: OnlineClientView
+  roomCode?: string
+  onLeave?: () => void
+}) {
+  const you = view.you!
+  const active = view.currentPlayer
+  const myPokemon = view.myPick
+    ? getPokemon(view.myPick, view.pool, 'type')
+    : null
+  const probesOnYou = view.probes.filter((p) => p.by !== you)
+  const [pulse, setPulse] = useState(0)
+
+  useEffect(() => {
+    setPulse((n) => n + 1)
+  }, [view.lastMessage, view.probes.length, view.dexCompares.length, active])
+
+  return (
+    <section className={`screen watch-screen tone-${you}`}>
+      <header className="live-status">
+        <div className="live-status-row">
+          <span className="live-dot" aria-hidden />
+          <span className="live-status-label">LIVE</span>
+          {roomCode && <span className="live-room">{roomCode}</span>}
+        </div>
+        <h2 className="live-turn">
+          {playerLabel(active, view.names)} が推理中…
+        </h2>
+        <p key={pulse} className="live-ticker">
+          {view.lastMessage ?? '相手の操作を待っています'}
+        </p>
+        <p className="live-hint">
+          <span className="thinking-dots" aria-hidden>
+            <i />
+            <i />
+            <i />
+          </span>
+          相手が絞っている間も、自分のタイプと公開メモは見ておけるよ
+        </p>
+      </header>
+
+      <LiveCandidateMeters
+        names={view.names}
+        counts={view.candidateCounts}
+        rosterSize={view.rosterSize}
+        you={you}
+        activePlayer={active}
+      />
+
+      {myPokemon && (
+        <SecretPickCard pokemon={myPokemon} probesOnYou={probesOnYou} />
+      )}
+
+      <ClueBoard
+        probes={view.probes}
+        dexCompares={view.dexCompares}
+        quizMode="type"
+        currentPlayer={active}
+        names={view.names}
+        expandAll
+      />
+
+      {onLeave && (
+        <div className="watch-footer">
+          <button type="button" className="btn ghost" onClick={onLeave}>
+            部屋をやめる
+          </button>
+        </div>
+      )}
+    </section>
+  )
+}
+
+/** Online picking wait: show your locked pick while opponent chooses. */
+export function OnlinePickWaitScreen({
+  view,
+  roomCode,
+  onLeave,
+}: {
+  view: OnlineClientView
+  roomCode?: string
+  onLeave?: () => void
+}) {
+  const you = view.you!
+  const myPokemon = view.myPick
+    ? getPokemon(view.myPick, view.pool, 'type')
+    : null
+
+  return (
+    <section className={`screen watch-screen tone-${you}`}>
+      <header className="live-status">
+        <div className="live-status-row">
+          <span className="live-dot" aria-hidden />
+          <span className="live-status-label">LIVE</span>
+          {roomCode && <span className="live-room">{roomCode}</span>}
+        </div>
+        <h2 className="live-turn">相手の選出待ち</h2>
+        <p className="live-ticker">
+          {view.lastMessage ?? '相手がポケモンを選んでいます'}
+        </p>
+      </header>
+
+      {myPokemon && (
+        <SecretPickCard pokemon={myPokemon} probesOnYou={[]} />
+      )}
+
+      <div className="pick-wait-rival">
+        <span className="mystery-ball big" aria-hidden />
+        <p>
+          {playerLabel(opponentOf(you), view.names)} が選出中
+          <span className="thinking-dots" aria-hidden>
+            <i />
+            <i />
+            <i />
+          </span>
+        </p>
+      </div>
+
+      {onLeave && (
+        <div className="watch-footer">
+          <button type="button" className="btn ghost" onClick={onLeave}>
+            部屋をやめる
+          </button>
+        </div>
+      )}
+    </section>
+  )
+}
+
 export function HandoffScreen({
   toPlayer,
   names,
@@ -1204,9 +1507,14 @@ export function BattleScreen({
   const [flash, setFlash] = useState<FlashState>(null)
 
   const candidates = filterCandidates(state, state.currentPlayer)
+  const rivalCandidates = filterCandidates(
+    state,
+    opponentOf(state.currentPlayer),
+  )
   const roster = pokemonIn(state.pool, state.quizMode)
   const targetOwner = opponentOf(state.currentPlayer)
   const remainPct = Math.round((candidates.length / roster.length) * 100)
+  const rivalPct = Math.round((rivalCandidates.length / roster.length) * 100)
 
   const visibleCandidates = useMemo(() => {
     const q = query.trim()
@@ -1370,13 +1678,24 @@ export function BattleScreen({
               : ''}
           </p>
         </div>
-        <div className="remain-box">
-          <p className="remain">
-            候補 <strong>{candidates.length}</strong>
-            <span> / {roster.length}</span>
-          </p>
-          <div className="remain-bar" aria-hidden>
-            <span style={{ width: `${remainPct}%` }} />
+        <div className="remain-box live-remain">
+          <div className="remain-pair">
+            <p className="remain">
+              自分 <strong>{candidates.length}</strong>
+              <span> / {roster.length}</span>
+            </p>
+            <div className="remain-bar" aria-hidden>
+              <span style={{ width: `${remainPct}%` }} />
+            </div>
+          </div>
+          <div className="remain-pair is-rival">
+            <p className="remain">
+              相手 <strong>{rivalCandidates.length}</strong>
+              <span> / {roster.length}</span>
+            </p>
+            <div className="remain-bar rival" aria-hidden>
+              <span style={{ width: `${rivalPct}%` }} />
+            </div>
           </div>
         </div>
       </header>
