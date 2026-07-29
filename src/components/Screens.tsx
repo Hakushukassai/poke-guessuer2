@@ -1018,20 +1018,30 @@ export function OnlineWatchScreen({
     : null
   const probesOnYou = view.probes.filter((p) => p.by !== you)
   const [pulse, setPulse] = useState(0)
+  const [candTab, setCandTab] = useState<'rival' | 'mine'>('rival')
   const gameState = useMemo(() => onlineViewToGameState(view), [view])
   const rivalCandidates = useMemo(
     () => filterCandidates(gameState, active),
     [gameState, active],
   )
+  const myCandidates = useMemo(
+    () => filterCandidates(gameState, you),
+    [gameState, you],
+  )
   const [candQuery, setCandQuery] = useState('')
-  const visibleRival = useMemo(() => {
+  const activeList = candTab === 'rival' ? rivalCandidates : myCandidates
+  const visibleCand = useMemo(() => {
     const q = candQuery.trim()
-    return rivalCandidates.filter((p) => !q || p.name.includes(q))
-  }, [rivalCandidates, candQuery])
+    return activeList.filter((p) => !q || p.name.includes(q))
+  }, [activeList, candQuery])
 
   useEffect(() => {
     setPulse((n) => n + 1)
   }, [view.lastMessage, view.probes.length, view.dexCompares.length, active])
+
+  useEffect(() => {
+    setCandQuery('')
+  }, [candTab])
 
   return (
     <section className={`screen watch-screen tone-${you}`}>
@@ -1053,7 +1063,7 @@ export function OnlineWatchScreen({
             <i />
             <i />
           </span>
-          相手の候補リストは質問のたびに減っていくよ
+          候補はタブで切り替え。デフォルトは相手側
         </p>
       </header>
 
@@ -1065,25 +1075,48 @@ export function OnlineWatchScreen({
         activePlayer={active}
       />
 
-      <section className="rival-candidates" aria-label="相手の候補">
+      <section className="rival-candidates" aria-label="候補リスト">
+        <div className="cand-tabs" role="tablist" aria-label="候補の切り替え">
+          <button
+            type="button"
+            role="tab"
+            aria-selected={candTab === 'rival'}
+            className={candTab === 'rival' ? 'is-on' : ''}
+            onClick={() => setCandTab('rival')}
+          >
+            相手の候補
+            <strong>{rivalCandidates.length}</strong>
+          </button>
+          <button
+            type="button"
+            role="tab"
+            aria-selected={candTab === 'mine'}
+            className={candTab === 'mine' ? 'is-on' : ''}
+            onClick={() => setCandTab('mine')}
+          >
+            自分の候補
+            <strong>{myCandidates.length}</strong>
+          </button>
+        </div>
         <header className="rival-cand-head">
           <h3>
-            {playerLabel(active, view.names)} の候補
-            <strong>{rivalCandidates.length}</strong>
+            {candTab === 'rival'
+              ? `${playerLabel(active, view.names)} が絞っている候補`
+              : '自分が当てる相手の候補'}
           </h3>
           <input
             type="search"
             placeholder="名前で探す"
             value={candQuery}
             onChange={(e) => setCandQuery(e.target.value)}
-            aria-label="相手の候補を名前で探す"
+            aria-label="候補を名前で探す"
           />
         </header>
-        {visibleRival.length === 0 ? (
+        {visibleCand.length === 0 ? (
           <p className="empty-panel">条件に合う候補がない</p>
         ) : (
           <div className="poke-tray compact rival-tray">
-            {visibleRival.map((p) => (
+            {visibleCand.map((p) => (
               <div key={p.id} className="poke-tile is-static">
                 <PokemonSprite pokemon={p} name={p.name} size={56} />
                 <span className="poke-name">{p.name}</span>
