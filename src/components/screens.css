@@ -731,6 +731,17 @@ select {
   background: #fffdf8;
 }
 
+.room-code-block {
+  display: grid;
+  justify-items: center;
+  gap: 0.45rem;
+  margin: 0.35rem 0 0.6rem;
+}
+
+.room-copy {
+  min-width: 10rem;
+}
+
 .online-error {
   margin: 0.5rem 1rem;
   padding: 0.5rem 0.7rem;
@@ -742,6 +753,10 @@ select {
   justify-content: space-between;
   gap: 0.5rem;
   align-items: center;
+}
+
+.online-error.is-reconnect {
+  background: #fff4d6;
 }
 
 .online-error button {

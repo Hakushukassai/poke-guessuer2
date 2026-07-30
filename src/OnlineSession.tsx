@@ -43,7 +43,22 @@ export function OnlineSession({
     })
   }, [claim, displayName, pool, quizMode, isHost])
 
-  if (!connected || !view || !view.you) {
+  const reconnectBanner =
+    !connected && view?.you ? (
+      <p className="online-error is-reconnect" role="status">
+        {error ?? '再接続しています…タブを開いたまま少し待ってね'}
+      </p>
+    ) : error && view?.you ? (
+      <p className="online-error" role="alert">
+        {error}
+        <button type="button" onClick={clearError}>
+          閉じる
+        </button>
+      </p>
+    ) : null
+
+  // 切断中も view があれば部屋UIを維持（コード共有のためタブを離れて戻ったとき用）
+  if (!view || !view.you) {
     return (
       <WaitingPanel
         title={connected ? '席を確保しています…' : '接続中…'}
@@ -66,16 +81,21 @@ export function OnlineSession({
 
   if (view.phase === 'lobby') {
     return (
-      <WaitingPanel
-        title="相手を待っています"
-        detail={
-          view.you === 'p1'
-            ? 'このコードを通話相手に伝えてね。あなたはこのタブを開いたままに'
-            : `${view.names.p1} の部屋に入りました`
-        }
-        roomCode={roomCode}
-        onLeave={onLeave}
-      />
+      <>
+        {reconnectBanner}
+        <WaitingPanel
+          title={connected ? '相手を待っています' : '再接続中…相手を待っています'}
+          detail={
+            view.you === 'p1'
+              ? connected
+                ? 'このコードを相手に送ってね。戻ってきたら自動でつなぎ直します'
+                : '通信を再開しています。このまま待つか、コードを再送してね'
+              : `${view.names.p1} の部屋に入りました`
+          }
+          roomCode={roomCode}
+          onLeave={onLeave}
+        />
+      </>
     )
   }
 
@@ -83,14 +103,7 @@ export function OnlineSession({
     if (!view.myPick) {
       return (
         <>
-          {error && (
-            <p className="online-error" role="alert">
-              {error}
-              <button type="button" onClick={clearError}>
-                閉じる
-              </button>
-            </p>
-          )}
+          {reconnectBanner}
           <PickScreen
             player={view.you}
             pool={view.pool}
@@ -103,14 +116,7 @@ export function OnlineSession({
     }
     return (
       <>
-        {error && (
-          <p className="online-error" role="alert">
-            {error}
-            <button type="button" onClick={clearError}>
-              閉じる
-            </button>
-          </p>
-        )}
+        {reconnectBanner}
         <OnlinePickWaitScreen
           view={view}
           roomCode={roomCode}
@@ -122,24 +128,20 @@ export function OnlineSession({
 
   if (view.phase === 'result') {
     return (
-      <ResultScreen
-        state={gameState}
-        onReset={() => send({ type: 'play_again' })}
-      />
+      <>
+        {reconnectBanner}
+        <ResultScreen
+          state={gameState}
+          onReset={() => send({ type: 'play_again' })}
+        />
+      </>
     )
   }
 
   if (wait && (view.phase === 'battle' || view.phase === 'catchup')) {
     return (
       <>
-        {error && (
-          <p className="online-error" role="alert">
-            {error}
-            <button type="button" onClick={clearError}>
-              閉じる
-            </button>
-          </p>
-        )}
+        {reconnectBanner}
         <OnlineWatchScreen view={view} roomCode={roomCode} onLeave={onLeave} />
       </>
     )
@@ -148,14 +150,7 @@ export function OnlineSession({
   if (view.phase === 'battle' || view.phase === 'catchup') {
     return (
       <>
-        {error && (
-          <p className="online-error" role="alert">
-            {error}
-            <button type="button" onClick={clearError}>
-              閉じる
-            </button>
-          </p>
-        )}
+        {reconnectBanner}
         <BattleScreen
           state={gameState}
           onProbe={(moveType) => send({ type: 'probe', moveType })}

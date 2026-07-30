@@ -1003,15 +1003,33 @@ export function WaitingPanel({
   roomCode?: string
   onLeave?: () => void
 }) {
+  const [copied, setCopied] = useState(false)
+
+  const copyCode = async () => {
+    if (!roomCode) return
+    try {
+      await navigator.clipboard.writeText(roomCode)
+      setCopied(true)
+      window.setTimeout(() => setCopied(false), 1800)
+    } catch {
+      /* fallback: select-friendly display only */
+    }
+  }
+
   return (
     <section className="screen wait-screen">
       <div className="wait-card">
         <p className="wait-title">{title}</p>
         {detail && <p className="wait-detail">{detail}</p>}
         {roomCode && (
-          <p className="room-code" aria-label="部屋コード">
-            {roomCode}
-          </p>
+          <div className="room-code-block">
+            <p className="room-code" aria-label="部屋コード">
+              {roomCode}
+            </p>
+            <button type="button" className="btn ghost room-copy" onClick={copyCode}>
+              {copied ? 'コピーした' : 'コードをコピー'}
+            </button>
+          </div>
         )}
         {onLeave && (
           <button type="button" className="btn ghost" onClick={onLeave}>
